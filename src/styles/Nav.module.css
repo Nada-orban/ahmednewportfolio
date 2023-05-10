@@ -1,6 +1,14 @@
-.icon{
-    color :white
+.icon {
+    background-color: black;
+    cursor: pointer;
+    
+}
 
+.icon:hover {
+    background-color: var(--secondray-maincolor);
+    color: white;
+    transition: all .5s ease-in-out;
+    transform: translateY(-10px);
 }
 /* #####################nav1################## */
 .nav1 {

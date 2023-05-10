@@ -1,2 +1,499 @@
 
 
+.buttonStyle {
+    border-radius: 20px;
+    background-color: var(--secondray-maincolor);
+    color: white;
+    padding: 15px 20px;
+    border-style: none;
+    font-size: large;
+    margin: 15px 5px;
+    cursor: pointer;
+    transition: all .5s;
+
+}
+
+.buttonStyle:hover {
+    background-color: white;
+    color: var(--secondray-maincolor);
+    transform: scale(1.1);
+}
+
+.buttonStyle2 {
+    border-radius: 20px;
+    border: 1px solid var(--secondray-maincolor);
+    background-color: transparent;
+    color: var(--secondray-maincolor);
+    padding: 15px 20px;
+    font-size: large;
+    margin: 15px 5px;
+    cursor: pointer;
+    transition: all .5s;
+
+}
+
+.spancolor {
+    color: var(--secondray-maincolor)
+}
+
+.redbox {
+    background-color: red;
+    width: "100px";
+    height: 100px;
+}
+
+
+
+/* ######################who am i######################## */
+/* .video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+} */
+.backgroundimage {
+    background: linear-gradient(#000000de,
+            #1b1b1bd0);
+    /* background: linear-gradient(to right, #4286f4, #373B44); */
+
+    /* background:linear-gradient( #000000bd,#424242); */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    z-index: -1;
+    color: white;
+    overflow: hidden;
+    /* position: relative; */
+    padding: 15vh 0px;
+
+}
+
+.contactionbox {
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    right: 50px;
+    bottom: 100px;
+    gap: 15px;
+
+}
+
+
+.WhoamiAnimation {
+    width: 500px;
+    height: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+    .homeSection {
+        order: 2;
+    }
+
+    .contactionbox {
+        position: absolute;
+        display: none;
+        justify-content: center;
+        bottom: 15%;
+        right: 20%;
+        gap: 15px;
+
+    }
+
+    .backgroundimage {
+        padding: 0px;
+        text-align: center;
+
+    }
+
+    .WhoamiAnimation {
+        width: 300px;
+        height: 300px;
+        order: -1;
+        padding-top: 100px;
+    }
+
+    .arrow {
+        left: 45%;
+    }
+
+
+
+}
+
+.icon {
+    background-color: white;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: var(--secondray-maincolor);
+    color: white;
+    transition: all .5s ease-in-out;
+    transform: translateY(-10px);
+}
+
+/* .overlay{
+  
+  background-color: black;
+  width: 100%;
+  height: 100VH;
+  z-index: 2;
+  position: absolute;
+  opacity: .6;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: WHITE;
+
+
+} */
+
+.containertext {
+    display: inline-block;
+}
+
+.typedout {
+    overflow: hidden;
+    border-right: .15em solid white;
+    font-size: 40px;
+    width: 0;
+    white-space: nowrap;
+    animation: typing 4s steps(20, end) infinite;
+    color: var(--secondray-maincolor);
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+.arrow {
+    animation: arrow 1.5s ease-in-out both;
+    animation-iteration-count: infinite;
+
+}
+
+/* @media (max-width: 768px) .hero .go-down {
+  bottom: -50px;
+} */
+@keyframes arrow {
+
+    0%,
+    10%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0%);
+    }
+
+    40%,
+    60% {
+        transform: translateY(-30%);
+    }
+
+}
+
+
+/* #########################about################# */
+.aboutbackground {
+    background: linear-gradient(to left, #3d3e49 70%, #43434338 30%);
+
+}
+
+.photobox {
+    position: relative;
+    border: 10px solid #dc965a;
+
+
+
+}
+
+.photo {
+    position: absolute;
+    /* bottom: -30px;
+  right: -30px; */
+    bottom: -30px;
+    right: -30px;
+    cursor: pointer;
+
+
+}
+
+.photo:hover {
+    animation: photomove 1s both;
+
+}
+
+@keyframes photomove {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translate(-30px, -30px);
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .aboutbackground {
+        background: #1c1d24;
+        text-align: center;
+
+    }
+
+    .photobox {
+        width: 300px;
+        height: 300px;
+        justify-content: center;
+        left: 10%;
+
+    }
+
+    .photo {
+        width: 280px;
+        height: 280px;
+        bottom: 0px;
+        right: 0px;
+
+    }
+}
+
+/* ##################skills############### */
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+
+}
+
+.slideTrack {
+    margin: 70px 0px;
+    width: calc(80px * 7);
+    /* perspective: 200px; */
+    animation: scroll 10s linear infinite normal;
+
+
+}
+
+.slideTrack:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+
+    }
+}
+
+
+
+.paper {
+    transition: transform 1s;
+    cursor: pointer;
+    box-shadow: rgba(245, 101, 57, 0.3) 0px 0px 30px;
+
+}
+
+.paper:hover {
+    /* transform: translateZ(20px); */
+    transform: scale(1.2);
+}
+
+
+/* ################project############# */
+/* .projectCard{
+  box-shadow:rgba(245, 101, 57, 0.3) 0px 0px 30px;
+} */
+.imageCard {
+    position: relative;
+    overflow: hidden;
+}
+
+.imageCard::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    background-color: rgba(138, 130, 130, 0.432);
+    height: 100%;
+    top: -100%;
+    left: 0px;
+    z-index: 1;
+    transition: all 1s ease-in-out;
+
+}
+
+.textCard {
+
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 30;
+    left: -150px;
+    top: 10px;
+    background-color: #1d1d1d;
+    color: white;
+    transition: all 1s ease-in-out;
+    transition-delay: .5s;
+
+}
+
+.textCard:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+.cardbutton {
+    border: 1px solid #1d1d1d;
+}
+
+.cardbutton:hover {
+    background-color: var(--secondray-maincolor);
+    border-style: none;
+
+}
+
+.demobox {
+    display: flex;
+    align-items: center;
+}
+
+.infobox1 {
+    border-radius: 10px;
+    background-color: #1d1d1d;
+    color: white;
+    padding: 5px 10px 5px 50px;
+    position: absolute;
+    left: -130px;
+    bottom: 5x;
+}
+
+.infobox2 {
+    border-radius: 10px;
+    background-color: #1d1d1d;
+    color: white;
+    padding: 5px 60px 5px 10px;
+    position: absolute;
+    right: -160px;
+    bottom: 5x;
+}
+
+.codebox {
+    display: flex;
+    align-items: center;
+}
+
+/* .projectCard:hover{
+  box-shadow:rgba(245, 101, 57, 0.3) 5px 10px 30px 10px;
+  
+
+} */
+
+.projectCard:hover .codebox {
+    animation: movebox1 1s ease-in-out both;
+    animation-delay: 0ms;
+    opacity: 1;
+
+}
+
+.projectCard:hover .imageCard::before {
+    transform: translateY(100%);
+
+}
+
+.projectCard:hover .demobox {
+    animation: movebox2 1s ease-in-out both;
+    animation-delay: 0ms;
+    opacity: 1;
+
+}
+
+.projectCard:hover .textCard {
+    transform: translateX(140px);
+}
+
+
+
+@keyframes movebox1 {
+    0% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: translateX(-90px);
+    }
+}
+
+@keyframes movebox2 {
+    0% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: translateX(80px);
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .projectCard {
+        margin: 0px 35px;
+    }
+
+    @keyframes movebox2 {
+        0% {
+            opacity: 0;
+            transform: translateX(0);
+        }
+
+
+        100% {
+            opacity: 1;
+            transform: translateX(60px);
+        }
+
+    }
+}
+
+
+
+
+/* #############contact##############3 */
+.iconContact {
+    background-color: var(--secondray-maincolor);
+    cursor: pointer;
+}
+
+.iconContact:hover {
+    color: var(--secondray-maincolor);
+    background-color: white;
+    transition: all .5s ease-in-out;
+    transform: scale(1.3);
+}
