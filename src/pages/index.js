@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import { Container } from '@mui/material'
+import Landing from '../../Components/Landing'
 
 
 
@@ -29,9 +30,7 @@ export default function Home() {
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></link>
 
       </Head>
-      <h1>hi</h1>
-      <h1>gug</h1>
-
+      <Landing />
 
 
 

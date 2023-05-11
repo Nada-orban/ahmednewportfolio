@@ -1,6 +1,6 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { AppBar, Avatar } from '@mui/material';
+import { AppBar, Avatar, Container } from '@mui/material';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
@@ -23,6 +23,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EmailIcon from '@mui/icons-material/Email';
+import robotjson from '../public/assets/backgrounds/112425-ai-cpu-circuit-board-loading-animation.json'
+import Lottie from 'lottie-react'
 
 
 const drawerWidth = 130;
@@ -36,10 +38,14 @@ function ResponsiveDrawer({ children }) {
     };
 
     const drawer = (
-        <div>
+        <Box sx={{
+            backgroundColor: "background.secondary", height: "100vh",
+        }}>
             <Toolbar />
+            <Box><Lottie animationData={robotjson} /></Box>
 
-            <Divider sx={{ mt: "40vh" }} />
+
+            <Divider sx={{ mt: "30vh" }} />
             <List sx={{ textAlign: "center", margin: "auto", }}>
                 {/* <ListItem>
                     <Link to="home" spy={true} smooth={true} offset={-50} duration={500}>
@@ -52,8 +58,8 @@ function ResponsiveDrawer({ children }) {
                 <ListItem>
                     <Link to="about" spy={true} smooth={true} offset={-50} duration={500} >
                         <ListItemButton >
-
-                            <ListItemText primary="About" />
+                            <Typography variant="h6">About</Typography>
+                            {/* <ListItemText primary="About" /> */}
                         </ListItemButton>
                     </Link>
                 </ListItem>
@@ -61,8 +67,7 @@ function ResponsiveDrawer({ children }) {
                 <ListItem>
                     <Link to="skills" spy={true} smooth={true} offset={-50} duration={500}>
                         <ListItemButton >
-
-                            <ListItemText primary="Skills" />
+                            <Typography variant="h6">Skills</Typography>
                         </ListItemButton>
                     </Link>
                 </ListItem>
@@ -70,8 +75,8 @@ function ResponsiveDrawer({ children }) {
                 <ListItem>
                     <Link to="projects" spy={true} smooth={true} offset={-50} duration={500}>
                         <ListItemButton >
-
-                            <ListItemText primary="Projects" />
+                            <Typography variant="h6">Projects</Typography>
+                            {/* <ListItemText primary="Projects" /> */}
                         </ListItemButton>
                     </Link>
                 </ListItem>
@@ -79,19 +84,15 @@ function ResponsiveDrawer({ children }) {
                 <ListItem>
                     <Link to="contact" spy={true} smooth={true} offset={-50} duration={500}>
                         <ListItemButton >
+                            <Typography variant="h6">Contact</Typography>
 
-                            <ListItemText primary="Contact" />
                         </ListItemButton>
                     </Link>
                 </ListItem>
                 <Divider />
             </List>
-            <Box gap="5px" mt="100px" sx={{ display: { xs: 'none', sm: 'flex' } }}>
-                {/* <a href="https://www.facebook.com/2447.nada.samir">
-                        <Avatar sx={{
-                            bgcolor: "white"
-                        }} ><FacebookIcon /></Avatar>
-                    </a> */}
+            {/* <Box gap="0px" mt="100px" sx={{ display: { xs: 'none', sm: 'flex' } }}>
+
                 <a href='https://github.com/Nada-orban' data-aos="fade-left" target="_blank">
                     <Avatar className={Styles.icon}><GitHubIcon sx={{ color: "white" }} /></Avatar>
                 </a>
@@ -99,17 +100,15 @@ function ResponsiveDrawer({ children }) {
                     <Avatar className={Styles.icon} >
                         <LinkedInIcon sx={{ color: "white" }} /></Avatar>
                 </a>
-                {/* <a href='' data-aos="fade-left" data-aos-delay="500">
-                        <Avatar className={Styles.icon}>< WhatsAppIcon sx={{ color: "white" }} /></Avatar>
-                    </a> */}
+
                 <a href='mailto:nadasamir9334@gmail.com' data-aos="fade-left" data-aos-delay="800" target="_blank">
                     <Avatar className={Styles.icon} ><EmailIcon sx={{ color: "white" }} /></Avatar>
                 </a>
 
-            </Box>
+            </Box> */}
 
 
-        </div>
+        </Box >
     );
     const drawer1 = (
         <div>
@@ -127,6 +126,7 @@ function ResponsiveDrawer({ children }) {
                 <ListItem>
                     <Link to="about" spy={true} smooth={true} offset={-50} duration={500} >
                         <ListItemButton >
+                            {/* <Typography variant="h3">About</Typography> */}
 
                             <ListItemText primary="About" />
                         </ListItemButton>
@@ -172,24 +172,26 @@ function ResponsiveDrawer({ children }) {
             <AppBar
                 position="fixed"
                 sx={{
-                    width: { sm: `calc(100% - ${drawerWidth}px)` },
-                    ml: { sm: `${drawerWidth}px` },
-                    display: { sm: "none" }
+
+                    width: { sm: `${drawerWidth}px)` },
+                    ml: { md: `${drawerWidth}px` },
+                    display: { md: "none" }
                 }}
             >
                 <Toolbar>
+
+                    <Typography variant="h6" noWrap sx={{ flexGrow: 1 }} component="div">
+                        Responsive drawer
+                    </Typography>
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
-                        edge="start"
+                        edge="end"
                         onClick={handleDrawerToggle}
-                        sx={{ mr: 2, display: { sm: 'none' } }}
+                        sx={{ mr: 2, display: { md: 'none' } }}
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h6" noWrap component="div">
-                        Responsive drawer
-                    </Typography>
                 </Toolbar>
             </AppBar>
             <Box
@@ -207,7 +209,7 @@ function ResponsiveDrawer({ children }) {
                         keepMounted: true, // Better open performance on mobile.
                     }}
                     sx={{
-                        display: { xs: 'block', sm: 'none' },
+                        display: { sm: 'block', md: 'none' },
                         '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
                     }}
                 >
@@ -216,8 +218,8 @@ function ResponsiveDrawer({ children }) {
                 <Drawer
                     variant="permanent"
                     sx={{
-                        display: { xs: 'none', sm: 'block' },
-                        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth, textAlign: "center" },
+                        display: { xs: 'none', md: 'block' },
+                        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth, textAlign: "center", borderRightStyle: "none" },
                     }}
                     open
                 >
@@ -227,11 +229,13 @@ function ResponsiveDrawer({ children }) {
 
             <Box
                 component="main"
-                sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
+                sx={{ flexGrow: 1, width: { sm: ` ${drawerWidth}px)` } }}
             >
+
 
                 <Toolbar />
                 <main >{children}</main>
+
 
             </Box>
         </Box>

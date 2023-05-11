@@ -25,17 +25,18 @@ export default function App({ Component, pageProps }) {
   const router = useRouter();
   const { Path } = router;
 
-
+  // #212A3E
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Drawer1>
           <Component {...pageProps} />
-          {/* <style jsx global>{`
-              ${theme.palette.mode === 'dark' ? "body{background:#3d3e49} " : "body{background: #fff} "}`
-          }</style> */}
+          <style jsx global>{`
+              ${theme.palette.mode === 'dark' ? "body{background:#09090b} " : "body{background: #fff} "}`
+          }</style>
         </Drawer1>
+
 
 
       </ThemeProvider>

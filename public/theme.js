@@ -41,23 +41,17 @@ export const themeSettongs = (mode) => {
                 },
                 secondary: {
                     // main: red[400],
-                    main: "#dc965a"
+                    main: "#5bc0be"
                 },
                 neutral: {
-                    brownlight: brown[200],
-                    lime: lime[900],
-                    green: green[400],
-                    red: red[500],
-                    blue: blue[900],
-                    black: "black",
-                    skill: "white"
+                    lightgray: "#F1F6F9",
+                    gray: "#9BA4B5"
                 },
                 background: {
-                    // main: "#3d3e49",
-                    main: "#3d3e49",
-                    secondary: "#1c1d24 "
-                    // secondary: "#3a3b3c"
-                    // secondary: " #1d1d1d"
+                    main: "#212121",
+                    // secondary: "#05141E"
+                    secondary: "#0f172a"
+                    // secondary: "#394867"
                 }, text: {
                     primary: "white",
                     secondary: grey[500],
@@ -81,10 +75,10 @@ export const ColorModeContext = createContext({
 });
 
 export const useMode = () => {
-    const [mode, setMode] = useState("light");
+    const [mode, setMode] = useState("dark");
     const colorMode = useMemo(() => ({
         toggleColorMode: () => {
-            setMode((prev) => (prev === "light" ? "dark" : "light"))
+            setMode((prev) => (prev === "dark" ? "light" : "dark"))
         }
     }), []);
     const theme = useMemo(() => createTheme(themeSettongs(mode)), [mode]);
