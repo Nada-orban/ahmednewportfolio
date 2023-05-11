@@ -30,12 +30,12 @@ export default function App({ Component, pageProps }) {
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Drawer1>
-          <Component {...pageProps} />
-          <style jsx global>{`
-              ${theme.palette.mode === 'dark' ? "body{background:#09090b} " : "body{background: #fff} "}`
-          }</style>
-        </Drawer1>
+
+        <Component {...pageProps} />
+        <style jsx global>{`
+              ${theme.palette.mode === 'dark' ? "body{background:#212A3E} " : "body{background: #fff} "}`
+        }</style>
+
 
 
 

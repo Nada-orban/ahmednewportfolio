@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { AppBar, Avatar, Container } from '@mui/material';
 import Box from '@mui/material/Box';
@@ -29,13 +29,17 @@ import Lottie from 'lottie-react'
 
 const drawerWidth = 130;
 
-function ResponsiveDrawer({ children }) {
+function ResponsiveDrawer() {
     // const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
 
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
     };
+
+    const [open, setOpen] = useState(false);
+
+
 
     const drawer = (
         <Box sx={{
@@ -47,14 +51,7 @@ function ResponsiveDrawer({ children }) {
 
             <Divider sx={{ mt: "30vh" }} />
             <List sx={{ textAlign: "center", margin: "auto", }}>
-                {/* <ListItem>
-                    <Link to="home" spy={true} smooth={true} offset={-50} duration={500}>
-                        <ListItemButton >
-                            <HomeIcon sx={{ color: "secondary.main", width: "50px" }} />
-                            <ListItemText primary="Home" />
-                        </ListItemButton>
-                    </Link>
-                </ListItem> */}
+
                 <ListItem>
                     <Link to="about" spy={true} smooth={true} offset={-50} duration={500} >
                         <ListItemButton >
@@ -91,134 +88,135 @@ function ResponsiveDrawer({ children }) {
                 </ListItem>
                 <Divider />
             </List>
-            {/* <Box gap="0px" mt="100px" sx={{ display: { xs: 'none', sm: 'flex' } }}>
+            <Box gap="10px" mt="15vh" sx={{ display: "flex", justifyContent: "center" }}>
 
                 <a href='https://github.com/Nada-orban' data-aos="fade-left" target="_blank">
-                    <Avatar className={Styles.icon}><GitHubIcon sx={{ color: "white" }} /></Avatar>
+                    <GitHubIcon sx={{ color: "neutral.lightgray" }} className={Styles.smallicon} />
                 </a>
                 <a href='https://www.linkedin.com/in/nada-samir-441a58130/' data-aos="fade-left" data-aos-delay="200" target="_blank">
-                    <Avatar className={Styles.icon} >
-                        <LinkedInIcon sx={{ color: "white" }} /></Avatar>
+
+                    <LinkedInIcon sx={{ color: "neutral.lightgray" }} className={Styles.smallicon} />
                 </a>
 
                 <a href='mailto:nadasamir9334@gmail.com' data-aos="fade-left" data-aos-delay="800" target="_blank">
-                    <Avatar className={Styles.icon} ><EmailIcon sx={{ color: "white" }} /></Avatar>
+                    <EmailIcon sx={{ color: "neutral.lightgray" }} className={Styles.smallicon} />
                 </a>
 
-            </Box> */}
+            </Box>
 
 
         </Box >
-    );
-    const drawer1 = (
-        <div>
-            <Toolbar />
-            <Divider sx={{ mt: 15 }} />
-            <List sx={{ textAlign: "center", margin: "auto", display: "flex", flexDirection: "column", justifyContent: "center" }}>
-                {/* <ListItem>
-                    <Link to="home" spy={true} smooth={true} offset={-50} duration={500}>
-                        <ListItemButton >
-                            <HomeIcon sx={{ color: "secondary.main", width: "50px" }} />
-                            <ListItemText primary="Home" />
-                        </ListItemButton>
-                    </Link>
-                </ListItem> */}
-                <ListItem>
-                    <Link to="about" spy={true} smooth={true} offset={-50} duration={500} >
-                        <ListItemButton >
-                            {/* <Typography variant="h3">About</Typography> */}
-
-                            <ListItemText primary="About" />
-                        </ListItemButton>
-                    </Link>
-                </ListItem>
-                <ListItem>
-                    <Link to="skills" spy={true} smooth={true} offset={-50} duration={500}>
-                        <ListItemButton >
-
-                            <ListItemText primary="Skills" />
-                        </ListItemButton>
-                    </Link>
-                </ListItem>
-                <ListItem>
-                    <Link to="projects" spy={true} smooth={true} offset={-50} duration={500}>
-                        <ListItemButton >
-
-                            <ListItemText primary="Projects" />
-                        </ListItemButton>
-                    </Link>
-                </ListItem>
-                <ListItem>
-                    <Link to="contact" spy={true} smooth={true} offset={-50} duration={500}>
-                        <ListItemButton >
-
-                            <ListItemText primary="Contact" />
-                        </ListItemButton>
-                    </Link>
-                </ListItem>
-            </List>
-
-
-
-        </div>
     );
 
 
     // const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <Box sx={{ display: 'flex' }}>
-            <CssBaseline />
+        <Box >
+
             <AppBar
                 position="fixed"
                 sx={{
-
-                    width: { sm: `${drawerWidth}px)` },
-                    ml: { md: `${drawerWidth}px` },
-                    display: { md: "none" }
+                    display: { md: "none", sm: "flex" }, background: "transparent"
                 }}
             >
                 <Toolbar>
 
                     <Typography variant="h6" noWrap sx={{ flexGrow: 1 }} component="div">
-                        Responsive drawer
+                        Ahmed Adel Attia
                     </Typography>
-                    <IconButton
-                        color="inherit"
-                        aria-label="open drawer"
-                        edge="end"
-                        onClick={handleDrawerToggle}
-                        sx={{ mr: 2, display: { md: 'none' } }}
-                    >
-                        <MenuIcon />
-                    </IconButton>
+                    <Box onClick={handleDrawerToggle} sx={{ cursor: "pointer" }}>
+                        <Box className={mobileOpen ? Styles.activeHamburger : Styles.hamburber}></Box>
+                    </Box>
                 </Toolbar>
+                {mobileOpen && (
+                    <Box height="100vh" backgroundColor="background.secondary" textAlign="end" margin="center" >
+                        <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
+                            <Divider />
+                            <Link to="about" spy={true} smooth={true} offset={-50} duration={500} >
+                                <Typography variant="h6" sx={{ textAlign: "center" }}>About</Typography>
+                                {/* <ListItemText primary="About" /> */}
+                            </Link>
+                            <Divider />
+                            <Link to="about" spy={true} smooth={true} offset={-50} duration={500} >
+                                <Typography variant="h6" sx={{ textAlign: "center" }}>About</Typography>
+                                {/* <ListItemText primary="About" /> */}
+                            </Link>
+                            <Divider />
+                            <Link to="about" spy={true} smooth={true} offset={-50} duration={500} >
+                                <Typography variant="h6" sx={{ textAlign: "center" }}>About</Typography>
+                                {/* <ListItemText primary="About" /> */}
+                            </Link>
+
+                        </Box>
+
+                        <List sx={{ display: "flex", flexDirection: "column", justifyContent: "center", marginTop: "30vh", textAlign: "center", }}>
+                            <Divider />
+                            <ListItem>
+                                <Link to="about" spy={true} smooth={true} offset={-50} duration={500} >
+                                    <ListItemButton >
+                                        <Typography variant="h6" sx={{ textAlign: "center" }}>About</Typography>
+                                        {/* <ListItemText primary="About" /> */}
+                                    </ListItemButton>
+                                </Link>
+                            </ListItem>
+                            <Divider />
+                            <ListItem>
+                                <Link to="skills" spy={true} smooth={true} offset={-50} duration={500}>
+                                    <ListItemButton >
+                                        <Typography variant="h6">Skills</Typography>
+                                    </ListItemButton>
+                                </Link>
+                            </ListItem>
+                            <Divider />
+                            <ListItem>
+                                <Link to="projects" spy={true} smooth={true} offset={-50} duration={500}>
+                                    <ListItemButton >
+                                        <Typography variant="h6">Projects</Typography>
+                                        {/* <ListItemText primary="Projects" /> */}
+                                    </ListItemButton>
+                                </Link>
+                            </ListItem>
+                            <Divider />
+                            <ListItem>
+                                <Link to="contact" spy={true} smooth={true} offset={-50} duration={500}>
+                                    <ListItemButton >
+                                        <Typography variant="h6">Contact</Typography>
+
+                                    </ListItemButton>
+                                </Link>
+                            </ListItem>
+                            <Divider />
+                        </List>
+                        <Box gap="20px" mt="30vh" sx={{ display: "flex", justifyContent: "center" }}>
+
+                            <a href='https://github.com/Nada-orban' data-aos="fade-left" target="_blank">
+                                <GitHubIcon sx={{ color: "neutral.lightgray" }} className={Styles.smallicon} />
+                            </a>
+                            <a href='https://www.linkedin.com/in/nada-samir-441a58130/' data-aos="fade-left" data-aos-delay="200" target="_blank">
+
+                                <LinkedInIcon sx={{ color: "neutral.lightgray" }} className={Styles.smallicon} />
+                            </a>
+
+                            <a href='mailto:nadasamir9334@gmail.com' data-aos="fade-left" data-aos-delay="800" target="_blank">
+                                <EmailIcon sx={{ color: "neutral.lightgray" }} className={Styles.smallicon} />
+                            </a>
+
+                        </Box>
+                    </Box>
+                )}
+
             </AppBar>
             <Box
                 component="nav"
-                sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
+                sx={{ width: { sm: drawerWidth }, }}
                 aria-label="mailbox folders"
             >
-                {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-                <Drawer
-                    // container={container}
-                    variant="temporary"
-                    open={mobileOpen}
-                    onClose={handleDrawerToggle}
-                    ModalProps={{
-                        keepMounted: true, // Better open performance on mobile.
-                    }}
-                    sx={{
-                        display: { sm: 'block', md: 'none' },
-                        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
-                    }}
-                >
-                    {drawer1}
-                </Drawer>
+
                 <Drawer
                     variant="permanent"
                     sx={{
-                        display: { xs: 'none', md: 'block' },
+                        display: { md: 'block', sm: 'none', xs: "none" },
                         '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth, textAlign: "center", borderRightStyle: "none" },
                     }}
                     open
@@ -227,18 +225,8 @@ function ResponsiveDrawer({ children }) {
                 </Drawer>
             </Box>
 
-            <Box
-                component="main"
-                sx={{ flexGrow: 1, width: { sm: ` ${drawerWidth}px)` } }}
-            >
 
-
-                <Toolbar />
-                <main >{children}</main>
-
-
-            </Box>
-        </Box>
+        </Box >
     );
 }
 

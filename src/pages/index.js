@@ -1,13 +1,18 @@
 import Head from 'next/head'
+import { Box, Tabs, Tab, Typography, LinkTab, Grid, Button, Container, Avatar, Toolbar } from '@mui/material'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
-import { Container } from '@mui/material'
+import CssBaseline from '@mui/material/CssBaseline';
 import Landing from '../../Components/Landing'
+import Drawer1 from '../../Components/Drawer1'
+import About from '../../Components/About'
+import Experience from '../../Components/Experience'
 
 
 
 
+const drawerWidth = 130;
 
 
 
@@ -30,7 +35,27 @@ export default function Home() {
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></link>
 
       </Head>
-      <Landing />
+
+      <Box sx={{ display: 'flex' }}>
+        <CssBaseline />
+        <Drawer1 />
+
+        <Box
+          component="main"
+          sx={{ flexGrow: 1, width: { sm: "100%" } }}
+        >
+
+
+
+          <main >
+            <Landing />
+            <About />
+            <Experience />
+          </main>
+
+
+        </Box>
+      </Box>
 
 
 

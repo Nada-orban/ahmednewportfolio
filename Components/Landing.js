@@ -14,6 +14,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import { styled, useTheme, alpha } from '@mui/material/styles';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import { Link } from 'react-scroll'
+import profilephoto from '../public/assets/zyro-image.png'
 
 
 function Landing() {
@@ -21,8 +22,8 @@ function Landing() {
     return (
         <Box id="home" className={styles.backgroundimage} >
             <Container maxWidth="xlg" >
-                <Grid container px="40px"  >
-                    <Grid md={6} xs={12} className={styles.homeSection} sx={{ mt: 18 }}>
+                <Grid container px="40px" spacing={2} >
+                    <Grid item md={6} xs={12} className={styles.homeSection} sx={{ mt: "40vh" }}>
                         <Typography variant='h1' data-aos="fade-up" >Hi,</Typography>
                         <Typography variant='h1' >I'm Ahmed Adel Attia</Typography>
                         {/* <div className={styles.containertext}>
@@ -37,7 +38,15 @@ function Landing() {
                     </Grid>
 
 
-                    <Grid md={6} xs={12} data-aos="zoom-in" >
+                    <Grid item md={6} xs={12} data-aos="zoom-in" >
+                        {/* <Box width="700px" height="700px" mb="50px">
+                            <Image
+                                src={profilephoto}
+                                width={800}
+
+                                alt="Picture of the author"
+                            />
+                        </Box> */}
 
                     </Grid>
                 </Grid>
