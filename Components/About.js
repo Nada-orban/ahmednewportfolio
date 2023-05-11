@@ -1,9 +1,10 @@
 import { Grid, Box, Typography, Container } from '@mui/material'
 import React from 'react'
+import styles from '../src/styles/Home.module.css'
 
 function About() {
     return (
-        <Box py="50px">
+        <Box py="50px" className={styles.aboutbackground}>
             <Container maxWidth="xlg" >
                 <Grid container px="40px" spacing={2} >
                     <Grid item xs={12} md={6}>

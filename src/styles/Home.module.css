@@ -206,7 +206,8 @@
 
 /* #########################about################# */
 .aboutbackground {
-    background: linear-gradient(to left, #3d3e49 70%, #43434338 30%);
+    /* background: linear-gradient(to left, #3d3e49 70%, #43434338 30%); */
+    background-color: #030218de;
 
 }
 
