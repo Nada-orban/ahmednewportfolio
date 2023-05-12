@@ -1,5 +1,16 @@
 
 
+.bigfake{  
+        
+        position: absolute;
+        top: -8rem;
+        left: 39vw;
+        z-index: -1;
+        font-size:330px;
+        font-weight: bolder;
+        color: rgba(255, 255, 255, 0.04);
+
+}
 .buttonStyle {
     border-radius: 20px;
     background-color: var(--secondray-maincolor);
@@ -207,10 +218,14 @@
 /* #########################about################# */
 .aboutbackground {
     /* background: linear-gradient(to left, #3d3e49 70%, #43434338 30%); */
-    background-color: #030218de;
+   
 
 }
-
+.profile{
+    position: absolute;
+    top:-300px;
+    left:100px;
+}
 .photobox {
     position: relative;
     border: 10px solid #dc965a;
@@ -320,9 +335,7 @@
 
 
 /* ################project############# */
-/* .projectCard{
-  box-shadow:rgba(245, 101, 57, 0.3) 0px 0px 30px;
-} */
+
 .projectBox{
     position: relative;
     overflow: hidden;
@@ -360,31 +373,16 @@
     border-radius: 50%;
     padding: 15px;
 }
-/* .projectBox::after{
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
-    background-color: rgba(138, 130, 130, 0.432);
-    width: 100%;
-    height: 100%;
-    transition: all 1s ease-in-out;
-    overflow: hidden;
-} */
-/* .projectBox::after:hover{
-    background: transparent;
-} */
+
 
 .projectBox:hover .boximage{
     transform: scale(1.2);
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
     opacity: 1;
 
 }
 .projectBox:hover .boxtext{
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
     opacity: 1;
 
 }
@@ -394,165 +392,6 @@
 
 
 
-.imageCard {
-    position: relative;
-    overflow: hidden;
-}
-
-.imageCard::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    background-color: rgba(138, 130, 130, 0.432);
-    height: 100%;
-    top: -100%;
-    left: 0px;
-    z-index: 1;
-    transition: all 1s ease-in-out;
-
-}
-
-.textCard {
-
-    width: fit-content;
-    padding: 10px 20px;
-    border-radius: 10px;
-    position: absolute;
-    z-index: 30;
-    left: -150px;
-    top: 10px;
-    background-color: #1d1d1d;
-    color: white;
-    transition: all 1s ease-in-out;
-    transition-delay: .5s;
-
-}
-
-.textCard:hover {
-    transform: scale(1.1);
-}
-
-
-
-
-
-.cardbutton {
-    border: 1px solid #1d1d1d;
-}
-
-.cardbutton:hover {
-    background-color: var(--secondray-maincolor);
-    border-style: none;
-
-}
-
-.demobox {
-    display: flex;
-    align-items: center;
-}
-
-.infobox1 {
-    border-radius: 10px;
-    background-color: #1d1d1d;
-    color: white;
-    padding: 5px 10px 5px 50px;
-    position: absolute;
-    left: -130px;
-    bottom: 5x;
-}
-
-.infobox2 {
-    border-radius: 10px;
-    background-color: #1d1d1d;
-    color: white;
-    padding: 5px 60px 5px 10px;
-    position: absolute;
-    right: -160px;
-    bottom: 5x;
-}
-
-.codebox {
-    display: flex;
-    align-items: center;
-}
-
-/* .projectCard:hover{
-  box-shadow:rgba(245, 101, 57, 0.3) 5px 10px 30px 10px;
-  
-
-} */
-
-.projectCard:hover .codebox {
-    animation: movebox1 1s ease-in-out both;
-    animation-delay: 0ms;
-    opacity: 1;
-
-}
-
-.projectCard:hover .imageCard::before {
-    transform: translateY(100%);
-
-}
-
-.projectCard:hover .demobox {
-    animation: movebox2 1s ease-in-out both;
-    animation-delay: 0ms;
-    opacity: 1;
-
-}
-
-.projectCard:hover .textCard {
-    transform: translateX(140px);
-}
-
-
-
-@keyframes movebox1 {
-    0% {
-        opacity: 0;
-        transform: translateX(0);
-    }
-
-
-    100% {
-        opacity: 1;
-        transform: translateX(-90px);
-    }
-}
-
-@keyframes movebox2 {
-    0% {
-        opacity: 0;
-        transform: translateX(0);
-    }
-
-
-    100% {
-        opacity: 1;
-        transform: translateX(80px);
-    }
-
-}
-
-@media only screen and (max-width: 600px) {
-    .projectCard {
-        margin: 0px 35px;
-    }
-
-    @keyframes movebox2 {
-        0% {
-            opacity: 0;
-            transform: translateX(0);
-        }
-
-
-        100% {
-            opacity: 1;
-            transform: translateX(60px);
-        }
-
-    }
-}
 
 
 

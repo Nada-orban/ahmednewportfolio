@@ -246,7 +246,7 @@ function ResponsiveDrawer() {
             </AppBar>
             <Box
                 component="nav"
-                sx={{ width: { sm: drawerWidth }, }}
+                sx={{ width: { md: drawerWidth }, }}
                 aria-label="mailbox folders"
             >
 

@@ -52,19 +52,17 @@ export default function Home({ projects }) {
           component="main"
           sx={{ flexGrow: 1, width: { sm: "100%" } }}
         >
-
-
-
           <main >
             <Landing />
             <About />
-            {/* <Experience /> */}
+            <Experience />
             {/* //projects section */}
             <Box id='projects' py="200px">
               <Container maxWidth="xlg" >
-                <Box px="40px">
+                <Box px="40px" position="relative">
                   <Typography variant='h2' sx={{ color: "secondary.main", fontWeight: "bold", mb: 3 }}>Projects</Typography>
                   <Typography variant='h5' >Here you can see some of the projects I've done on my own time.</Typography>
+                  <Typography className={styles.bigfake}>WORK</Typography>
                 </Box>
               </Container>
               <Grid container sx={{ my: "50px" }} spacing={3}>
