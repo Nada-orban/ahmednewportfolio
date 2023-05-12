@@ -49,7 +49,7 @@ function ResponsiveDrawer() {
             <Box><Lottie animationData={robotjson} /></Box>
 
 
-            <Divider sx={{ mt: "30vh" }} />
+            <Divider sx={{ mt: "20vh" }} />
             <List sx={{ textAlign: "center", margin: "auto", }}>
 
                 <ListItem>
@@ -78,6 +78,25 @@ function ResponsiveDrawer() {
                     </Link>
                 </ListItem>
                 <Divider />
+                <ListItem>
+                    <Link to="papers" spy={true} smooth={true} offset={-50} duration={500}>
+                        <ListItemButton >
+                            <Typography variant="h6">Papers</Typography>
+                            {/* <ListItemText primary="Projects" /> */}
+                        </ListItemButton>
+                    </Link>
+                </ListItem>
+                <Divider />
+                <ListItem>
+                    <Link to="experience" spy={true} smooth={true} offset={-50} duration={500}>
+                        <ListItemButton >
+                            <Typography variant="h6">Timeline</Typography>
+                            {/* <ListItemText primary="Projects" /> */}
+                        </ListItemButton>
+                    </Link>
+                </ListItem>
+                <Divider />
+
                 <ListItem>
                     <Link to="contact" spy={true} smooth={true} offset={-50} duration={500}>
                         <ListItemButton >
@@ -173,6 +192,24 @@ function ResponsiveDrawer() {
                                 <Link to="projects" spy={true} smooth={true} offset={-50} duration={500}>
                                     <ListItemButton >
                                         <Typography variant="h6">Projects</Typography>
+                                        {/* <ListItemText primary="Projects" /> */}
+                                    </ListItemButton>
+                                </Link>
+                            </ListItem>
+                            <Divider />
+                            <ListItem>
+                                <Link to="papers" spy={true} smooth={true} offset={-50} duration={500}>
+                                    <ListItemButton >
+                                        <Typography variant="h6">Papers</Typography>
+                                        {/* <ListItemText primary="Projects" /> */}
+                                    </ListItemButton>
+                                </Link>
+                            </ListItem>
+                            <Divider />
+                            <ListItem>
+                                <Link to="experience" spy={true} smooth={true} offset={-50} duration={500}>
+                                    <ListItemButton >
+                                        <Typography variant="h6">Timeline</Typography>
                                         {/* <ListItemText primary="Projects" /> */}
                                     </ListItemButton>
                                 </Link>
