@@ -63,7 +63,23 @@ export default function Home({ projects }) {
             <Box id='projects' py="100px">
               <Container maxWidth="xlg" >
                 <Box sx={{ px: { sm: "10px", md: "40px" } }} position="relative">
-                  <Typography sx={{ color: "secondary.main", fontWeight: "bold", mb: 3 }} className={styles.titlesection}>Projects</Typography>
+                  <Box display="flex" gap="20px">
+                    <div className={styles.titlesection}>
+                      <h1>
+                        <span class={styles.a} >P</span>
+                        <span class={styles.a} >r</span>
+                        <span class={styles.a} >o</span>
+                        <span class={styles.a} >j</span>
+                        <span class={styles.a} >e</span>
+                        <span class={styles.a} >c</span>
+                        <span class={styles.a} >t</span>
+                        <span class={styles.a} >s</span>
+
+
+                      </h1>
+                    </div>
+
+                  </Box>
                   <Typography variant='h5' >Here you can see some of the projects I've done on my own time.</Typography>
                   <Typography className={styles.bigfake}>WORK</Typography>
                 </Box>

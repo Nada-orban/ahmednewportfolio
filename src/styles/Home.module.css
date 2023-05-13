@@ -1,12 +1,4 @@
-.titlesection{
-    font-size: 60px;
-}
-@media only screen and (max-width: 900px) {
-    .titlesection {
-        font-size: 40px;
-    }
- 
-}
+
 
 
 .bigfake{  
@@ -29,6 +21,63 @@
     font-weight: bolder;
     color: rgba(255, 255, 255, 0.04);
 
+}
+.titlesection {
+    font-size: 40px;
+    color: var(--secondray-maincolor);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 900px) {
+    .titlesection {
+        font-size: 40px;
+    }
+
+}
+/* //rubberband letter */
+.a {
+    animation-duration: .3s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    display: inline-block;
+    
+}
+
+.a:hover {
+    /* color: var(--secondray-maincolor); */
+    animation: rubberBand 1s infinite;
+    animation-name: rubberBand;
+}
+
+@keyframes rubberBand {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, .95, 1);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
 }
 .buttonStyle {
     border-radius: 20px;

@@ -15,7 +15,21 @@ function Skill() {
         <Box id="about" py="100px" className={styles.backgroundskill} >
             <Container maxWidth="xlg" >
                 <Box sx={{ px: { sm: "10px", md: "40px" } }}>
-                    <Typography sx={{ color: "secondary.main", fontWeight: "bold", mb: 3 }} className={styles.titlesection}>Skills</Typography>
+                    <Box display="flex" gap="20px">
+                        <div className={styles.titlesection}>
+                            <h1>
+                                <span class={styles.a} >S</span>
+                                <span class={styles.a} >k</span>
+                                <span class={styles.a} >i</span>
+                                <span class={styles.a} >l</span>
+                                <span class={styles.a} >l</span>
+                                <span class={styles.a} >s</span>
+
+
+                            </h1>
+                        </div>
+
+                    </Box>
                     <Typography variant='h6'>Below are some of my skills, and I'm always looking to learn more.</Typography>
                     <Grid container spacing={2} sx={{ my: "50px", }}>
                         <Grid item xs={12} sm={6} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }}>

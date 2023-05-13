@@ -12,6 +12,7 @@ import AttachEmailIcon from '@mui/icons-material/AttachEmail';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 
+
 function Contact() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
@@ -20,7 +21,28 @@ function Contact() {
         <Box id="about" py="100px" sx={{ backgroundColor: "background.blue" }}>
             <Container maxWidth="xlg" >
                 <Box sx={{ px: { sm: "10px", md: "40px" } }}>
-                    <Typography sx={{ color: "secondary.main", fontWeight: "bold", mb: 3 }} className={styles.titlesection}>Contact me</Typography>
+                    <Box display="flex" gap="20px">
+                        <div className={styles.titlesection}>
+                            <h1>
+                                <span class={styles.a} >C</span>
+                                <span class={styles.a} >o</span>
+                                <span class={styles.a} >n</span>
+                                <span class={styles.a} >t</span>
+                                <span class={styles.a} >a</span>
+                                <span class={styles.a} >c</span>
+                                <span class={styles.a} >t</span>
+
+                            </h1>
+                        </div>
+                        <div className={styles.titlesection}>
+                            <h1>
+                                <span class={styles.a} >m</span>
+                                <span class={styles.a} >e</span>
+                            </h1>
+                        </div>
+                    </Box>
+
+
                     <Box display="flex">
                         <AttachEmailIcon sx={{ mt: "5px", marginRight: "3px" }} />
                         {/* <Typography variant='h5' >:</Typography> */}
@@ -127,7 +149,9 @@ function Contact() {
 
 
                     </Grid>
+
                 </Box>
+
             </Container >
         </Box >
     )

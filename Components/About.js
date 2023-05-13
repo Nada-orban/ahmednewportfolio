@@ -14,7 +14,26 @@ function About() {
             <Container maxWidth="xlg" >
                 <Grid container sx={{ px: { sm: "10px", md: "40px" } }} spacing={10} >
                     <Grid item xs={12} md={6} position="relative">
-                        <Typography sx={{ color: "secondary.main", fontWeight: "bold", mb: 3 }} className={styles.titlesection}>About me</Typography>
+                        <Box display="flex" gap="20px">
+                            <div className={styles.titlesection}>
+                                <h1>
+                                    <span class={styles.a} >A</span>
+                                    <span class={styles.a} >b</span>
+                                    <span class={styles.a} >o</span>
+                                    <span class={styles.a} >u</span>
+                                    <span class={styles.a} >t</span>
+
+                                </h1>
+                            </div>
+                            <div className={styles.titlesection}>
+                                <h1>
+                                    <span class={styles.a} >m</span>
+                                    <span class={styles.a} >e</span>
+
+
+                                </h1>
+                            </div>
+                        </Box>
                         <Typography className={styles.bigfakeleft}>ABOUT</Typography>
                         <Typography variant='h5'>Welcome to my website!I am a Deep Learning engineer and PhD researcher with expertise in Natural Language Processing, Signal Processing, Statistics, and Unsupervised Learning.My primary focus is on developing advanced Deep Learning models for speech and audio processing, with a passion for exploring the limitless possibilities of this cutting-edge technology.</Typography>
 
