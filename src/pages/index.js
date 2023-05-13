@@ -14,6 +14,7 @@ import { projectsdata } from '../../data'
 import { ColorModeContext } from '../../public/theme'
 import { styled, useTheme, alpha } from '@mui/material/styles';
 import Skill from '../../Components/Skill'
+import Contact from '../../Components/Contact'
 
 
 
@@ -62,7 +63,7 @@ export default function Home({ projects }) {
             <Box id='projects' py="100px">
               <Container maxWidth="xlg" >
                 <Box sx={{ px: { sm: "10px", md: "40px" } }} position="relative">
-                  <Typography variant='h2' sx={{ color: "secondary.main", fontWeight: "bold", mb: 3 }}>Projects</Typography>
+                  <Typography sx={{ color: "secondary.main", fontWeight: "bold", mb: 3 }} className={styles.titlesection}>Projects</Typography>
                   <Typography variant='h5' >Here you can see some of the projects I've done on my own time.</Typography>
                   <Typography className={styles.bigfake}>WORK</Typography>
                 </Box>
@@ -79,6 +80,7 @@ export default function Home({ projects }) {
                 </Box> */}
             </Box>
             <Experience2 />
+            <Contact />
 
           </main>
 

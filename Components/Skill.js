@@ -12,10 +12,10 @@ function Skill() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
     return (
-        <Box id="about" py="100px" >
+        <Box id="about" py="100px" className={styles.backgroundskill} >
             <Container maxWidth="xlg" >
                 <Box sx={{ px: { sm: "10px", md: "40px" } }}>
-                    <Typography variant='h2' sx={{ color: "secondary.main", fontWeight: "bold", mb: 3 }}>Skills</Typography>
+                    <Typography sx={{ color: "secondary.main", fontWeight: "bold", mb: 3 }} className={styles.titlesection}>Skills</Typography>
                     <Typography variant='h6'>Below are some of my skills, and I'm always looking to learn more.</Typography>
                     <Grid container spacing={2} sx={{ my: "50px", }}>
                         <Grid item xs={12} sm={6} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }}>

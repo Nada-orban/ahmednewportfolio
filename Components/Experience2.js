@@ -114,7 +114,7 @@ function Experience2(props) {
         <Box id="experience" py="100px" >
             <Container maxWidth="xlg" >
                 <Box sx={{ px: { sm: "10px", md: "40px" } }}>
-                    <Typography variant='h2' sx={{ color: "secondary.main", fontWeight: "bold", mb: 10 }}>TimeLine</Typography>
+                    <Typography sx={{ color: "secondary.main", fontWeight: "bold", mb: 10 }} className={styles.titlesection}>TimeLine</Typography>
 
 
                     {/* big view */}
