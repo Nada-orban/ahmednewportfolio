@@ -8,7 +8,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Landing from '../../Components/Landing'
 import Drawer1 from '../../Components/Drawer1'
 import About from '../../Components/About'
-import Experience from '../../Components/Experience'
+import Experience2 from '../../Components/Experience2'
 import Projects from '../../Components/Projects'
 import { projectsdata } from '../../data'
 import { ColorModeContext } from '../../public/theme'
@@ -55,7 +55,7 @@ export default function Home({ projects }) {
           <main >
             <Landing />
             <About />
-            <Experience />
+            <Experience2 />
             {/* //projects section */}
             <Box id='projects' py="200px">
               <Container maxWidth="xlg" >
@@ -65,7 +65,7 @@ export default function Home({ projects }) {
                   <Typography className={styles.bigfake}>WORK</Typography>
                 </Box>
               </Container>
-              <Grid container sx={{ my: "50px" }} spacing={3}>
+              <Grid container sx={{ my: "50px" }}>
                 {projects.map(project => (
                   <Projects key={project.id} {...project} />
 
