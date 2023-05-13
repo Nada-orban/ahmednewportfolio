@@ -111,9 +111,9 @@ function Experience2(props) {
 
 
     return (
-        <Box id="experience" py="150px" >
+        <Box id="experience" py="100px" >
             <Container maxWidth="xlg" >
-                <Box px="40px">
+                <Box sx={{ px: { sm: "10px", md: "40px" } }}>
                     <Typography variant='h2' sx={{ color: "secondary.main", fontWeight: "bold", mb: 10 }}>TimeLine</Typography>
 
 

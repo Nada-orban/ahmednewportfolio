@@ -13,6 +13,7 @@ import Projects from '../../Components/Projects'
 import { projectsdata } from '../../data'
 import { ColorModeContext } from '../../public/theme'
 import { styled, useTheme, alpha } from '@mui/material/styles';
+import Skill from '../../Components/Skill'
 
 
 
@@ -55,11 +56,12 @@ export default function Home({ projects }) {
           <main >
             <Landing />
             <About />
-            <Experience2 />
+            <Skill />
+
             {/* //projects section */}
-            <Box id='projects' py="200px">
+            <Box id='projects' py="100px">
               <Container maxWidth="xlg" >
-                <Box px="40px" position="relative">
+                <Box sx={{ px: { sm: "10px", md: "40px" } }} position="relative">
                   <Typography variant='h2' sx={{ color: "secondary.main", fontWeight: "bold", mb: 3 }}>Projects</Typography>
                   <Typography variant='h5' >Here you can see some of the projects I've done on my own time.</Typography>
                   <Typography className={styles.bigfake}>WORK</Typography>
@@ -75,9 +77,8 @@ export default function Home({ projects }) {
                   <Typography variant='h4'>To see more of my projects...</Typography>
                   <button className={styles.normalButton}><a href='https://github.com/AhmedFakhry47' target="_blank">Visit My GitHub<GitHubIcon /></a></button>
                 </Box> */}
-
-
             </Box>
+            <Experience2 />
 
           </main>
 

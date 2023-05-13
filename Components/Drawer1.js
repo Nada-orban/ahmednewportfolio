@@ -25,6 +25,8 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EmailIcon from '@mui/icons-material/Email';
 import robotjson from '../public/assets/backgrounds/112425-ai-cpu-circuit-board-loading-animation.json'
 import Lottie from 'lottie-react'
+import { ColorModeContext } from '../public/theme'
+import { styled, useTheme, alpha } from '@mui/material/styles';
 
 
 const drawerWidth = 130;
@@ -38,6 +40,8 @@ function ResponsiveDrawer() {
     };
 
     const [open, setOpen] = useState(false);
+    const colorMode = React.useContext(ColorModeContext);
+    const theme = useTheme();
 
 
 
@@ -136,7 +140,7 @@ function ResponsiveDrawer() {
             <AppBar
                 position="fixed"
                 sx={{
-                    display: { md: "none", sm: "flex" }, background: "transparent"
+                    display: { md: "none", sm: "flex" }, backgroundColor: "background.secondary"
                 }}
             >
                 <Toolbar>
