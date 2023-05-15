@@ -109,3 +109,25 @@
 
 
 }
+.menuBox {
+    position: fixed;
+    width: 100%;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+    
+
+
+
+}
+
+.menuBoxactive {
+    position: fixed;
+    width: 100%;
+    transform: translateX(0%);
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+    
+
+
+}

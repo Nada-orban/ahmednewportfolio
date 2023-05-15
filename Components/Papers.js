@@ -12,7 +12,7 @@ function Papers() {
     const theme = useTheme();
     return (
         <Box id="papers" py="90px" color="white">
-            <Container>
+            <Container maxWidth="xlg" >
                 <Box sx={{ px: { sm: "10px", md: "40px" } }}>
                     <Box display="flex" gap="20px">
                         <div className={styles.titlesection}>
@@ -36,7 +36,7 @@ function Papers() {
                                 <Typography variant='h5' sx={{ color: "secondary.main", fontWeight: "bolder" }}>Virufy: Global Applicability of Crowdsourced and Clinical Datasets for AI Detection of COVID‐19 from Cough Audio
                                     Samples</Typography>
                             </a>
-                            <Typography variant='h6'>Nov 2020, Awaiting AE Recommendation from IEEE TAI.</Typography>
+                            <Typography variant='h6'>Nov 2020, Awaiting AE Recommendation from IEEE TAI. </Typography>
                             <a href='https://arxiv.org/pdf/2011.13320.pdf' className={styles.linkText} target="_blank">
                                 <Box display="flex" justifyContent="start">
                                     <Typography variant='h5' sx={{ color: "secondary.main", }}>Download</Typography>

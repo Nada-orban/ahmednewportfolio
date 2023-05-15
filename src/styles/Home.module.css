@@ -28,10 +28,29 @@
     font-weight: bold;
     margin-bottom: 30px;
 }
+.titlesection1{
+    font-size: 40px;
+    font-weight: bold;
+   
+}
+.letterA{
+    width: 100px;
+    height: 100px;
+    margin-right: -15px;
+}
+.ahmedtext{
+    display: flex;
+    align-items: center;
+
+}
 
 @media only screen and (max-width: 900px) {
     .titlesection {
         font-size: 30px;
+    }
+    .titlesection1 {
+        font-size: 30px;
+    
     }
 
 }
@@ -453,7 +472,7 @@
     text-align: center;
     width: 100px;
     height: 100px;
-    background-color:var(--secondray-maincolor);
+    background-color:#0DD1CF;
     border-radius: 50%;
     padding: 15px;
 }
@@ -469,6 +488,15 @@
     transition: all .3s ease-in-out;
     opacity: 1;
 
+}
+
+/*############Papers############ */
+.linkText:hover {
+    text-decoration: underline var(--secondary-color);
+}
+
+.iconLink:hover {
+    color: #c7933a;
 }
 
 

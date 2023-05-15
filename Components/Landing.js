@@ -15,6 +15,8 @@ import { styled, useTheme, alpha } from '@mui/material/styles';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import { Link } from 'react-scroll'
 import profilephoto from '../public/assets/zyro-image.png'
+import Lottie from 'lottie-react'
+import letterA from '../public/assets/backgrounds/A.json'
 
 
 function Landing() {
@@ -24,8 +26,67 @@ function Landing() {
             <Container maxWidth="xlg" >
                 <Grid container px="40px" spacing={2} >
                     <Grid item md={6} xs={12} className={styles.homeSection} sx={{ mt: { md: "20%", sm: "30%", xs: "40%" }, textAlign: "start" }}>
-                        <Typography sx={{ fontSize: "65px" }} data-aos="fade-up" >Hi,</Typography>
-                        <Typography sx={{ fontSize: "65px" }}>I'm Ahmed Adel Attia</Typography>
+                        <Box display="flex" gap="20px">
+                            <div className={styles.titlesection1}>
+                                <h1>
+                                    <span class={styles.a} >H</span>
+                                    <span class={styles.a} >i</span>
+                                    <span class={styles.a} >,</span>
+
+
+
+
+                                </h1>
+                            </div>
+
+                            <div className={styles.titlesection1}>
+                                <h1>
+                                    <span class={styles.a} >I</span>
+                                    <span class={styles.a} >'</span>
+                                    <span class={styles.a} >m</span>
+
+
+                                </h1>
+                            </div>
+
+                        </Box>
+                        <Box display="flex" gap="20px">
+
+                            <div className={styles.titlesection1}>
+                                <h1 className={styles.ahmedtext}>
+                                    <div className={styles.letterA}><Lottie animationData={letterA} /></div>
+                                    {/* <span class={styles.a} >A</span> */}
+                                    <span class={styles.a} >h</span>
+                                    <span class={styles.a} >m</span>
+                                    <span class={styles.a} >e</span>
+                                    <span class={styles.a} >d</span>
+
+
+                                </h1>
+                            </div>
+                            <div className={styles.titlesection1}>
+                                <h1>
+                                    <span class={styles.a} >A</span>
+                                    <span class={styles.a} >d</span>
+                                    <span class={styles.a} >e</span>
+                                    <span class={styles.a} >l</span>
+
+
+
+                                </h1>
+                            </div>  <div className={styles.titlesection1}>
+                                <h1>
+                                    <span class={styles.a} >A</span>
+                                    <span class={styles.a} >t</span>
+                                    <span class={styles.a} >t</span>
+                                    <span class={styles.a} >i</span>
+                                    <span class={styles.a} >a</span>
+
+
+                                </h1>
+                            </div>
+                        </Box>
+
                         {/* <div className={styles.containertext}>
 
                             <div className={styles.typedout} data-aos="fade-up" data-aos-delay="500">Nada Orban</div>

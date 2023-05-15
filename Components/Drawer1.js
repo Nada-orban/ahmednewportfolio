@@ -111,7 +111,7 @@ function ResponsiveDrawer() {
                 </ListItem>
                 <Divider />
             </List>
-            <Box gap="10px" mt="10%" sx={{ display: "flex", justifyContent: "center" }}>
+            <Box gap="10px" mt="20%" sx={{ display: "flex", justifyContent: "center" }}>
 
                 <a href='https://github.com/Nada-orban' data-aos="fade-left" target="_blank">
                     <GitHubIcon sx={{ color: "neutral.lightgray" }} className={Styles.smallicon} />
@@ -152,100 +152,52 @@ function ResponsiveDrawer() {
                         <Box className={mobileOpen ? Styles.activeHamburger : Styles.hamburber}></Box>
                     </Box>
                 </Toolbar>
-                {mobileOpen && (
-                    <Box height="100vh" backgroundColor="background.secondary" textAlign="end" margin="center" >
-                        <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
-                            <Divider />
+
+                <Box className={mobileOpen ? Styles.menuBoxactive : Styles.menuBox} backgroundColor="background.secondary" textAlign="end" mt="60px" BackdropProps={{ invisible: false }} >
+                    {mobileOpen && (<List  >
+                        <ListItem>
                             <Link to="about" spy={true} smooth={true} offset={-50} duration={500} >
-                                <Typography variant="h6" sx={{ textAlign: "center" }}>About</Typography>
-                                {/* <ListItemText primary="About" /> */}
+                                <ListItemText primary="ABOUT" />
                             </Link>
-                            <Divider />
-                            <Link to="about" spy={true} smooth={true} offset={-50} duration={500} >
-                                <Typography variant="h6" sx={{ textAlign: "center" }}>About</Typography>
-                                {/* <ListItemText primary="About" /> */}
+                        </ListItem>
+                        <ListItem>
+                            <Link to="skills" spy={true} smooth={true} offset={-50} duration={500} >
+                                <ListItemText primary="SKILLS" />
                             </Link>
-                            <Divider />
-                            <Link to="about" spy={true} smooth={true} offset={-50} duration={500} >
-                                <Typography variant="h6" sx={{ textAlign: "center" }}>About</Typography>
-                                {/* <ListItemText primary="About" /> */}
+                        </ListItem>
+                        <ListItem>
+                            <Link to="projects" spy={true} smooth={true} offset={-50} duration={500}>
+                                <ListItemText primary="PROJECTS" />
                             </Link>
-
-                        </Box>
-
-                        <List sx={{ display: "flex", flexDirection: "column", justifyContent: "center", marginTop: "30vh", textAlign: "center", }}>
-                            <Divider />
-                            <ListItem>
-                                <Link to="about" spy={true} smooth={true} offset={-50} duration={500} >
-                                    <ListItemButton >
-                                        <Typography variant="h6" sx={{ textAlign: "center" }}>About</Typography>
-                                        {/* <ListItemText primary="About" /> */}
-                                    </ListItemButton>
-                                </Link>
-                            </ListItem>
-                            <Divider />
-                            <ListItem>
-                                <Link to="skills" spy={true} smooth={true} offset={-50} duration={500}>
-                                    <ListItemButton >
-                                        <Typography variant="h6">Skills</Typography>
-                                    </ListItemButton>
-                                </Link>
-                            </ListItem>
-                            <Divider />
-                            <ListItem>
-                                <Link to="projects" spy={true} smooth={true} offset={-50} duration={500}>
-                                    <ListItemButton >
-                                        <Typography variant="h6">Projects</Typography>
-                                        {/* <ListItemText primary="Projects" /> */}
-                                    </ListItemButton>
-                                </Link>
-                            </ListItem>
-                            <Divider />
-                            <ListItem>
-                                <Link to="papers" spy={true} smooth={true} offset={-50} duration={500}>
-                                    <ListItemButton >
-                                        <Typography variant="h6">Papers</Typography>
-                                        {/* <ListItemText primary="Projects" /> */}
-                                    </ListItemButton>
-                                </Link>
-                            </ListItem>
-                            <Divider />
-                            <ListItem>
-                                <Link to="experience" spy={true} smooth={true} offset={-50} duration={500}>
-                                    <ListItemButton >
-                                        <Typography variant="h6">Timeline</Typography>
-                                        {/* <ListItemText primary="Projects" /> */}
-                                    </ListItemButton>
-                                </Link>
-                            </ListItem>
-                            <Divider />
-                            <ListItem>
-                                <Link to="contact" spy={true} smooth={true} offset={-50} duration={500}>
-                                    <ListItemButton >
-                                        <Typography variant="h6">Contact</Typography>
-
-                                    </ListItemButton>
-                                </Link>
-                            </ListItem>
-                            <Divider />
-                        </List>
-                        <Box gap="20px" mt="30vh" sx={{ display: "flex", justifyContent: "center" }}>
-
-                            <a href='https://github.com/Nada-orban' data-aos="fade-left" target="_blank">
-                                <GitHubIcon sx={{ color: "neutral.lightgray" }} className={Styles.smallicon} />
+                        </ListItem>
+                        <ListItem>
+                            <Link to="papers" spy={true} smooth={true} offset={-50} duration={500}>
+                                <ListItemText primary="PAPERS" />
+                            </Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link to="experience" spy={true} smooth={true} offset={-50} duration={500} >
+                                <ListItemText primary="TIMELINE" />
+                            </Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link to="contact" spy={true} smooth={true} offset={-50} duration={500}>
+                                <ListItemText primary="CONTACT" />
+                            </Link>
+                        </ListItem>
+                        {/* <ListItem>
+                            < AiOutlineFilePdf style={{ color: "white", marginRight: "5px" }} />
+                            <a href="https://drive.google.com/file/d/104BElFusWYq6HvrSFBAB7fCKLfOo-3zg/view" target="_blank">
+                                <ListItemText primary="RESUME" />
                             </a>
-                            <a href='https://www.linkedin.com/in/nada-samir-441a58130/' data-aos="fade-left" data-aos-delay="200" target="_blank">
+                        </ListItem> */}
 
-                                <LinkedInIcon sx={{ color: "neutral.lightgray" }} className={Styles.smallicon} />
-                            </a>
 
-                            <a href='mailto:nadasamir9334@gmail.com' data-aos="fade-left" data-aos-delay="800" target="_blank">
-                                <EmailIcon sx={{ color: "neutral.lightgray" }} className={Styles.smallicon} />
-                            </a>
+                    </List>
+                    )}
 
-                        </Box>
-                    </Box>
-                )}
+                </Box>
+
 
             </AppBar>
             <Box
