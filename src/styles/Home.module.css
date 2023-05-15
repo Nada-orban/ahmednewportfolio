@@ -31,7 +31,7 @@
 
 @media only screen and (max-width: 900px) {
     .titlesection {
-        font-size: 40px;
+        font-size: 30px;
     }
 
 }
@@ -433,7 +433,7 @@
 
 
 .boximage{
-    width:450px;
+    width:100%;
     height: 300px;
     overflow: hidden;
     opacity: 0.5;

@@ -25,6 +25,7 @@ const ColorlibConnector = styled(StepConnector)(({ theme }) => ({
         left: 'calc(-50% + 90px)',
         right: 'calc(50% + 90px)',
 
+
     },
     [`&.${stepConnectorClasses.active}`]: {
         [`& .${stepConnectorClasses.line}`]: {
@@ -58,6 +59,7 @@ const ColorlibStepIconRoot = styled('div')(({ theme, ownerState }) => ({
     justifyContent: 'center',
     alignItems: 'center',
     border: "4px solid gray",
+
     // ...(ownerState.active && {
     //     backgroundImage:
     //         'linear-gradient( 136deg, rgb(242,113,33) 0%, rgb(233,64,87) 50%, rgb(138,35,135) 100%)',
@@ -134,9 +136,9 @@ function Experience2(props) {
 
                     {/* big view */}
 
-                    <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
+                    <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }} >
                         <Stepper alternativeLabel activeStep={3} connector={<ColorlibConnector />}>
-                            <Step >
+                            <Step  >
                                 <StepLabel StepIconComponent={ColorlibStepIcon}> <Box textAlign="start"><Typography variant='subtitle1' sx={{ color: "text.secondary" }}>Nov 2022 ‐ Now</Typography>
                                     <Typography variant='h5' sx={{ fontWeight: "bold" }}>Machine Learning  Developer</Typography>
                                     <Typography variant="h4" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
@@ -189,6 +191,7 @@ function Experience2(props) {
                                         </ul></Typography></Box></StepLabel>
                             </Step>
 
+
                         </Stepper>
                     </Box>
 
@@ -198,8 +201,8 @@ function Experience2(props) {
 
 
                 </Box>
-            </Container>
-        </Box>
+            </Container >
+        </Box >
     )
 }
 

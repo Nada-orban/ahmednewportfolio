@@ -23,9 +23,9 @@ function Landing() {
         <Box id="home" className={styles.backgroundimage} >
             <Container maxWidth="xlg" >
                 <Grid container px="40px" spacing={2} >
-                    <Grid item md={6} xs={12} className={styles.homeSection} sx={{ mt: "40vh" }}>
-                        <Typography variant='h1' data-aos="fade-up" >Hi,</Typography>
-                        <Typography variant='h1' >I'm Ahmed Adel Attia</Typography>
+                    <Grid item md={6} xs={12} className={styles.homeSection} sx={{ mt: { md: "20%", sm: "30%", xs: "40%" }, textAlign: "start" }}>
+                        <Typography sx={{ fontSize: "65px" }} data-aos="fade-up" >Hi,</Typography>
+                        <Typography sx={{ fontSize: "65px" }}>I'm Ahmed Adel Attia</Typography>
                         {/* <div className={styles.containertext}>
 
                             <div className={styles.typedout} data-aos="fade-up" data-aos-delay="500">Nada Orban</div>

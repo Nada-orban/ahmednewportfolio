@@ -59,7 +59,7 @@ function Contact() {
                     </Box>
                     <Grid container spacing={2} mt="20px">
                         <Grid item sm={12} md={6}>
-                            <Box display="flex" gap="10px" mb="10px">
+                            <Box gap="5px" mb="10px" sx={{ display: { sm: 'grid', md: "flex" } }}>
                                 <TextField
                                     // sx={{ '& .css-14m6kzo-MuiInputBase-root-MuiFilledInput-root.Mui-focused': { backgroundColor: "neutral.white" } }}
                                     id="name"
@@ -69,11 +69,11 @@ function Contact() {
                                     variant="filled"
                                     color="secondary"
                                     style={{
-                                        backgroundColor: "#2B2B2B", width: "300px"
+                                        backgroundColor: "#2B2B2B", width: "100%"
                                     }}
                                     InputProps={{
                                         style: {
-                                            color: "black"
+                                            color: "white"
                                         }
                                     }}
                                     f
@@ -84,7 +84,7 @@ function Contact() {
                                     errors={state.errors}
                                 />
                                 <TextField
-
+                                    sx={{ mt: { xs: "10px", md: '0px' } }}
                                     id="email"
                                     name="email"
                                     type="email"
@@ -93,11 +93,11 @@ function Contact() {
                                     color="secondary"
 
                                     style={{
-                                        backgroundColor: "#2B2B2B", width: "300px"
+                                        backgroundColor: "#2B2B2B", width: "100%",
                                     }}
                                     InputProps={{
                                         style: {
-                                            color: "black"
+                                            color: "white"
                                         }
                                     }}
 
@@ -122,11 +122,11 @@ function Contact() {
                                 rows={6}
 
                                 style={{
-                                    backgroundColor: "#2B2B2B", width: "610px"
+                                    backgroundColor: "#2B2B2B", width: "100%"
                                 }}
                                 InputProps={{
                                     style: {
-                                        color: "black"
+                                        color: "white"
                                     }
                                 }}
 

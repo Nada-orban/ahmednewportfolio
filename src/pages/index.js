@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
-import { Box, Tabs, Tab, Typography, LinkTab, Grid, Button, Container, Avatar, Toolbar } from '@mui/material'
+import { Box, Tabs, Tab, Typography, LinkTab, Grid, Button, Container, Avatar, Toolbar, Paper } from '@mui/material'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
@@ -15,6 +15,7 @@ import { ColorModeContext } from '../../public/theme'
 import { styled, useTheme, alpha } from '@mui/material/styles';
 import Skill from '../../Components/Skill'
 import Contact from '../../Components/Contact'
+import Papers from '../../Components/Papers'
 
 
 
@@ -95,6 +96,7 @@ export default function Home({ projects }) {
                   <button className={styles.normalButton}><a href='https://github.com/AhmedFakhry47' target="_blank">Visit My GitHub<GitHubIcon /></a></button>
                 </Box> */}
             </Box>
+            <Papers />
             <Experience2 />
             <Contact />
 

@@ -50,10 +50,10 @@ function ResponsiveDrawer() {
             backgroundColor: "background.secondary", height: "100vh",
         }}>
             <Toolbar />
-            <Box><Lottie animationData={robotjson} /></Box>
+            <Box ><Lottie animationData={robotjson} /></Box>
 
 
-            <Divider sx={{ mt: "20vh" }} />
+            <Divider sx={{ mt: "20%" }} />
             <List sx={{ textAlign: "center", margin: "auto", }}>
 
                 <ListItem>
@@ -111,7 +111,7 @@ function ResponsiveDrawer() {
                 </ListItem>
                 <Divider />
             </List>
-            <Box gap="10px" mt="15vh" sx={{ display: "flex", justifyContent: "center" }}>
+            <Box gap="10px" mt="10%" sx={{ display: "flex", justifyContent: "center" }}>
 
                 <a href='https://github.com/Nada-orban' data-aos="fade-left" target="_blank">
                     <GitHubIcon sx={{ color: "neutral.lightgray" }} className={Styles.smallicon} />
