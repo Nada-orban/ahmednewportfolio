@@ -98,12 +98,11 @@ function Landing() {
                         {/* <Link href=""><button className={styles.buttonStyle} data-aos="fade-up" data-aos-delay="1500">Download My CV</button></Link> */}
 
                         <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} >
-                            <div className={styles.boxButton}>
-                                <span className={styles.bgButton}></span>
-                                <span className={styles.baseButton}></span>
-                                <span className={styles.textButton}><p className={styles.text}>Contact me</p></span>
-                                {/* <button className={styles.buttonStyle2} data-aos="fade-up" data-aos-delay="1500">Contact Me</button> */}
-                            </div>
+                            <button className={styles.normalButton2} >
+                                <div className={styles.normalButtonbg}></div>
+                                <p className={styles.normalButton2text}>Contact me</p>
+                            </button>
+
                         </Link>
                     </Grid>
 

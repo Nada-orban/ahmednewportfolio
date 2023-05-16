@@ -57,17 +57,71 @@ function Contact() {
                             <Typography variant='h5' sx={{ color: "secondary.main" }} className={styles.linkText}>(+20) 10-9813-0059</Typography>
                         </Link>
                     </Box>
-                    <Grid container spacing={2} mt="20px">
-                        <Grid item sm={12} md={6}>
-                            <Box gap="5px" mb="10px" sx={{ display: { sm: 'grid', md: "flex" } }}>
+                    <form onSubmit={handleSubmit}  >
+                        <Grid container spacing={2} mt="20px">
+                            <Grid item sm={12} md={6}>
+                                <Box gap="5px" mb="10px" sx={{ display: { sm: 'grid', md: "flex" } }}>
+                                    <TextField
+                                        // sx={{ '& .css-14m6kzo-MuiInputBase-root-MuiFilledInput-root.Mui-focused': { backgroundColor: "neutral.white" } }}
+                                        id="name"
+                                        name="name"
+                                        type="name"
+                                        label="Name"
+                                        variant="filled"
+                                        color="secondary"
+                                        style={{
+                                            backgroundColor: "#2B2B2B", width: "100%"
+                                        }}
+                                        InputProps={{
+                                            style: {
+                                                color: "white"
+                                            }
+                                        }}
+                                        f
+                                    />
+                                    <ValidationError
+                                        prefix="Name"
+                                        field="name"
+                                        errors={state.errors}
+                                    />
+                                    <TextField
+                                        sx={{ mt: { xs: "10px", md: '0px' } }}
+                                        id="email"
+                                        name="email"
+                                        type="email"
+                                        label="Email"
+                                        variant="filled"
+                                        color="secondary"
+
+                                        style={{
+                                            backgroundColor: "#2B2B2B", width: "100%",
+                                        }}
+                                        InputProps={{
+                                            style: {
+                                                color: "white"
+                                            }
+                                        }}
+
+
+
+                                    />
+                                    <ValidationError
+                                        prefix="Email"
+                                        field="email"
+                                        errors={state.errors}
+                                    />
+                                </Box>
+
                                 <TextField
-                                    // sx={{ '& .css-14m6kzo-MuiInputBase-root-MuiFilledInput-root.Mui-focused': { backgroundColor: "neutral.white" } }}
-                                    id="name"
-                                    name="name"
-                                    type="name"
-                                    label="Name"
-                                    variant="filled"
+
+                                    id="message"
+                                    name="message"
+                                    label="Message"
                                     color="secondary"
+                                    variant="filled"
+                                    multiline
+                                    rows={6}
+
                                     style={{
                                         backgroundColor: "#2B2B2B", width: "100%"
                                     }}
@@ -76,79 +130,31 @@ function Contact() {
                                             color: "white"
                                         }
                                     }}
-                                    f
-                                />
-                                <ValidationError
-                                    prefix="Name"
-                                    field="name"
-                                    errors={state.errors}
-                                />
-                                <TextField
-                                    sx={{ mt: { xs: "10px", md: '0px' } }}
-                                    id="email"
-                                    name="email"
-                                    type="email"
-                                    label="Email"
-                                    variant="filled"
-                                    color="secondary"
 
-                                    style={{
-                                        backgroundColor: "#2B2B2B", width: "100%",
-                                    }}
-                                    InputProps={{
-                                        style: {
-                                            color: "white"
-                                        }
-                                    }}
 
 
 
                                 />
                                 <ValidationError
-                                    prefix="Email"
-                                    field="email"
+                                    prefix="Message"
+                                    field="message"
                                     errors={state.errors}
                                 />
-                            </Box>
-
-                            <TextField
-
-                                id="message"
-                                name="message"
-                                label="Message"
-                                color="secondary"
-                                variant="filled"
-                                multiline
-                                rows={6}
-
-                                style={{
-                                    backgroundColor: "#2B2B2B", width: "100%"
-                                }}
-                                InputProps={{
-                                    style: {
-                                        color: "white"
-                                    }
-                                }}
 
 
 
+                            </Grid>
+                            <Grid item sm={12} md={6}>
 
-                            />
-                            <ValidationError
-                                prefix="Message"
-                                field="message"
-                                errors={state.errors}
-                            />
-
+                            </Grid>
 
 
                         </Grid>
-                        <Grid item sm={12} md={6}>
-
-                        </Grid>
-
-
-                    </Grid>
+                        <button className={styles.normalButton2} type="submit" >
+                            <div className={styles.normalButtonbg}></div>
+                            <p className={styles.normalButton2text}>Send</p>
+                        </button>
+                    </form>
 
                 </Box>
 

@@ -5,11 +5,16 @@ import { ColorModeContext, useMode } from '../../public/theme'
 import { useRouter } from 'next/router';
 import { styled, useTheme, alpha } from '@mui/material/styles';
 import Drawer1 from '../../Components/Drawer1'
+import { Kanit } from 'next/font/google'
 
 import AOS from "aos";
 
 import "aos/dist/aos.css";
 
+const kanit = Kanit({
+  weight: '400',
+  subsets: ['latin'],
+});
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
@@ -31,8 +36,9 @@ export default function App({ Component, pageProps }) {
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
+        <main className={kanit.className}><Component {...pageProps} /></main>
 
-        <Component {...pageProps} />
+
         <style jsx global>{`
               ${theme.palette.mode === 'dark' ? "body{background:#030218de} " : "body{background: #fff} "}`
         }</style>
