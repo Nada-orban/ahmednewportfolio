@@ -31,12 +31,12 @@
 .titlesection1{
     font-size: 40px;
     font-weight: bold;
-   
 }
+
 .letterA{
     width: 120px;
-    height: 120px;
-    margin-right: -20px;
+    height: 125px;
+    margin-right: -24px;
     margin-left: -25px;
 }
 .ahmedtext{
@@ -50,8 +50,14 @@
         font-size: 30px;
     }
     .titlesection1 {
-        font-size: 30px;
+        font-size: 20px;
     
+    }
+    .letterA {
+        width: 60px;
+        height: 60px;
+        margin-right: -13px;
+        margin-left: -15px;
     }
 
 }
@@ -107,7 +113,7 @@
     border-style: none;
     /* padding: 10px 20px; */
     border: 1px solid var(--secondray-maincolor);
-    width: 200px;
+    width:200px;
     height: 45px;
     background:transparent;
     color:var(--secondray-maincolor);
@@ -132,11 +138,25 @@
     transition: all .3s ease-out;
 
 }
-.normalButton2text{
+.normalButton1text{
     z-index: 5;
     position: absolute;
     margin-top: -15px;
-    left: 35%;
+    left: 15%;
+
+}
+.normalButton2text{
+    z-index: 5;
+    position: absolute;
+    /* margin-top: -15px; */
+    left: 15%;
+}
+.normalButton2icon{
+    z-index: 5;
+    position: absolute;
+    /* right: 30%; */
+    transform: translateX(10%);
+    transition: all 1s ease-in-out;
 }
 .normalButton2:hover .normalButtonbg{
     width: 100%;
@@ -146,6 +166,14 @@
 }
 .normalButton2:hover .normalButton2text{
     color: black;
+}
+.normalButton2:hover .normalButton1text {
+    color: black;
+}
+.normalButton2:hover .normalButton2icon{
+    color: black;
+    transform: translateX(100%);
+    
 }
 
 

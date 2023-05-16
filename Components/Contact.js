@@ -11,6 +11,7 @@ import { useForm, ValidationError } from '@formspree/react';
 import AttachEmailIcon from '@mui/icons-material/AttachEmail';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
+import EastIcon from '@mui/icons-material/East';
 
 
 function Contact() {
@@ -152,7 +153,11 @@ function Contact() {
                         </Grid>
                         <button className={styles.normalButton2} type="submit" >
                             <div className={styles.normalButtonbg}></div>
-                            <p className={styles.normalButton2text}>Send</p>
+                            <Box display="flex" justifyContent="center" alignItems="center" >
+                                <p className={styles.normalButton2text}>Send</p>
+                                <EastIcon sx={{ ml: "30px", width: "50px", height: "30px" }} className={styles.normalButton2icon} />
+                            </Box>
+
                         </button>
                     </form>
 

@@ -24,9 +24,9 @@ function Landing() {
     return (
         <Box id="home" className={styles.backgroundimage} >
             <Container maxWidth="xlg" >
-                <Grid container px="40px" spacing={2} >
+                <Grid container sx={{ px: { sm: "10px", md: "40px" } }} spacing={2} >
                     <Grid item md={6} xs={12} className={styles.homeSection} sx={{ mt: { md: "20%", sm: "30%", xs: "40%" }, textAlign: "start" }}>
-                        <Box display="flex" gap="20px">
+                        <Box display="flex" gap="10px">
                             <div className={styles.titlesection1}>
                                 <h1>
                                     <span class={styles.a} >H</span>
@@ -76,17 +76,31 @@ function Landing() {
 
 
                                 </h1>
-                            </div>  <div className={styles.titlesection1}>
+                            </div>
+                            <Box sx={{ display: { xs: "none", sm: "none", md: "none", lg: "block" } }} className={styles.titlesection1}>
                                 <h1>
                                     <span class={styles.a} >A</span>
                                     <span class={styles.a} >t</span>
                                     <span class={styles.a} >t</span>
                                     <span class={styles.a} >i</span>
                                     <span class={styles.a} >a</span>
+                                </h1>
+                            </Box>
 
-
+                        </Box>
+                        <Box sx={{ display: { md: "block", lg: "none" } }}>
+                            <div className={styles.titlesection1}>
+                                <h1>
+                                    <span class={styles.a} >A</span>
+                                    <span class={styles.a} >t</span>
+                                    <span class={styles.a} >t</span>
+                                    <span class={styles.a} >i</span>
+                                    <span class={styles.a} >a</span>
                                 </h1>
                             </div>
+
+
+
                         </Box>
 
                         {/* <div className={styles.containertext}>
@@ -94,13 +108,13 @@ function Landing() {
                             <div className={styles.typedout} data-aos="fade-up" data-aos-delay="500">Nada Orban</div>
                         </div> */}
 
-                        <Typography variant='h4' mb="50px" mx="5px">Deep Learning,Bh.D Resercher</Typography>
+                        <Typography variant='h4' mb="50px" mx="5px">Deep Learning,Ph.D Resercher</Typography>
                         {/* <Link href=""><button className={styles.buttonStyle} data-aos="fade-up" data-aos-delay="1500">Download My CV</button></Link> */}
 
                         <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} >
                             <button className={styles.normalButton2} >
                                 <div className={styles.normalButtonbg}></div>
-                                <p className={styles.normalButton2text}>Contact me</p>
+                                <p className={styles.normalButton1text}>Contact me</p>
                             </button>
 
                         </Link>

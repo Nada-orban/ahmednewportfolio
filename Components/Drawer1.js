@@ -153,7 +153,7 @@ function ResponsiveDrawer() {
                     </Box>
                 </Toolbar>
 
-                <Box className={mobileOpen ? Styles.menuBoxactive : Styles.menuBox} backgroundColor="background.secondary" textAlign="end" mt="60px" BackdropProps={{ invisible: false }} >
+                <Box className={mobileOpen ? Styles.menuBoxactive : Styles.menuBox} backgroundColor="background.secondary" textAlign="end" mt="55px" BackdropProps={{ invisible: false }} >
                     {mobileOpen && (<List  >
                         <ListItem>
                             <Link to="about" spy={true} smooth={true} offset={-50} duration={500} >
