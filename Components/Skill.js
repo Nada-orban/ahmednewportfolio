@@ -12,7 +12,7 @@ function Skill() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
     return (
-        <Box id="about" py="100px" className={styles.backgroundskill} >
+        <Box id="about" py="100px"  >
             <Container maxWidth="xlg" >
                 <Box sx={{ px: { sm: "10px", md: "40px" } }}>
                     <Box display="flex" gap="20px">
@@ -33,10 +33,13 @@ function Skill() {
                     <Typography variant='h6'>Below are some of my skills, and I'm always looking to learn more.</Typography>
                     <Grid container spacing={2} sx={{ my: "50px", }}>
                         <Grid item xs={12} sm={6} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }}>
-                            <CodeIcon sx={{ padding: "20px", textAlign: "center", border: "2px solid white", borderRadius: "50%", backgroundColor: "white", color: "secondary.main", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} />
-                            <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Programming Languages</Typography>
-                            <Typography variant='h6' sx={{ textAlign: "center" }}>Python,C/C++
-                            </Typography>
+                            <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", backgroundColor: "red", padding: "10px" }}>
+                                <CodeIcon sx={{ padding: "20px", textAlign: "center", color: "secondary.main", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} />
+                                <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Programming Languages</Typography>
+                                <Typography variant='h6' sx={{ textAlign: "center" }}>Python,C/C++
+                                </Typography>
+                            </Box>
+
                         </Grid>
                         <Grid item xs={12} sm={6} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }}>
                             <ShareIcon sx={{ padding: "20px", textAlign: "center", border: "2px solid white", borderRadius: "50%", backgroundColor: "white", color: "secondary.main", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} />

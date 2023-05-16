@@ -23,7 +23,7 @@
 
 }
 .titlesection {
-    font-size: 40px;
+    font-size: 35px;
     color: var(--secondray-maincolor);
     font-weight: bold;
     margin-bottom: 10px;
@@ -47,7 +47,7 @@
 
 @media only screen and (max-width: 900px) {
     .titlesection {
-        font-size: 30px;
+        font-size: 25px;
     }
     .titlesection1 {
         font-size: 20px;

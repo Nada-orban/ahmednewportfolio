@@ -15,15 +15,15 @@ function Footer() {
         <>
             <Divider />
             <Box id="footer" >
-                <Container maxWidth="xlg" >
+                <Container maxWidth="xlg">
                     <Box sx={{ px: { sm: "10px", md: "40px" } }}>
                         <Grid container spacing={4} sx={{ my: "2px", padding: "15px" }}>
 
                             <Grid xs={12} md={6}>
-                                <Typography variant='h6'>Copyright © Nada Samir 2023</Typography>
+                                <Typography variant='h6' sx={{ textAlign: { xs: "center", sm: "center", md: "start", lg: "start" } }}>Copyright © Nada Samir 2023</Typography>
                             </Grid>
                             <Grid xs={12} md={6} >
-                                <Box display="flex" justifyContent="center" alignItems="center" gap="20px" >
+                                <Box display="flex" sx={{ justifyContent: { xs: "center", sm: "center", md: "end", lg: "end" }, mt: { sm: "10px", xs: "10px", md: "0px", lg: "0px" } }} alignItems="center" gap="20px" >
                                     <Link href="mailto:nadasamir9334@gmail.com" ><Avatar sx={{ width: "30px", height: "30px", backgroundColor: "secondary.main", }}><EmailIcon /></Avatar></Link>
                                     <Link href="https://www.linkedin.com/in/nada-samir-441a58130/" ><Avatar sx={{ width: "30px", height: "30px", backgroundColor: "secondary.main", }}><FiLinkedin /></Avatar></Link>
                                     <Link href="https://github.com/Nada-orban" ><Avatar sx={{ width: "30px", height: "30px", backgroundColor: "secondary.main", }}><FiGithub /></Avatar></Link>
@@ -51,7 +51,7 @@ function Footer() {
 
                 </Container>
 
-            </Box>
+            </Box >
         </>
     )
 }
