@@ -16,7 +16,7 @@ import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrow
 import { Link } from 'react-scroll'
 import profilephoto from '../public/assets/zyro-image.png'
 import Lottie from 'lottie-react'
-import letterA from '../public/assets/backgrounds/A.json'
+import letterA from '../public/assets/backgrounds/A (1).json'
 
 
 function Landing() {
@@ -38,7 +38,6 @@ function Landing() {
 
                                 </h1>
                             </div>
-
                             <div className={styles.titlesection1}>
                                 <h1>
                                     <span class={styles.a} >I</span>
@@ -49,8 +48,11 @@ function Landing() {
                                 </h1>
                             </div>
 
+
+
                         </Box>
                         <Box display="flex" gap="20px">
+
 
                             <div className={styles.titlesection1}>
                                 <h1 className={styles.ahmedtext}>
@@ -92,10 +94,17 @@ function Landing() {
                             <div className={styles.typedout} data-aos="fade-up" data-aos-delay="500">Nada Orban</div>
                         </div> */}
 
-                        <Typography variant='h4' data-aos="fade-up" data-aos-delay="1000">FRONT END DEVELOPER</Typography>
-                        <Link href=""><button className={styles.buttonStyle} data-aos="fade-up" data-aos-delay="1500">Download My CV</button></Link>
+                        <Typography variant='h4' mb="50px" mx="5px">Deep Learning,Bh.D Resercher</Typography>
+                        {/* <Link href=""><button className={styles.buttonStyle} data-aos="fade-up" data-aos-delay="1500">Download My CV</button></Link> */}
 
-                        <Link to="contact" spy={true} smooth={true} offset={-50} duration={500}><button className={styles.buttonStyle2} data-aos="fade-up" data-aos-delay="1500">Contact Me</button></Link>
+                        <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} >
+                            <div className={styles.boxButton}>
+                                <span className={styles.bgButton}></span>
+                                <span className={styles.baseButton}></span>
+                                <span className={styles.textButton}><p className={styles.text}>Contact me</p></span>
+                                {/* <button className={styles.buttonStyle2} data-aos="fade-up" data-aos-delay="1500">Contact Me</button> */}
+                            </div>
+                        </Link>
                     </Grid>
 
 

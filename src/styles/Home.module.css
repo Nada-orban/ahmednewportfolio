@@ -34,9 +34,10 @@
    
 }
 .letterA{
-    width: 100px;
-    height: 100px;
-    margin-right: -15px;
+    width: 120px;
+    height: 120px;
+    margin-right: -20px;
+    margin-left: -25px;
 }
 .ahmedtext{
     display: flex;
@@ -97,6 +98,63 @@
     to {
         transform: scale3d(1, 1, 1);
     }
+}
+
+
+/* style button */
+.boxButton{
+    position: relative;
+    overflow: hidden;
+    max-width: 200px;
+    height: 45px;
+    cursor: pointer;
+
+}
+.bgButton{
+    position: absolute;
+    left:-3px;
+    background-color:var(--secondray-maincolor);
+    width: 0;
+    height: 100%;
+    z-index: 3;
+    transform: skewX(-10deg);
+    transition: all .3s ease-out;
+    
+
+    
+}
+.baseButton{
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border:1px solid var(--secondray-maincolor );
+    
+}
+.textButton{
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 15%;
+    top: 5px;
+    color: var(--secondray-maincolor);
+    
+   
+}
+.text{
+    font-size: 23px;
+}
+.boxButton:hover .bgButton{
+    width: 100%;
+    
+    
+}
+.boxButton:hover .textButton{
+    color: black;
+
 }
 .buttonStyle {
     border-radius: 20px;
