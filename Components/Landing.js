@@ -18,6 +18,8 @@ import profilephoto from '../public/assets/zyro-image.png'
 import Lottie from 'lottie-react'
 import letterA from '../public/assets/backgrounds/A (1).json'
 
+import logo from '../public/assets/backgrounds/logo2.png'
+
 
 function Landing() {
     const theme = useTheme();
@@ -56,7 +58,17 @@ function Landing() {
 
                             <div className={styles.titlesection1}>
                                 <h1 className={styles.ahmedtext}>
-                                    <div className={styles.letterA}><Lottie animationData={letterA} /></div>
+                                    <Box  >
+                                        <Image
+                                            src={logo}
+                                            width={80}
+                                            // height={500}
+                                            alt="Picture of the author"
+
+                                        />
+                                        {/* <Lottie animationData={robotjson} /> */}
+                                    </Box>
+                                    {/* <div className={styles.letterA}><Lottie animationData={letterA} /></div> */}
                                     {/* <span class={styles.a} >A</span> */}
                                     <span class={styles.a} >h</span>
                                     <span class={styles.a} >m</span>
@@ -108,7 +120,7 @@ function Landing() {
                             <div className={styles.typedout} data-aos="fade-up" data-aos-delay="500">Nada Orban</div>
                         </div> */}
 
-                        <Typography variant='h4' mb="50px" mx="5px">Deep Learning,Ph.D Resercher</Typography>
+                        <Typography variant='h4' mb="50px" mx="5px">Deep Learning Ph.D Resercher</Typography>
                         {/* <Link href=""><button className={styles.buttonStyle} data-aos="fade-up" data-aos-delay="1500">Download My CV</button></Link> */}
 
                         <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} >

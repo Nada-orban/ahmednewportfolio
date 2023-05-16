@@ -23,10 +23,12 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EmailIcon from '@mui/icons-material/Email';
-import robotjson from '../public/assets/backgrounds/112425-ai-cpu-circuit-board-loading-animation.json'
+import robotjson from '../public/assets/backgrounds/wave.json'
 import Lottie from 'lottie-react'
 import { ColorModeContext } from '../public/theme'
 import { styled, useTheme, alpha } from '@mui/material/styles';
+import Image from 'next/image';
+import logo from '../public/assets/backgrounds/logo2.png'
 
 
 const drawerWidth = 130;
@@ -50,10 +52,18 @@ function ResponsiveDrawer() {
             backgroundColor: "background.secondary", height: "100vh",
         }}>
             <Toolbar />
-            <Box ><Lottie animationData={robotjson} /></Box>
+            <Box >
+                <Image
+                    src={logo}
+                    width={100}
+                    // height={500}
+                    alt="Picture of the author"
+                />
+                {/* <Lottie animationData={robotjson} /> */}
+            </Box>
 
 
-            <Divider sx={{ mt: "20%" }} />
+            <Divider sx={{ mt: "20vh" }} />
             <List sx={{ textAlign: "center", margin: "auto", }}>
 
                 <ListItem>

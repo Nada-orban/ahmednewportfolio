@@ -25,20 +25,20 @@ function Contact() {
                     <Box display="flex" gap="20px">
                         <div className={styles.titlesection}>
                             <h1>
-                                <span class={styles.a} >C</span>
-                                <span class={styles.a} >o</span>
-                                <span class={styles.a} >n</span>
-                                <span class={styles.a} >t</span>
-                                <span class={styles.a} >a</span>
-                                <span class={styles.a} >c</span>
-                                <span class={styles.a} >t</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="50" >C</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="100">o</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="200">n</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="300">t</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="400">a</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="500">c</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="600">t</span>
 
                             </h1>
                         </div>
                         <div className={styles.titlesection}>
                             <h1>
-                                <span class={styles.a} >m</span>
-                                <span class={styles.a} >e</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="700">m</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="800">e</span>
                             </h1>
                         </div>
                     </Box>
@@ -111,6 +111,38 @@ function Contact() {
                                         field="email"
                                         errors={state.errors}
                                     />
+                                </Box>
+                                <Box mb="10px">
+                                    <TextField
+
+                                        id="subject"
+                                        name="subject"
+                                        label="subject"
+                                        color="secondary"
+                                        variant="filled"
+                                        multiline
+
+
+                                        style={{
+                                            backgroundColor: "#2B2B2B", width: "100%"
+                                        }}
+                                        InputProps={{
+                                            style: {
+                                                color: "white"
+                                            }
+                                        }}
+
+
+
+
+                                    />
+                                    <ValidationError
+                                        prefix="Message"
+                                        field="message"
+                                        errors={state.errors}
+                                    />
+
+
                                 </Box>
 
                                 <TextField

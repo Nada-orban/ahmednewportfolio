@@ -198,7 +198,7 @@
 } */
 .backgroundimage {
     background: linear-gradient(#000000de,
-            #080a25d0),url('../../public/assets/skills/turned-gray-laptop-computer.jpg');
+            #080a25d0),url('../../public/assets/backgrounds/abstract-black-futuristic-background.jpg');
     /* background: linear-gradient(to right, #4286f4, #373B44); */
 
     /* background:linear-gradient( #000000bd,#424242); */
@@ -539,7 +539,7 @@
 
 /*############Papers############ */
 .linkText:hover {
-    text-decoration: underline var(--secondary-color);
+    text-decoration: underline var(--secondray-maincolor);
 }
 
 .iconLink:hover {
