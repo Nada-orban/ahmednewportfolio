@@ -24,10 +24,10 @@ function Footer() {
                             </Grid>
                             <Grid xs={12} md={6} >
                                 <Box display="flex" sx={{ justifyContent: { xs: "center", sm: "center", md: "end", lg: "end" }, mt: { sm: "10px", xs: "10px", md: "0px", lg: "0px" } }} alignItems="center" gap="20px" >
-                                    <Link href="mailto:nadasamir9334@gmail.com" ><Avatar sx={{ width: "30px", height: "30px", backgroundColor: "secondary.main", }}><EmailIcon /></Avatar></Link>
-                                    <Link href="https://www.linkedin.com/in/nada-samir-441a58130/" ><Avatar sx={{ width: "30px", height: "30px", backgroundColor: "secondary.main", }}><FiLinkedin /></Avatar></Link>
-                                    <Link href="https://github.com/Nada-orban" ><Avatar sx={{ width: "30px", height: "30px", backgroundColor: "secondary.main", }}><FiGithub /></Avatar></Link>
-                                    <Link href="https://www.upwork.com/freelancers/~0158c861bae4be2e7b" ><Avatar sx={{ width: "30px", height: "30px", backgroundColor: "secondary.main", }}><SiUpwork /></Avatar></Link>
+                                    <Link href="mailto:nadasamir9334@gmail.com" ><Avatar sx={{ width: "30px", height: "30px", backgroundColor: "secondary.main", color: "white" }}><EmailIcon /></Avatar></Link>
+                                    <Link href="https://www.linkedin.com/in/nada-samir-441a58130/" ><Avatar sx={{ width: "30px", height: "30px", backgroundColor: "secondary.main", color: "white" }}><FiLinkedin /></Avatar></Link>
+                                    <Link href="https://github.com/Nada-orban" ><Avatar sx={{ width: "30px", height: "30px", backgroundColor: "secondary.main", color: "white" }}><FiGithub /></Avatar></Link>
+                                    <Link href="https://www.upwork.com/freelancers/~0158c861bae4be2e7b" ><Avatar sx={{ width: "30px", height: "30px", backgroundColor: "secondary.main", color: "white" }}><SiUpwork /></Avatar></Link>
                                 </Box>
                             </Grid>
                         </Grid>

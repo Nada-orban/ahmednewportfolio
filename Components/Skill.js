@@ -18,24 +18,26 @@ function Skill() {
                     <Box display="flex" gap="20px">
                         <div className={styles.titlesection}>
                             <h1>
-                                <span class={styles.a} >S</span>
-                                <span class={styles.a} >k</span>
-                                <span class={styles.a} >i</span>
-                                <span class={styles.a} >l</span>
-                                <span class={styles.a} >l</span>
-                                <span class={styles.a} >s</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="50">S</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="100">k</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="200">i</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="300">l</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="400">l</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="500">s</span>
 
 
                             </h1>
                         </div>
 
                     </Box>
-                    <Typography variant='h6'>Below are some of my skills, and I'm always looking to learn more.</Typography>
-                    <Grid container spacing={2} sx={{ my: "50px", }}>
+                    <Typography variant='h6' data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom">Below are some of my skills, and I'm always looking to learn more.</Typography>
+                    <Grid container spacing={2} sx={{ my: "50px", }} data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom" data-aos-delay="600">
                         <Grid item xs={12} sm={6} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }}>
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", backgroundColor: "#03021863", padding: " 10px 5px" }}>
                                 <CodeIcon sx={{ padding: "20px", textAlign: "center", color: "primary.main", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} />
-                                <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Programming Languages</Typography>
+                                <Typography variant='h4' sx={{ textAlign: "center", my: 1, fontWeight: "bold" }}>Programming Languages</Typography>
                                 <Typography variant='h6' sx={{ textAlign: "center" }}>Python,C/C++
                                 </Typography>
                             </Box>
@@ -51,7 +53,7 @@ function Skill() {
                         <Grid item xs={12} sm={6} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }}>
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", backgroundColor: "#03021863", padding: " 10px 5px" }}>
                                 <StorageIcon sx={{ padding: "20px", textAlign: "center", color: "primary.main", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} />
-                                <Typography variant='h4' sx={{ textAlign: "center", my: "35px", fontWeight: "bold" }}>Databases</Typography>
+                                <Typography variant='h4' sx={{ textAlign: "center", my: "28px", fontWeight: "bold" }}>Databases</Typography>
                                 <Typography variant='h6' sx={{ textAlign: "center" }}> SQL database,MongoDB
                                 </Typography>
                             </Box>

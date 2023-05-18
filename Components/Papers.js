@@ -17,12 +17,12 @@ function Papers() {
                     <Box display="flex" gap="20px">
                         <div className={styles.titlesection}>
                             <h1>
-                                <span class={styles.a} >P</span>
-                                <span class={styles.a} >a</span>
-                                <span class={styles.a} >p</span>
-                                <span class={styles.a} >e</span>
-                                <span class={styles.a} >r</span>
-                                <span class={styles.a} >s</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="50">P</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="100">a</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="200">p</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="300">e</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="400">r</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="500">s</span>
 
 
 
@@ -31,7 +31,8 @@ function Papers() {
 
                     </Box>
                     <Box my="40px" >
-                        <Box my="20px">
+                        <Box my="20px" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
                             <a href="https://arxiv.org/abs/2011.13320" className={styles.linkText} target="_blank">
                                 <Typography variant='h5' sx={{ color: "secondary.main", fontWeight: "bolder" }}>Virufy: Global Applicability of Crowdsourced and Clinical Datasets for AI Detection of COVID‐19 from Cough Audio
                                     Samples</Typography>
@@ -44,7 +45,8 @@ function Papers() {
                                 </Box>
                             </a>
                         </Box>
-                        <Box my="30px">
+                        <Box my="30px" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
                             <a href="https://www.isca-speech.org/archive/pdfs/interspeech_2021/fakhry21_interspeech.pdf" className={styles.linkText} target="_blank">
                                 <Typography variant='h5' sx={{ color: "secondary.main", fontWeight: "bolder" }}>Virufy: A Multi‐Branch Deep Learning Network for Automated Detection of COVID‐19 </Typography>
                             </a>
