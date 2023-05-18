@@ -63,7 +63,7 @@ function ResponsiveDrawer() {
             </Box>
 
 
-            <Divider sx={{ mt: "20vh" }} />
+            <Divider />
             <List sx={{ textAlign: "center", margin: "auto", }}>
 
                 <ListItem>
@@ -119,7 +119,7 @@ function ResponsiveDrawer() {
                         </ListItemButton>
                     </Link>
                 </ListItem>
-                <Divider />
+                <Divider sx={{ mb: "10vh" }} />
             </List>
             <Box gap="10px" mt="20%" sx={{ display: "flex", justifyContent: "center" }}>
 
