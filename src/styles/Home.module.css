@@ -538,6 +538,9 @@
 }
 
 /*############Papers############ */
+.linkText {
+    text-decoration: none;
+}
 .linkText:hover {
     text-decoration: underline var(--secondray-maincolor);
 }
@@ -556,6 +559,9 @@
 
 
 /* #############contact##############3 */
+.myEmail {
+    text-decoration: none;
+}
 .iconContact {
     background-color: var(--secondray-maincolor);
     cursor: pointer;

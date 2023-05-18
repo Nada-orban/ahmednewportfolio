@@ -17,7 +17,7 @@ import EastIcon from '@mui/icons-material/East';
 function Contact() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
-    const [state, handleSubmit] = useForm("mjvdegqz");
+    const [state, handleSubmit] = useForm("xdovjjlp");
     return (
         <Box id="contact" py="100px" sx={{ backgroundColor: "background.blue" }}>
             <Container maxWidth="xlg" >
@@ -44,25 +44,29 @@ function Contact() {
                     </Box>
 
 
-                    <Box display="flex">
+                    <Box display="flex" data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom" data-aos-delay="900">
                         <AttachEmailIcon sx={{ mt: "5px", marginRight: "3px" }} />
                         {/* <Typography variant='h5' >:</Typography> */}
-                        <Link href="mailto:ahmedfakhry805@gmail.com"  >
+                        <Link href="mailto:ahmedfakhry805@gmail.com" className={styles.myEmail}>
                             <Typography variant='h5' sx={{ color: "secondary.main" }} className={styles.linkText}> ahmedfakhry805@gmail.com</Typography>
                         </Link>
                     </Box>
-                    <Box display="flex" >
+                    <Box display="flex" data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom" data-aos-delay="1000">
                         <PhoneIphoneIcon sx={{ mt: "5px" }} />
                         {/* <Typography variant='h5' >:</Typography> */}
-                        <Link href=""  >
-                            <Typography variant='h5' sx={{ color: "secondary.main" }} className={styles.linkText}>(+20) 10-9813-0059</Typography>
-                        </Link>
+
+                        <Typography variant='h5' sx={{ color: "secondary.main" }} className={styles.linkText}>(+20) 10-9813-0059</Typography>
+
                     </Box>
                     <form onSubmit={handleSubmit}  >
                         <Grid container spacing={2} mt="20px">
                             <Grid item sm={12} md={6}>
                                 <Box gap="5px" mb="10px" sx={{ display: { sm: 'grid', md: "flex" } }}>
                                     <TextField
+                                        data-aos="fade-up"
+                                        data-aos-anchor-placement="top-bottom" data-aos-delay="1100"
                                         // sx={{ '& .css-14m6kzo-MuiInputBase-root-MuiFilledInput-root.Mui-focused': { backgroundColor: "neutral.white" } }}
                                         id="name"
                                         name="name"
@@ -86,6 +90,8 @@ function Contact() {
                                         errors={state.errors}
                                     />
                                     <TextField
+                                        data-aos="fade-up"
+                                        data-aos-anchor-placement="top-bottom" data-aos-delay="1200"
                                         sx={{ mt: { xs: "10px", md: '0px' } }}
                                         id="email"
                                         name="email"
@@ -114,6 +120,8 @@ function Contact() {
                                 </Box>
                                 <Box mb="10px">
                                     <TextField
+                                        data-aos="fade-up"
+                                        data-aos-anchor-placement="top-bottom" data-aos-delay="1300"
 
                                         id="subject"
                                         name="subject"
@@ -146,6 +154,8 @@ function Contact() {
                                 </Box>
 
                                 <TextField
+                                    data-aos="fade-up"
+                                    data-aos-anchor-placement="top-bottom" data-aos-delay="1400"
 
                                     id="message"
                                     name="message"
