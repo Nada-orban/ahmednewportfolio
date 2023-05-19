@@ -68,25 +68,26 @@ export default function Home({ projects }) {
                   <Box display="flex" gap="20px">
                     <div className={styles.titlesection}>
                       <h1>
-                        <span class={styles.a} >P</span>
-                        <span class={styles.a} >r</span>
-                        <span class={styles.a} >o</span>
-                        <span class={styles.a} >j</span>
-                        <span class={styles.a} >e</span>
-                        <span class={styles.a} >c</span>
-                        <span class={styles.a} >t</span>
-                        <span class={styles.a} >s</span>
-
+                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="50">P</span>
+                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="100">r</span>
+                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="200">o</span>
+                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="300">j</span>
+                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="400">e</span>
+                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="500">c</span>
+                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="600">t</span>
+                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="700">s</span>
 
                       </h1>
                     </div>
 
                   </Box>
-                  <Typography variant='h5' >Here you can see some of the projects I've done on my own time.</Typography>
+                  <Typography variant='h5' data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom">Here you can see some of the projects I've done on my own time.</Typography>
                   <Typography className={styles.bigfake}>WORK</Typography>
                 </Box>
               </Container>
-              <Grid container sx={{ my: "80px" }}>
+              <Grid container sx={{ my: "80px" }} data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom" data-aos-delay="800">
                 {projects.map(project => (
                   <Projects key={project.id} {...project} />
 

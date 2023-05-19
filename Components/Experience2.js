@@ -119,14 +119,14 @@ function Experience2(props) {
                     <Box display="flex" gap="20px">
                         <div className={styles.titlesection}>
                             <h1>
-                                <span class={styles.a} >T</span>
-                                <span class={styles.a} >i</span>
-                                <span class={styles.a} >m</span>
-                                <span class={styles.a} >e</span>
-                                <span class={styles.a} >l</span>
-                                <span class={styles.a} >i</span>
-                                <span class={styles.a} >n</span>
-                                <span class={styles.a} >e</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="50">T</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="100" >i</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="200">m</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="300">e</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="400">l</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="500">i</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="600">n</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="700">e</span>
 
                             </h1>
                         </div>
