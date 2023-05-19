@@ -26,14 +26,14 @@ function Landing() {
     return (
         <Box id="home" className={styles.backgroundimage} >
             <Container maxWidth="xlg" >
-                <Grid container sx={{ px: { sm: "10px", md: "40px" } }} spacing={2} >
-                    <Grid item md={6} xs={12} className={styles.homeSection} sx={{ mt: { md: "20%", sm: "30%", xs: "40%" }, textAlign: "start" }}>
+                <Grid container sx={{ px: { sm: "10px", md: "40px" }, mt: { lg: "10%", md: "30px", sm: "30%", xs: "40%" } }} spacing={2} >
+                    <Grid item md={12} xs={12} className={styles.homeSection} sx={{ textAlign: "start" }}>
                         <Box display="flex" gap="10px">
                             <div className={styles.titlesection1}>
                                 <h1>
-                                    <span class={styles.a} >H</span>
-                                    <span class={styles.a} >i</span>
-                                    <span class={styles.a} >,</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="50" >H</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="100" >i</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="200">,</span>
 
 
 
@@ -42,9 +42,11 @@ function Landing() {
                             </div>
                             <div className={styles.titlesection1}>
                                 <h1>
-                                    <span class={styles.a} >I</span>
-                                    <span class={styles.a} >'</span>
-                                    <span class={styles.a} >m</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="300">I</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="400" >'</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="500">m</span>
+
+
 
 
                                 </h1>
@@ -70,20 +72,20 @@ function Landing() {
                                     </Box>
                                     {/* <div className={styles.letterA}><Lottie animationData={letterA} /></div> */}
                                     {/* <span class={styles.a} >A</span> */}
-                                    <span class={styles.a} >h</span>
-                                    <span class={styles.a} >m</span>
-                                    <span class={styles.a} >e</span>
-                                    <span class={styles.a} >d</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="600">h</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="700">m</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="800" >e</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="900">d</span>
 
 
                                 </h1>
                             </div>
                             <div className={styles.titlesection1}>
                                 <h1>
-                                    <span class={styles.a} >A</span>
-                                    <span class={styles.a} >d</span>
-                                    <span class={styles.a} >e</span>
-                                    <span class={styles.a} >l</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1000" >A</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1100" >d</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1200" >e</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1300">l</span>
 
 
 
@@ -91,11 +93,11 @@ function Landing() {
                             </div>
                             <Box sx={{ display: { xs: "none", sm: "none", md: "none", lg: "block" } }} className={styles.titlesection1}>
                                 <h1>
-                                    <span class={styles.a} >A</span>
-                                    <span class={styles.a} >t</span>
-                                    <span class={styles.a} >t</span>
-                                    <span class={styles.a} >i</span>
-                                    <span class={styles.a} >a</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1400">A</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1500" >t</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1600">t</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1700">i</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1800">a</span>
                                 </h1>
                             </Box>
 
@@ -103,11 +105,11 @@ function Landing() {
                         <Box sx={{ display: { md: "block", lg: "none" } }}>
                             <div className={styles.titlesection1}>
                                 <h1>
-                                    <span class={styles.a} >A</span>
-                                    <span class={styles.a} >t</span>
-                                    <span class={styles.a} >t</span>
-                                    <span class={styles.a} >i</span>
-                                    <span class={styles.a} >a</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1400">A</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1500" >t</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1600">t</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1700">i</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1800">a</span>
                                 </h1>
                             </div>
 
@@ -120,10 +122,11 @@ function Landing() {
                             <div className={styles.typedout} data-aos="fade-up" data-aos-delay="500">Nada Orban</div>
                         </div> */}
 
-                        <Typography variant='h4' mb="50px" mx="5px">Deep Learning Ph.D Resercher</Typography>
+                        <Typography variant='h4' mb="50px" mx="5px" data-aos="fade-up" data-aos-delay="1900"
+                            data-aos-anchor-placement="top-bottom">Deep Learning Ph.D Resercher</Typography>
                         {/* <Link href=""><button className={styles.buttonStyle} data-aos="fade-up" data-aos-delay="1500">Download My CV</button></Link> */}
 
-                        <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} >
+                        <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} data-aos="fade-right" data-aos-delay="2000" >
                             <button className={styles.normalButton2} >
                                 <div className={styles.normalButtonbg}></div>
                                 <p className={styles.normalButton1text}>Contact me</p>
@@ -132,18 +135,18 @@ function Landing() {
                         </Link>
                     </Grid>
 
-
+                    {/* 
                     <Grid item md={6} xs={12} data-aos="zoom-in" >
-                        {/* <Box width="700px" height="700px" mb="50px">
+                        <Box width="700px" height="700px" mb="50px">
                             <Image
                                 src={profilephoto}
                                 width={800}
 
                                 alt="Picture of the author"
                             />
-                        </Box> */}
+                        </Box>
 
-                    </Grid>
+                    </Grid> */}
                 </Grid>
 
 
