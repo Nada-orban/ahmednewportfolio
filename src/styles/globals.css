@@ -15,7 +15,7 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   /* background-color: #03021863; */
-  color: #004037;
+  color: #004037!important;
   /* background: #FFC517; */
   /* font-family: 'Sofia Sans Condensed',
   sans-serif; */
