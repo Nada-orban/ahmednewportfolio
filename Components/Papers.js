@@ -11,7 +11,7 @@ function Papers() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
     return (
-        <Box id="papers" py="90px" color="white">
+        <Box id="papers" py="90px" color="white" className={styles.backgroundseamless}>
             <Container maxWidth="xlg" >
                 <Box sx={{ px: { sm: "10px", md: "40px" } }}>
                     <Box display="flex" gap="20px">

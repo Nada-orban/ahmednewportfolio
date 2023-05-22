@@ -1,7 +1,8 @@
 :root {
   
-  --secondray-maincolor:#FFC517;
+  /* --secondray-maincolor:#FFC517; */
   /* --secondray-maincolor: #e53935; */
+  --secondray-maincolor: #0DD1CF;
 }
 * {
   box-sizing: border-box;
@@ -13,7 +14,8 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background-color: #03021863;
+  /* background-color: #03021863; */
+  color: #004037;
   /* background: #FFC517; */
   /* font-family: 'Sofia Sans Condensed',
   sans-serif; */

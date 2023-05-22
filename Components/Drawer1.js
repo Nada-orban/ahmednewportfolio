@@ -32,6 +32,13 @@ import logo from '../public/assets/backgrounds/logo2.png'
 
 
 const drawerWidth = 130;
+const NavLinks = styled(Link)`
+  color: white;
+  &.active {
+    color: #0DD1CF;
+    
+  }
+`;
 
 function ResponsiveDrawer() {
     // const { window } = props;
@@ -49,10 +56,10 @@ function ResponsiveDrawer() {
 
     const drawer = (
         <Box sx={{
-            backgroundColor: "background.secondary", height: "100vh",
+            backgroundColor: "background.secondary", height: "100vh", borderRight: "1px solid white"
         }}>
             <Toolbar />
-            <Box >
+            <Box sx={{ mb: "50%" }}>
                 <Image
                     src={logo}
                     width={100}
@@ -67,59 +74,59 @@ function ResponsiveDrawer() {
             <List sx={{ textAlign: "center", margin: "auto", }}>
 
                 <ListItem>
-                    <Link to="about" spy={true} smooth={true} offset={-50} duration={500} >
+                    <NavLinks to="about" spy={true} smooth={true} offset={-50} duration={500} >
                         <ListItemButton >
                             <Typography variant="h6">About</Typography>
                             {/* <ListItemText primary="About" /> */}
                         </ListItemButton>
-                    </Link>
+                    </NavLinks>
                 </ListItem>
                 <Divider />
                 <ListItem>
-                    <Link to="skills" spy={true} smooth={true} offset={-50} duration={500}>
+                    <NavLinks to="skills" spy={true} smooth={true} offset={-50} duration={500}>
                         <ListItemButton >
                             <Typography variant="h6">Skills</Typography>
                         </ListItemButton>
-                    </Link>
+                    </NavLinks>
                 </ListItem>
                 <Divider />
                 <ListItem>
-                    <Link to="projects" spy={true} smooth={true} offset={-50} duration={500}>
+                    <NavLinks to="projects" spy={true} smooth={true} offset={-50} duration={500}>
                         <ListItemButton >
                             <Typography variant="h6">Projects</Typography>
                             {/* <ListItemText primary="Projects" /> */}
                         </ListItemButton>
-                    </Link>
+                    </NavLinks>
                 </ListItem>
                 <Divider />
                 <ListItem>
-                    <Link to="papers" spy={true} smooth={true} offset={-50} duration={500}>
+                    <NavLinks to="papers" spy={true} smooth={true} offset={-50} duration={500}>
                         <ListItemButton >
                             <Typography variant="h6">Papers</Typography>
                             {/* <ListItemText primary="Projects" /> */}
                         </ListItemButton>
-                    </Link>
+                    </NavLinks>
                 </ListItem>
                 <Divider />
                 <ListItem>
-                    <Link to="experience" spy={true} smooth={true} offset={-50} duration={500}>
+                    <NavLinks to="experience" spy={true} smooth={true} offset={-50} duration={500}>
                         <ListItemButton >
                             <Typography variant="h6">Timeline</Typography>
                             {/* <ListItemText primary="Projects" /> */}
                         </ListItemButton>
-                    </Link>
+                    </NavLinks>
                 </ListItem>
                 <Divider />
 
                 <ListItem>
-                    <Link to="contact" spy={true} smooth={true} offset={-50} duration={500}>
+                    <NavLinks to="contact" spy={true} smooth={true} offset={-50} duration={500}>
                         <ListItemButton >
                             <Typography variant="h6">Contact</Typography>
 
                         </ListItemButton>
-                    </Link>
+                    </NavLinks>
                 </ListItem>
-                <Divider sx={{ mb: "10vh" }} />
+                <Divider />
             </List>
             <Box gap="10px" mt="10vh" sx={{ display: "flex", justifyContent: "center" }}>
 
@@ -166,34 +173,34 @@ function ResponsiveDrawer() {
                 <Box className={mobileOpen ? Styles.menuBoxactive : Styles.menuBox} backgroundColor="background.secondary" textAlign="end" mt="55px" BackdropProps={{ invisible: false }} >
                     {mobileOpen && (<List  >
                         <ListItem>
-                            <Link to="about" spy={true} smooth={true} offset={-50} duration={500} >
+                            <NavLinks to="about" spy={true} smooth={true} offset={-50} duration={500} >
                                 <ListItemText primary="ABOUT" />
-                            </Link>
+                            </NavLinks>
                         </ListItem>
                         <ListItem>
-                            <Link to="skills" spy={true} smooth={true} offset={-50} duration={500} >
+                            <NavLinks to="skills" spy={true} smooth={true} offset={-50} duration={500} >
                                 <ListItemText primary="SKILLS" />
-                            </Link>
+                            </NavLinks>
                         </ListItem>
                         <ListItem>
-                            <Link to="projects" spy={true} smooth={true} offset={-50} duration={500}>
+                            <NavLinks to="projects" spy={true} smooth={true} offset={-50} duration={500}>
                                 <ListItemText primary="PROJECTS" />
-                            </Link>
+                            </NavLinks>
                         </ListItem>
                         <ListItem>
-                            <Link to="papers" spy={true} smooth={true} offset={-50} duration={500}>
+                            <NavLinks to="papers" spy={true} smooth={true} offset={-50} duration={500}>
                                 <ListItemText primary="PAPERS" />
-                            </Link>
+                            </NavLinks>
                         </ListItem>
                         <ListItem>
-                            <Link to="experience" spy={true} smooth={true} offset={-50} duration={500} >
+                            <NavLinks to="experience" spy={true} smooth={true} offset={-50} duration={500} >
                                 <ListItemText primary="TIMELINE" />
-                            </Link>
+                            </NavLinks>
                         </ListItem>
                         <ListItem>
-                            <Link to="contact" spy={true} smooth={true} offset={-50} duration={500}>
+                            <NavLinks to="contact" spy={true} smooth={true} offset={-50} duration={500}>
                                 <ListItemText primary="CONTACT" />
-                            </Link>
+                            </NavLinks>
                         </ListItem>
                         {/* <ListItem>
                             < AiOutlineFilePdf style={{ color: "white", marginRight: "5px" }} />

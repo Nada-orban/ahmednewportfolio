@@ -16,18 +16,37 @@ import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrow
 import { Link } from 'react-scroll'
 import profilephoto from '../public/assets/zyro-image.png'
 import Lottie from 'lottie-react'
-import letterA from '../public/assets/backgrounds/A (1).json'
-
+import waveform from '../public/assets/backgrounds/waves.json'
+// import { useCallback } from "react";
+// import Particles from "react-tsparticles";
+// import { loadFull } from "tsparticles";
 import logo from '../public/assets/backgrounds/logo2.png'
 
 
 function Landing() {
     const theme = useTheme();
+    // const particlesInit = useCallback(async engine => {
+    //     console.log(engine);
+    //     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+    //     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    //     // starting from v2 you can add only the features you need reducing the bundle size
+    //     await loadFull(engine);
+    // }, []);
+
+    // const particlesLoaded = useCallback(async container => {
+    //     await console.log(container);
+    // }, []);
     return (
-        <Box id="home" className={styles.backgroundimage} >
+        <Box id="home" height="100vh" >
             <Container maxWidth="xlg" >
-                <Grid container sx={{ px: { sm: "10px", md: "40px" }, mt: { lg: "10%", md: "30px", sm: "30%", xs: "40%" } }} spacing={2} >
-                    <Grid item md={12} xs={12} className={styles.homeSection} sx={{ textAlign: "start" }}>
+                <Box sx={{ position: "relative" }} spacing={2} >
+                    <Box>
+                        {/* <Particles id="tsparticles" url="http://foo.bar/particles.json" init={particlesInit} loaded={particlesLoaded} /> */}
+                    </Box>
+                    <Box sx={{ position: "absolute", top: "-150px", opacity: 0.4, }} >
+                        <div ><Lottie animationData={waveform} className={styles.wavejson} /></div>
+                    </Box>
+                    <Box className={styles.homeSection} sx={{ px: { sm: "10px", md: "40px" }, mt: { lg: "10%", md: "30px", sm: "30%", xs: "40%" }, }}>
                         <Box display="flex" gap="10px">
                             <div className={styles.titlesection1}>
                                 <h1>
@@ -133,21 +152,11 @@ function Landing() {
                             </button>
 
                         </Link>
-                    </Grid>
+                    </Box>
 
-                    {/* 
-                    <Grid item md={6} xs={12} data-aos="zoom-in" >
-                        <Box width="700px" height="700px" mb="50px">
-                            <Image
-                                src={profilephoto}
-                                width={800}
 
-                                alt="Picture of the author"
-                            />
-                        </Box>
 
-                    </Grid> */}
-                </Grid>
+                </Box>
 
 
                 {/* <Box gap="30px" mt="20px" className={styles.contactionbox} sx={{ display: { xs: 'none', sm: 'none', md: 'flex' } }}>

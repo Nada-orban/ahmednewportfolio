@@ -193,7 +193,7 @@ function Contact() {
 
 
                         </Grid>
-                        <button className={styles.normalButton2} type="submit" >
+                        <button className={styles.normalButton2} type="submit" data-aos="fade-right" data-aos-delay="1500">
                             <div className={styles.normalButtonbg}></div>
                             <Box display="flex" justifyContent="center" alignItems="center" >
                                 <p className={styles.normalButton2text}>Send</p>
