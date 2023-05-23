@@ -35,7 +35,7 @@ function Skill() {
                     <Grid container spacing={2} sx={{ my: "50px", }} >
                         <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
                             data-aos-delay="600">
-                            <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", backgroundColor: "#030218de", padding: " 10px 5px", height: "250px" }}>
+                            <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", backgroundColor: "#0040375b", padding: " 10px 5px", height: "250px" }}>
                                 <CodeIcon sx={{ padding: "20px", textAlign: "center", color: "primary.main", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} />
                                 <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Programming Languages</Typography>
                                 <Typography variant='h6' sx={{ textAlign: "center" }}>Python,C/C++
@@ -44,7 +44,7 @@ function Skill() {
                         </Grid>
                         <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
                             data-aos-delay="800">
-                            <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", backgroundColor: "#030218de", padding: " 10px 5px", height: "250px" }}>
+                            <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", backgroundColor: "#0040375b", padding: " 10px 5px", height: "250px" }}>
                                 <ShareIcon sx={{ padding: "20px", textAlign: "center", color: "primary.main", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} />
                                 <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Deep Learning Frameworks</Typography>
                                 <Typography variant='h6' sx={{ textAlign: "center" }}>Tensorflow, Keras, Pytorch
@@ -53,7 +53,7 @@ function Skill() {
                         </Grid>
                         <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
                             data-aos-delay="1000">
-                            <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", backgroundColor: "#030218de", padding: " 10px 5px", height: "250px" }}>
+                            <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", backgroundColor: "#0040375b", padding: " 10px 5px", height: "250px" }}>
                                 <StorageIcon sx={{ padding: "20px", textAlign: "center", color: "primary.main", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} />
                                 <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Databases</Typography>
                                 <Typography variant='h6' sx={{ textAlign: "center" }}> SQL database,MongoDB

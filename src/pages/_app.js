@@ -7,6 +7,7 @@ import { styled, useTheme, alpha } from '@mui/material/styles';
 import Drawer1 from '../../Components/Drawer1'
 import { Kanit } from 'next/font/google'
 
+
 import AOS from "aos";
 
 import "aos/dist/aos.css";

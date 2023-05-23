@@ -37,7 +37,7 @@ export const themeSettongs = (mode) => {
 
             } : {
                 primary: {
-                    main: "#0DD1CF",
+                    main: "#004037",
                 },
                 secondary: {
                     // main: red[400],
@@ -57,7 +57,7 @@ export const themeSettongs = (mode) => {
 
 
                 }, text: {
-                    primary: "white",
+                    primary: "#004037",
                     secondary: grey[500],
                 },
 

@@ -22,31 +22,25 @@ import waveform from '../public/assets/backgrounds/waves.json'
 // import { loadFull } from "tsparticles";
 import logo from '../public/assets/backgrounds/logo2.png'
 
+import Particlesbackground from './Particlesbackground'
+
+
 
 function Landing() {
     const theme = useTheme();
-    // const particlesInit = useCallback(async engine => {
-    //     console.log(engine);
-    //     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    //     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    //     // starting from v2 you can add only the features you need reducing the bundle size
-    //     await loadFull(engine);
-    // }, []);
 
-    // const particlesLoaded = useCallback(async container => {
-    //     await console.log(container);
-    // }, []);
     return (
         <Box id="home" height="100vh" >
+
             <Container maxWidth="xlg" >
                 <Box sx={{ position: "relative" }} spacing={2} >
                     <Box>
-                        {/* <Particles id="tsparticles" url="http://foo.bar/particles.json" init={particlesInit} loaded={particlesLoaded} /> */}
+                        <Particlesbackground />
                     </Box>
-                    <Box sx={{ position: "absolute", top: "-150px", opacity: 0.4, }} >
+                    {/* <Box sx={{ position: "absolute", top: "-150px", opacity: 0.4, }} >
                         <div ><Lottie animationData={waveform} className={styles.wavejson} /></div>
-                    </Box>
-                    <Box className={styles.homeSection} sx={{ px: { sm: "10px", md: "40px" }, mt: { lg: "10%", md: "30px", sm: "30%", xs: "40%" }, }}>
+                    </Box> */}
+                    <Box className={styles.homeSection} sx={{ px: { sm: "10px", md: "40px" }, mt: { lg: "15%", md: "35px", sm: "30%", xs: "40%" }, }}>
                         <Box display="flex" gap="10px">
                             <div className={styles.titlesection1}>
                                 <h1>
