@@ -58,7 +58,7 @@ export const themeSettongs = (mode) => {
 
                 }, text: {
                     primary: "#004037",
-                    secondary: grey[500],
+                    secondary: "#FAF3E8",
                 },
 
             }),

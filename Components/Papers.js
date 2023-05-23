@@ -36,11 +36,11 @@ function Papers() {
                     <Box my="40px" >
                         <Box my="20px" data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom" data-aos-delay="600">
-                            <a href="https://arxiv.org/abs/2011.13320" className={styles.linkText} target="_blank">
+                            <a href="https://arxiv.org/pdf/2210.15195" className={styles.linkText} target="_blank">
                                 <Typography variant='h5' sx={{ color: "white", fontWeight: "bolder" }}>Masked Autoencoders Are Articulatory Learners</Typography>
                             </a>
                             <Typography variant='h6'>Nov 2020, Awaiting AE Recommendation from IEEE TAI. </Typography>
-                            <a href='https://arxiv.org/pdf/2011.13320.pdf' className={styles.linkText} target="_blank">
+                            <a href='https://arxiv.org/pdf/2210.15195.pdf' className={styles.linkText} target="_blank">
                                 <Box display="flex" justifyContent="start">
                                     <Typography variant='h5' sx={{ color: "white", }}>Download</Typography>
                                     <DownloadIcon sx={{ color: "secondary.main", width: "26px", height: "26px" }} className={styles.iconLink} />
@@ -49,12 +49,12 @@ function Papers() {
                         </Box>
                         <Box my="30px" data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom" data-aos-delay="700">
-                            <a href="https://www.isca-speech.org/archive/pdfs/interspeech_2021/fakhry21_interspeech.pdf" className={styles.linkText} target="_blank">
+                            <a href="https://arxiv.org/pdf/2305.10775" className={styles.linkText} target="_blank">
                                 <Typography variant='h5' sx={{ color: "white", fontWeight: "bolder" }}>Enhancing Speech Articulation Analysis Using A Geometric Transformation
                                     Of The X‐ray Microbeam Dataset </Typography>
                             </a>
-                            <Typography variant='h6'>March 2021,Interspeech conference 2021</Typography>
-                            <a href='https://www.isca-speech.org/archive/pdfs/interspeech_2021/fakhry21_interspeech.pdf.' className={styles.linkText} target="_blank">
+                            <Typography variant='h6'>18 May, 2023</Typography>
+                            <a href='https://arxiv.org/pdf/2305.10775.pdf' className={styles.linkText} target="_blank">
                                 <Box display="flex" justifyContent="start">
                                     <Typography variant='h5' sx={{ color: "white", }}>Download</Typography>
                                     <DownloadIcon sx={{ color: "secondary.main", width: "26px", height: "26px" }} className={styles.iconLink} />
@@ -62,13 +62,13 @@ function Papers() {
                             </a>
                         </Box>
                         <Box my="30px" data-aos="fade-up"
-                            data-aos-anchor-placement="top-bottom" data-aos-delay="700">
-                            <a href="https://www.isca-speech.org/archive/pdfs/interspeech_2021/fakhry21_interspeech.pdf" className={styles.linkText} target="_blank">
+                            data-aos-anchor-placement="top-bottom" data-aos-delay="800">
+                            <a href="https://arxiv.org/pdf/2205.13086" className={styles.linkText} target="_blank">
                                 <Typography variant='h5' sx={{ color: "white", fontWeight: "bolder" }}>Audio Data Augmentation for Acoustic to articulatory Speech Inversion using
                                     Bidirectional Gated RNNs </Typography>
                             </a>
                             <Typography variant='h6'>March 2021,Interspeech conference 2021</Typography>
-                            <a href='https://www.isca-speech.org/archive/pdfs/interspeech_2021/fakhry21_interspeech.pdf.' className={styles.linkText} target="_blank">
+                            <a href='https://arxiv.org/pdf/2205.13086.pdf' className={styles.linkText} target="_blank">
                                 <Box display="flex" justifyContent="start">
                                     <Typography variant='h5' sx={{ color: "white", }}>Download</Typography>
                                     <DownloadIcon sx={{ color: "secondary.main", width: "26px", height: "26px" }} className={styles.iconLink} />

@@ -33,14 +33,14 @@ function Landing() {
         <Box id="home" height="100vh" >
 
             <Container maxWidth="xlg" >
-                <Box sx={{ position: "relative" }} spacing={2} >
+                <Box sx={{ position: "relative" }} spacing={2} height="100vh" >
 
                     <Particlesbackground />
 
                     {/* <Box sx={{ position: "absolute", top: "-150px", opacity: 0.4, }} >
                         <div ><Lottie animationData={waveform} className={styles.wavejson} /></div>
                     </Box> */}
-                    <Box className={styles.homeSection} sx={{ px: { sm: "10px", md: "40px" }, mt: { lg: "15%", md: "35px", sm: "30%", xs: "40%" }, }}>
+                    <Box className={styles.homeSection} sx={{ px: { sm: "10px", md: "40px" }, pt: { lg: "15%", md: "35px", sm: "30%", xs: "40%" }, }}>
                         <Box display="flex" gap="10px">
                             <div className={styles.titlesection1}>
                                 <h1>
