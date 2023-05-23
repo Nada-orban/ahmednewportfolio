@@ -11,7 +11,7 @@ function Papers() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
     return (
-        <Box id="papers" py="90px" color="white" className={styles.backgroundseamless}>
+        <Box id="papers" py="90px" color="white" className={styles.paperbackground}>
             <Container maxWidth="xlg" >
                 <Box sx={{ px: { sm: "10px", md: "40px" } }}>
                     <Box display="flex" gap="20px">
@@ -26,6 +26,9 @@ function Papers() {
 
 
 
+
+
+
                             </h1>
                         </div>
 
@@ -34,13 +37,12 @@ function Papers() {
                         <Box my="20px" data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom" data-aos-delay="600">
                             <a href="https://arxiv.org/abs/2011.13320" className={styles.linkText} target="_blank">
-                                <Typography variant='h5' sx={{ color: "secondary.main", fontWeight: "bolder" }}>Virufy: Global Applicability of Crowdsourced and Clinical Datasets for AI Detection of COVID‐19 from Cough Audio
-                                    Samples</Typography>
+                                <Typography variant='h5' sx={{ color: "white", fontWeight: "bolder" }}>Masked Autoencoders Are Articulatory Learners</Typography>
                             </a>
                             <Typography variant='h6'>Nov 2020, Awaiting AE Recommendation from IEEE TAI. </Typography>
                             <a href='https://arxiv.org/pdf/2011.13320.pdf' className={styles.linkText} target="_blank">
                                 <Box display="flex" justifyContent="start">
-                                    <Typography variant='h5' sx={{ color: "secondary.main", }}>Download</Typography>
+                                    <Typography variant='h5' sx={{ color: "white", }}>Download</Typography>
                                     <DownloadIcon sx={{ color: "secondary.main", width: "26px", height: "26px" }} className={styles.iconLink} />
                                 </Box>
                             </a>
@@ -48,12 +50,27 @@ function Papers() {
                         <Box my="30px" data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom" data-aos-delay="700">
                             <a href="https://www.isca-speech.org/archive/pdfs/interspeech_2021/fakhry21_interspeech.pdf" className={styles.linkText} target="_blank">
-                                <Typography variant='h5' sx={{ color: "secondary.main", fontWeight: "bolder" }}>Virufy: A Multi‐Branch Deep Learning Network for Automated Detection of COVID‐19 </Typography>
+                                <Typography variant='h5' sx={{ color: "white", fontWeight: "bolder" }}>Enhancing Speech Articulation Analysis Using A Geometric Transformation
+                                    Of The X‐ray Microbeam Dataset </Typography>
                             </a>
                             <Typography variant='h6'>March 2021,Interspeech conference 2021</Typography>
                             <a href='https://www.isca-speech.org/archive/pdfs/interspeech_2021/fakhry21_interspeech.pdf.' className={styles.linkText} target="_blank">
                                 <Box display="flex" justifyContent="start">
-                                    <Typography variant='h5' sx={{ color: "secondary.main", }}>Download</Typography>
+                                    <Typography variant='h5' sx={{ color: "white", }}>Download</Typography>
+                                    <DownloadIcon sx={{ color: "secondary.main", width: "26px", height: "26px" }} className={styles.iconLink} />
+                                </Box>
+                            </a>
+                        </Box>
+                        <Box my="30px" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom" data-aos-delay="700">
+                            <a href="https://www.isca-speech.org/archive/pdfs/interspeech_2021/fakhry21_interspeech.pdf" className={styles.linkText} target="_blank">
+                                <Typography variant='h5' sx={{ color: "white", fontWeight: "bolder" }}>Audio Data Augmentation for Acoustic to articulatory Speech Inversion using
+                                    Bidirectional Gated RNNs </Typography>
+                            </a>
+                            <Typography variant='h6'>March 2021,Interspeech conference 2021</Typography>
+                            <a href='https://www.isca-speech.org/archive/pdfs/interspeech_2021/fakhry21_interspeech.pdf.' className={styles.linkText} target="_blank">
+                                <Box display="flex" justifyContent="start">
+                                    <Typography variant='h5' sx={{ color: "white", }}>Download</Typography>
                                     <DownloadIcon sx={{ color: "secondary.main", width: "26px", height: "26px" }} className={styles.iconLink} />
                                 </Box>
                             </a>

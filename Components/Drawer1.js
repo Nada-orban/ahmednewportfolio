@@ -56,7 +56,7 @@ function ResponsiveDrawer() {
 
     const drawer = (
         <Box sx={{
-            backgroundColor: "background.secondary", height: "100vh", borderRight: "1px solid white"
+            backgroundColor: "background.secondary", height: "100vh",
         }}>
             <Toolbar />
             <Box sx={{ mb: "50%" }}>

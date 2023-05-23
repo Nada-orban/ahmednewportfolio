@@ -189,7 +189,7 @@
 
 
 
-/* ######################who am i######################## */
+/* ######################landing######################## */
 /* .video{
   width: 100%;
   height: 100%;
@@ -352,7 +352,39 @@
 .wavejson{
     width: 100%;
 }
+.tsparticles{
+    position: absolute!important;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+    
+
+    
+
+}
 /* #########################about################# */
+.aboutbackground{
+    background: linear-gradient(#1640380a, #000000de),
+    url('../../public/assets/backgrounds/Background-1.jpg');
+    
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    /* height: 70vh; */
+    background-position: center;
+    
+    z-index: 2;
+    
+    overflow: hidden;
+    /* position: relative; */
+    /* padding: 15vh 0px; */
+
+}
 
 .profile{
     position: absolute;
@@ -542,6 +574,23 @@
 }
 
 /*############Papers############ */
+.paperbackground{
+    background: linear-gradient(#164038d0, #000000ec),
+    url('../../public/assets/backgrounds/Conference\ -\ 1\ \(1\).png');
+   
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    /* height: 70vh; */
+    /* background-position: center; */
+    
+    z-index: 2;
+    color: white;
+    overflow: hidden;
+    /* position: relative; */
+    /* padding: 15vh 0px; */
+}
 .linkText {
     text-decoration: none;
 }

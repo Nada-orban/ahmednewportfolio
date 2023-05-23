@@ -11,7 +11,7 @@ function About() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
     return (
-        <Box id="about" py="100px"  >
+        <Box id="about" py="100px" className={styles.aboutbackground}>
             <Container maxWidth="xlg" >
                 <Grid container sx={{ px: { sm: "10px", md: "40px" } }} spacing={10} >
                     <Grid item xs={12} md={6} position="relative">

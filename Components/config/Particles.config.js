@@ -12,7 +12,7 @@ const particlesConfig = {
 
     },
     fullScreen: {
-        enable: true,
+        enable: false,
         zIndex: -1
     },
     fpsLimit: 60,
@@ -35,6 +35,7 @@ const particlesConfig = {
             repulse: {
                 distance: 200,
                 duration: 0.4,
+
             },
         },
     },
@@ -59,7 +60,7 @@ const particlesConfig = {
                 default: "bounce",
             },
             random: false,
-            speed: 1,
+            speed: 3,
             straight: false,
         },
         number: {

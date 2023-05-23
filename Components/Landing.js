@@ -34,9 +34,9 @@ function Landing() {
 
             <Container maxWidth="xlg" >
                 <Box sx={{ position: "relative" }} spacing={2} >
-                    <Box>
-                        <Particlesbackground />
-                    </Box>
+
+                    <Particlesbackground />
+
                     {/* <Box sx={{ position: "absolute", top: "-150px", opacity: 0.4, }} >
                         <div ><Lottie animationData={waveform} className={styles.wavejson} /></div>
                     </Box> */}
