@@ -583,7 +583,7 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    
+    height: 600px;
     /* background-position: center; */
     
     z-index: 2;
@@ -607,6 +607,159 @@
 
 
 /********************* timeline ************************/
+.timeline {
+    transform: rotate(90deg);
+    margin-top: -100px;
+}
+
+
+.timelineContentContainer {
+    text-align: left;
+    
+}
+
+
+.timelineContent {
+    display: inline-block;
+
+        transform: rotate(-90deg);
+        text-align: center;
+        min-width: 50;
+        
+}
+
+
+.timelineIcon {
+    transform: rotate(-90deg);
+}
+.timelinecircle{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(-90deg);
+    /* border-radius: 50%;
+    background: radial-gradient(closest-side, #FAF3E8 95%, transparent 80% 100%),
+    conic-gradient(blue 75%, #FAF3E8 0);
+    
+    text-align: center; */
+    
+    
+    
+    
+}
+.timelineinfodot{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform: rotate(135deg);
+    overflow: hidden;
+    left: 15%;
+    top: 8%;
+
+}
+.timelinecircle::before{
+    content: "";
+    background-color: blue;
+    position: absolute;
+    top: -147px;
+    left:70px;
+    width: 5px;
+    height: 150px;
+}
+.timelinecircle::after{
+    content: "";
+    background-color: blue;
+    position: absolute;
+    top:-150px;
+    left: 67px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+
+.bar {
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    border: 10px solid blue;
+    border-width: 3px;
+    border-top-style: inset;
+    border-right-style: inset;
+    border-top-color: transparent;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+/* bottom */
+
+.timelinecirclebottom {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(-90deg);
+    /* border-radius: 50%;
+    background: radial-gradient(closest-side, #FAF3E8 95%, transparent 80% 100%),
+    conic-gradient(blue 75%, #FAF3E8 0);
+    
+    text-align: center; */
+
+
+
+
+}
+
+.timelineinfodotbottom {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-135deg);
+    overflow: hidden;
+    left: 15%;
+    top: 8%;
+    padding:0px 0px 50px 10px;
+
+}
+
+.timelinecirclebottom::before {
+    content: "";
+    background-color: red;
+    position: absolute;
+    top: 147px;
+    left: 70px;
+    width: 5px;
+    height: 150px;
+}
+
+.timelinecirclebottom::after {
+    content: "";
+    background-color: red;
+    position: absolute;
+    top: 300px;
+    left: 67px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+
+.barbottom {
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    border: 10px solid red;
+    border-width: 3px;
+    border-top-style: inset;
+    border-right-style: inset;
+    border-top-color: transparent;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    transform: rotate(-135deg);
+}
+
+
 
 
 

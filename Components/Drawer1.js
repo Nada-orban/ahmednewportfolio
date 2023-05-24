@@ -128,7 +128,7 @@ function ResponsiveDrawer() {
                 </ListItem>
                 <Divider />
             </List>
-            <Box gap="10px" mt="10vh" sx={{ display: "flex", justifyContent: "center" }}>
+            <Box gap="10px" mt="0px" sx={{ display: "flex", justifyContent: "center" }}>
 
                 <a href='https://github.com/Nada-orban' data-aos="fade-left" target="_blank">
                     <GitHubIcon sx={{ color: "neutral.lightgray" }} className={Styles.smallicon} />

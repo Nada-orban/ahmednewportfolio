@@ -18,102 +18,157 @@ function Timelinewebsite() {
     const theme = useTheme();
     return (
         <Box id="timeline" py="60px">
-            <Container>
-                <Typography variant='h2' sx={{ textAlign: "center", fontWeight: "bold" }} className={styles.timeline}>Timeline</Typography>
-                <Typography variant='h6' sx={{ textAlign: "center" }}>A short summary of my work experience..</Typography>
-                <Timeline position="alternate" sx={{ my: 5, display: { xs: "none", sm: "block" } }}>
-                    <TimelineItem>
-                        <TimelineSeparator >
-                            <TimelineDot color="primary" variant="outlined" sx={{ width: "150px", height: "150px", overflow: "hidden", border: "2px solid #bdbdbd", padding: "15px 5px" }}>
-                                <Image
-                                    src={arizonalogo}
-                                    alt="Picture of the author"
-                                    width={130}
-                                    className={styles.timelineIcon}
+            <Container maxWidth="xlg" >
+                <Box sx={{ px: { sm: "10px", md: "40px" } }}>
+                    <Typography variant='h2' sx={{ textAlign: "center", fontWeight: "bold" }} >Timeline</Typography>
+                    <Typography variant='h6' sx={{ textAlign: "center" }}>A short summary of my work experience..</Typography>
+                    <Timeline position="alternate" sx={{ my: 5, display: { xs: "none", sm: "block" } }} className={styles.timeline}>
+                        <TimelineItem>
+                            <TimelineSeparator>
+                                <TimelineConnector />
+                                <Box className={styles.timelinecirclebottom}>
+                                    <Box className={styles.barbottom}>
+                                        <TimelineDot className={styles.timelineinfodotbottom}>
+                                            <Image
+                                                src={arizonalogo}
+                                                alt="Picture of the author"
+                                                width={130}
+                                                className={styles.timelineIcon}
+                                            />
+                                        </TimelineDot>
+                                    </Box>
+                                </Box>
 
-                                />
-                            </TimelineDot>
-                            <TimelineConnector sx={{ height: "100px" }} />
-                        </TimelineSeparator>
-                        <TimelineContent sx={{ py: '12px', px: 2 }}>
-                            <Typography variant='subtitle1' sx={{ color: "text.secondary" }}>Nov 2022 ‐ Now</Typography>
-                            <Typography variant='h5' sx={{ fontWeight: "bold" }}>Machine Learning Developer</Typography>
-                            <Typography variant="h4" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
-                                OpenAI
-                            </Typography>
-                            <Typography variant='h6' sx={{ fontWeight: "bold" }}>US - Remote</Typography>
-                            <Typography variant='h6'>
-                                <ul>
-                                    <li>Working on the tether project.</li>
-                                    <li>Helping reinforcement learning models to fine‐tune and enhance chatgpt performance.</li>
-                                </ul></Typography>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <TimelineSeparator >
-                            <TimelineDot color="primary" variant="outlined" sx={{ width: "150px", height: "150px", overflow: "hidden", border: "2px solid #bdbdbd", padding: "11px 5px" }}>
-                                <Image
-                                    src={arizonalogo}
-                                    alt="Picture of the author"
-                                    width={110}
-                                    className={styles.timelineIcon}
+                                <TimelineConnector sx={{ height: "130px", bgcolor: 'red', width: "5px" }} />
+                            </TimelineSeparator>
+                            <TimelineContent sx={{ py: '12px', px: 2, position: "relative" }} className={styles.timelineContentContainer}>
+                                <Box className={styles.timelineContent} sx={{ position: "absolute", bottom: "0%", right: "60%" }}>
+                                    <Typography variant='subtitle1' sx={{ color: "red" }}>Nov 2022 ‐ Now</Typography>
+                                    <Typography sx={{ fontWeight: "bold", fontSize: "10px" }}>Machine Learning Developer</Typography>
+                                    <Typography component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
+                                        OpenAI
+                                    </Typography>
+                                    <Typography sx={{ fontWeight: "bold" }}>US - Remote</Typography>
+                                    <Typography >
+                                        <ul>
+                                            <li>Working on the tether project.</li>
+                                            <li>Helping reinforcement learning models to fine‐tune and enhance chatgpt performance.</li>
+                                        </ul></Typography>
+                                </Box>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineSeparator>
+                                <TimelineConnector />
+                                <Box className={styles.timelinecircle}>
+                                    <Box className={styles.bar}>
+                                        <TimelineDot className={styles.timelineinfodot}>
+                                            <Image
+                                                src={arizonalogo}
+                                                alt="Picture of the author"
+                                                width={130}
+                                                className={styles.timelineIcon}
+                                            />
+                                        </TimelineDot>
+                                    </Box>
+                                </Box>
 
-                                />
-                            </TimelineDot>
-                            <TimelineConnector sx={{ height: "80px" }} />
-                        </TimelineSeparator>
-                        <TimelineContent sx={{ py: '12px', px: 2 }}>
-                            <Typography variant='subtitle1' sx={{ color: "text.secondary" }}>Feb 2023 ‐ Now</Typography>
-                            <Typography variant='h5' sx={{ fontWeight: "bold" }}>M.SC in computing and information systems</Typography>
-                            <Typography variant="h4" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
-                                Liverpool John Moores University
-                            </Typography>
-                            <Typography variant='h6' sx={{ fontWeight: "bold" }}>Liverpool - Remote</Typography>
-                            <Typography variant='h6'>
-                                • Topics: Computer Systems, Software Development.</Typography>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <TimelineSeparator>
-                            <TimelineConnector />
-                            <TimelineDot color="primary" variant="outlined" sx={{ width: "150px", height: "150px", overflow: "hidden", border: "2px solid #bdbdbd", padding: "10px 0px" }}>
-                                <Image
-                                    src={arizonalogo}
-                                    alt="Picture of the author"
-                                    width={130}
-                                    className={styles.timelineIcon}
-                                />
-                            </TimelineDot>
-                            <TimelineConnector sx={{ height: "250px" }} />
-                        </TimelineSeparator>
-                        <TimelineContent sx={{ py: '12px', px: 2 }}>
-                            <Typography variant='subtitle1' sx={{ color: "text.secondary" }}>Jan 2022 ‐ Jan 2023</Typography>
-                            <Typography variant='h5' sx={{ fontWeight: "bold" }}>Lead Data Scientist</Typography>
-                            <Typography variant="h4" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
-                                P.E.R PARTNERS
-                            </Typography>
-                            <Typography variant='h6' sx={{ fontWeight: "bold" }}>UK ‐ Remote</Typography>
-                            <Typography variant='h6' sx={{ textAlign: "start" }} >
-                                <ul>
-                                    <li>Lead a team of four data scientists where I was responsible for developing the company’s
-                                        flagship product, Digital Eye, alongside other products such as Drug Interaction Checker.</li>
-                                    <li>Digital Eye is based on a deep learning model for digitizing handwritten documents</li>
-                                    <li>Carried out research and built the core understanding of the company performance metrics
-                                        to qualitatively inform and interpret models</li>
-                                    <li>Was responsible for supporting the growth and professional development of the team.</li>
-                                </ul>
+                                <TimelineConnector sx={{ height: "130px", bgcolor: 'blue', width: "5px" }} />
+                            </TimelineSeparator>
+                            <TimelineContent sx={{ py: '12px', px: 2, position: "relative" }} className={styles.timelineContentContainer}>
+                                <Box className={styles.timelineContent} sx={{ position: "absolute", bottom: "90%", left: "50%" }}>
+                                    <Typography variant='subtitle1' sx={{ color: "red" }}>Nov 2022 ‐ Now</Typography>
+                                    <Typography sx={{ fontWeight: "bold", fontSize: "10px" }}>Machine Learning Developer</Typography>
+                                    <Typography component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
+                                        OpenAI
+                                    </Typography>
+                                    <Typography sx={{ fontWeight: "bold" }}>US - Remote</Typography>
+                                    <Typography >
+                                        <ul>
+                                            <li>Working on the tether project.</li>
+                                            <li>Helping reinforcement learning models to fine‐tune and enhance chatgpt performance.</li>
+                                        </ul></Typography>
+                                </Box>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineSeparator>
+                                <TimelineConnector />
+                                <Box className={styles.timelinecirclebottom}>
+                                    <Box className={styles.barbottom}>
+                                        <TimelineDot className={styles.timelineinfodotbottom}>
+                                            <Image
+                                                src={arizonalogo}
+                                                alt="Picture of the author"
+                                                width={130}
+                                                className={styles.timelineIcon}
+                                            />
+                                        </TimelineDot>
+                                    </Box>
+                                </Box>
 
-                            </Typography>
-                        </TimelineContent>
-                    </TimelineItem>
+                                <TimelineConnector sx={{ height: "130px", bgcolor: 'red', width: "5px" }} />
+                            </TimelineSeparator>
+                            <TimelineContent sx={{ py: '12px', px: 2, position: "relative" }} className={styles.timelineContentContainer}>
+                                <Box className={styles.timelineContent} sx={{ position: "absolute", bottom: "0%", right: "60%" }}>
+                                    <Typography variant='subtitle1' sx={{ color: "red" }}>Nov 2022 ‐ Now</Typography>
+                                    <Typography sx={{ fontWeight: "bold", fontSize: "10px" }}>Machine Learning Developer</Typography>
+                                    <Typography component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
+                                        OpenAI
+                                    </Typography>
+                                    <Typography sx={{ fontWeight: "bold" }}>US - Remote</Typography>
+                                    <Typography >
+                                        <ul>
+                                            <li>Working on the tether project.</li>
+                                            <li>Helping reinforcement learning models to fine‐tune and enhance chatgpt performance.</li>
+                                        </ul></Typography>
+                                </Box>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem >
+                            <TimelineSeparator>
+                                <TimelineConnector />
+                                <Box className={styles.timelinecircle}>
+                                    <Box className={styles.bar}>
+                                        <TimelineDot className={styles.timelineinfodot}>
+                                            <Image
+                                                src={arizonalogo}
+                                                alt="Picture of the author"
+                                                width={130}
+                                                className={styles.timelineIcon}
+                                            />
+                                        </TimelineDot>
+                                    </Box>
+                                </Box>
 
-                </Timeline>
+                                <TimelineConnector sx={{ height: "130px", bgcolor: 'blue', width: "5px" }} />
+                            </TimelineSeparator>
+                            <TimelineContent sx={{ py: '20px', px: 2, position: "relative" }} className={styles.timelineContentContainer}>
+                                <Box className={styles.timelineContent} sx={{ position: "absolute", bottom: "90%", left: "50%" }}>
+                                    <Typography variant='subtitle1' sx={{ color: "red" }}>Nov 2022 ‐ Now</Typography>
+                                    <Typography sx={{ fontWeight: "bold", fontSize: "10px" }}>Machine Learning Developer</Typography>
+                                    <Typography component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
+                                        OpenAI
+                                    </Typography>
+                                    <Typography sx={{ fontWeight: "bold" }}>US - Remote</Typography>
+                                    <Typography >
+                                        <ul>
+                                            <li>Working on the tether project.</li>
+                                            <li>Helping reinforcement learning models to fine‐tune and enhance chatgpt performance.</li>
+                                        </ul></Typography>
+                                </Box>
+                            </TimelineContent>
+                        </TimelineItem>
+
+                    </Timeline>
 
 
 
 
 
 
+
+                </Box>
 
 
 

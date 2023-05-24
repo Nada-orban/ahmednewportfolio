@@ -15,7 +15,7 @@ function Mywork({ id, title, body, image, pdf, code, poster }) {
     const theme = useTheme();
     return (
 
-        <Grid item xs={6} sm={6} lg={3} md={6}>
+        <Grid item xs={12} sm={6} lg={3} md={6}>
             <Link href={`/projects/[id]`} as={`/projects/${id}`} key={id} passHref>
                 <Box className={styles.projectBox}>
                     <img src={image} alt='' className={styles.boximage} />
