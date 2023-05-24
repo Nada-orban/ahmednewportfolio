@@ -42,6 +42,12 @@
 .ahmedtext{
     display: flex;
     align-items: center;
+    position: relative;
+
+}
+.ahmedlogo {
+    width: 70px;
+    height: 70px;
 
 }
 
@@ -58,6 +64,10 @@
         height: 60px;
         margin-right: -13px;
         margin-left: -15px;
+    }
+    .ahmedlogo {
+        width: 35px;
+        height: 35px;
     }
 
 }
@@ -217,6 +227,7 @@
 
 }
 
+
 .contactionbox {
     position: absolute;
     display: grid;
@@ -264,6 +275,7 @@
     .arrow {
         left: 45%;
     }
+    
 
 
 

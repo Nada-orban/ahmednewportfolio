@@ -68,15 +68,13 @@ function Landing() {
 
 
                         </Box>
-                        <Box display="flex" gap="20px">
-
-
+                        <Box display="flex" gap="20px" alignItems="center">
                             <div className={styles.titlesection1}>
                                 <h1 className={styles.ahmedtext}>
                                     <Box  >
                                         <Image
                                             src={logo}
-                                            width={80}
+                                            className={styles.ahmedlogo}
                                             // height={500}
                                             alt="Picture of the author"
 
