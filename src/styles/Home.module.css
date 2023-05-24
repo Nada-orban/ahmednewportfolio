@@ -150,6 +150,7 @@
     position: absolute;
     /* margin-top: -15px; */
     left: 15%;
+    
 }
 .normalButton2icon{
     z-index: 5;
@@ -165,13 +166,13 @@
 
 }
 .normalButton2:hover .normalButton2text{
-    color: black;
+    color: white;
 }
 .normalButton2:hover .normalButton1text {
-    color: black;
+    color: white;
 }
 .normalButton2:hover .normalButton2icon{
-    color: black;
+    color: white;
     transform: translateX(100%);
     
 }
@@ -368,8 +369,9 @@
 }
 /* #########################about################# */
 .aboutbackground{
-    background: linear-gradient(#1640380a, #000000de),
-    url('../../public/assets/backgrounds/Background-1.jpg');
+    /* background: linear-gradient(135deg, #000000 0%, #ffffff00 70% ), */
+    background: linear-gradient(to right,#0a201cea 0%, #ffffff00 70%),
+    url('../../public/assets/backgrounds/Background-ahmed1.jpg');
     
     
     background-repeat: no-repeat;
@@ -381,16 +383,13 @@
     z-index: 2;
     
     overflow: hidden;
-    /* position: relative; */
+   
     /* padding: 15vh 0px; */
+  
 
 }
 
-.profile{
-    position: absolute;
-    top:-300px;
-    left:100px;
-}
+
 .photobox {
     position: relative;
     border: 10px solid #dc965a;
@@ -412,6 +411,7 @@
 
 .photo:hover {
     animation: photomove 1s both;
+    color:#fff1dcef;
 
 }
 
@@ -576,13 +576,14 @@
 /*############Papers############ */
 .paperbackground{
     background: linear-gradient(#164038d0, #000000ec),
-    url('../../public/assets/backgrounds/Conference\ -\ 1\ \(1\).png');
+    url('../../public/assets/backgrounds/Conference\ -\ 5.png');
    
     
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
-    /* height: 70vh; */
+    
     /* background-position: center; */
     
     z-index: 2;
@@ -605,7 +606,7 @@
 
 
 
-
+/********************* timeline ************************/
 
 
 

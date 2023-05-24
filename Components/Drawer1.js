@@ -162,7 +162,7 @@ function ResponsiveDrawer() {
             >
                 <Toolbar>
 
-                    <Typography variant="h6" noWrap sx={{ flexGrow: 1 }} component="div">
+                    <Typography variant="h6" noWrap sx={{ flexGrow: 1, color: "#FAF3E8" }} component="div">
                         Ahmed Adel Attia
                     </Typography>
                     <Box onClick={handleDrawerToggle} sx={{ cursor: "pointer" }}>

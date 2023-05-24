@@ -50,7 +50,7 @@ export const themeSettongs = (mode) => {
                     bluelight: "#05FFFC"
                 },
                 background: {
-                    // main: "#030218de",
+                    main: "#FAF3E8",
                     // secondary: "#0f172a",
                     // main: "#7A5CE0",#29654D
                     secondary: "#164038"

@@ -1,7 +1,7 @@
 import { Box, Tabs, Tab, Typography, LinkTab, Grid, Button, Container, Paper, List, ListItem, ListItemText, ListItemIcon, Avatar } from '@mui/material'
 import React from 'react'
 import styles from '../src/styles/Home.module.css'
-import profilephoto from '../public/assets/zyro-image.png'
+import profilephoto from '../public/assets/backgrounds/Background-Ahmed2.png'
 import Image from 'next/image'
 import { ColorModeContext } from '../public/theme'
 import { styled, useTheme, alpha } from '@mui/material/styles';
@@ -38,7 +38,7 @@ function About() {
                         <Typography className={styles.bigfakeleft}>ABOUT</Typography>
                         <Box data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom">
-                            <Typography variant='h5' >Welcome to my website!<br />I am a Deep Learning engineer and PhD researcher with expertise in Natural Language Processing, Signal Processing, Statistics, and Unsupervised Learning.My primary focus is on developing advanced Deep Learning models for speech and audio processing, with a passion for exploring the limitless possibilities of this cutting-edge technology.</Typography>
+                            <Typography variant='h5' sx={{ color: "white" }} >Welcome to my website!<br />I am a Deep Learning engineer and PhD researcher with expertise in Natural Language Processing, Signal Processing, Statistics, and Unsupervised Learning.My primary focus is on developing advanced Deep Learning models for speech and audio processing, with a passion for exploring the limitless possibilities of this cutting-edge technology.</Typography>
                         </Box>
                         <List >
                             <Typography variant='h4' sx={{ my: 1, fontWeight: "bold", color: "secondary.main" }} >Education</Typography>
@@ -46,7 +46,7 @@ function About() {
                                 <ListItemIcon>
                                     <SchoolIcon sx={{ color: "text.primary", width: "30px", height: "30px" }} />
                                 </ListItemIcon>
-                                <ListItemText primary="Ph.D. in Computer Engineering" primaryTypographyProps={{ fontSize: '18px', color: "text.primary", fontWeight: "bold" }}
+                                <ListItemText primary="Ph.D. in Computer Engineering" primaryTypographyProps={{ fontSize: '18px', color: "white", fontWeight: "bold" }}
                                     secondary={<React.Fragment>
                                         <Typography
                                             sx={{ fontSize: '18px', marginRight: 6 }}
@@ -65,7 +65,7 @@ function About() {
                                 <ListItemIcon>
                                     <SchoolIcon sx={{ color: "text.primary", width: "30px", height: "30px" }} />
                                 </ListItemIcon>
-                                <ListItemText primary="B.SC in electronics and communication engineering " primaryTypographyProps={{ fontSize: '18px', color: "text.primary", fontWeight: "bold" }}
+                                <ListItemText primary="B.SC in electronics and communication engineering " primaryTypographyProps={{ fontSize: '18px', color: "white", fontWeight: "bold" }}
                                     secondary={<React.Fragment>
                                         <Typography
                                             sx={{ fontSize: '18px', marginRight: 2 }}
@@ -82,10 +82,10 @@ function About() {
                         </List>
                     </Grid>
                     {/* <Grid item xs={12} md={6}>
-                        <Box width="300px" height="300px" position="relative">
+                        <Box position="relative">
                             <Image
                                 src={profilephoto}
-                                width={500}
+                                width={1800}
                                 className={styles.profile}
                                 alt="Picture of the author"
                             />
@@ -94,6 +94,7 @@ function About() {
 
                     </Grid> */}
                 </Grid>
+
             </Container>
         </Box>
     )
