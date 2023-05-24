@@ -150,6 +150,7 @@
     position: absolute;
     /* margin-top: -15px; */
     left: 15%;
+    
 }
 .normalButton2icon{
     z-index: 5;
@@ -165,13 +166,13 @@
 
 }
 .normalButton2:hover .normalButton2text{
-    color: black;
+    color: white;
 }
 .normalButton2:hover .normalButton1text {
-    color: black;
+    color: white;
 }
 .normalButton2:hover .normalButton2icon{
-    color: black;
+    color: white;
     transform: translateX(100%);
     
 }
@@ -189,7 +190,7 @@
 
 
 
-/* ######################who am i######################## */
+/* ######################landing######################## */
 /* .video{
   width: 100%;
   height: 100%;
@@ -198,9 +199,9 @@
 } */
 .backgroundimage {
     background: linear-gradient(#000000de,
-            #080a25d0),url('../../public/assets/backgrounds/abstract-black-futuristic-background.jpg');
+        #000000de ),url('../../public/assets/backgrounds/404288197149.jpg');
     /* background: linear-gradient(to right, #4286f4, #373B44); */
-
+/* #080a25d0 */
     /* background:linear-gradient( #000000bd,#424242); */
 
     background-repeat: no-repeat;
@@ -349,13 +350,46 @@
 }
 
 
-/* #########################about################# */
-
-.profile{
-    position: absolute;
-    top:-300px;
-    left:100px;
+.wavejson{
+    width: 100%;
 }
+.tsparticles{
+    position: absolute!important;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+    
+
+    
+
+}
+/* #########################about################# */
+.aboutbackground{
+    /* background: linear-gradient(135deg, #000000 0%, #ffffff00 70% ), */
+    background: linear-gradient(to right,#0a201cea 0%, #ffffff00 70%),
+    url('../../public/assets/backgrounds/Background-ahmed1.jpg');
+    
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    /* height: 70vh; */
+    background-position: center;
+    
+    z-index: 2;
+    
+    overflow: hidden;
+   
+    /* padding: 15vh 0px; */
+  
+
+}
+
+
 .photobox {
     position: relative;
     border: 10px solid #dc965a;
@@ -377,6 +411,7 @@
 
 .photo:hover {
     animation: photomove 1s both;
+    color:#fff1dcef;
 
 }
 
@@ -416,10 +451,10 @@
 }
 
 /* ##################skills############### */
-.backgroundskill{
-    background: linear-gradient(#000000de,
-        #080a25d0),
-    url('../../public/assets/skills/turned-gray-laptop-computer.jpg');
+.backgroundseamless{
+    background: linear-gradient(#000000de,#000000de
+    ),
+    url('../../public/assets/backgrounds/404288197149.jpg');
     /* background: linear-gradient(to right, #4286f4, #373B44); */
     
     /* background:linear-gradient( #000000bd,#424242); */
@@ -429,7 +464,8 @@
     width: 100%;
     /* height: 70vh; */
     background-position: center;
-    z-index: -1;
+ 
+    z-index: 2;
     color: white;
     overflow: hidden;
     /* position: relative; */
@@ -538,7 +574,32 @@
 }
 
 /*############Papers############ */
-.linkText{
+/* .paperbackground{
+    background: linear-gradient(#164038d0, #000000ec),
+    url('../../public/assets/backgrounds/Conference\ -\ 5.png');
+   
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    
+    
+    
+    z-index: 2;
+    color: white;
+    overflow: hidden;
+  
+} */
+.layer{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    background: linear-gradient(#164038d0, #000000ec);
+}
+.linkText {
     text-decoration: none;
 }
 .linkText:hover {
@@ -548,9 +609,172 @@
 .iconLink:hover {
     color: #c7933a;
 }
+.paperimage{
+    width: 500px;
+    height: 400px;
+}
+@media only screen and (max-width: 600px) {
+    .paperimage {
+        width: 350px;
+        height: 200px;
+    }
+
+}
 
 
 
+/********************* timeline ************************/
+.timeline {
+    transform: rotate(90deg);
+    margin-top: -100px;
+}
+
+
+.timelineContentContainer {
+    text-align: left;
+    
+}
+
+
+.timelineContent {
+    display: inline-block;
+
+        transform: rotate(-90deg);
+        text-align: center;
+        min-width: 50;
+        
+}
+
+
+.timelineIcon {
+    transform: rotate(-90deg);
+}
+.timelinecircle{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(-90deg);
+    /* border-radius: 50%;
+    background: radial-gradient(closest-side, #FAF3E8 95%, transparent 80% 100%),
+    conic-gradient(blue 75%, #FAF3E8 0);
+    
+    text-align: center; */
+    
+    
+    
+    
+}
+.timelineinfodot{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform: rotate(135deg);
+    overflow: hidden;
+    left: 15%;
+    top: 8%;
+
+}
+.timelinecircle::before{
+    content: "";
+    background-color: blue;
+    position: absolute;
+    top: -147px;
+    left:70px;
+    width: 5px;
+    height: 150px;
+}
+.timelinecircle::after{
+    content: "";
+    background-color: blue;
+    position: absolute;
+    top:-150px;
+    left: 67px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+
+.bar {
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    border: 10px solid blue;
+    border-width: 3px;
+    border-top-style: inset;
+    border-right-style: inset;
+    border-top-color: transparent;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+/* bottom */
+
+.timelinecirclebottom {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(-90deg);
+    /* border-radius: 50%;
+    background: radial-gradient(closest-side, #FAF3E8 95%, transparent 80% 100%),
+    conic-gradient(blue 75%, #FAF3E8 0);
+    
+    text-align: center; */
+
+
+
+
+}
+
+.timelineinfodotbottom {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-135deg);
+    overflow: hidden;
+    left: 15%;
+    top: 8%;
+    padding:0px 0px 50px 10px;
+
+}
+
+.timelinecirclebottom::before {
+    content: "";
+    background-color: red;
+    position: absolute;
+    top: 147px;
+    left: 70px;
+    width: 5px;
+    height: 150px;
+}
+
+.timelinecirclebottom::after {
+    content: "";
+    background-color: red;
+    position: absolute;
+    top: 300px;
+    left: 67px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+
+.barbottom {
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    border: 10px solid red;
+    border-width: 3px;
+    border-top-style: inset;
+    border-right-style: inset;
+    border-top-color: transparent;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    transform: rotate(-135deg);
+}
 
 
 
@@ -559,10 +783,9 @@
 
 
 /* #############contact##############3 */
-.myEmail{
+.myEmail {
     text-decoration: none;
 }
-
 .iconContact {
     background-color: var(--secondray-maincolor);
     cursor: pointer;

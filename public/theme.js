@@ -37,12 +37,12 @@ export const themeSettongs = (mode) => {
 
             } : {
                 primary: {
-                    main: "#0DD1CF",
+                    main: "#004037",
                 },
                 secondary: {
                     // main: red[400],
-                    main: "#FFC517",
-                    // main: "#5bc0be"
+                    // main: "#FFC517",
+                    main: "#0DD1CF"
                 },
                 neutral: {
                     lightgray: "#F1F6F9",
@@ -50,14 +50,15 @@ export const themeSettongs = (mode) => {
                     bluelight: "#05FFFC"
                 },
                 background: {
-                    main: "#030218de",
-                    // secondary: "#05141E"
-                    secondary: "#0f172a",
-                    // secondary: "#394867"
+                    main: "#FAF3E8",
+                    // secondary: "#0f172a",
+                    // main: "#7A5CE0",#29654D
+                    secondary: "#164038"
+
 
                 }, text: {
-                    primary: "white",
-                    secondary: grey[500],
+                    primary: "#004037",
+                    secondary: "#FAF3E8",
                 },
 
             }),

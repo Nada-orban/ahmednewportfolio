@@ -16,18 +16,31 @@ import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrow
 import { Link } from 'react-scroll'
 import profilephoto from '../public/assets/zyro-image.png'
 import Lottie from 'lottie-react'
-import letterA from '../public/assets/backgrounds/A (1).json'
-
+import waveform from '../public/assets/backgrounds/waves.json'
+// import { useCallback } from "react";
+// import Particles from "react-tsparticles";
+// import { loadFull } from "tsparticles";
 import logo from '../public/assets/backgrounds/logo2.png'
+
+import Particlesbackground from './Particlesbackground'
+
 
 
 function Landing() {
     const theme = useTheme();
+
     return (
-        <Box id="home" className={styles.backgroundimage} >
+        <Box id="home" height="100vh" >
+
             <Container maxWidth="xlg" >
-                <Grid container sx={{ px: { sm: "10px", md: "40px" }, mt: { lg: "10%", md: "30px", sm: "30%", xs: "40%" } }} spacing={2} >
-                    <Grid item md={12} xs={12} className={styles.homeSection} sx={{ textAlign: "start" }}>
+                <Box sx={{ position: "relative" }} spacing={2} height="100vh" >
+
+                    <Particlesbackground />
+
+                    {/* <Box sx={{ position: "absolute", top: "-150px", opacity: 0.4, }} >
+                        <div ><Lottie animationData={waveform} className={styles.wavejson} /></div>
+                    </Box> */}
+                    <Box className={styles.homeSection} sx={{ px: { sm: "10px", md: "40px" }, pt: { lg: "15%", md: "35px", sm: "30%", xs: "40%" }, }}>
                         <Box display="flex" gap="10px">
                             <div className={styles.titlesection1}>
                                 <h1>
@@ -45,6 +58,8 @@ function Landing() {
                                     <span className={styles.a} data-aos="zoom-in" data-aos-delay="300">I</span>
                                     <span className={styles.a} data-aos="zoom-in" data-aos-delay="400" >'</span>
                                     <span className={styles.a} data-aos="zoom-in" data-aos-delay="500">m</span>
+
+
 
 
                                 </h1>
@@ -69,7 +84,7 @@ function Landing() {
                                         {/* <Lottie animationData={robotjson} /> */}
                                     </Box>
                                     {/* <div className={styles.letterA}><Lottie animationData={letterA} /></div> */}
-                                    {/* <span className{styles.a} >A</span> */}
+                                    {/* <span class={styles.a} >A</span> */}
                                     <span className={styles.a} data-aos="zoom-in" data-aos-delay="600">h</span>
                                     <span className={styles.a} data-aos="zoom-in" data-aos-delay="700">m</span>
                                     <span className={styles.a} data-aos="zoom-in" data-aos-delay="800" >e</span>
@@ -104,7 +119,7 @@ function Landing() {
                             <div className={styles.titlesection1}>
                                 <h1>
                                     <span className={styles.a} data-aos="zoom-in" data-aos-delay="1400">A</span>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1500">t</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1500" >t</span>
                                     <span className={styles.a} data-aos="zoom-in" data-aos-delay="1600">t</span>
                                     <span className={styles.a} data-aos="zoom-in" data-aos-delay="1700">i</span>
                                     <span className={styles.a} data-aos="zoom-in" data-aos-delay="1800">a</span>
@@ -124,29 +139,18 @@ function Landing() {
                             data-aos-anchor-placement="top-bottom">Deep Learning Ph.D Resercher</Typography>
                         {/* <Link href=""><button className={styles.buttonStyle} data-aos="fade-up" data-aos-delay="1500">Download My CV</button></Link> */}
 
-                        <Link to="contact" spy={true} smooth={true} offset={-50} duration={500}
-                        >
-                            <button className={styles.normalButton2} data-aos="fade-right" data-aos-delay="2000">
+                        <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} data-aos="fade-right" data-aos-delay="2000" >
+                            <button className={styles.normalButton2} >
                                 <div className={styles.normalButtonbg}></div>
                                 <p className={styles.normalButton1text}>Contact me</p>
                             </button>
 
                         </Link>
-                    </Grid>
+                    </Box>
 
 
-                    {/* <Grid item md={6} xs={12} data-aos="zoom-in" >
-                     <Box width="700px" height="700px" mb="50px">
-                            <Image
-                                src={profilephoto}
-                                width={800}
 
-                                alt="Picture of the author"
-                            />
-                        </Box>
-
-                </Grid>  */}
-                </Grid>
+                </Box>
 
 
                 {/* <Box gap="30px" mt="20px" className={styles.contactionbox} sx={{ display: { xs: 'none', sm: 'none', md: 'flex' } }}>

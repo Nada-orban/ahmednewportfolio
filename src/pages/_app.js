@@ -7,6 +7,7 @@ import { styled, useTheme, alpha } from '@mui/material/styles';
 import Drawer1 from '../../Components/Drawer1'
 import { Kanit } from 'next/font/google'
 
+
 import AOS from "aos";
 
 import "aos/dist/aos.css";
@@ -29,7 +30,7 @@ export default function App({ Component, pageProps }) {
   const [theme, colorMode] = useMode();
   const router = useRouter();
   const { Path } = router;
-
+  //#030218de
   // #212A3E
   //#050416de
   return (
@@ -40,7 +41,7 @@ export default function App({ Component, pageProps }) {
 
 
         <style jsx global>{`
-              ${theme.palette.mode === 'dark' ? "body{background:#030218de!important} " : "body{background: #fff} "}`
+              ${theme.palette.mode === 'dark' ? "body{background:#FAF3E8!important} " : "body{background: #fff} "}`
         }</style>
 
 

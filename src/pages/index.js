@@ -17,6 +17,8 @@ import Skill from '../../Components/Skill'
 import Contact from '../../Components/Contact'
 import Papers from '../../Components/Papers'
 import Footer from '../../Components/Footer'
+import Timelinewebsite from '../../Components/Timelinewebsite'
+
 
 
 
@@ -77,7 +79,6 @@ export default function Home({ projects }) {
                         <span class={styles.a} data-aos="zoom-in" data-aos-delay="600">t</span>
                         <span class={styles.a} data-aos="zoom-in" data-aos-delay="700">s</span>
 
-
                       </h1>
                     </div>
 
@@ -100,7 +101,7 @@ export default function Home({ projects }) {
                 </Box> */}
             </Box>
             <Papers />
-            <Experience2 />
+            <Timelinewebsite />
             <Contact />
             <Footer />
 

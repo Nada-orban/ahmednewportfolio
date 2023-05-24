@@ -16,6 +16,10 @@ import GroupAddIcon from '@mui/icons-material/GroupAdd';
 import VideoLabelIcon from '@mui/icons-material/VideoLabel';
 import StepConnector, { stepConnectorClasses } from '@mui/material/StepConnector';
 import Timelinemobileview from './Timelinemobileview'
+import alexunevphoto from '../public/assets/timeline/download.jpeg'
+import arizonalogo from '../public/assets/timeline/arizona.png'
+import marylandlogo from '../public/assets/timeline/university-of-maryland-logo-1.png'
+import omnispeechlogo from '../public/assets/timeline/omnispeech.png'
 
 
 
@@ -29,14 +33,16 @@ const ColorlibConnector = styled(StepConnector)(({ theme }) => ({
     },
     [`&.${stepConnectorClasses.active}`]: {
         [`& .${stepConnectorClasses.line}`]: {
-            backgroundImage:
-                'linear-gradient( 95deg,#FFC517 0%,rgb(233,64,87) 50%,rgb(138,35,135) 100%)',
+            color: "#164038"
+            // backgroundImage:
+            //     'linear-gradient( 95deg,#FFC517 0%,rgb(233,64,87) 50%,#164038 100%)',
         },
     },
     [`&.${stepConnectorClasses.completed}`]: {
         [`& .${stepConnectorClasses.line}`]: {
-            backgroundImage:
-                'linear-gradient( 95deg,#FFC517 0%,rgb(233,64,87) 50%,rgb(138,35,135) 100%)',
+            color: "#164038"
+            // backgroundImage:
+            //     'linear-gradient( 95deg,#FFC517 0%,rgb(233,64,87) 50%,#164038 100%)',
         },
     },
     [`& .${stepConnectorClasses.line}`]: {
@@ -58,7 +64,7 @@ const ColorlibStepIconRoot = styled('div')(({ theme, ownerState }) => ({
     borderRadius: '50%',
     justifyContent: 'center',
     alignItems: 'center',
-    border: "4px solid gray",
+    border: "4px solid #164038",
 
     // ...(ownerState.active && {
     //     backgroundImage:
@@ -75,9 +81,24 @@ function ColorlibStepIcon(props) {
     const { active, completed, className } = props;
 
     const icons = {
-        1: <SettingsIcon />,
-        2: <GroupAddIcon />,
-        3: <VideoLabelIcon />,
+        1: <Image
+            src={arizonalogo}
+            alt="Picture of the author"
+            width={100}
+
+        />,
+        2: <Image
+            src={omnispeechlogo}
+            alt="Picture of the author"
+            width={100}
+
+        />,
+        3: <Image
+            src={marylandlogo}
+            alt="Picture of the author"
+            width={100}
+
+        />,
         4: <VideoLabelIcon />,
     };
 
@@ -139,26 +160,13 @@ function Experience2(props) {
                     <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }} >
                         <Stepper alternativeLabel activeStep={3} connector={<ColorlibConnector />}>
                             <Step  >
-                                <StepLabel StepIconComponent={ColorlibStepIcon}> <Box textAlign="start"><Typography variant='subtitle1' sx={{ color: "text.secondary" }}>Nov 2022 ‐ Now</Typography>
-                                    <Typography variant='h5' sx={{ fontWeight: "bold" }}>Machine Learning  Developer</Typography>
+                                <StepLabel StepIconComponent={ColorlibStepIcon}> <Box ><Typography variant='subtitle1' sx={{ color: "text.secondary" }}>Nov 2022 ‐ Now</Typography>
+                                    <Typography variant='h5' sx={{ fontWeight: "bold", color: "#004037" }}>Machine Learning  Developer</Typography>
                                     <Typography variant="h4" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
                                         OpenAI
                                     </Typography>
-                                    <Typography variant='h6' sx={{ fontWeight: "bold" }}>US - Remote</Typography>
-                                    <Typography variant='h6'>
-                                        <ul>
-                                            <li>Working on the tether project.</li>
-                                            <li>Helping reinforcement learning models to <br /> fine‐tune and enhance chatgpt performance.</li>
-                                        </ul></Typography></Box></StepLabel>
-                            </Step>
-                            <Step >
-                                <StepLabel StepIconComponent={ColorlibStepIcon}> <Box textAlign="start" s><Typography variant='subtitle1' sx={{ color: "text.secondary" }}>Nov 2022 ‐ Now</Typography>
-                                    <Typography variant='h5' sx={{ fontWeight: "bold" }}>Machine Learning  Developer</Typography>
-                                    <Typography variant="h4" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
-                                        OpenAI
-                                    </Typography>
-                                    <Typography variant='h6' sx={{ fontWeight: "bold" }}>US - Remote</Typography>
-                                    <Typography variant='h6'>
+                                    <Typography variant='h6' sx={{ fontWeight: "bold", color: "#004037" }}>US - Remote</Typography>
+                                    <Typography variant='h6' sx={{ color: "#004037" }}>
                                         <ul>
                                             <li>Working on the tether project.</li>
                                             <li>Helping reinforcement learning models to <br /> fine‐tune and enhance chatgpt performance.</li>
@@ -166,12 +174,12 @@ function Experience2(props) {
                             </Step>
                             <Step >
                                 <StepLabel StepIconComponent={ColorlibStepIcon}> <Box ><Typography variant='subtitle1' sx={{ color: "text.secondary" }}>Nov 2022 ‐ Now</Typography>
-                                    <Typography variant='h5' sx={{ fontWeight: "bold" }}>Machine Learning  Developer</Typography>
+                                    <Typography variant='h5' sx={{ fontWeight: "bold", color: "#004037" }}>Machine Learning  Developer</Typography>
                                     <Typography variant="h4" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
                                         OpenAI
                                     </Typography>
-                                    <Typography variant='h6' sx={{ fontWeight: "bold" }}>US - Remote</Typography>
-                                    <Typography variant='h6'>
+                                    <Typography variant='h6' sx={{ fontWeight: "bold", color: "#004037" }}>US - Remote</Typography>
+                                    <Typography variant='h6' sx={{ color: "#004037" }}>
                                         <ul>
                                             <li>Working on the tether project.</li>
                                             <li>Helping reinforcement learning models to <br /> fine‐tune and enhance chatgpt performance.</li>
@@ -179,17 +187,30 @@ function Experience2(props) {
                             </Step>
                             <Step >
                                 <StepLabel StepIconComponent={ColorlibStepIcon}> <Box ><Typography variant='subtitle1' sx={{ color: "text.secondary" }}>Nov 2022 ‐ Now</Typography>
-                                    <Typography variant='h5' sx={{ fontWeight: "bold" }}>Machine Learning  Developer</Typography>
+                                    <Typography variant='h5' sx={{ fontWeight: "bold", color: "#004037" }}>Machine Learning  Developer</Typography>
                                     <Typography variant="h4" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
                                         OpenAI
                                     </Typography>
-                                    <Typography variant='h6' sx={{ fontWeight: "bold" }}>US - Remote</Typography>
-                                    <Typography variant='h6'>
+                                    <Typography variant='h6' sx={{ fontWeight: "bold", color: "#004037" }}>US - Remote</Typography>
+                                    <Typography variant='h6' sx={{ color: "#004037" }}>
                                         <ul>
                                             <li>Working on the tether project.</li>
                                             <li>Helping reinforcement learning models to <br /> fine‐tune and enhance chatgpt performance.</li>
                                         </ul></Typography></Box></StepLabel>
                             </Step>
+                            {/* <Step >
+                                <StepLabel StepIconComponent={ColorlibStepIcon}> <Box ><Typography variant='subtitle1' sx={{ color: "text.secondary" }}>Nov 2022 ‐ Now</Typography>
+                                    <Typography variant='h5' sx={{ fontWeight: "bold", color: "#004037" }}>Machine Learning  Developer</Typography>
+                                    <Typography variant="h4" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
+                                        OpenAI
+                                    </Typography>
+                                    <Typography variant='h6' sx={{ fontWeight: "bold", color: "#004037" }}>US - Remote</Typography>
+                                    <Typography variant='h6' sx={{ color: "#004037" }}>
+                                        <ul>
+                                            <li>Working on the tether project.</li>
+                                            <li>Helping reinforcement learning models to <br /> fine‐tune and enhance chatgpt performance.</li>
+                                        </ul></Typography></Box></StepLabel>
+                            </Step> */}
 
 
                         </Stepper>
