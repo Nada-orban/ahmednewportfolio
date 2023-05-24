@@ -53,11 +53,7 @@ function Contact() {
                         </Link>
                     </Box>
                     <Box display="flex" data-aos="fade-up"
-<<<<<<< HEAD
-                        data-aos-anchor-placement="top-bottom" data-aos-delay="1000" >
-=======
                         data-aos-anchor-placement="top-bottom" data-aos-delay="1000">
->>>>>>> origin/test
                         <PhoneIphoneIcon sx={{ mt: "5px" }} />
                         {/* <Typography variant='h5' >:</Typography> */}
 
@@ -161,10 +157,6 @@ function Contact() {
                                 <TextField
                                     data-aos="fade-up"
                                     data-aos-anchor-placement="top-bottom" data-aos-delay="1400"
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/test
                                     id="message"
                                     name="message"
                                     label="Message"
@@ -201,11 +193,7 @@ function Contact() {
 
 
                         </Grid>
-<<<<<<< HEAD
-                        <button className={styles.normalButton2} type="submit"  >
-=======
                         <button className={styles.normalButton2} type="submit" data-aos="fade-right" data-aos-delay="1500">
->>>>>>> origin/test
                             <div className={styles.normalButtonbg}></div>
                             <Box display="flex" justifyContent="center" alignItems="center" >
                                 <p className={styles.normalButton2text}>Send</p>
