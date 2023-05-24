@@ -12,6 +12,7 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import arizonalogo from '../public/assets/timeline/arizona.png'
 import Image from 'next/image'
+import Timelinemobileview from './Timelinemobileview'
 
 function Timelinewebsite() {
     const colorMode = React.useContext(ColorModeContext);
@@ -19,10 +20,25 @@ function Timelinewebsite() {
     return (
         <Box id="timeline" py="60px">
             <Container maxWidth="xlg" >
-                <Box sx={{ px: { sm: "10px", md: "40px" } }}>
-                    <Typography variant='h2' sx={{ textAlign: "center", fontWeight: "bold" }} >Timeline</Typography>
-                    <Typography variant='h6' sx={{ textAlign: "center" }}>A short summary of my work experience..</Typography>
-                    <Timeline position="alternate" sx={{ my: 5, display: { xs: "none", sm: "block" } }} className={styles.timeline}>
+                <Box sx={{ py: { sm: "10px", md: "0px" } }}>
+                    <Box display="flex" gap="20px">
+                        <div className={styles.titlesection}>
+                            <h1>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="50">T</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="100">i</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="200">m</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="300">e</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="400">l</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="400">i</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="400">n</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="400">e</span>
+
+
+                            </h1>
+                        </div>
+
+                    </Box>
+                    <Timeline position="alternate" sx={{ mx: 5, display: { xs: "none", md: "block" } }} className={styles.timeline}>
                         <TimelineItem>
                             <TimelineSeparator>
                                 <TimelineConnector />
@@ -39,7 +55,7 @@ function Timelinewebsite() {
                                     </Box>
                                 </Box>
 
-                                <TimelineConnector sx={{ height: "130px", bgcolor: 'red', width: "5px" }} />
+                                <TimelineConnector sx={{ height: "25vh", bgcolor: 'red', width: "5px" }} />
                             </TimelineSeparator>
                             <TimelineContent sx={{ py: '12px', px: 2, position: "relative" }} className={styles.timelineContentContainer}>
                                 <Box className={styles.timelineContent} sx={{ position: "absolute", bottom: "0%", right: "60%" }}>
@@ -73,10 +89,10 @@ function Timelinewebsite() {
                                     </Box>
                                 </Box>
 
-                                <TimelineConnector sx={{ height: "130px", bgcolor: 'blue', width: "5px" }} />
+                                <TimelineConnector sx={{ height: "25vh", bgcolor: 'blue', width: "5px" }} />
                             </TimelineSeparator>
                             <TimelineContent sx={{ py: '12px', px: 2, position: "relative" }} className={styles.timelineContentContainer}>
-                                <Box className={styles.timelineContent} sx={{ position: "absolute", bottom: "90%", left: "50%" }}>
+                                <Box className={styles.timelineContent} sx={{ position: "absolute", bottom: "0%", left: "50%" }}>
                                     <Typography variant='subtitle1' sx={{ color: "red" }}>Nov 2022 ‐ Now</Typography>
                                     <Typography sx={{ fontWeight: "bold", fontSize: "10px" }}>Machine Learning Developer</Typography>
                                     <Typography component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
@@ -107,7 +123,7 @@ function Timelinewebsite() {
                                     </Box>
                                 </Box>
 
-                                <TimelineConnector sx={{ height: "130px", bgcolor: 'red', width: "5px" }} />
+                                <TimelineConnector sx={{ height: "25vh", bgcolor: 'red', width: "5px" }} />
                             </TimelineSeparator>
                             <TimelineContent sx={{ py: '12px', px: 2, position: "relative" }} className={styles.timelineContentContainer}>
                                 <Box className={styles.timelineContent} sx={{ position: "absolute", bottom: "0%", right: "60%" }}>
@@ -141,10 +157,10 @@ function Timelinewebsite() {
                                     </Box>
                                 </Box>
 
-                                <TimelineConnector sx={{ height: "130px", bgcolor: 'blue', width: "5px" }} />
+                                <TimelineConnector sx={{ height: "25vh", bgcolor: 'blue', width: "5px" }} />
                             </TimelineSeparator>
                             <TimelineContent sx={{ py: '20px', px: 2, position: "relative" }} className={styles.timelineContentContainer}>
-                                <Box className={styles.timelineContent} sx={{ position: "absolute", bottom: "90%", left: "50%" }}>
+                                <Box className={styles.timelineContent} sx={{ position: "absolute", bottom: "0%", left: "50%" }}>
                                     <Typography variant='subtitle1' sx={{ color: "red" }}>Nov 2022 ‐ Now</Typography>
                                     <Typography sx={{ fontWeight: "bold", fontSize: "10px" }}>Machine Learning Developer</Typography>
                                     <Typography component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
@@ -161,6 +177,7 @@ function Timelinewebsite() {
                         </TimelineItem>
 
                     </Timeline>
+                    <Timelinemobileview />
 
 
 

@@ -144,73 +144,7 @@ function Timelinemobileview() {
                             • Responsible for designing, training, and evaluating the performance of the deep learning model.</Typography>
                     </TimelineContent>
                 </TimelineItem>
-                <TimelineItem>
-                    <TimelineSeparator>
-                        <TimelineConnector />
-                        <TimelineConnector />
-                        <TimelineDot color="primary" variant="outlined" sx={{ width: "70px", height: "70px", overflow: "hidden", border: "2px solid #bdbdbd", padding: "5px" }}>
-                            <Image
-                                // src={virufyphoto}
-                                alt="Picture of the author"
-                                width={50}
-                                height={50}
-                            />
-                        </TimelineDot>
-                        <TimelineConnector sx={{ height: "450px" }} />
-                    </TimelineSeparator>
-                    <TimelineContent sx={{ py: '12px', px: 2 }}>
-                        <Typography variant='subtitle1' sx={{ color: "text.secondary" }}>March 2021 ‐ June 2021</Typography>
-                        <Typography variant='h6' sx={{ fontWeight: "bold" }}>Machine Learning Team Lead</Typography>
-                        <Typography variant="h5" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
-                            ViRUFY
-                        </Typography>
-                        <Typography variant='subtitle1' sx={{ fontWeight: "bold" }}>San Francisco, US ‐ Remote</Typography>
-                        <Typography variant='subtitle1'>
-                            <ul>
-                                <li>Was responsible for all phases of deploying machine learning models in production, deciding on
-                                    performance, fine‐tuning the model on clinical datasets, Testing APIs, etc.</li>
-                                <li>Involved in making deals with hospitals to gather, clean, and standardize clinical datasets.</li>
-                                <li>Helped the machine learning team to achieve their potential and meet up the organization standards
-                                    and follow deadlines and guidelines.</li>
-                            </ul>
-                        </Typography>
-                    </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                    <TimelineSeparator>
-                        <TimelineConnector />
-                        <TimelineDot color="primary" variant="outlined" sx={{ width: "70px", height: "70px", overflow: "hidden", border: "2px solid #bdbdbd", padding: "5px" }}>
-                            <Image
-                                // src={virufyphoto}
-                                alt="Picture of the author"
-                                width={50}
-                                height={50}
-                            />
-                        </TimelineDot>
-                        <TimelineConnector sx={{ height: "580px" }} />
-                    </TimelineSeparator>
-                    <TimelineContent sx={{ py: '12px', px: 2 }}>
-                        <Typography variant='subtitle1' sx={{ color: "text.secondary" }}>Oct 2020 ‐ Feb 2021</Typography>
-                        <Typography variant='h6' sx={{ fontWeight: "bold" }}>Machine Learning Engineer</Typography>
-                        <Typography variant="h5" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
-                            ViRUFY
-                        </Typography>
-                        <Typography variant='subtitle1' sx={{ fontWeight: "bold" }}>San Francisco, US ‐ Remote</Typography>
-                        <Typography variant='subtitle1' sx={{ textAlign: "start" }}>
-                            <ul><li>Pre‐process and extract audio features from coughing audio files from large clinical and
-                                crowdsourced datasets.</li>
-                                <li>Worked on the design and the implementation of machine learning models for automated
-                                    detection of respiratory diseases from speech and cough audio files.</li>
-                                <li> Thorough and comparative analysis of SOTA deep learning models for audio classification
-                                    and automated detection of respiratory diseases.</li>
-                                <li> Contributed to design the state of the art deep learning model in detecting COVID‐19
-                                    from coughing audio files from COUGHVID crowdsourced dataset.the deep learning model.</li>
-                            </ul>
 
-
-                        </Typography>
-                    </TimelineContent>
-                </TimelineItem>
 
                 <TimelineItem>
                     <TimelineSeparator>

@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { ColorModeContext } from '../public/theme'
 import { styled, useTheme, alpha } from '@mui/material/styles';
 import SchoolIcon from '@mui/icons-material/School';
+import marylandlogo from '../public/assets/timeline/university-of-maryland-logo-1.png'
 
 function About() {
     const colorMode = React.useContext(ColorModeContext);
@@ -44,7 +45,12 @@ function About() {
                             <Typography variant='h4' sx={{ my: 1, fontWeight: "bold", color: "secondary.main" }} >Education</Typography>
                             <ListItem display="flex" justifyContent="center" alignItems='center'>
                                 <ListItemIcon>
-                                    <SchoolIcon sx={{ color: "text.primary", width: "30px", height: "30px" }} />
+                                    <Image
+                                        src={marylandlogo}
+                                        width={50}
+
+                                    />
+                                    {/* <SchoolIcon sx={{ color: "text.primary", width: "30px", height: "30px" }} /> */}
                                 </ListItemIcon>
                                 <ListItemText primary="Ph.D. in Computer Engineering" primaryTypographyProps={{ fontSize: '18px', color: "white", fontWeight: "bold" }}
                                     secondary={<React.Fragment>
@@ -52,7 +58,7 @@ function About() {
                                             sx={{ fontSize: '18px', marginRight: 6 }}
                                             component="span"
                                             variant="body2"
-                                            color="text.primary"
+                                            color="white"
                                         >
                                             University of Maryland
                                         </Typography>
@@ -71,7 +77,7 @@ function About() {
                                             sx={{ fontSize: '18px', marginRight: 2 }}
                                             component="span"
                                             variant="body2"
-                                            color="text.primary"
+                                            color="white"
                                         >
                                             Alexandria University, Faculty of Engineering
                                         </Typography>
