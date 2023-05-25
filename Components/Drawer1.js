@@ -38,6 +38,7 @@ const NavLinks = styled(Link)`
     color: #0DD1CF;
     
   }
+  
 `;
 
 function ResponsiveDrawer() {
@@ -74,7 +75,7 @@ function ResponsiveDrawer() {
             <List sx={{ textAlign: "center", margin: "auto", }}>
 
                 <ListItem>
-                    <NavLinks to="about" spy={true} smooth={true} offset={-50} duration={500} >
+                    <NavLinks to="about" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink}  >
                         <ListItemButton >
                             <Typography variant="h6">About</Typography>
                             {/* <ListItemText primary="About" /> */}
@@ -83,7 +84,7 @@ function ResponsiveDrawer() {
                 </ListItem>
                 <Divider />
                 <ListItem>
-                    <NavLinks to="skills" spy={true} smooth={true} offset={-50} duration={500}>
+                    <NavLinks to="skills" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
                         <ListItemButton >
                             <Typography variant="h6">Skills</Typography>
                         </ListItemButton>
@@ -91,7 +92,7 @@ function ResponsiveDrawer() {
                 </ListItem>
                 <Divider />
                 <ListItem>
-                    <NavLinks to="projects" spy={true} smooth={true} offset={-50} duration={500}>
+                    <NavLinks to="projects" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
                         <ListItemButton >
                             <Typography variant="h6">Projects</Typography>
                             {/* <ListItemText primary="Projects" /> */}
@@ -100,7 +101,7 @@ function ResponsiveDrawer() {
                 </ListItem>
                 <Divider />
                 <ListItem>
-                    <NavLinks to="papers" spy={true} smooth={true} offset={-50} duration={500}>
+                    <NavLinks to="papers" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
                         <ListItemButton >
                             <Typography variant="h6">Papers</Typography>
                             {/* <ListItemText primary="Projects" /> */}
@@ -109,7 +110,7 @@ function ResponsiveDrawer() {
                 </ListItem>
                 <Divider />
                 <ListItem>
-                    <NavLinks to="experience" spy={true} smooth={true} offset={-50} duration={500}>
+                    <NavLinks to="experience" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
                         <ListItemButton >
                             <Typography variant="h6">Timeline</Typography>
                             {/* <ListItemText primary="Projects" /> */}
@@ -119,7 +120,7 @@ function ResponsiveDrawer() {
                 <Divider />
 
                 <ListItem>
-                    <NavLinks to="contact" spy={true} smooth={true} offset={-50} duration={500}>
+                    <NavLinks to="contact" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
                         <ListItemButton >
                             <Typography variant="h6">Contact</Typography>
 

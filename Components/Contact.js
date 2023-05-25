@@ -1,4 +1,4 @@
-import { Grid, Box, Typography, Container, Divider } from '@mui/material'
+import { Grid, Box, Typography, Container, Divider, Avatar } from '@mui/material'
 import React from 'react'
 import styles from '../src/styles/Home.module.css'
 import profilephoto from '../public/assets/zyro-image.png'
@@ -13,6 +13,8 @@ import EmailIcon from '@mui/icons-material/Email';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import EastIcon from '@mui/icons-material/East';
 import mapphoto from '../public/assets/Screenshot from 2023-05-24 17-26-00.png'
+import { FiFacebook, FiLinkedin, FiGithub } from 'react-icons/fi'
+import { SiUpwork } from 'react-icons/si'
 
 
 function Contact() {
@@ -66,6 +68,12 @@ function Contact() {
                                 <Typography variant='h5' sx={{ color: "secondary.main" }} className={styles.linkText}>(+1) 469-596-4371</Typography>
 
                             </Box>
+                            {/* <Box display="flex" sx={{ justifyContent: "start", mt: { sm: "10px", xs: "10px", md: "0px", lg: "0px" } }} alignItems="center" gap="20px" >
+                                <Link href="mailto:nadasamir9334@gmail.com" ><Avatar sx={{ width: "30px", height: "30px", backgroundColor: "secondary.main", color: "white" }} className={styles.nadaavatar}><EmailIcon /></Avatar></Link>
+                                <Link href="https://www.linkedin.com/in/nada-samir-441a58130/" ><Avatar sx={{ width: "30px", height: "30px", backgroundColor: "secondary.main", color: "white" }} className={styles.nadaavatar}><FiLinkedin /></Avatar></Link>
+                                <Link href="https://github.com/Nada-orban" ><Avatar sx={{ width: "30px", height: "30px", backgroundColor: "secondary.main", color: "white" }} className={styles.nadaavatar}><FiGithub /></Avatar></Link>
+                                <Link href="https://www.upwork.com/freelancers/~0158c861bae4be2e7b" ><Avatar sx={{ width: "30px", height: "30px", backgroundColor: "secondary.main", color: "white" }} className={styles.nadaavatar}><SiUpwork /></Avatar></Link>
+                            </Box> */}
                             <form onSubmit={handleSubmit}  >
                                 <Box gap="5px" mb="10px" mt="30px" sx={{ display: { sm: 'grid', md: "flex" } }}>
                                     <TextField

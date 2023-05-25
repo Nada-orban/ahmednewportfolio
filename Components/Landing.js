@@ -20,9 +20,12 @@ import waveform from '../public/assets/backgrounds/waves.json'
 // import { useCallback } from "react";
 // import Particles from "react-tsparticles";
 // import { loadFull } from "tsparticles";
-import logo from '../public/assets/backgrounds/logo2.png'
+import logo from '../public/logo- 3 colors-small-flipped.png'
 import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
 import Particlesbackground from './Particlesbackground'
+import { FiFacebook, FiLinkedin, FiGithub } from 'react-icons/fi'
+import { SiUpwork } from 'react-icons/si'
+
 
 
 
@@ -40,7 +43,7 @@ function Landing() {
                     {/* <Box sx={{ position: "absolute", top: "-150px", opacity: 0.4, }} >
                         <div ><Lottie animationData={waveform} className={styles.wavejson} /></div>
                     </Box> */}
-                    <Box className={styles.homeSection} sx={{ px: { sm: "10px", md: "40px" }, pt: { lg: "15%", md: "35px", sm: "30%", xs: "40%" }, }}>
+                    <Box className={styles.homeSection} sx={{ px: { sm: "10px", md: "40px" }, pt: { lg: "15%", md: "15%", sm: "30%", xs: "40%" }, }}>
                         <Box display="flex" gap="10px">
                             <div className={styles.titlesection1}>
                                 <h1>
@@ -135,7 +138,16 @@ function Landing() {
 
                         <Typography variant='h4' mb="50px" mx="5px" data-aos="fade-up" data-aos-delay="1900"
                             data-aos-anchor-placement="top-bottom">Deep Learning Ph.D Resercher</Typography>
-                        {/* <Link href=""><button className={styles.buttonStyle} data-aos="fade-up" data-aos-delay="1500">Download My CV</button></Link> */}
+
+                        <Box display="flex" sx={{ justifyContent: "start", mt: { sm: "10px", xs: "10px", md: "0px", lg: "0px" } }} alignItems="center" gap="20px" >
+                            <Link href="mailto:nadasamir9334@gmail.com" ><Avatar variant="rounded" sx={{ width: "50px", height: "50px", backgroundColor: "secondary.main", color: "white" }} className={styles.nadaavatar}><EmailIcon /></Avatar></Link>
+                            <Link href="https://www.linkedin.com/in/nada-samir-441a58130/" ><Avatar variant="rounded" sx={{ width: "50px", height: "50px", backgroundColor: "secondary.main", color: "white" }} className={styles.nadaavatar}><FiLinkedin /></Avatar></Link>
+                            <Link href="https://github.com/Nada-orban" ><Avatar variant="rounded" sx={{ width: "50px", height: "50px", backgroundColor: "secondary.main", color: "white" }} className={styles.nadaavatar}><FiGithub /></Avatar></Link>
+                            <Link href="https://www.upwork.com/freelancers/~0158c861bae4be2e7b" ><Avatar variant="rounded" sx={{ width: "50px", height: "50px", backgroundColor: "secondary.main", color: "white" }} className={styles.nadaavatar}><SiUpwork /></Avatar></Link>
+                        </Box>
+
+
+
                         <Box sx={{ display: { xs: "grid", md: "flex" } }} gap="20px" justifyItems="center" justifyContent="start">
                             <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} data-aos="fade-right" data-aos-delay="2000" >
                                 <button className={styles.normalButton2} >
