@@ -35,7 +35,7 @@ const drawerWidth = 130;
 const NavLinks = styled(Link)`
   color: white;
   &.active {
-    color: #0DD1CF;
+    color: #F7AE9D;
     
   }
   
@@ -57,7 +57,7 @@ function ResponsiveDrawer() {
 
     const drawer = (
         <Box sx={{
-            backgroundColor: "background.secondary", height: "100vh",
+            backgroundColor: "background.secondary", height: "100vh", boxShadow: "10px 0 5px -2px #888"
         }}>
             <Toolbar />
             <Box sx={{ mb: "50%" }}>

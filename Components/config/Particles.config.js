@@ -2,7 +2,8 @@ const particlesConfig = {
     autoPlay: true,
     background: {
         color: {
-            value: "#FAF3E8"
+            // value: "#FAF3E8"
+            value: "#FFFFFF"
         },
         image: "",
         position: "",
@@ -41,10 +42,10 @@ const particlesConfig = {
     },
     particles: {
         color: {
-            value: "#0DD1CF",
+            value: "#F7AE9D",
         },
         links: {
-            color: "#B28B1A",
+            color: "#F7AE9D",
             distance: 150,
             enable: true,
             opacity: 0.5,

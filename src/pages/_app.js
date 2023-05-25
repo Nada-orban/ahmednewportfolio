@@ -41,7 +41,7 @@ export default function App({ Component, pageProps }) {
 
 
         <style jsx global>{`
-              ${theme.palette.mode === 'dark' ? "body{background:#FAF3E8!important} " : "body{background: #fff} "}`
+              ${theme.palette.mode === 'dark' ? "body{background:#FFFFFF!important} " : "body{background: #fff} "}`
         }</style>
 
 

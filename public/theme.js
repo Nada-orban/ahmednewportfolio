@@ -40,9 +40,9 @@ export const themeSettongs = (mode) => {
                     main: "#004037",
                 },
                 secondary: {
-                    // main: red[400],
-                    // main: "#FFC517",
-                    main: "#0DD1CF"
+                    main: "#F7AE9D",
+                    // main: "#25C37D",
+                    // main: "#0DD1CF"
                 },
                 neutral: {
                     lightgray: "#F1F6F9",
@@ -51,9 +51,9 @@ export const themeSettongs = (mode) => {
                 },
                 background: {
                     main: "#FAF3E8",
-                    // secondary: "#0f172a",
+                    secondary: "#0F6973",
                     // main: "#7A5CE0",#29654D
-                    secondary: "#164038"
+                    // secondary: "#164038"
 
 
                 }, text: {

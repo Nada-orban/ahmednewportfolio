@@ -430,7 +430,9 @@
 /* #########################about################# */
 .aboutbackground{
     /* background: linear-gradient(135deg, #000000 0%, #ffffff00 70% ), */
-    background: linear-gradient(to right,#0a201cea 0%, #ffffff00 70%),
+    /* background: linear-gradient(to right,#0a201cea 0%, #ffffff00 70%),
+    url('../../public/assets/backgrounds/Background-ahmed1.jpg'); */
+    background: linear-gradient(to right, #0f6973 0%, #ffffff00 70%),
     url('../../public/assets/backgrounds/Background-ahmed1.jpg');
     
     
@@ -633,7 +635,8 @@
 
 }
 
-/*############Papers############ */
+/*############Papers############ */ 
+
 /* .paperbackground{
     background: linear-gradient(#164038d0, #000000ec),
     url('../../public/assets/backgrounds/Conference\ -\ 5.png');
@@ -657,7 +660,7 @@
     right: 0px;
     bottom: 0px;
     width: 100%;
-    background: linear-gradient(#164038d0, #000000ec);
+    background: linear-gradient(#1f6973b7, #000000ec);
 }
 .linkText {
     text-decoration: none;

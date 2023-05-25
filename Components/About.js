@@ -73,6 +73,7 @@ function About() {
                                     <Image
                                         src={alexlogo}
                                         width={30}
+                                        className={styles.aleximage}
 
                                     />
 
