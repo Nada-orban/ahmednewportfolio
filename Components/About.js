@@ -7,6 +7,7 @@ import { ColorModeContext } from '../public/theme'
 import { styled, useTheme, alpha } from '@mui/material/styles';
 import SchoolIcon from '@mui/icons-material/School';
 import marylandlogo from '../public/assets/timeline/university-of-maryland-logo-1.png'
+import alexlogo from '../public/assets/timeline/alexandria-160614_1280.png'
 
 function About() {
     const colorMode = React.useContext(ColorModeContext);
@@ -42,7 +43,7 @@ function About() {
                             <Typography variant='h5' sx={{ color: "white" }} >Welcome to my website!<br />I am a Deep Learning engineer and PhD researcher with expertise in Natural Language Processing, Signal Processing, Statistics, and Unsupervised Learning.My primary focus is on developing advanced Deep Learning models for speech and audio processing, with a passion for exploring the limitless possibilities of this cutting-edge technology.</Typography>
                         </Box>
                         <List >
-                            <Typography variant='h4' sx={{ my: 1, fontWeight: "bold", color: "secondary.main" }} >Education</Typography>
+                            <Typography variant='h4' sx={{ my: 1, fontWeight: "bold", color: "secondary.main", textAlign: "start" }} >Education</Typography>
                             <ListItem display="flex" justifyContent="center" alignItems='center'>
                                 <ListItemIcon>
                                     <Image
@@ -69,7 +70,12 @@ function About() {
                             </ListItem>
                             <ListItem>
                                 <ListItemIcon>
-                                    <SchoolIcon sx={{ color: "text.primary", width: "30px", height: "30px" }} />
+                                    <Image
+                                        src={alexlogo}
+                                        width={30}
+
+                                    />
+
                                 </ListItemIcon>
                                 <ListItemText primary="B.SC in electronics and communication engineering " primaryTypographyProps={{ fontSize: '18px', color: "white", fontWeight: "bold" }}
                                     secondary={<React.Fragment>

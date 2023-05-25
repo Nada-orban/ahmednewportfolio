@@ -132,7 +132,46 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
-   
+    
+
+}
+.normalButton3 {
+    border-style: none;
+    /* padding: 10px 20px; */
+    border: 1px solid var(--secondray-maincolor);
+    width: 200px;
+    height: 45px;
+    background: transparent;
+    color: var(--secondray-maincolor);
+    margin-top: 30px;
+    font-size: 25px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+
+}
+
+.normalButtonbg3 {
+    content: "";
+    background-color: var(--secondray-maincolor);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -4px;
+    top: 0px;
+    z-index: 3;
+    transform: skewX(-10deg);
+    transition: all .3s ease-out;
+
+}
+
+.normalButton3text {
+    z-index: 5;
+    position: absolute;
+    margin-top: -15px;
+    left: 15%;
+    color:white;
 
 }
 .normalButtonbg{
@@ -174,6 +213,15 @@
     
    
 
+}
+.normalButton3:hover .normalButtonbg3 {
+    width: 0%;
+
+
+
+}
+.normalButton3:hover .normalButton3text {
+    color: var(--secondray-maincolor);
 }
 .normalButton2:hover .normalButton2text{
     color: white;
@@ -622,7 +670,7 @@
     color: #c7933a;
 }
 .paperimage{
-    width: 400px;
+    
     height: 400px;
 }
 @media only screen and (max-width: 600px) {
@@ -878,7 +926,7 @@
     
     background-image:url('../../public/assets/Screenshot\ from\ 2023-05-24\ 17-26-00.png') ;
     width: 100%;
-    height:600px;
+    height:700px;
 
 
 }

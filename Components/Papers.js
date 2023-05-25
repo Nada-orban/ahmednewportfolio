@@ -19,7 +19,7 @@ function Papers() {
         <Box id="papers" py="50px" color="white" backgroundColor="white" position="relative" >
 
             <Container maxWidth="xlg" >
-                <Box sx={{ px: { sm: "10px", md: "40px" }, py: "50px" }} >
+                <Box sx={{ px: { sm: "10px", md: "40px" }, py: "100px" }} >
                     <Grid container >
 
 
@@ -58,7 +58,7 @@ function Papers() {
 
                     </Grid>
                     <Box className={styles.layer}>
-                        <Box sx={{ px: { xs: "10px", md: "40px" }, }}>
+                        <Box sx={{ px: { xs: "10px", md: "40px" }, pt: "50px" }}>
                             <Box display="flex" gap="20px">
                                 <div className={styles.titlesection}>
                                     <h1>

@@ -21,7 +21,7 @@ import waveform from '../public/assets/backgrounds/waves.json'
 // import Particles from "react-tsparticles";
 // import { loadFull } from "tsparticles";
 import logo from '../public/assets/backgrounds/logo2.png'
-
+import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
 import Particlesbackground from './Particlesbackground'
 
 
@@ -136,14 +136,28 @@ function Landing() {
                         <Typography variant='h4' mb="50px" mx="5px" data-aos="fade-up" data-aos-delay="1900"
                             data-aos-anchor-placement="top-bottom">Deep Learning Ph.D Resercher</Typography>
                         {/* <Link href=""><button className={styles.buttonStyle} data-aos="fade-up" data-aos-delay="1500">Download My CV</button></Link> */}
+                        <Box sx={{ display: { xs: "grid", md: "flex" } }} gap="20px" justifyItems="center" justifyContent="start">
+                            <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} data-aos="fade-right" data-aos-delay="2000" >
+                                <button className={styles.normalButton2} >
+                                    <div className={styles.normalButtonbg}></div>
+                                    <p className={styles.normalButton1text}>Contact me</p>
+                                </button>
 
-                        <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} data-aos="fade-right" data-aos-delay="2000" >
-                            <button className={styles.normalButton2} >
-                                <div className={styles.normalButtonbg}></div>
-                                <p className={styles.normalButton1text}>Contact me</p>
-                            </button>
+                            </Link>
+                            <a href="https://mail.google.com/mail/u/0/#inbox/FMfcgzGsmhcKkbrNLHhrvCbxHsNksQSK?projector=1&messagePartId=0.3" target="_blank">
+                                <button className={styles.normalButton3} >
+                                    <div className={styles.normalButtonbg3}></div>
+                                    <p className={styles.normalButton3text}>RESUME</p>
+                                </button>
+                                {/* <Box display="flex" gap="5px" padding="5px 40px" justifyItems="center" border="1px solid #0DD1CF" backgroundColor="secondary.main" cursor="pointer">
+                                    <InsertDriveFileIcon sx={{ color: "white", mt: "8px", cursor: "pointer" }} />
+                                    <Typography sx={{ fontSize: "25px", color: "white", cursor: "pointer" }}>RESUME</Typography>
 
-                        </Link>
+                                </Box> */}
+
+                            </a></Box>
+
+
                     </Box>
 
 

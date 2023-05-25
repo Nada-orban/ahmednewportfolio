@@ -67,7 +67,7 @@ function Contact() {
 
                             </Box>
                             <form onSubmit={handleSubmit}  >
-                                <Box gap="5px" mb="10px" sx={{ display: { sm: 'grid', md: "flex" } }}>
+                                <Box gap="5px" mb="10px" mt="30px" sx={{ display: { sm: 'grid', md: "flex" } }}>
                                     <TextField
                                         data-aos="fade-up"
                                         data-aos-anchor-placement="top-bottom" data-aos-delay="1100"

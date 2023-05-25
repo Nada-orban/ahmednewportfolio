@@ -84,7 +84,9 @@ export default function Home({ projects }) {
 
                   </Box>
                   <Typography variant='h5' data-aos="fade-up"
-                    data-aos-anchor-placement="top-bottom">Here you can see some of the projects I've done on my own time.</Typography>
+                    data-aos-anchor-placement="top-bottom">
+                    Below are some selected projects that I have worked on during my industry experience, as well as class and capstone projects. These endeavors highlight my skills and dedication in various professional contexts, showcasing the breadth of my experience and capabilities.
+                  </Typography>
                   <Typography className={styles.bigfake}>WORK</Typography>
                 </Box>
               </Container>
