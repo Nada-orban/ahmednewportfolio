@@ -130,15 +130,15 @@ function ResponsiveDrawer() {
             </List>
             <Box gap="10px" mt="0px" sx={{ display: "flex", justifyContent: "center" }}>
 
-                <a href='https://github.com/Nada-orban' data-aos="fade-left" target="_blank">
+                <a href='https://github.com/ahmedadelattia' data-aos="fade-left" target="_blank">
                     <GitHubIcon sx={{ color: "neutral.lightgray" }} className={Styles.smallicon} />
                 </a>
-                <a href='https://www.linkedin.com/in/nada-samir-441a58130/' data-aos="fade-left" data-aos-delay="200" target="_blank">
+                <a href='www.linkedin.com/in/ahmedadelattia' data-aos="fade-left" data-aos-delay="200" target="_blank">
 
                     <LinkedInIcon sx={{ color: "neutral.lightgray" }} className={Styles.smallicon} />
                 </a>
 
-                <a href='mailto:nadasamir9334@gmail.com' data-aos="fade-left" data-aos-delay="800" target="_blank">
+                <a href='mailto:ahmadadelattia@gmail.com' data-aos="fade-left" data-aos-delay="800" target="_blank">
                     <EmailIcon sx={{ color: "neutral.lightgray" }} className={Styles.smallicon} />
                 </a>
 

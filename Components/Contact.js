@@ -1,4 +1,4 @@
-import { Grid, Box, Typography, Container } from '@mui/material'
+import { Grid, Box, Typography, Container, Divider } from '@mui/material'
 import React from 'react'
 import styles from '../src/styles/Home.module.css'
 import profilephoto from '../public/assets/zyro-image.png'
@@ -12,6 +12,7 @@ import AttachEmailIcon from '@mui/icons-material/AttachEmail';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import EastIcon from '@mui/icons-material/East';
+import mapphoto from '../public/assets/Screenshot from 2023-05-24 17-26-00.png'
 
 
 function Contact() {
@@ -21,48 +22,51 @@ function Contact() {
     return (
         <Box id="contact" py="100px" sx={{ backgroundColor: "background.blue" }}>
             <Container maxWidth="xlg" >
+
                 <Box sx={{ px: { sm: "10px", md: "40px" } }}>
-                    <Box display="flex" gap="20px">
-                        <div className={styles.titlesection}>
-                            <h1>
-                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="50" >C</span>
-                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="100">o</span>
-                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="200">n</span>
-                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="300">t</span>
-                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="400">a</span>
-                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="500">c</span>
-                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="600">t</span>
-
-                            </h1>
-                        </div>
-                        <div className={styles.titlesection}>
-                            <h1>
-                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="700">m</span>
-                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="800">e</span>
-                            </h1>
-                        </div>
-                    </Box>
 
 
-                    <Box display="flex" data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom" data-aos-delay="900">
-                        <AttachEmailIcon sx={{ mt: "5px", marginRight: "3px" }} />
-                        {/* <Typography variant='h5' >:</Typography> */}
-                        <Link href="mailto:ahmedfakhry805@gmail.com" className={styles.myEmail}>
-                            <Typography variant='h5' sx={{ color: "secondary.main" }} className={styles.linkText}> ahmedfakhry805@gmail.com</Typography>
-                        </Link>
-                    </Box>
-                    <Box display="flex" data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom" data-aos-delay="1000">
-                        <PhoneIphoneIcon sx={{ mt: "5px" }} />
-                        {/* <Typography variant='h5' >:</Typography> */}
+                    <Grid container spacing={4} mt="20px">
+                        <Grid item sm={12} md={6}>
+                            <Box display="flex" gap="20px">
+                                <div className={styles.titlesection}>
+                                    <h1>
+                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="50" >C</span>
+                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="100">o</span>
+                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="200">n</span>
+                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="300">t</span>
+                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="400">a</span>
+                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="500">c</span>
+                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="600">t</span>
 
-                        <Typography variant='h5' sx={{ color: "secondary.main" }} className={styles.linkText}>(+20) 10-9813-0059</Typography>
+                                    </h1>
+                                </div>
+                                <div className={styles.titlesection}>
+                                    <h1>
+                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="700">m</span>
+                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="800">e</span>
+                                    </h1>
+                                </div>
+                            </Box>
 
-                    </Box>
-                    <form onSubmit={handleSubmit}  >
-                        <Grid container spacing={2} mt="20px">
-                            <Grid item sm={12} md={6}>
+
+                            <Box display="flex" data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom" data-aos-delay="900">
+                                <AttachEmailIcon sx={{ mt: "5px", marginRight: "3px" }} />
+                                {/* <Typography variant='h5' >:</Typography> */}
+                                <Link href="mailto:ahmadadelattia@gmail.com" className={styles.myEmail}>
+                                    <Typography variant='h5' sx={{ color: "secondary.main" }} className={styles.linkText}> ahmadadelattia@gmail.com</Typography>
+                                </Link>
+                            </Box>
+                            <Box display="flex" data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom" data-aos-delay="1000">
+                                <PhoneIphoneIcon sx={{ mt: "5px" }} />
+                                {/* <Typography variant='h5' >:</Typography> */}
+
+                                <Typography variant='h5' sx={{ color: "secondary.main" }} className={styles.linkText}>(+1) 469-596-4371</Typography>
+
+                            </Box>
+                            <form onSubmit={handleSubmit}  >
                                 <Box gap="5px" mb="10px" sx={{ display: { sm: 'grid', md: "flex" } }}>
                                     <TextField
                                         data-aos="fade-up"
@@ -75,7 +79,7 @@ function Contact() {
                                         variant="filled"
                                         color="secondary"
                                         style={{
-                                            backgroundColor: "#2B2B2B", width: "100%"
+                                            backgroundColor: "#04574c49", width: "100%"
                                         }}
                                         InputProps={{
                                             style: {
@@ -101,7 +105,7 @@ function Contact() {
                                         color="secondary"
 
                                         style={{
-                                            backgroundColor: "#2B2B2B", width: "100%",
+                                            backgroundColor: "#04574c49", width: "100%",
                                         }}
                                         InputProps={{
                                             style: {
@@ -133,7 +137,7 @@ function Contact() {
 
 
                                         style={{
-                                            backgroundColor: "#2B2B2B", width: "100%"
+                                            backgroundColor: "#04574c49", width: "100%"
                                         }}
                                         InputProps={{
                                             style: {
@@ -166,7 +170,7 @@ function Contact() {
                                     rows={6}
 
                                     style={{
-                                        backgroundColor: "#2B2B2B", width: "100%"
+                                        backgroundColor: "#04574c49", width: "100%"
                                     }}
                                     InputProps={{
                                         style: {
@@ -183,25 +187,31 @@ function Contact() {
                                     field="message"
                                     errors={state.errors}
                                 />
+                                <button className={styles.normalButton2} type="submit" data-aos="fade-right" data-aos-delay="1500">
+                                    <div className={styles.normalButtonbg}></div>
+                                    <Box display="flex" justifyContent="center" alignItems="center" >
+                                        <p className={styles.normalButton2text}>Send</p>
+                                        <EastIcon sx={{ ml: "30px", width: "50px", height: "30px" }} className={styles.normalButton2icon} />
+                                    </Box>
 
-
-
-                            </Grid>
-                            <Grid item sm={12} md={6}>
-
-                            </Grid>
-
+                                </button>
+                            </form>
+                        </Grid>
+                        <Grid item sm={12} md={6} xs={12}>
+                            <Box className={styles.mapbox}>
+                                <Box className={styles.maplayer}></Box>
+                            </Box>
+                            {/* <Image
+                                src={mapphoto}
+                                width={700}
+                            /> */}
 
                         </Grid>
-                        <button className={styles.normalButton2} type="submit" data-aos="fade-right" data-aos-delay="1500">
-                            <div className={styles.normalButtonbg}></div>
-                            <Box display="flex" justifyContent="center" alignItems="center" >
-                                <p className={styles.normalButton2text}>Send</p>
-                                <EastIcon sx={{ ml: "30px", width: "50px", height: "30px" }} className={styles.normalButton2icon} />
-                            </Box>
 
-                        </button>
-                    </form>
+
+                    </Grid>
+
+
 
                 </Box>
 
