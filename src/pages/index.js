@@ -18,6 +18,7 @@ import Contact from '../../Components/Contact'
 import Papers from '../../Components/Papers'
 import Footer from '../../Components/Footer'
 import Timelinewebsite from '../../Components/Timelinewebsite'
+import Projects2 from '../../Components/Projects2'
 
 
 
@@ -62,9 +63,10 @@ export default function Home({ projects }) {
             <Landing />
             <About />
             <Skill />
+            <Projects2 />
 
             {/* //projects section */}
-            <Box id='projects' py="100px">
+            {/* <Box id='projects' py="100px">
               <Container maxWidth="xlg" >
                 <Box sx={{ px: { sm: "10px", md: "40px" } }} position="relative">
                   <Box display="flex" gap="20px">
@@ -97,11 +99,11 @@ export default function Home({ projects }) {
 
                 ))}
               </Grid>
-              {/* <Box display='flex' justifyContent="center" flexDirection="column" textAlign="center" marginTop="10px">
+              <Box display='flex' justifyContent="center" flexDirection="column" textAlign="center" marginTop="10px">
                   <Typography variant='h4'>To see more of my projects...</Typography>
                   <button className={styles.normalButton}><a href='https://github.com/AhmedFakhry47' target="_blank">Visit My GitHub<GitHubIcon /></a></button>
-                </Box> */}
-            </Box>
+                </Box>
+            </Box> */}
             <Papers />
             <Timelinewebsite />
             <Contact />
