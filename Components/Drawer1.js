@@ -57,8 +57,8 @@ function ResponsiveDrawer() {
 
     const drawer = (
         <Box sx={{
-            backgroundColor: "background.secondary", height: "100vh", boxShadow: "10px 0 5px -2px #888"
-        }}>
+            backgroundColor: "background.secondary", height: "100vh",
+        }} className={Styles.drawer}>
             <Toolbar />
             <Box sx={{ mb: "50%" }}>
                 <Image
@@ -222,6 +222,7 @@ function ResponsiveDrawer() {
                 component="nav"
                 sx={{ width: { md: drawerWidth }, }}
                 aria-label="mailbox folders"
+
             >
 
                 <Drawer

@@ -1,3 +1,10 @@
+.drawer{
+    border-right: 1px solid white;
+    box-shadow: 5px 10px 18px #c42c2c;
+    color: "#0F6973";
+    
+
+}
 .navlink:hover{
     color:var(--secondray-maincolor);
 }
