@@ -19,6 +19,7 @@ import Papers from '../../Components/Papers'
 import Footer from '../../Components/Footer'
 import Timelinewebsite from '../../Components/Timelinewebsite'
 import Projects2 from '../../Components/Projects2'
+import Nav from '../../Components/Nav'
 
 
 
@@ -50,7 +51,7 @@ export default function Home({ projects }) {
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></link>
 
       </Head>
-
+      {/* 
       <Box sx={{ display: 'flex' }}>
         <CssBaseline />
         <Drawer1 />
@@ -58,15 +59,16 @@ export default function Home({ projects }) {
         <Box
           component="main"
           sx={{ flexGrow: 1, width: { sm: "100%" } }}
-        >
-          <main >
-            <Landing />
-            <About />
-            <Skill />
-            <Projects2 />
+        > */}
+      <main >
+        <Nav />
+        <Landing />
+        <About />
+        <Skill />
+        <Projects2 />
 
-            {/* //projects section */}
-            {/* <Box id='projects' py="100px">
+        {/* //projects section */}
+        {/* <Box id='projects' py="100px">
               <Container maxWidth="xlg" >
                 <Box sx={{ px: { sm: "10px", md: "40px" } }} position="relative">
                   <Box display="flex" gap="20px">
@@ -104,16 +106,16 @@ export default function Home({ projects }) {
                   <button className={styles.normalButton}><a href='https://github.com/AhmedFakhry47' target="_blank">Visit My GitHub<GitHubIcon /></a></button>
                 </Box>
             </Box> */}
-            <Papers />
-            <Timelinewebsite />
-            <Contact />
-            <Footer />
+        <Papers />
+        {/* <Timelinewebsite /> */}
+        <Contact />
+        <Footer />
 
-          </main>
+      </main>
 
 
-        </Box>
-      </Box>
+      {/* </Box>
+      </Box> */}
 
 
 
