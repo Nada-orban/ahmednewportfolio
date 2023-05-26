@@ -7,7 +7,7 @@ export const themeSettongs = (mode) => {
     return {
         palette: {
             mode: mode,
-            ...(mode === "light" ? {
+            ...(mode === "dark" ? {
                 primary: {
                     main: grey[800],
                 },
@@ -79,10 +79,10 @@ export const ColorModeContext = createContext({
 });
 
 export const useMode = () => {
-    const [mode, setMode] = useState("dark");
+    const [mode, setMode] = useState("light");
     const colorMode = useMemo(() => ({
         toggleColorMode: () => {
-            setMode((prev) => (prev === "dark" ? "light" : "dark"))
+            setMode((prev) => (prev === "light" ? "dark" : "light"))
         }
     }), []);
     const theme = useMemo(() => createTheme(themeSettongs(mode)), [mode]);
