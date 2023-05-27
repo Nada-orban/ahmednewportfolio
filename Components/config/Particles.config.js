@@ -3,7 +3,7 @@ const particlesConfig = {
     background: {
         color: {
             // value: "#FAF3E8"
-            value: "#FFFFFF"
+            value: "transparent"
         },
         image: "",
         position: "",

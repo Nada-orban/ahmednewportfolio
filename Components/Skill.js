@@ -33,7 +33,7 @@ function Skill() {
                     <Typography variant='h6' data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom" data-aos-delay="600">Below are some of my skills, and I'm always looking to learn more.</Typography>
                     <Grid container spacing={2} sx={{ my: "50px", }} >
-                        <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
+                        <Grid item xs={12} sm={12} md={3} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
                             data-aos-delay="700">
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
                                 <CodeIcon sx={{ padding: "20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} />
@@ -42,7 +42,7 @@ function Skill() {
                                 </Typography>
                             </Box>
                         </Grid>
-                        <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
+                        <Grid item xs={12} sm={12} md={3} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
                             data-aos-delay="800">
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
                                 <ShareIcon sx={{ padding: "20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "background.secondary", color: "secondary.main", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} />
@@ -51,12 +51,21 @@ function Skill() {
                                 </Typography>
                             </Box>
                         </Grid>
-                        <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
+                        <Grid item xs={12} sm={12} md={3} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
                             data-aos-delay="900">
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
                                 <StorageIcon sx={{ padding: "20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} />
                                 <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Databases</Typography>
                                 <Typography variant='h6' sx={{ textAlign: "center" }}> SQL database,MongoDB
+                                </Typography>
+                            </Box>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={3} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
+                            data-aos-delay="800">
+                            <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
+                                <ShareIcon sx={{ padding: "20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "background.secondary", color: "secondary.main", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} />
+                                <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Deep Learning Frameworks</Typography>
+                                <Typography variant='h6' sx={{ textAlign: "center" }}>Tensorflow, Keras, Pytorch
                                 </Typography>
                             </Box>
                         </Grid>

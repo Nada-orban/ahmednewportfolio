@@ -15,17 +15,47 @@ import conf3 from '../public/assets/papers/insterspeech (1).png'
 function Papers() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
+    const confarray = [conf1, conf2, conf3];
     return (
-        <Box id="papers" py="50px" color="white" backgroundColor="white" position="relative" >
+        <Box id="papers" py="50px" color="white" backgroundColor="background.secondary" position="relative" >
 
             <Container maxWidth="xlg" >
-                <Box sx={{ px: { sm: "10px", md: "40px" }, py: "100px" }} >
-                    <Grid container >
+                <Box sx={{ px: { sm: "10px", md: "40px" }, py: "50px" }}  >
+                    <Box className={styles.slideTrack} display="flex" justifyContent="space-between" gap="50px" alignItems="center">
+                        {confarray.map((array) => (
+                            <Paper sx={{ width: "400px", height: "400px", textAlign: "center", p: "30px", backgroundColor: "neutral.skill" }} className={styles.paper}>
+                                <Image
+                                    src={array}
+                                    alt="Picture of the skill"
+                                    width={300}
+
+                                />
+                            </Paper>
+                        ))}
+                        {confarray.map((array) => (
+                            <Paper sx={{ width: "400px", height: "400px", textAlign: "center", p: "30px", backgroundColor: "neutral.skill" }} className={styles.paper}>
+                                <Image
+                                    src={array}
+                                    alt="Picture of the author"
+                                    width={300}
+
+                                />
+                            </Paper>
+                        ))}
+                        {confarray.map((array) => (
+                            <Paper sx={{ width: "400px", height: "400px", textAlign: "center", p: "30px", backgroundColor: "neutral.skill" }} className={styles.paper}>
+                                <Image
+                                    src={array}
+                                    alt="Picture of the author"
+                                    width={300}
+
+                                />
+                            </Paper>
+                        ))}
 
 
-
-
-
+                    </Box>
+                    {/* <Grid container >
                         <Grid item md={4} xs={12} sm={12}>
                             <Box >
                                 <Image
@@ -56,7 +86,7 @@ function Papers() {
                             />
                         </Grid>
 
-                    </Grid>
+                    </Grid> */}
                     <Box className={styles.layer}>
                         <Box sx={{ px: { xs: "10px", md: "40px" }, pt: "50px" }}>
                             <Box display="flex" gap="20px">

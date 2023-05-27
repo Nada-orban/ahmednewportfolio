@@ -29,7 +29,7 @@
     margin-bottom: 10px;
 }
 .titlesection1{
-    font-size: 40px;
+    font-size: 65px;
     font-weight: bold;
 }
 
@@ -433,8 +433,9 @@
     /* background: linear-gradient(135deg, #000000 0%, #ffffff00 70% ), */
     /* background: linear-gradient(to right,#0a201cea 0%, #ffffff00 70%),
     url('../../public/assets/backgrounds/Background-ahmed1.jpg'); */
-    background: linear-gradient(to right, #0f6973 0%, #ffffff00 70%),
+    background: linear-gradient(to right , #0f6973 10%, #ffffff00 70%),
     url('../../public/assets/backgrounds/Background-ahmed1.jpg');
+    
     
     
     background-repeat: no-repeat;
@@ -655,6 +656,22 @@
     overflow: hidden;
   
 } */
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+
+}
+
+.slideTrack {
+    margin: 70px 0px;
+    width: calc(80px * 7);
+    /* perspective: 200px; */
+    animation: scroll 10s linear infinite normal;
+
+
+}
 .layer{
     position: absolute;
     top: 0px;

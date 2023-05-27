@@ -46,7 +46,7 @@
 .hamburber {
     width: 30px;
     height: 3px;
-    background: #FAF3E8;
+    background: var(--primary-color);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgb(255, 101, 47, .2);
     transition: all 0.5s ease-in-out;
@@ -57,7 +57,7 @@
     position: absolute;
     width: 30px;
     height: 3px;
-    background:#FAF3E8;
+    background:var(--primary-color);
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
     transform: translateY(-10px);
@@ -68,7 +68,7 @@
     position: absolute;
     width: 30px;
     height: 3px;
-    background: #FAF3E8;
+    background: var(--primary-color);
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
     transform: translateY(10px);
@@ -88,7 +88,7 @@
     position: absolute;
     width: 30px;
     height: 3px;
-    background: #FAF3E8;
+    background: var(--primary-color);
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
     transform: rotate(45deg) translate(35px, -35px);
@@ -99,7 +99,7 @@
     position: absolute;
     width: 30px;
     height: 3px;
-    background:#FAF3E8;
+    background:var(--primary-color);
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
     transform: rotate(-45deg) translate(35px, 35px);

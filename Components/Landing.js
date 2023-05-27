@@ -33,12 +33,13 @@ function Landing() {
     const theme = useTheme();
 
     return (
-        <Box id="home" height="100vh" >
+        <Box id="home" height="100vh">
+            <Particlesbackground />
 
-            <Container maxWidth="xlg" >
+            <Container >
                 <Box sx={{ position: "relative" }} spacing={2} height="100vh" >
 
-                    <Particlesbackground />
+
 
                     {/* <Box sx={{ position: "absolute", top: "-150px", opacity: 0.4, }} >
                         <div ><Lottie animationData={waveform} className={styles.wavejson} /></div>
