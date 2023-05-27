@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { AppBar, Avatar, Container } from '@mui/material';
 import Box from '@mui/material/Box';
@@ -43,6 +43,7 @@ const NavLinks = styled(Link)`
 
 function Nav() {
     const [mobileOpen, setMobileOpen] = React.useState(false);
+    const [navbar, setNavbar] = useState(false)
 
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
@@ -52,117 +53,136 @@ function Nav() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
 
+
+    //background changing function
+    useEffect(() => {
+        const changeBackground = () => {
+            if (window.scrollY >= 80) {
+                setNavbar(true);
+            } else {
+                setNavbar(false);
+            }
+        }
+        window.addEventListener('scroll', changeBackground);
+
+
+    }, [])
+
     return (
         <Box>
-            <Container maxWidth="xlg">
-                <AppBar
-                    variant="permanent"
-                    position="fixed"
-                    sx={{
-                        display: "flex", backgroundColor: "background.secondary", px: { sm: "10px", md: "40px" }
-                    }}
 
-                >
+            <AppBar
+                variant="permanent"
+                position="fixed"
+                sx={{
+                    display: "flex", backgroundColor: "background.secondary",
+                }}
+                className={navbar ? Styles.Appbaractive : Styles.Appbar}
+
+            >
+                <Container maxWidth="xlg">
                     <Toolbar>
+                        <Box display='flex' flexGrow={1} alignItems="center" justifyContent="space-between" sx={{ px: { sm: "10px", md: "40px" } }}>
 
-                        <Typography variant="h6" noWrap sx={{ flexGrow: 1, }} component="div">
-                            Ahmed Adel Attia
-                        </Typography>
-                        <Box onClick={handleDrawerToggle} sx={{ display: { md: "none", sm: "flex" }, cursor: "pointer" }}>
-                            <Box className={mobileOpen ? Styles.activeHamburger : Styles.hamburber}></Box>
-                        </Box>
-                        <Box sx={{ display: { xs: "none", sm: 'none', md: 'block', } }}>
-                            <List sx={{ display: "flex" }}>
-                                <ListItem>
-                                    <NavLinks to="about" spy={true} smooth={true} offset={-50} duration={500}   >
-                                        <ListItemButton >
-                                            <Typography variant="h6">About</Typography>
-                                            {/* <ListItemText primary="About" /> */}
-                                        </ListItemButton>
-                                    </NavLinks>
-                                </ListItem>
+                            <Typography variant="h5" noWrap sx={{ flexGrow: 1, color: "text.primary", fontWeight: "bold", fontStyle: "italic" }} >
+                                Ahmed Adel Attia
+                            </Typography>
+                            <Box onClick={handleDrawerToggle} sx={{ display: { md: "none", sm: "flex" }, cursor: "pointer" }}>
+                                <Box className={mobileOpen ? Styles.activeHamburger : Styles.hamburber}></Box>
+                            </Box>
+                            <Box sx={{ display: { xs: "none", sm: 'none', md: 'block', } }}>
+                                <List sx={{ display: "flex" }}>
+                                    <ListItem>
+                                        <NavLinks to="about" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink}  >
+                                            <ListItemButton >
+                                                <Typography variant="h6">About</Typography>
+                                                {/* <ListItemText primary="About" /> */}
+                                            </ListItemButton>
+                                        </NavLinks>
+                                    </ListItem>
 
-                                <ListItem>
-                                    <NavLinks to="skills" spy={true} smooth={true} offset={-50} duration={500}  >
-                                        <ListItemButton >
-                                            <Typography variant="h6">Skills</Typography>
-                                        </ListItemButton>
-                                    </NavLinks>
-                                </ListItem>
+                                    <ListItem>
+                                        <NavLinks to="skills" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
+                                            <ListItemButton >
+                                                <Typography variant="h6">Skills</Typography>
+                                            </ListItemButton>
+                                        </NavLinks>
+                                    </ListItem>
 
-                                <ListItem>
-                                    <NavLinks to="projects" spy={true} smooth={true} offset={-50} duration={500}  >
-                                        <ListItemButton >
-                                            <Typography variant="h6">Projects</Typography>
-                                            {/* <ListItemText primary="Projects" /> */}
-                                        </ListItemButton>
-                                    </NavLinks>
-                                </ListItem>
+                                    <ListItem>
+                                        <NavLinks to="projects" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink}  >
+                                            <ListItemButton >
+                                                <Typography variant="h6">Projects</Typography>
+                                                {/* <ListItemText primary="Projects" /> */}
+                                            </ListItemButton>
+                                        </NavLinks>
+                                    </ListItem>
 
-                                <ListItem>
-                                    <NavLinks to="papers" spy={true} smooth={true} offset={-50} duration={500}  >
-                                        <ListItemButton >
-                                            <Typography variant="h6">Papers</Typography>
-                                            {/* <ListItemText primary="Projects" /> */}
-                                        </ListItemButton>
-                                    </NavLinks>
-                                </ListItem>
+                                    <ListItem>
+                                        <NavLinks to="papers" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
+                                            <ListItemButton >
+                                                <Typography variant="h6">Papers</Typography>
+                                                {/* <ListItemText primary="Projects" /> */}
+                                            </ListItemButton>
+                                        </NavLinks>
+                                    </ListItem>
 
-                                <ListItem>
-                                    <NavLinks to="experience" spy={true} smooth={true} offset={-50} duration={500}  >
-                                        <ListItemButton >
-                                            <Typography variant="h6">Timeline</Typography>
-                                            {/* <ListItemText primary="Projects" /> */}
-                                        </ListItemButton>
-                                    </NavLinks>
-                                </ListItem>
+                                    <ListItem>
+                                        <NavLinks to="experience" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
+                                            <ListItemButton >
+                                                <Typography variant="h6">Timeline</Typography>
+                                                {/* <ListItemText primary="Projects" /> */}
+                                            </ListItemButton>
+                                        </NavLinks>
+                                    </ListItem>
 
 
-                                <ListItem>
-                                    <NavLinks to="contact" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
-                                        <ListItemButton >
-                                            <Typography variant="h6">Contact</Typography>
+                                    <ListItem>
+                                        <NavLinks to="contact" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
+                                            <ListItemButton >
+                                                <Typography variant="h6">Contact</Typography>
 
-                                        </ListItemButton>
-                                    </NavLinks>
-                                </ListItem>
+                                            </ListItemButton>
+                                        </NavLinks>
+                                    </ListItem>
 
-                                {/* <IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">
+                                    {/* <IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">
                                 {theme.palette.mode === 'dark' ? <LightModeIcon sx={{ color: "secondary.main" }} /> : <NightlightRoundIcon sx={{ color: "white" }} />}
                             </IconButton> */}
-                            </List>
+                                </List>
+                            </Box>
                         </Box>
                     </Toolbar>
 
                     <Box className={mobileOpen ? Styles.menuBoxactive : Styles.menuBox} backgroundColor="background.secondary" textAlign="end" mt="55px" BackdropProps={{ invisible: false }} >
                         {mobileOpen && (<List  >
                             <ListItem>
-                                <NavLinks to="about" spy={true} smooth={true} offset={-50} duration={500} >
+                                <NavLinks to="about" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
                                     <ListItemText primary="ABOUT" />
                                 </NavLinks>
                             </ListItem>
                             <ListItem>
-                                <NavLinks to="skills" spy={true} smooth={true} offset={-50} duration={500} >
+                                <NavLinks to="skills" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
                                     <ListItemText primary="SKILLS" />
                                 </NavLinks>
                             </ListItem>
                             <ListItem>
-                                <NavLinks to="projects" spy={true} smooth={true} offset={-50} duration={500}>
+                                <NavLinks to="projects" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
                                     <ListItemText primary="PROJECTS" />
                                 </NavLinks>
                             </ListItem>
                             <ListItem>
-                                <NavLinks to="papers" spy={true} smooth={true} offset={-50} duration={500}>
+                                <NavLinks to="papers" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
                                     <ListItemText primary="PAPERS" />
                                 </NavLinks>
                             </ListItem>
                             <ListItem>
-                                <NavLinks to="experience" spy={true} smooth={true} offset={-50} duration={500} >
+                                <NavLinks to="experience" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
                                     <ListItemText primary="TIMELINE" />
                                 </NavLinks>
                             </ListItem>
                             <ListItem>
-                                <NavLinks to="contact" spy={true} smooth={true} offset={-50} duration={500}>
+                                <NavLinks to="contact" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
                                     <ListItemText primary="CONTACT" />
                                 </NavLinks>
                             </ListItem>
@@ -178,10 +198,9 @@ function Nav() {
                         )}
 
                     </Box>
+                </Container>
+            </AppBar>
 
-
-                </AppBar>
-            </Container>
         </Box>
     )
 }
