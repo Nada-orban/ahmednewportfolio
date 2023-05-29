@@ -7,9 +7,9 @@ import { styled, useTheme, alpha } from '@mui/material/styles';
 import Link from 'next/link'
 import DownloadIcon from '@mui/icons-material/Download';
 import Image from 'next/image'
-import conf1 from '../public/assets/papers/eusipco2023_logo_large (1).png'
+import conf1 from '../public/assets/papers/eusipco2023_logo_large (3).png'
 import conf2 from '../public/assets/papers/icassp (1).png'
-import conf3 from '../public/assets/papers/insterspeech (1).png'
+import conf3 from '../public/assets/papers/insterspeech (3).png'
 
 
 function Papers() {
@@ -23,35 +23,44 @@ function Papers() {
                 <Box sx={{ px: { sm: "10px", md: "40px" }, py: "50px" }}  >
                     <Box className={styles.slideTrack} display="flex" justifyContent="space-between" gap="50px" alignItems="center">
                         {confarray.map((array) => (
-                            <Paper sx={{ width: "400px", height: "400px", textAlign: "center", p: "30px", backgroundColor: "neutral.skill" }} className={styles.paper}>
+                            <Paper sx={{ width: "400px", height: "400px", textAlign: "center", p: "50px 30px", backgroundColor: "white" }} className={styles.paper}>
                                 <Image
                                     src={array}
                                     alt="Picture of the skill"
+
                                     width={300}
 
                                 />
                             </Paper>
                         ))}
                         {confarray.map((array) => (
-                            <Paper sx={{ width: "400px", height: "400px", textAlign: "center", p: "30px", backgroundColor: "neutral.skill" }} className={styles.paper}>
+                            <Paper sx={{
+                                width: "400px", height: "400px", textAlign: "center", p: "50px 30px", backgroundColor: "white"
+                            }} className={styles.paper}>
                                 <Image
                                     src={array}
                                     alt="Picture of the author"
+
                                     width={300}
 
                                 />
                             </Paper>
                         ))}
                         {confarray.map((array) => (
-                            <Paper sx={{ width: "400px", height: "400px", textAlign: "center", p: "30px", backgroundColor: "neutral.skill" }} className={styles.paper}>
+                            <Paper sx={{
+                                width: "400px", height: "400px", textAlign: "center", p: "50px 30px", backgroundColor: "white"
+                            }} className={styles.paper}>
                                 <Image
                                     src={array}
                                     alt="Picture of the author"
+
                                     width={300}
 
                                 />
                             </Paper>
                         ))}
+
+
 
 
                     </Box>

@@ -75,77 +75,111 @@ function Contact() {
                                 <Link href="https://www.upwork.com/freelancers/~0158c861bae4be2e7b" ><Avatar sx={{ width: "30px", height: "30px", backgroundColor: "secondary.main", color: "white" }} className={styles.nadaavatar}><SiUpwork /></Avatar></Link>
                             </Box> */}
                             <form onSubmit={handleSubmit}  >
-                                <Box gap="5px" mb="10px" mt="30px" sx={{ display: { sm: 'grid', md: "flex" } }}>
+                                <Box mb="20px">
+                                    <Box gap="5px" mb="10px" mt="30px" sx={{ display: { sm: 'grid', md: "flex" } }}>
+                                        <TextField
+                                            data-aos="fade-up"
+                                            data-aos-anchor-placement="top-bottom" data-aos-delay="1100"
+                                            // sx={{ '& .css-14m6kzo-MuiInputBase-root-MuiFilledInput-root.Mui-focused': { backgroundColor: "neutral.white" } }}
+                                            id="name"
+                                            name="name"
+                                            type="name"
+                                            label="Name"
+                                            variant="filled"
+                                            color="secondary"
+                                            style={{
+                                                backgroundColor: "#055f6946", width: "100%"
+                                            }}
+                                            InputProps={{
+                                                style: {
+                                                    color: "white"
+                                                }
+                                            }}
+                                            f
+                                        />
+                                        <ValidationError
+                                            prefix="Name"
+                                            field="name"
+                                            errors={state.errors}
+                                        />
+                                        <TextField
+                                            data-aos="fade-up"
+                                            data-aos-anchor-placement="top-bottom" data-aos-delay="1200"
+                                            sx={{ mt: { xs: "10px", md: '0px' } }}
+                                            id="email"
+                                            name="email"
+                                            type="email"
+                                            label="Email"
+                                            variant="filled"
+                                            color="secondary"
+
+                                            style={{
+                                                backgroundColor: "#055f6946", width: "100%",
+                                            }}
+                                            InputProps={{
+                                                style: {
+                                                    color: "white"
+                                                }
+                                            }}
+
+
+
+                                        />
+                                        <ValidationError
+                                            prefix="Email"
+                                            field="email"
+                                            errors={state.errors}
+                                        />
+                                    </Box>
+                                    <Box mb="10px" data-aos="fade-up"
+                                        data-aos-anchor-placement="top-bottom" data-aos-delay="1300">
+                                        <TextField
+                                            data-aos="fade-up"
+                                            data-aos-anchor-placement="top-bottom" data-aos-delay="1300"
+
+                                            id="subject"
+                                            name="subject"
+                                            label="subject"
+                                            color="secondary"
+                                            variant="filled"
+                                            multiline
+
+
+                                            style={{
+                                                backgroundColor: "#055f6946", width: "100%"
+                                            }}
+                                            InputProps={{
+                                                style: {
+                                                    color: "white"
+                                                }
+                                            }}
+
+
+
+
+                                        />
+                                        <ValidationError
+                                            prefix="Message"
+                                            field="message"
+                                            errors={state.errors}
+                                        />
+
+
+                                    </Box>
+
                                     <TextField
                                         data-aos="fade-up"
-                                        data-aos-anchor-placement="top-bottom" data-aos-delay="1100"
-                                        // sx={{ '& .css-14m6kzo-MuiInputBase-root-MuiFilledInput-root.Mui-focused': { backgroundColor: "neutral.white" } }}
-                                        id="name"
-                                        name="name"
-                                        type="name"
-                                        label="Name"
-                                        variant="filled"
-                                        color="secondary"
-                                        style={{
-                                            backgroundColor: "#04574c49", width: "100%"
-                                        }}
-                                        InputProps={{
-                                            style: {
-                                                color: "white"
-                                            }
-                                        }}
-                                        f
-                                    />
-                                    <ValidationError
-                                        prefix="Name"
-                                        field="name"
-                                        errors={state.errors}
-                                    />
-                                    <TextField
-                                        data-aos="fade-up"
-                                        data-aos-anchor-placement="top-bottom" data-aos-delay="1200"
-                                        sx={{ mt: { xs: "10px", md: '0px' } }}
-                                        id="email"
-                                        name="email"
-                                        type="email"
-                                        label="Email"
-                                        variant="filled"
-                                        color="secondary"
-
-                                        style={{
-                                            backgroundColor: "#04574c49", width: "100%",
-                                        }}
-                                        InputProps={{
-                                            style: {
-                                                color: "white"
-                                            }
-                                        }}
-
-
-
-                                    />
-                                    <ValidationError
-                                        prefix="Email"
-                                        field="email"
-                                        errors={state.errors}
-                                    />
-                                </Box>
-                                <Box mb="10px" data-aos="fade-up"
-                                    data-aos-anchor-placement="top-bottom" data-aos-delay="1300">
-                                    <TextField
-                                        data-aos="fade-up"
-                                        data-aos-anchor-placement="top-bottom" data-aos-delay="1300"
-
-                                        id="subject"
-                                        name="subject"
-                                        label="subject"
+                                        data-aos-anchor-placement="top-bottom" data-aos-delay="1400"
+                                        id="message"
+                                        name="message"
+                                        label="Message"
                                         color="secondary"
                                         variant="filled"
                                         multiline
-
+                                        rows={6}
 
                                         style={{
-                                            backgroundColor: "#04574c49", width: "100%"
+                                            backgroundColor: "#055f6946", width: "100%"
                                         }}
                                         InputProps={{
                                             style: {
@@ -162,39 +196,8 @@ function Contact() {
                                         field="message"
                                         errors={state.errors}
                                     />
-
-
                                 </Box>
 
-                                <TextField
-                                    data-aos="fade-up"
-                                    data-aos-anchor-placement="top-bottom" data-aos-delay="1400"
-                                    id="message"
-                                    name="message"
-                                    label="Message"
-                                    color="secondary"
-                                    variant="filled"
-                                    multiline
-                                    rows={6}
-
-                                    style={{
-                                        backgroundColor: "#04574c49", width: "100%"
-                                    }}
-                                    InputProps={{
-                                        style: {
-                                            color: "white"
-                                        }
-                                    }}
-
-
-
-
-                                />
-                                <ValidationError
-                                    prefix="Message"
-                                    field="message"
-                                    errors={state.errors}
-                                />
                                 <button className={styles.normalButton2} type="submit" data-aos="fade-right" data-aos-delay="1500">
                                     <div className={styles.normalButtonbg}></div>
                                     <Box display="flex" justifyContent="center" alignItems="center" >

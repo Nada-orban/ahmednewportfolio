@@ -84,7 +84,7 @@ function Nav() {
                     <Toolbar>
                         <Box display='flex' flexGrow={1} alignItems="center" justifyContent="space-between" sx={{ px: { sm: "10px", md: "40px" } }}>
 
-                            <Typography variant="h5" noWrap sx={{ flexGrow: 1, color: "text.primary", fontWeight: "bold", fontStyle: "italic" }} >
+                            <Typography variant="h5" noWrap sx={{ flexGrow: 1, color: "text.primary", fontWeight: "bold", }} >
                                 Ahmed Adel Attia
                             </Typography>
                             <Box onClick={handleDrawerToggle} sx={{ display: { md: "none", sm: "flex" }, cursor: "pointer" }}>
@@ -154,30 +154,30 @@ function Nav() {
                         </Box>
                     </Toolbar>
 
-                    <Box className={mobileOpen ? Styles.menuBoxactive : Styles.menuBox} backgroundColor="background.secondary" textAlign="end" mt="55px" BackdropProps={{ invisible: false }} >
+                    <Box className={mobileOpen ? Styles.menuBoxactive : Styles.menuBox} backgroundColor="background.secondary" textAlign="end" mt="4px" BackdropProps={{ invisible: false }} sx={{ sm: "block", md: "none", lg: "none" }} >
                         {mobileOpen && (<List  >
                             <ListItem>
-                                <NavLinks to="about" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
+                                <NavLinks to="about" spy={true} smooth={true} offset={-50} duration={500}  >
                                     <ListItemText primary="ABOUT" />
                                 </NavLinks>
                             </ListItem>
                             <ListItem>
-                                <NavLinks to="skills" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
+                                <NavLinks to="skills" spy={true} smooth={true} offset={-50} duration={500}  >
                                     <ListItemText primary="SKILLS" />
                                 </NavLinks>
                             </ListItem>
                             <ListItem>
-                                <NavLinks to="projects" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
+                                <NavLinks to="projects" spy={true} smooth={true} offset={-50} duration={500}  >
                                     <ListItemText primary="PROJECTS" />
                                 </NavLinks>
                             </ListItem>
                             <ListItem>
-                                <NavLinks to="papers" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
+                                <NavLinks to="papers" spy={true} smooth={true} offset={-50} duration={500}  >
                                     <ListItemText primary="PAPERS" />
                                 </NavLinks>
                             </ListItem>
                             <ListItem>
-                                <NavLinks to="experience" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
+                                <NavLinks to="experience" spy={true} smooth={true} offset={-50} duration={500}  >
                                     <ListItemText primary="TIMELINE" />
                                 </NavLinks>
                             </ListItem>

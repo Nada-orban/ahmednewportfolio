@@ -33,7 +33,7 @@ function Landing() {
     const theme = useTheme();
 
     return (
-        <Box id="home" height="100vh">
+        <Box id="home" height="100vh" overflow="hidden">
             <Particlesbackground />
 
             <Container >
@@ -140,7 +140,7 @@ function Landing() {
                         <Typography variant='h4' mb="50px" mx="5px" data-aos="fade-up" data-aos-delay="1900"
                             data-aos-anchor-placement="top-bottom">Deep Learning Ph.D Resercher</Typography>
 
-                        <Box display="flex" sx={{ justifyContent: "start", mt: { sm: "10px", xs: "10px", md: "0px", lg: "0px" } }} alignItems="center" gap="20px" >
+                        <Box display="flex" sx={{ justifyContent: "start", mt: { sm: "10px", xs: "10px", md: "0px", lg: "0px" }, mb: "30px" }} alignItems="center" gap="20px" >
                             <Link href="mailto:nadasamir9334@gmail.com" ><Avatar variant="rounded" sx={{ width: "50px", height: "50px", backgroundColor: "secondary.main", color: "white" }} className={styles.nadaavatar}><EmailIcon /></Avatar></Link>
                             <Link href="https://www.linkedin.com/in/nada-samir-441a58130/" ><Avatar variant="rounded" sx={{ width: "50px", height: "50px", backgroundColor: "secondary.main", color: "white" }} className={styles.nadaavatar}><FiLinkedin /></Avatar></Link>
                             <Link href="https://github.com/Nada-orban" ><Avatar variant="rounded" sx={{ width: "50px", height: "50px", backgroundColor: "secondary.main", color: "white" }} className={styles.nadaavatar}><FiGithub /></Avatar></Link>
@@ -149,7 +149,7 @@ function Landing() {
 
 
 
-                        <Box sx={{ display: { xs: "grid", md: "flex" } }} gap="20px" justifyItems="center" justifyContent="start">
+                        <Box sx={{ display: { xs: "grid", md: "flex", } }} gap="20px" justifyItems="center" justifyContent="start">
                             <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} data-aos="fade-right" data-aos-delay="2000" >
                                 <button className={styles.normalButton2} >
                                     <div className={styles.normalButtonbg}></div>
