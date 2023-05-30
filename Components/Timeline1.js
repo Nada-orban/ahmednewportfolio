@@ -19,9 +19,9 @@ function Timeline1() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
     return (
-        <Box id="timeline" pb="50px" >
+        <Box id="experience" py="100px" height="100vh">
             <Container maxWidth="xlg" >
-                <Box sx={{ px: { sm: "10px", md: "40px" } }}>
+                <Box sx={{ px: { sm: "10px", md: "40px" }, }}>
                     <Box display="flex" gap="20px">
                         <div className={styles.titlesection}>
                             <h1>
@@ -39,11 +39,74 @@ function Timeline1() {
                         </div>
 
                     </Box>
-                    <Timeline position="alternate" className={styles.timeline}>
+                    <Timeline position="alternate" className={styles.timeline} sx={{ display: { xs: "none", sm: "none", md: "block" }, mt: "-600px", }}>
+                        <TimelineItem>
+
+                            <TimelineOppositeContent >
+                                <Box className={styles.timelineContent} marginLeft="100px">
+                                    <Typography variant='subtitle1' sx={{ color: "text.secondary" }}>Nov 2022 ‐ Now</Typography>
+                                    <Typography variant='h5' sx={{ fontWeight: "bold" }}>Machine Learning Developer</Typography>
+                                    <Typography variant="h4" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
+                                        OpenAI
+                                    </Typography>
+                                    <Typography variant='subtitle1' sx={{ fontWeight: "bold" }}>US - Remote</Typography>
+                                    <Typography variant='subtitle1'>
+                                        <ul>
+                                            <li>Working on the tether project.</li>
+                                            <li>Helping reinforcement learning models to fine‐tune and enhance chatgpt performance.</li>
+                                        </ul></Typography>
+                                </Box>
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineDot />
+                                <TimelineConnector sx={{ height: "400px" }} />
+                            </TimelineSeparator>
+                            <TimelineContent className={styles.timelineContentContainer}>
+                                <Box className={styles.timelineContentup}>
+                                    Eat
+                                </Box>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineOppositeContent color="text.secondary" className={styles.timelineContentContainer}>
+                                <Box className={styles.timelineContentup}>
+                                    9.30pm
+                                </Box>
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineDot />
+                                <TimelineConnector sx={{ height: "400px" }} />
+                            </TimelineSeparator>
+                            <TimelineContent className={styles.timelineContentContainer}>
+                                <Box className={styles.timelineContent}>
+                                    <Typography variant='subtitle1' sx={{ color: "text.secondary" }}>Nov 2022 ‐ Now</Typography>
+                                    <Typography variant='h5' sx={{ fontWeight: "bold", }}>Machine Learning Developer</Typography>
+                                    <Typography variant="h4" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
+                                        OpenAI
+                                    </Typography>
+                                    <Typography variant='subtitle1' sx={{ fontWeight: "bold" }}>US - Remote</Typography>
+                                    <Typography variant='subtitle1'>
+                                        <ul>
+                                            <li>Working on the tether project.</li>
+                                            <li>Helping reinforcement learning models to fine‐tune and enhance chatgpt performance.</li>
+                                        </ul></Typography>
+                                </Box>
+                            </TimelineContent>
+                        </TimelineItem>
                         <TimelineItem>
                             <TimelineOppositeContent >
                                 <Box className={styles.timelineContent}>
-                                    9.30pm
+                                    <Typography variant='subtitle1' sx={{ color: "text.secondary" }}>Nov 2022 ‐ Now</Typography>
+                                    <Typography variant='h5' sx={{ fontWeight: "bold", }}>Machine Learning Developer</Typography>
+                                    <Typography variant="h4" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
+                                        OpenAI
+                                    </Typography>
+                                    <Typography variant='subtitle1' sx={{ fontWeight: "bold" }}>US - Remote</Typography>
+                                    <Typography variant='subtitle1'>
+                                        <ul>
+                                            <li>Working on the tether project.</li>
+                                            <li>Helping reinforcement learning models to fine‐tune and enhance chatgpt performance.</li>
+                                        </ul></Typography>
                                 </Box>
                             </TimelineOppositeContent>
                             <TimelineSeparator>
@@ -51,14 +114,14 @@ function Timeline1() {
                                 <TimelineConnector sx={{ height: "400px" }} />
                             </TimelineSeparator>
                             <TimelineContent className={styles.timelineContentContainer}>
-                                <Box className={styles.timelineContent}>
+                                <Box className={styles.timelineContentup}>
                                     Eat
                                 </Box>
                             </TimelineContent>
                         </TimelineItem>
                         <TimelineItem>
                             <TimelineOppositeContent color="text.secondary" className={styles.timelineContentContainer}>
-                                <Box className={styles.timelineContent}>
+                                <Box className={styles.timelineContentup}>
                                     9.30pm
                                 </Box>
                             </TimelineOppositeContent>
@@ -68,43 +131,22 @@ function Timeline1() {
                             </TimelineSeparator>
                             <TimelineContent className={styles.timelineContentContainer}>
                                 <Box className={styles.timelineContent}>
-                                    Eat
-                                </Box>
-                            </TimelineContent>
-                        </TimelineItem>
-                        <TimelineItem>
-                            <TimelineOppositeContent color="text.secondary" >
-                                <Box className={styles.timelineContent}>
-                                    9.30pm
-                                </Box>
-                            </TimelineOppositeContent>
-                            <TimelineSeparator>
-                                <TimelineDot />
-                                <TimelineConnector sx={{ height: "400px" }} />
-                            </TimelineSeparator>
-                            <TimelineContent className={styles.timelineContentContainer}>
-                                <Box className={styles.timelineContent}>
-                                    Eat
-                                </Box>
-                            </TimelineContent>
-                        </TimelineItem>
-                        <TimelineItem>
-                            <TimelineOppositeContent color="text.secondary" className={styles.timelineContentContainer}>
-                                <Box className={styles.timelineContent}>
-                                    9.30pm
-                                </Box>
-                            </TimelineOppositeContent>
-                            <TimelineSeparator>
-                                <TimelineDot />
-                                <TimelineConnector sx={{ height: "400px" }} />
-                            </TimelineSeparator>
-                            <TimelineContent className={styles.timelineContentContainer}>
-                                <Box className={styles.timelineContent}>
-                                    Eat
+                                    <Typography variant='subtitle1' sx={{ color: "text.secondary" }}>Nov 2022 ‐ Now</Typography>
+                                    <Typography variant='h5' sx={{ fontWeight: "bold", }}>Machine Learning Developer</Typography>
+                                    <Typography variant="h4" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
+                                        OpenAI
+                                    </Typography>
+                                    <Typography variant='subtitle1' sx={{ fontWeight: "bold" }}>US - Remote</Typography>
+                                    <Typography variant='subtitle1'>
+                                        <ul>
+                                            <li>Working on the tether project.</li>
+                                            <li>Helping reinforcement learning models to fine‐tune and enhance chatgpt performance.</li>
+                                        </ul></Typography>
                                 </Box>
                             </TimelineContent>
                         </TimelineItem>
                     </Timeline>
+                    <Timelinemobileview />
                     {/* <Timeline position="alternate" sx={{ my: 5, display: { xs: "none", sm: "block" } }} className={styles.timeline}>
                         <TimelineItem>
                             <TimelineOppositeContent className={styles.timelineContent}>

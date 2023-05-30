@@ -707,7 +707,7 @@
 
 /********************* timeline ************************/
 .timeline {
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
     
 }
 
@@ -716,20 +716,31 @@
     text-align: left;
     
 }
+.timelineContentup {
+    display: inline-block;
+
+    transform: rotate(90deg);
+    text-align: center;
+    
+    min-width: 50;
+
+}
 
 
 .timelineContent {
     display: inline-block;
-
-        transform: rotate(-90deg);
-        text-align: center;
+        transform: rotate(90deg);
+        text-align:start;
+        margin-top: 110px;
         min-width: 50;
+        max-width: 350px;
+        margin-right: -50px;
         
 }
 
 
 .timelineIcon {
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
 }
 /* .timelinecircle{
     position: relative;
