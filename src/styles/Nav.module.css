@@ -18,6 +18,26 @@
     
 
 }
+.hoverbutton{
+    border-radius: 50%;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+
+
+
+}
+.hoverbutton:hover{
+    border-radius: 50%;
+    background-color: var(--secondray-maincolor);
+}
+.hoverbuttonactive{
+    border-radius: 50%;
+    background-color: var(--secondray-maincolor);
+    width: 50px;
+    height: 50px;
+
+}
 
 .navlink{
     color: var(--primary-color);
@@ -46,10 +66,13 @@
 .hamburber {
     width: 30px;
     height: 3px;
-    background: var(--primary-color);
+    background: white;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgb(255, 101, 47, .2);
     transition: all 0.5s ease-in-out;
+    top: 23px;
+    left: 10px;
+
 }
 
 .hamburber::before {
@@ -57,7 +80,7 @@
     position: absolute;
     width: 30px;
     height: 3px;
-    background:var(--primary-color);
+    background:white;
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
     transform: translateY(-10px);
@@ -68,7 +91,7 @@
     position: absolute;
     width: 30px;
     height: 3px;
-    background: var(--primary-color);
+    background: white;
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
     transform: translateY(10px);
@@ -81,14 +104,18 @@
     transform: translateX(-50px);
     background: transparent;
     transition: all 0.5s ease-in-out;
+    top: 23px;
+    left: 10px;
+    
 }
+
 
 .activeHamburger::before {
     content: '';
     position: absolute;
     width: 30px;
     height: 3px;
-    background: var(--primary-color);
+    background: white;
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
     transform: rotate(45deg) translate(35px, -35px);
@@ -99,7 +126,7 @@
     position: absolute;
     width: 30px;
     height: 3px;
-    background:var(--primary-color);
+    background:white;
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
     transform: rotate(-45deg) translate(35px, 35px);
@@ -129,4 +156,37 @@
     
 
 
+}
+.bigmenuBox {
+    position: fixed;
+    width: 100%;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+
+
+
+
+}
+
+.bigmenuBoxactive {
+    position: fixed;
+    width: 100vh;
+    height: 100%;
+    padding-left: 40px;
+    transform: translateX(-2.8%);
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+    color: white !important;
+    
+
+
+
+}
+.mobilenavlink{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.emailstyle{
+    color: var(--secondray-maincolor);
 }

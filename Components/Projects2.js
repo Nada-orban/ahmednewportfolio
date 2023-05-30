@@ -100,15 +100,16 @@ function Projects2() {
                 </Container>
                 <Grid container sx={{ my: "80px" }} data-aos="fade-up"
                     data-aos-anchor-placement="top-bottom" data-aos-delay="800">
-                    {projectsdata.map(project => (
+                    {/* {projectsdata.map(project => (
                         <Grid item xs={12} sm={6} lg={3} md={6}>
 
                             <Box className={styles.projectBox}>
                                 <img src={project.image} alt='' className={styles.boximage} />
                                 <Box className={styles.boxtext} onClick={handleClickOpen}>
                                     <Typography variant='subtitle1'>VIEW PROJECT</Typography>
-                                </Box>
 
+                                </Box>
+                                <Typography >{project.title}</Typography>
                             </Box>
                             <BootstrapDialog
                                 onClose={handleClose}
@@ -116,34 +117,152 @@ function Projects2() {
                                 open={open}
                             >
                                 <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
-                                    Modal title
+                                    {project.title}
                                 </BootstrapDialogTitle>
                                 <DialogContent dividers>
                                     <Typography gutterBottom>
-                                        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                                        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-                                        consectetur ac, vestibulum at eros.
+                                        {project.body}
                                     </Typography>
-                                    <Typography gutterBottom>
-                                        Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-                                        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-                                    </Typography>
-                                    <Typography gutterBottom>
-                                        Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
-                                        magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec
-                                        ullamcorper nulla non metus auctor fringilla.
-                                    </Typography>
+
                                 </DialogContent>
-                                <DialogActions>
+                                 <DialogActions>
                                     <button autoFocus onClick={handleClose}>
                                         Save changes
                                     </button>
-                                </DialogActions>
+                                </DialogActions> 
                             </BootstrapDialog>
 
                         </Grid>
 
-                    ))}
+                    ))} */}
+                    <Grid item xs={12} sm={6} lg={3} md={6}>
+
+                        <Box className={styles.projectBox}>
+                            <img src="" alt='' className={styles.boximage} />
+                            <Box className={styles.boxtext} onClick={handleClickOpen}>
+                                <Typography variant='subtitle1'>VIEW PROJECT</Typography>
+
+                            </Box>
+
+                        </Box>
+                        <BootstrapDialog
+                            onClose={handleClose}
+                            aria-labelledby="customized-dialog-title"
+                            open={open}
+                        >
+                            <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
+                                Efficient Speech Enhancement GANs
+                            </BootstrapDialogTitle>
+                            <DialogContent dividers>
+                                <Typography gutterBottom>
+                                    During my tenure at Omnispeech, I contributed to the development of efficient speech enhancement models. My work involved scaling down large Speech Enhancement GANs to sub-1 Million parameter models, ensuring excellent clarity and noise cancellation in real-time applications.
+                                </Typography>
+
+                            </DialogContent>
+                            {/* <DialogActions>
+                                    <button autoFocus onClick={handleClose}>
+                                        Save changes
+                                    </button>
+                                </DialogActions> */}
+                        </BootstrapDialog>
+
+                    </Grid>
+                    <Grid item xs={12} sm={6} lg={3} md={6}>
+
+                        <Box className={styles.projectBox}>
+                            <img src="" alt='' className={styles.boximage} />
+                            <Box className={styles.boxtext} onClick={handleClickOpen}>
+                                <Typography variant='subtitle1'>VIEW PROJECT</Typography>
+
+                            </Box>
+
+                        </Box>
+                        <BootstrapDialog
+                            onClose={handleClose}
+                            aria-labelledby="customized-dialog-title"
+                            open={open}
+                        >
+                            <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
+                                Optimizing Tensorflow dataset pipeline for large audio dataset
+                            </BootstrapDialogTitle>
+                            <DialogContent dividers>
+                                <Typography gutterBottom>
+                                    At Omnispeech, I optimized the audio data loading pipeline for deep learning experiments using Tensorflow. By achieving near-optimal ~100% GPU utilization, the pipeline significantly enhanced the efficiency of training small and medium-sized models.
+                                </Typography>
+
+                            </DialogContent>
+                            {/* <DialogActions>
+                                    <button autoFocus onClick={handleClose}>
+                                        Save changes
+                                    </button>
+                                </DialogActions> */}
+                        </BootstrapDialog>
+
+                    </Grid>
+                    <Grid item xs={12} sm={6} lg={3} md={6}>
+
+                        <Box className={styles.projectBox}>
+                            <img src="" alt='' className={styles.boximage} />
+                            <Box className={styles.boxtext} onClick={handleClickOpen}>
+                                <Typography variant='subtitle1'>VIEW PROJECT</Typography>
+
+                            </Box>
+
+                        </Box>
+                        <BootstrapDialog
+                            onClose={handleClose}
+                            aria-labelledby="customized-dialog-title"
+                            open={open}
+                        >
+                            <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
+                                VR Hostage Rescue Video Game Open source
+                            </BootstrapDialogTitle>
+                            <DialogContent dividers>
+                                <Typography gutterBottom>
+                                    I created an immersive Virtual Reality video game using Unity for the PC and Oculus platforms. This thrilling game puts players in the midst of hostage rescue missions, delivering an interactive and captivating experience
+                                </Typography>
+
+                            </DialogContent>
+                            {/* <DialogActions>
+                                    <button autoFocus onClick={handleClose}>
+                                        Save changes
+                                    </button>
+                                </DialogActions> */}
+                        </BootstrapDialog>
+
+                    </Grid>
+                    <Grid item xs={12} sm={6} lg={3} md={6}>
+
+                        <Box className={styles.projectBox}>
+                            <img src="" alt='' className={styles.boximage} />
+                            <Box className={styles.boxtext} onClick={handleClickOpen}>
+                                <Typography variant='subtitle1'>VIEW PROJECT</Typography>
+
+                            </Box>
+
+                        </Box>
+                        <BootstrapDialog
+                            onClose={handleClose}
+                            aria-labelledby="customized-dialog-title"
+                            open={open}
+                        >
+                            <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
+                                You Only Look Faster
+                            </BootstrapDialogTitle>
+                            <DialogContent dividers>
+                                <Typography gutterBottom>
+                                    As part of my Bachelor's degree capstone project, I developed a modified version of YOLOv2, called 'You Only Look Faster.' This lightweight object detection model is designed for efficient performance and accuracy.
+                                </Typography>
+
+                            </DialogContent>
+                            {/* <DialogActions>
+                                    <button autoFocus onClick={handleClose}>
+                                        Save changes
+                                    </button>
+                                </DialogActions> */}
+                        </BootstrapDialog>
+
+                    </Grid>
                 </Grid>
 
             </Box>

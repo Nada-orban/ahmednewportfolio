@@ -32,7 +32,6 @@ import logo from '../public/assets/backgrounds/logo2.png'
 import { AiOutlineFilePdf } from 'react-icons/ai'
 import { FiFacebook, FiLinkedin, FiGithub } from 'react-icons/fi'
 import { SiUpwork } from 'react-icons/si'
-import Mobilenav from './Mobilenav';
 
 
 const NavLinks = styled(Link)`
@@ -44,7 +43,7 @@ const NavLinks = styled(Link)`
   
 `;
 
-function Nav() {
+function Mobilenav() {
     const [mobileOpen, setMobileOpen] = React.useState(false);
     const [navbar, setNavbar] = useState(false)
     const [hoverbutton, setHoverbutton] = useState(false)
@@ -63,11 +62,11 @@ function Nav() {
     useEffect(() => {
         const changeBackground = () => {
             if (window.scrollY >= 80) {
-                setNavbar(true);
-
+                setHoverbutton(true);
+                setNavname(true)
             } else {
-                setNavbar(false);
-
+                setHoverbutton(false);
+                setNavname(false)
             }
         }
         window.addEventListener('scroll', changeBackground);
@@ -76,94 +75,31 @@ function Nav() {
     }, [])
 
     return (
-        <>
-            <Box sx={{ display: { sm: "none", md: "block" } }}>
+        <Box sx={{ display: { sm: "block", md: "none" } }}>
 
-                <AppBar
-                    variant="permanent"
-                    position="fixed"
-                    sx={{
-                        display: "flex", backgroundColor: "background.secondary",
-                    }}
-                    className={navbar ? Styles.Appbaractive : Styles.Appbar}
-
-                >
-                    <Container maxWidth="xlg">
-                        <Toolbar >
-                            <Box display='flex' flexGrow={1} alignItems="center" justifyContent="space-between" sx={{ px: { sm: "10px", md: "40px" } }}>
-
-                                <Typography variant="h5" noWrap sx={{ flexGrow: 1, color: "text.primary", fontWeight: "bold", }} >
-                                    Ahmed Adel Attia
-                                </Typography>
-                                <Box onClick={handleDrawerToggle} sx={{ display: { md: "none", sm: "flex" }, cursor: "pointer", position: "relative" }} className={hoverbutton ? Styles.hoverbuttonactive : Styles.hoverbutton}>
-                                    <Box className={mobileOpen ? Styles.activeHamburger : Styles.hamburber} position="absolute"></Box>
-                                </Box>
-                                <Box sx={{ display: { xs: "none", sm: 'none', md: 'block', } }}>
-                                    <List sx={{ display: "flex" }}>
-                                        <ListItem>
-                                            <NavLinks to="about" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink}  >
-                                                <ListItemButton >
-                                                    <Typography variant="h6">About</Typography>
-                                                    {/* <ListItemText primary="About" /> */}
-                                                </ListItemButton>
-                                            </NavLinks>
-                                        </ListItem>
-
-                                        <ListItem>
-                                            <NavLinks to="skills" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
-                                                <ListItemButton >
-                                                    <Typography variant="h6">Skills</Typography>
-                                                </ListItemButton>
-                                            </NavLinks>
-                                        </ListItem>
-
-                                        <ListItem>
-                                            <NavLinks to="projects" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink}  >
-                                                <ListItemButton >
-                                                    <Typography variant="h6">Projects</Typography>
-                                                    {/* <ListItemText primary="Projects" /> */}
-                                                </ListItemButton>
-                                            </NavLinks>
-                                        </ListItem>
-
-                                        <ListItem>
-                                            <NavLinks to="papers" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
-                                                <ListItemButton >
-                                                    <Typography variant="h6">Papers</Typography>
-                                                    {/* <ListItemText primary="Projects" /> */}
-                                                </ListItemButton>
-                                            </NavLinks>
-                                        </ListItem>
-
-                                        <ListItem>
-                                            <NavLinks to="experience" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
-                                                <ListItemButton >
-                                                    <Typography variant="h6">Timeline</Typography>
-                                                    {/* <ListItemText primary="Projects" /> */}
-                                                </ListItemButton>
-                                            </NavLinks>
-                                        </ListItem>
+            <AppBar
+                variant="permanent"
+                position="fixed"
+                sx={{
+                    display: "flex", backgroundColor: "background.secondary",
+                }}
 
 
-                                        <ListItem>
-                                            <NavLinks to="contact" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
-                                                <ListItemButton >
-                                                    <Typography variant="h6">Contact</Typography>
+            >
+                <Container maxWidth="xlg">
+                    <Toolbar>
+                        <Box display='flex' flexGrow={1} alignItems="center" justifyContent="space-between" sx={{ px: { sm: "10px", md: "40px" } }}>
 
-                                                </ListItemButton>
-                                            </NavLinks>
-                                        </ListItem>
-
-                                        {/* <IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">
-                                {theme.palette.mode === 'dark' ? <LightModeIcon sx={{ color: "secondary.main" }} /> : <NightlightRoundIcon sx={{ color: "white" }} />}
-                            </IconButton> */}
-                                    </List>
-                                </Box>
+                            <Typography variant="h5" noWrap sx={{ flexGrow: 1, color: "white", fontWeight: "bold", }} >
+                                Ahmed Adel Attia
+                            </Typography>
+                            <Box onClick={handleDrawerToggle} sx={{ display: { md: "none", sm: "flex" }, cursor: "pointer", position: "relative" }} className={hoverbutton ? Styles.hoverbuttonactive : Styles.hoverbutton}>
+                                <Box className={mobileOpen ? Styles.activeHamburger : Styles.hamburber} position="absolute"></Box>
                             </Box>
-                        </Toolbar>
-                        <Mobilenav />
+                        </Box>
+                    </Toolbar>
 
-                        {/* <Box className={mobileOpen ? Styles.bigmenuBoxactive : Styles.bigmenuBox} backgroundColor="background.secondary" textAlign="end" mt="4px" BackdropProps={{ invisible: false }} sx={{ sm: "block", md: "none", lg: "none" }} >
+                    <Box className={mobileOpen ? Styles.bigmenuBoxactive : Styles.bigmenuBox} backgroundColor="background.secondary" textAlign="end" mt="0px" BackdropProps={{ invisible: false }} sx={{ sm: "block", md: "none", lg: "none" }} >
                         {mobileOpen && (
                             <Box>
                                 <List  >
@@ -203,7 +139,12 @@ function Nav() {
                                             <Typography className={Styles.mobilenavlink}>CONTACT</Typography>
                                         </NavLinks>
                                     </ListItem>
-
+                                    {/* <ListItem>
+                            < AiOutlineFilePdf style={{ color: "white", marginRight: "5px" }} />
+                            <a href="https://drive.google.com/file/d/104BElFusWYq6HvrSFBAB7fCKLfOo-3zg/view" target="_blank">
+                                <ListItemText primary="RESUME" />
+                            </a>
+                        </ListItem> */}
 
 
                                 </List>
@@ -213,7 +154,7 @@ function Nav() {
 
                                         <a href="https://www.linkedin.com/in/nada-samir-441a58130/" ><Avatar variant="rounded" sx={{ width: "40px", height: "40px", backgroundColor: "secondary.main", color: "white" }} ><FiLinkedin /></Avatar></a>
                                         <a href="https://github.com/Nada-orban" ><Avatar variant="rounded" sx={{ width: "40px", height: "40px", backgroundColor: "secondary.main", color: "white" }} ><FiGithub /></Avatar></a>
-
+                                        {/* <a href="https://www.upwork.com/freelancers/~0158c861bae4be2e7b" ><Avatar variant="rounded" sx={{ width: "50px", height: "50px", backgroundColor: "secondary.main", color: "white" }} ><SiUpwork /></Avatar></a> */}
                                     </Box>
 
 
@@ -225,15 +166,12 @@ function Nav() {
                             </Box>
                         )}
 
-                    </Box> */}
-                    </Container>
-                </AppBar>
+                    </Box>
+                </Container>
+            </AppBar>
 
-            </Box>
-            <Mobilenav />
-        </>
-
+        </Box>
     )
 }
 
-export default Nav
+export default Mobilenav
