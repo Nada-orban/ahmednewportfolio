@@ -41,7 +41,6 @@ function Timeline1() {
                     </Box>
                     <Timeline position="alternate" className={styles.timeline} sx={{ display: { xs: "none", sm: "none", md: "block" }, mt: "-600px", }}>
                         <TimelineItem>
-
                             <TimelineOppositeContent >
                                 <Box className={styles.timelineContent} marginLeft="100px">
                                     <Typography variant='subtitle1' sx={{ color: "text.secondary" }}>Nov 2022 ‐ Now</Typography>
