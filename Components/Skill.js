@@ -7,6 +7,10 @@ import CodeIcon from '@mui/icons-material/Code';
 import StorageIcon from '@mui/icons-material/Storage';
 import ShareIcon from '@mui/icons-material/Share';
 import ComputerIcon from '@mui/icons-material/Computer';
+import { SiTensorflow, SiUnity, SiLatex, SiLinux, SiGnubash } from 'react-icons/si'
+import { GiSoundWaves } from 'react-icons/gi'
+import { BiNetworkChart } from 'react-icons/bi'
+import { FiMonitor } from 'react-icons/fi'
 
 function Skill() {
     const colorMode = React.useContext(ColorModeContext);
@@ -32,40 +36,62 @@ function Skill() {
                     </Box>
                     <Typography variant='h6' data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom" data-aos-delay="600">Below are some of my skills, and I'm always looking to learn more.</Typography>
-                    <Grid container spacing={2} sx={{ my: "50px", }} >
-                        <Grid item xs={12} sm={12} md={3} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
+                    <Grid container spacing={1} sx={{ my: "50px", }} >
+                        <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
                             data-aos-delay="700">
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
-                                <CodeIcon sx={{ padding: "20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} />
+                                <Box sx={{ padding: "25px 20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} ><FiMonitor style={{ width: "70px", height: "70px" }} /></Box>
                                 <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Programming Languages</Typography>
-                                <Typography variant='h6' sx={{ textAlign: "center" }}>Python,C/C++
+                                <Typography variant='h6' sx={{ textAlign: "center" }}>Python, Matlab, C, C++, C#, VHDL, Verilog
                                 </Typography>
                             </Box>
                         </Grid>
-                        <Grid item xs={12} sm={12} md={3} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
+                        <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
                             data-aos-delay="800">
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
-                                <ShareIcon sx={{ padding: "20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "background.secondary", color: "secondary.main", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} />
-                                <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Deep Learning Frameworks</Typography>
-                                <Typography variant='h6' sx={{ textAlign: "center" }}>Tensorflow, Keras, Pytorch
+                                <Box sx={{ padding: "25px 20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} ><BiNetworkChart style={{ width: "70px", height: "70px" }} /></Box>
+                                <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Deep Learning </Typography>
+                                <Typography variant='h6' sx={{ textAlign: "center" }}>Transformers, GANs, Autoencoders, Unsupervised learning, FairAI
                                 </Typography>
                             </Box>
                         </Grid>
-                        <Grid item xs={12} sm={12} md={3} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
+                        <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
+                            data-aos-delay="800">
+                            <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
+                                <Box sx={{ padding: "25px 20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} ><SiTensorflow style={{ width: "70px", height: "70px" }} /></Box>
+                                <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Deep Learning Frameworks</Typography>
+                                <Typography variant='h6' sx={{ textAlign: "center" }}>Tensorflow, Pytorch, Scikit learn
+                                </Typography>
+                            </Box>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
                             data-aos-delay="900">
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
-                                <StorageIcon sx={{ padding: "20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} />
-                                <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Databases</Typography>
-                                <Typography variant='h6' sx={{ textAlign: "center" }}> SQL database,MongoDB
+                                <Box sx={{ padding: "25px 20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} ><GiSoundWaves style={{ width: "70px", height: "70px" }} /></Box>
+                                <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Signal Processing</Typography>
+                                <Typography variant='h6' sx={{ textAlign: "center" }}>Audio Processing, Speech Processing, Computer Vision and Image Processing
                                 </Typography>
                             </Box>
                         </Grid>
-                        <Grid item xs={12} sm={12} md={3} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
+                        <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
                             data-aos-delay="800">
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
-                                <ShareIcon sx={{ padding: "20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "background.secondary", color: "secondary.main", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} />
-                                <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Deep Learning Frameworks</Typography>
-                                <Typography variant='h6' sx={{ textAlign: "center" }}>Tensorflow, Keras, Pytorch
+                                <Box sx={{ padding: "25px 20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} ><SiUnity style={{ width: "70px", height: "70px" }} /></Box>
+                                <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Game Development</Typography>
+                                <Typography variant='h6' sx={{ textAlign: "center" }}>Unity Game Engine, VR Development
+                                </Typography>
+                            </Box>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
+                            data-aos-delay="800">
+                            <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
+                                <Box sx={{ padding: "25px 20px", display: "flex", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} >
+
+                                    <SiLinux style={{ width: "70px", height: "70px" }} />
+
+                                </Box>
+                                <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Others</Typography>
+                                <Typography variant='h6' sx={{ textAlign: "center" }}>Linux,Bash,Latex
                                 </Typography>
                             </Box>
                         </Grid>

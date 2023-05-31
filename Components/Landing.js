@@ -157,7 +157,7 @@ function Landing() {
                                 </button>
 
                             </Link>
-                            <a href="https://mail.google.com/mail/u/0/#inbox/FMfcgzGsmhcKkbrNLHhrvCbxHsNksQSK?projector=1&messagePartId=0.3" target="_blank">
+                            <a href="/assets/CV.pdf" target="_blank" rel='noopener noreferrer'>
                                 <button className={styles.normalButton3} >
                                     <div className={styles.normalButtonbg3}></div>
                                     <p className={styles.normalButton3text}>RESUME</p>
