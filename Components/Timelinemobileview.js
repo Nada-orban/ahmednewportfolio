@@ -18,6 +18,9 @@ import HotelIcon from '@mui/icons-material/Hotel';
 import RepeatIcon from '@mui/icons-material/Repeat';
 import { FcGoogle } from 'react-icons/fc'
 import Image from 'next/image'
+import arizonalogo from '../public/assets/timeline/arizona.png'
+import marylandlogo from '../public/assets/timeline/university-of-maryland-logo-1.png'
+import omnispeech2logo from '../public/assets/timeline/omnispeech2.png'
 // import alexunversity from '../public/assets/download.jpeg'
 import { NoEncryption } from '@mui/icons-material';
 // import openaiphoto from '../public/assets/timeline/contact-helpdesk-customer-service-spaceship-graphic-concept.jpg'
@@ -37,139 +40,96 @@ function Timelinemobileview() {
             }} >
                 <TimelineItem>
                     <TimelineSeparator >
-                        <TimelineDot color="primary" variant="outlined" sx={{ width: "70px", height: "70px", overflow: "hidden", border: "2px solid #bdbdbd", padding: "5px" }}>
+                        <TimelineDot color="primary" variant="outlined" sx={{ width: "70px", height: "70px", overflow: "hidden", border: "2px solid #bdbdbd", padding: "3px" }}>
                             <Image
-                                // src={openaiphoto}
+                                src={marylandlogo}
                                 alt="Picture of the author"
                                 width={60}
-                                height={60}
+
                             />
                         </TimelineDot>
-                        <TimelineConnector sx={{ height: "200px" }} />
+                        <TimelineConnector sx={{ height: { sm: "200px", xs: "400px" } }} />
                     </TimelineSeparator>
                     <TimelineContent sx={{ py: '12px', px: 2 }}>
-                        <Typography variant='subtitle1' sx={{ color: "text.secondary" }}>Nov 2022 ‐ Now</Typography>
-                        <Typography variant='h6' sx={{ fontWeight: "bold" }}>Machine Learning Developer</Typography>
+                        <Typography variant='subtitle1' sx={{ color: "text.secondary" }}>2022 ‐ Present</Typography>
+                        <Typography variant='h6' sx={{ fontWeight: "bold" }}>Graduate Research Assistant</Typography>
                         <Typography variant="h5" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
-                            OpenAI
+                            University Of Maryland
                         </Typography>
-                        <Typography variant='subtitle1' sx={{ fontWeight: "bold" }}>US - Remote</Typography>
+                        <Typography variant='subtitle1' sx={{ fontWeight: "bold" }}>Maryland,USA</Typography>
                         <Typography variant='subtitle1'>
                             <ul>
-                                <li>Working on the tether project.</li>
-                                <li>Helping reinforcement learning models to fine‐tune and enhance chatgpt performance.</li>
+                                <li>Conducting research to develop Deep Learning and Machine Learning algorithms for acoustic and articulatory
+                                    speech data to better understand speech production.</li>
+
+                                <li>Published a number of papers in top conferences in speech and signal processing and machine learning.</li>
                             </ul></Typography>
                     </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
                     <TimelineSeparator>
                         <TimelineConnector />
-                        <TimelineDot color="primary" variant="outlined" sx={{ width: "70px", height: "70px", overflow: "hidden", border: "2px solid #bdbdbd", padding: "0px" }}>
+                        <TimelineDot color="primary" variant="outlined" sx={{ width: "70px", height: "70px", overflow: "hidden", border: "2px solid #bdbdbd", padding: "2px" }}>
                             <Image
-                                // src={perphoto}
+                                src={omnispeech2logo}
                                 alt="Picture of the author"
                                 width={60}
-                                height={60}
+
                             />
                         </TimelineDot>
-                        <TimelineConnector sx={{ height: "490px" }} />
+                        <TimelineConnector sx={{ height: { sm: "300px", xs: "500px" } }} />
                     </TimelineSeparator>
                     <TimelineContent sx={{ py: '12px', px: 2 }}>
-                        <Typography variant='subtitle1' sx={{ color: "text.secondary" }}>Jan 2022 ‐ Jan 2023</Typography>
-                        <Typography variant='h6' sx={{ fontWeight: "bold" }}>Lead Data Scientist</Typography>
+                        <Typography variant='subtitle1' sx={{ color: "text.secondary" }}>June 2021 ‐ January 2022 </Typography>
+                        <Typography variant='h6' sx={{ fontWeight: "bold" }}>Deep Learning Consultant</Typography>
                         <Typography variant="h5" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
-                            P.E.R PARTNERS
+                            Omnispeech, LLC
                         </Typography>
-                        <Typography variant='subtitle1' sx={{ fontWeight: "bold" }}>UK ‐ Remote</Typography>
+                        <Typography variant='subtitle1' sx={{ fontWeight: "bold" }}>Us ‐ Remote</Typography>
                         <Typography variant='subtitle1' >
-                            Lead a team of four data scientists where I was responsible for developing the company’s
-                            flagship product, Digital Eye, alongside other products such as Drug Interaction Checker,
-                            Digital Eye is based on a deep learning model for digitizing handwritten documents,
-                            Carried out research and built the core understanding of the company performance metrics
-                            to qualitatively inform and interpret models,
-                            Was responsible for supporting the growth and professional development of the team.
+                            <ul>
+                                <li>I worked on developing lightweight real‐time speech enhancement deep learning models.</li>
+                                <li>I successfully scaled down large Speech Enhancement GAN models from 37 million parameters to less than 1
+                                    Million parameters, maintaining good clarity and noise cancellation.</li>
+                                <li>I also developed an efficient data pipeline using TensorFlow Dataset API and TensorFlow profiler for more than
+                                    a terabyte of audio data achieving optimal performance and ∼ 100% GPU utilization.</li>
+                            </ul>
                         </Typography>
                     </TimelineContent>
                 </TimelineItem>
+
                 <TimelineItem>
                     <TimelineSeparator>
                         <TimelineConnector />
-                        <TimelineDot color="primary" variant="outlined" sx={{ width: "70px", height: "70px", overflow: "hidden", border: "2px solid #bdbdbd", padding: "0px" }}>
+                        <TimelineDot color="primary" variant="outlined" sx={{ width: "70px", height: "70px", overflow: "hidden", border: "2px solid #bdbdbd", padding: "3px" }}>
                             <Image
-                                // src={perphoto}
+                                src={arizonalogo}
                                 alt="Picture of the author"
                                 width={60}
-                                height={60}
+
                             />
                         </TimelineDot>
-                        <TimelineConnector sx={{ height: "230px" }} />
+                        <TimelineConnector sx={{ height: { sm: "200px", xs: "350px" } }} />
                     </TimelineSeparator>
                     <TimelineContent sx={{ py: '12px', px: 2 }}>
-                        <Typography variant='subtitle1' sx={{ color: "text.secondary" }}>July 2021 ‐ Jan 2022</Typography>
-                        <Typography variant='h6' sx={{ fontWeight: "bold" }}>Senior Data Scientist</Typography>
+                        <Typography variant='subtitle1' sx={{ color: "text.secondary" }}>July 2019 ‐ September 2019</Typography>
+                        <Typography variant='h6' sx={{ fontWeight: "bold" }}>Deep Learning Research Intern</Typography>
                         <Typography variant="h5" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
-                            P.E.R PARTNERS
+                            University Of Arizona
                         </Typography>
-                        <Typography variant='subtitle1' sx={{ fontWeight: "bold" }}>UK ‐ Remote</Typography>
-                        <Typography variant='subtitle1' >
-                            Worked on designing machine learning models for a variety of products in the healthcare sector.
-                            For example, SKU demand forecasting for drug‐distributing companies.
-                        </Typography>
-                    </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                    <TimelineSeparator>
-                        <TimelineConnector />
-                        <TimelineDot color="primary" variant="outlined" sx={{ width: "70px", height: "70px", overflow: "hidden", border: "2px solid #bdbdbd", padding: "4px" }}>
-                            <Image
-                                // src={bergenphoto}
-                                alt="Picture of the author"
-                                width={60}
-                                height={60}
-                            />
-                        </TimelineDot>
-                        <TimelineConnector sx={{ height: "400px" }} />
-                    </TimelineSeparator>
-                    <TimelineContent sx={{ py: '12px', px: 2 }}>
-                        <Typography variant='subtitle1' sx={{ color: "text.secondary" }}>Dec 2020 ‐ July 2021</Typography>
-                        <Typography variant='h6' sx={{ fontWeight: "bold" }}>Machine Learning Research Assistant</Typography>
-                        <Typography variant="h5" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
-                            UNiVERSiTY OF BERGEN
-                        </Typography>
-                        <Typography variant='subtitle1' sx={{ fontWeight: "bold" }}>Bergen, Norway ‐ Remote</Typography>
+                        <Typography variant='subtitle1' sx={{ fontWeight: "bold" }}>Arizona, USA</Typography>
                         <Typography variant='subtitle1'>
-                            • Worked on a research project to create a deep learning model to detect gene‐gene
-                            interactions from gene expression data.<br />
-                            • Used findr tool to preprocess yeast gene expressions.<br />
-                            • Responsible for designing, training, and evaluating the performance of the deep learning model.</Typography>
+                            <ul>
+                                <li>Conducted research on Generative Adversarial Networks (GANs) under the supervision of Prof. Ravi Tandon.</li>
+                                <li>I worked on and helped with different projects on GANs.</li>
+                                <li>I developed Mutual Information Neural Estimators that achieved over 98% accuracy, and unsupervised Outlier
+                                    Detection systems.</li>
+                            </ul></Typography>
                     </TimelineContent>
                 </TimelineItem>
 
 
-                <TimelineItem>
-                    <TimelineSeparator>
 
-                        <TimelineDot color="primary" variant="outlined" sx={{ width: "70px", height: "70px", overflow: "hidden", border: "2px solid #bdbdbd", padding: "15px" }}>
-                            <Image
-                                // src={alexunversity}
-                                alt="Picture of the author"
-                                width={60}
-                                height={60}
-                            />
-                        </TimelineDot>
-
-
-                    </TimelineSeparator>
-                    <TimelineContent sx={{ py: '12px', px: 2 }}>
-                        <Typography variant='subtitle1' sx={{ color: "text.secondary" }}>Sep 2015 ‐ Aug 2020</Typography>
-                        <Typography variant="h5" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
-                            Faculty of Engineering
-                        </Typography>
-                        <Typography variant='subtitle1' sx={{ fontWeight: "bold" }}>Alexandria</Typography>
-                        <Typography variant='subtitle1'>B.SC in electronics and communication engineering
-                            <br />• Cumulative Grade: 72.8% (Good).</Typography>
-                    </TimelineContent>
-                </TimelineItem>
             </Timeline>
         </Box>
     )

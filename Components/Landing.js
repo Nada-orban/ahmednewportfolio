@@ -50,7 +50,7 @@ function Landing() {
                                 <h1>
                                     <span className={styles.a} data-aos="zoom-in" data-aos-delay="50" >H</span>
                                     <span className={styles.a} data-aos="zoom-in" data-aos-delay="100" >i</span>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="200">,</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="150">,</span>
 
 
 
@@ -59,9 +59,9 @@ function Landing() {
                             </div>
                             <div className={styles.titlesection1}>
                                 <h1>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="300">I</span>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="400" >'</span>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="500">m</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="200">I</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="250" >'</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="300">m</span>
 
 
 
@@ -87,20 +87,20 @@ function Landing() {
                                     </Box>
                                     {/* <div className={styles.letterA}><Lottie animationData={letterA} /></div> */}
                                     {/* <span class={styles.a} >A</span> */}
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="600">h</span>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="700">m</span>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="800" >e</span>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="900">d</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="400">h</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="450">m</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="500" >e</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="550">d</span>
 
 
                                 </h1>
                             </div>
                             <div className={styles.titlesection1}>
                                 <h1>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1000" >A</span>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1100" >d</span>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1200" >e</span>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1300">l</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="600" >A</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="650" >d</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="700" >e</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="750">l</span>
 
 
 
@@ -108,11 +108,11 @@ function Landing() {
                             </div>
                             <Box sx={{ display: { xs: "none", sm: "none", md: "none", lg: "block" } }} className={styles.titlesection1}>
                                 <h1>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1400">A</span>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1500" >t</span>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1600">t</span>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1700">i</span>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1800">a</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="800">A</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="850" >t</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="900">t</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="950">i</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1000">a</span>
                                 </h1>
                             </Box>
 
@@ -120,11 +120,11 @@ function Landing() {
                         <Box sx={{ display: { md: "block", lg: "none" } }}>
                             <div className={styles.titlesection1}>
                                 <h1>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1400">A</span>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1500" >t</span>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1600">t</span>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1700">i</span>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1800">a</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1050">A</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1100" >t</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1150">t</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1200">i</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1250">a</span>
                                 </h1>
                             </div>
 
@@ -137,7 +137,7 @@ function Landing() {
                             <div className={styles.typedout} data-aos="fade-up" data-aos-delay="500">Nada Orban</div>
                         </div> */}
 
-                        <Typography variant='h4' mb="50px" mx="5px" data-aos="fade-up" data-aos-delay="1900"
+                        <Typography variant='h4' mb="50px" mx="5px" data-aos="fade-up" data-aos-delay="1300"
                             data-aos-anchor-placement="top-bottom">Deep Learning Ph.D Resercher</Typography>
 
                         <Box display="flex" sx={{ justifyContent: "start", mt: { sm: "10px", xs: "10px", md: "0px", lg: "0px" }, mb: "30px" }} alignItems="center" gap="20px" >
@@ -150,14 +150,14 @@ function Landing() {
 
 
                         <Box sx={{ display: { xs: "grid", md: "flex", } }} gap="20px" justifyItems="center" justifyContent="start">
-                            <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} data-aos="fade-right" data-aos-delay="2000" >
+                            <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} data-aos="fade-right" data-aos-delay="1350" >
                                 <button className={styles.normalButton2} >
                                     <div className={styles.normalButtonbg}></div>
                                     <p className={styles.normalButton1text}>Contact me</p>
                                 </button>
 
                             </Link>
-                            <a href="/assets/CV.pdf" target="_blank" rel='noopener noreferrer'>
+                            <a href="/assets/CV.pdf" target="_blank" rel='noopener noreferrer' data-aos="fade-right" data-aos-delay="1400">
                                 <button className={styles.normalButton3} >
                                     <div className={styles.normalButtonbg3}></div>
                                     <p className={styles.normalButton3text}>RESUME</p>

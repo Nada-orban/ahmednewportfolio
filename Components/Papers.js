@@ -17,7 +17,7 @@ function Papers() {
     const theme = useTheme();
     const confarray = [conf1, conf2, conf3];
     return (
-        <Box id="papers" py="50px" color="white" backgroundColor="background.secondary" position="relative" >
+        <Box id="papers" color="white" backgroundColor="background.secondary" position="relative" sx={{ py: { sm: "50px", xs: "150px" } }} >
 
             <Container maxWidth="xlg" >
                 <Box sx={{ px: { sm: "10px", md: "40px" }, py: "50px" }}  >

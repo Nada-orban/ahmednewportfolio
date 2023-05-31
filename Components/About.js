@@ -40,7 +40,7 @@ function About() {
                         <Typography className={styles.bigfakeleft}>ABOUT</Typography>
                         <Box data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom">
-                            <Typography variant='h5' sx={{ color: "white" }} >Welcome to my website!<br />I am a Deep Learning engineer and PhD researcher with expertise in Natural Language Processing, Signal Processing, Statistics, and Unsupervised Learning.My primary focus is on developing advanced Deep Learning models for speech and audio processing, with a passion for exploring the limitless possibilities of this cutting-edge technology.</Typography>
+                            <Typography variant='h5' sx={{ color: "white", textAlign: "start" }} >Welcome to my website!<br />I am a Deep Learning engineer and PhD researcher with expertise in Natural Language Processing, Signal Processing, Statistics, and Unsupervised Learning.My primary focus is on developing advanced Deep Learning models for speech and audio processing, with a passion for exploring the limitless possibilities of this cutting-edge technology.</Typography>
                         </Box>
                         <List >
                             <Typography variant='h4' sx={{ my: 1, fontWeight: "bold", color: "secondary.main", textAlign: "start" }} >Education</Typography>
