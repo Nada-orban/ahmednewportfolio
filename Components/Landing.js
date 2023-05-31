@@ -24,7 +24,7 @@ import logo from '../public/logo- 3 colors-small-flipped.png'
 import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
 import Particlesbackground from './Particlesbackground'
 import { FiFacebook, FiLinkedin, FiGithub } from 'react-icons/fi'
-import { SiUpwork } from 'react-icons/si'
+import { SiUpwork, SiGooglescholar } from 'react-icons/si'
 
 
 
@@ -141,10 +141,10 @@ function Landing() {
                             data-aos-anchor-placement="top-bottom">Deep Learning Ph.D Resercher</Typography>
 
                         <Box display="flex" sx={{ justifyContent: "start", mt: { sm: "10px", xs: "10px", md: "0px", lg: "0px" }, mb: "30px" }} alignItems="center" gap="20px" >
-                            <Link href="mailto:nadasamir9334@gmail.com" ><Avatar variant="rounded" sx={{ width: "50px", height: "50px", backgroundColor: "secondary.main", color: "white" }} className={styles.nadaavatar}><EmailIcon /></Avatar></Link>
-                            <Link href="https://www.linkedin.com/in/nada-samir-441a58130/" ><Avatar variant="rounded" sx={{ width: "50px", height: "50px", backgroundColor: "secondary.main", color: "white" }} className={styles.nadaavatar}><FiLinkedin /></Avatar></Link>
-                            <Link href="https://github.com/Nada-orban" ><Avatar variant="rounded" sx={{ width: "50px", height: "50px", backgroundColor: "secondary.main", color: "white" }} className={styles.nadaavatar}><FiGithub /></Avatar></Link>
-                            <Link href="https://www.upwork.com/freelancers/~0158c861bae4be2e7b" ><Avatar variant="rounded" sx={{ width: "50px", height: "50px", backgroundColor: "secondary.main", color: "white" }} className={styles.nadaavatar}><SiUpwork /></Avatar></Link>
+                            <a href="mailto:ahmadadelattia@gmail.com" target="_blank"><Avatar variant="rounded" sx={{ width: "50px", height: "50px", backgroundColor: "secondary.main", color: "white" }} className={styles.nadaavatar}><EmailIcon /></Avatar></a>
+                            <a href="https://www.linkedin.com/in/ahmedadelattia" target="_blank" ><Avatar variant="rounded" sx={{ width: "50px", height: "50px", backgroundColor: "secondary.main", color: "white" }} className={styles.nadaavatar}><FiLinkedin /></Avatar></a>
+                            <a href="https://github.com/ahmedadelattia" target="_blank"><Avatar variant="rounded" sx={{ width: "50px", height: "50px", backgroundColor: "secondary.main", color: "white" }} className={styles.nadaavatar}><FiGithub /></Avatar></a>
+                            <a href="https://scholar.google.com/citations?user=x2TMhSQAAAAJ&hl=en&oi=sra" target="_blank"><Avatar variant="rounded" sx={{ width: "50px", height: "50px", backgroundColor: "secondary.main", color: "white" }} className={styles.nadaavatar}><SiGooglescholar /></Avatar></a>
                         </Box>
 
 

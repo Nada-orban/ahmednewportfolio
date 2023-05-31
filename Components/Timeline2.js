@@ -47,7 +47,7 @@ function Timeline2() {
                             <Image
                                 src={arizonalogo}
                                 alt="Picture of the author"
-                                width={70}
+                                width={100}
 
                             />
                             <Box display="flex" justifyContact="center" justifyItems="center" mb="20px">
@@ -77,7 +77,7 @@ function Timeline2() {
                             <Image
                                 src={omnispeech2logo}
                                 alt="Picture of the author"
-                                width={85}
+                                width={121}
 
                             />
                             <Box display="flex" justifyContact="center" justifyItems="center" mb="20px">
@@ -107,7 +107,7 @@ function Timeline2() {
                             <Image
                                 src={marylandlogo}
                                 alt="Picture of the author"
-                                width={76}
+                                width={109}
 
                             />
                             <Box display="flex" justifyContact="center" justifyItems="center" mb="20px">
@@ -136,7 +136,7 @@ function Timeline2() {
                             <Image
                                 src={marylandlogo}
                                 alt="Picture of the author"
-                                width={76}
+                                width={109}
 
                             />
                             <Box display="flex" justifyContact="center" justifyItems="center" mb="20px">
@@ -148,15 +148,17 @@ function Timeline2() {
 
                             <Box width="80%">
                                 <Typography variant='subtitle1' sx={{ color: "text.secondary", }}>January 2022 ‐ Present</Typography>
-                                <Typography variant='h5' sx={{ fontWeight: "bold" }}>Advisor: Prof. Carol Espy‐Wilson.</Typography>
+                                <Typography variant='h5' sx={{ fontWeight: "bold" }}>Graduate Research Assistant</Typography>
                                 <Typography variant="h4" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
                                     University Of Maryland
                                 </Typography>
                                 <Typography variant='subtitle1' sx={{ fontWeight: "bold" }}>Maryland,USA</Typography>
                                 <Typography variant='subtitle1'>
                                     <ul>
-                                        <li>Working on the tether project.</li>
-                                        <li>Helping reinforcement learning models to fine‐tune and enhance chatgpt performance.</li>
+                                        <li>Conducting research to develop Deep Learning and Machine Learning algorithms for acoustic and articulatory
+                                            speech data to better understand speech production.</li>
+                                        <li>In my first 10 months in this position I authored and published my first conference paper (arXiv: 2210.15195) to
+                                            IEEE ICASSP 2023.</li>
                                     </ul></Typography>
                             </Box>
                         </Grid>
