@@ -46,7 +46,7 @@ function Timeline2() {
                     <Box sx={{ display: { xs: "none", sm: "none", md: "block" }, }}>
                         <Grid container mt="100px" >
                             <Grid item xs={12} md={4} >
-                                <Box >
+                                <Box display="flex" justifyContent="center">
                                     <Image
                                         src={arizonalogo}
                                         alt="Picture of the author"
@@ -55,7 +55,7 @@ function Timeline2() {
                                     />
                                 </Box>
 
-                                <Box display="flex" justifyContact="center" justifyItems="center" mb="20px">
+                                <Box display="flex" justifyItems="center" mb="20px">
                                     <Divider sx={{ width: "200px", height: "2px", mt: "7px", backgroundColor: "gray" }} />
                                     <Box sx={{ border: "1px solid #F7AE9D", borderRadius: "50%", width: "15px", height: "15px", backgroundColor: "#F7AE9D" }}></Box>
                                     <Divider sx={{ width: "377px", height: "2px", mt: "7px", backgroundColor: "gray" }} />
@@ -64,7 +64,7 @@ function Timeline2() {
 
                                 <Box width="90%">
                                     <Typography variant='h6' sx={{ color: "text.secondary", mb: "30px", textAlign: "center" }}>July 2019 ‐ September 2019</Typography>
-                                    <Box marginLeft="50px">
+                                    <Box marginLeft="50px" >
                                         <Typography variant='h5' sx={{ fontWeight: "bold" }}>Deep Learning Research Intern</Typography>
                                         <Typography variant="h4" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
                                             University Of Arizona
@@ -82,12 +82,15 @@ function Timeline2() {
                                 </Box>
                             </Grid>
                             <Grid item xs={12} md={4}>
-                                <Image
-                                    src={omnispeech2logo}
-                                    alt="Picture of the author"
-                                    width={181}
+                                <Box display="flex" justifyContent="center">
+                                    <Image
+                                        src={omnispeech2logo}
+                                        alt="Picture of the author"
+                                        width={181}
 
-                                />
+                                    />
+                                </Box>
+
                                 <Box display="flex" justifyContact="center" justifyItems="center" mb="20px">
                                     <Divider sx={{ width: "215px", height: "2px", mt: "7px", backgroundColor: "gray" }} />
                                     <Box sx={{ border: "1px solid #F7AE9D", borderRadius: "50%", width: "15px", height: "15px", backgroundColor: "#F7AE9D" }}></Box>
@@ -114,21 +117,22 @@ function Timeline2() {
                             </Grid>
 
                             <Grid item xs={12} md={4}>
-                                <Image
+                                <Box display="flex" justifyContent="center">  <Image
                                     src={marylandlogo}
                                     alt="Picture of the author"
                                     width={163}
 
-                                />
+                                /></Box>
+
                                 <Box display="flex" justifyContact="center" justifyItems="center" mb="20px">
                                     <Divider sx={{ width: "215px", height: "2px", mt: "7px", backgroundColor: "gray" }} />
                                     <Box sx={{ border: "1px solid #F7AE9D", borderRadius: "50%", width: "15px", height: "15px", backgroundColor: "#F7AE9D" }}></Box>
-                                    <Divider sx={{ width: "363px", height: "2px", mt: "7px", backgroundColor: "gray" }} />
+                                    <Divider sx={{ width: "200px", height: "2px", mt: "7px", backgroundColor: "gray" }} />
                                 </Box>
 
                                 <Box width="90%" >
                                     <Typography variant='h6' sx={{ color: "text.secondary", mb: "30px", textAlign: "center" }}>2022 ‐ Present</Typography>
-                                    <Box> <Typography variant='h5' sx={{ fontWeight: "bold" }}>Graduate Research Assistant</Typography>
+                                    <Box marginLeft="60px"> <Typography variant='h5' sx={{ fontWeight: "bold" }}>Graduate Research Assistant</Typography>
                                         <Typography variant="h4" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
                                             University Of Maryland
                                         </Typography>
