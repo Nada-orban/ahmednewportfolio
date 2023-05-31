@@ -29,7 +29,7 @@
 }
 .hoverbutton:hover{
     border-radius: 50%;
-    background-color: var(--secondray-maincolor);
+    /* background-color: var(--secondray-maincolor); */
 }
 .hoverbuttonactive{
     border-radius: 50%;

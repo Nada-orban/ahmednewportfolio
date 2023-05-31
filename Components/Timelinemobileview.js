@@ -77,7 +77,7 @@ function Timelinemobileview() {
 
                             />
                         </TimelineDot>
-                        <TimelineConnector sx={{ height: { sm: "300px", xs: "500px" } }} />
+                        <TimelineConnector sx={{ height: { sm: "300px", xs: "540px" } }} />
                     </TimelineSeparator>
                     <TimelineContent sx={{ py: '12px', px: 2 }}>
                         <Typography variant='subtitle1' sx={{ color: "text.secondary" }}>June 2021 ‐ January 2022 </Typography>
