@@ -20,7 +20,7 @@ import Footer from '../../Components/Footer'
 import Timelinewebsite from '../../Components/Timelinewebsite'
 import Projects2 from '../../Components/Projects2'
 import Nav from '../../Components/Nav'
-import Timeline1 from '../../Components/Timeline1'
+import Timeline2 from '../../Components/Timeline2'
 import { Timeline } from '@mui/lab'
 
 
@@ -109,7 +109,7 @@ export default function Home({ projects }) {
                 </Box>
             </Box> */}
         <Papers />
-        <Timeline1 />
+        <Timeline2 />
         {/* <Timelinewebsite /> */}
         <Contact />
         <Footer />

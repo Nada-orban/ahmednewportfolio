@@ -127,7 +127,7 @@ function Papers() {
                                 </Box>
                                 <Box my="30px" data-aos="fade-up"
                                     data-aos-anchor-placement="top-bottom" data-aos-delay="700">
-                                    <a href="https://arxiv.org/pdf/2305.10775" className={styles.linkText} target="_blank">
+                                    <a href="https://arxiv.org/abs/2305.10775" className={styles.linkText} target="_blank">
                                         <Typography variant='h5' sx={{ color: "secondary.main", fontWeight: "bolder" }}>Enhancing Speech Articulation Analysis Using A Geometric Transformation
                                             Of The X‐ray Microbeam Dataset </Typography>
                                     </a>
@@ -141,7 +141,7 @@ function Papers() {
                                 </Box>
                                 <Box my="30px" data-aos="fade-up"
                                     data-aos-anchor-placement="top-bottom" data-aos-delay="800">
-                                    <a href="https://arxiv.org/pdf/2205.13086" className={styles.linkText} target="_blank">
+                                    <a href="https://arxiv.org/abs/2205.13086" className={styles.linkText} target="_blank">
                                         <Typography variant='h5' sx={{ color: "secondary.main", fontWeight: "bolder" }}>Audio Data Augmentation for Acoustic to articulatory Speech Inversion using
                                             Bidirectional Gated RNNs </Typography>
                                     </a>

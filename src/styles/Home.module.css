@@ -886,7 +886,15 @@
     transition: all .5s ease-in-out;
     transform: scale(1.3);
 }
+.mapbox {
 
+    background-image: url('../../public/assets/Screenshot\ from\ 2023-05-24\ 17-26-00.png');
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+
+
+}
 /* .boxButton{
     position: relative;
     overflow: hidden;
@@ -951,11 +959,12 @@
     transition: all .5 ease-out;
 
 }
-.mapbox{
-    
-    background-image:url('../../public/assets/Screenshot\ from\ 2023-05-24\ 17-26-00.png') ;
-    width: 100%;
-    height:700px;
 
+.portfoliolink{
+    color: var(--primary-color);
+    text-decoration: none;
 
+}
+.portfoliolink:hover{
+    text-decoration: underline;
 }
