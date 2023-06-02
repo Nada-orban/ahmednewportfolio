@@ -43,7 +43,7 @@ function BootstrapDialogTitle(props) {
                         position: 'absolute',
                         right: 8,
                         top: 8,
-                        color: 'red',
+                        color: 'secondary.main',
                     }}
                 >
                     <CloseIcon />
@@ -114,8 +114,8 @@ function Projects2() {
 
                             <Box className={styles.projectBox}>
                                 <img src={project.image} alt='' className={styles.boximage} />
-                                <Box className={styles.boxtext} onClick={() => changecontent(project)} >
-                                    <Box onClick={handleClickOpen} ><VisibilityIcon sx={{ cursor: "pointer", }} /></Box>
+                                <Box onClick={() => changecontent(project)} >
+                                    <Box onClick={handleClickOpen} className={styles.boxtext} ></Box>
                                     {/* <Typography variant='subtitle1' onClick={handleClickOpen} sx={{ cursor: "pointer", }} >VIEW PROJECT</Typography> */}
                                     {/* <VisibilityIcon /> */}
                                 </Box>
@@ -124,11 +124,6 @@ function Projects2() {
                                     <Link href={`${project.link}`} target="_blank" className={styles.projectlink}>
                                         <Typography variant='subtitle1' sx={{ color: "white" }}>{project.source}</Typography>
                                     </Link>
-
-
-
-
-
                                 </Box>
                                 <Typography >{project.title}</Typography>
                             </Box>
@@ -148,9 +143,13 @@ function Projects2() {
                         {popupcontent.map((pop) => {
                             return (
                                 <>
-                                    <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
+                                    <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose} sx={{ color: "secondary.main", fontWeight: "bold" }}>
                                         {pop.title}
+                                        <br />
+                                        <Link href={`${pop.link}`} target="_blank" className={styles.projectlink}><Typography variant="subtitle1" sx={{ color: "text.primary" }}>{pop.source}</Typography></Link>
+
                                     </BootstrapDialogTitle>
+
                                     <DialogContent dividers>
                                         <Typography gutterBottom>
                                             {pop.body}

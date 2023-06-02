@@ -22,7 +22,7 @@ export const projectsdata = [{
 },
 {
     "id": 3,
-    "title": "VR Hostage Rescue Video Game Open source",
+    "title": "VR Hostage Rescue Video Game ",
     "source": "Open Source",
     "body": "We created an immersive Virtual Reality video game using Unity for the PC and Oculus platforms. This thrilling game puts players in the midst of hostage rescue missions, delivering an interactive and captivating experience.",
     "image": "../assets/projects/Screenshot 2023-05-15 at 9.29.15 PM.png",

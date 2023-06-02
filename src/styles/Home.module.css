@@ -610,20 +610,21 @@
 }
 .boxtext{
     transition: .5s ease;
-    /* opacity: 0; */
+    opacity: 0;
     position: absolute;
     top: 20%;
     left: -50px;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-    width: 50px;
-    height: 20px;
-    background-color:var(--secondray-maincolor);
+    width: 100vw;
+    height: 100vh;
+    background-color:transparent;
     border-radius: 10px;
     /* padding: 5px; */
     display: flex;
     padding-left: 20px;
+    cursor: pointer;
 }
 .infobox{
     position: absolute;
@@ -641,19 +642,20 @@
     transform: scale(1.2);
     transition: all .3s ease-in-out;
     opacity: 1;
+    cursor: pointer;
 
 }
 .projectBox:hover .boxtext{
     transition: all .3s ease-in-out;
     opacity: 1;
-    left: 15px;
+    
 
 }
 .projectlink{
     text-decoration: none;
 }
 .projectlink:hover{
-    text-decoration: underline white;
+    text-decoration: underline var(--secondray-maincolor);
 }
 
 /*############Papers############ */ 
