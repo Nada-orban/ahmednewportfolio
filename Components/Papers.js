@@ -23,7 +23,7 @@ function Papers() {
                 <Box sx={{ px: { sm: "10px", md: "40px" }, py: "50px" }}  >
                     <Box className={styles.slideTrack} display="flex" justifyContent="space-between" gap="50px" alignItems="center">
                         {confarray.map((array) => (
-                            <Paper sx={{ width: "400px", height: "400px", textAlign: "center", p: "50px 30px", backgroundColor: "white" }} className={styles.paper}>
+                            <Paper sx={{ width: "400px", height: "400px", textAlign: "center", p: "50px ", backgroundColor: "white" }} className={styles.paper}>
                                 <Image
                                     src={array}
                                     alt="Picture of the skill"
@@ -97,7 +97,7 @@ function Papers() {
 
                     </Grid> */}
                     <Box className={styles.layer}>
-                        <Box sx={{ px: { xs: "10px", md: "40px" }, pt: "50px" }}>
+                        <Box sx={{ px: { xs: "10px", md: "65px" }, pt: "50px" }}>
                             <Box display="flex" gap="20px">
                                 <div className={styles.titlesection}>
                                     <h1>
