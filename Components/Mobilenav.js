@@ -163,6 +163,10 @@ function Mobilenav() {
                                     <Typography variant='h5'>Email</Typography>
                                     <a href="mailto:ahmadadelattia@gmail.com" className={Styles.emailstyle}>ahmadadelattia@gmail.com</a>
                                 </Box>
+                                <Box textAlign="start" mt="20px" paddingLeft="20px">
+                                    <Typography variant='h5'>Phone</Typography>
+                                    <a href="mailto:ahmadadelattia@gmail.com" className={Styles.emailstyle}> 469-596-4371</a>
+                                </Box>
                             </Box>
                         )}
 

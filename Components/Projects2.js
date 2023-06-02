@@ -114,8 +114,15 @@ function Projects2() {
                             <Box className={styles.projectBox}>
                                 <img src={project.image} alt='' className={styles.boximage} />
                                 <Box className={styles.boxtext} onClick={() => changecontent(project)}>
-
                                     <Typography variant='subtitle1' onClick={handleClickOpen} sx={{ cursor: "pointer" }}>VIEW PROJECT</Typography>
+                                </Box>
+                                <Box className={styles.infobox}>
+                                    <Typography variant='subtitle1' sx={{ fontWeight: "bold" }}>{project.title}</Typography>
+                                    <Link href={`${project.link}`} target="_blank" className={styles.projectlink}>
+                                        <Typography variant='subtitle1' sx={{ color: "white" }}>{project.source}</Typography>
+                                    </Link>
+
+
 
 
 
