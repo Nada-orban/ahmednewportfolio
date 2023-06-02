@@ -171,8 +171,8 @@
 
 .bigmenuBoxactive {
     position: fixed;
-    width: 100vh;
-    height: 100%;
+    width: 100vw;
+    height:100vh ;
     padding-left: 40px;
     transform: translateX(-2.8%);
     transition: all 0.5s ease-in-out;

@@ -17,6 +17,7 @@ import DialogActions from '@mui/material/DialogActions';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import PropTypes from 'prop-types';
+import VisibilityIcon from '@mui/icons-material/Visibility';
 
 
 
@@ -113,8 +114,10 @@ function Projects2() {
 
                             <Box className={styles.projectBox}>
                                 <img src={project.image} alt='' className={styles.boximage} />
-                                <Box className={styles.boxtext} onClick={() => changecontent(project)}>
-                                    <Typography variant='subtitle1' onClick={handleClickOpen} sx={{ cursor: "pointer" }}>VIEW PROJECT</Typography>
+                                <Box className={styles.boxtext} onClick={() => changecontent(project)} >
+                                    <Box onClick={handleClickOpen} ><VisibilityIcon sx={{ cursor: "pointer", }} /></Box>
+                                    {/* <Typography variant='subtitle1' onClick={handleClickOpen} sx={{ cursor: "pointer", }} >VIEW PROJECT</Typography> */}
+                                    {/* <VisibilityIcon /> */}
                                 </Box>
                                 <Box className={styles.infobox}>
                                     <Typography variant='subtitle1' sx={{ fontWeight: "bold" }}>{project.title}</Typography>

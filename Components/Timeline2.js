@@ -56,14 +56,14 @@ function Timeline2() {
                                 </Box>
 
                                 <Box display="flex" justifyItems="center" mb="20px">
-                                    <Divider sx={{ width: "200px", height: "2px", mt: "7px", backgroundColor: "gray" }} />
+                                    <Divider sx={{ width: "14.5vw", height: "2px", mt: "7px", backgroundColor: "gray" }} />
                                     <Box sx={{ border: "1px solid #F7AE9D", borderRadius: "50%", width: "15px", height: "15px", backgroundColor: "#F7AE9D" }}></Box>
-                                    <Divider sx={{ width: "377px", height: "2px", mt: "7px", backgroundColor: "gray" }} />
+                                    <Divider sx={{ width: "14.5vw", height: "2px", mt: "7px", backgroundColor: "gray" }} />
 
                                 </Box>
 
                                 <Box width="90%">
-                                    <Typography variant='h6' sx={{ color: "text.secondary", mb: "30px", textAlign: "center" }}>July 2019 ‐ September 2019</Typography>
+                                    <Typography variant='h6' sx={{ color: "text.secondary", mb: "30px", textAlign: "center", }}>Jul 2019 ‐ Sep 2019</Typography>
                                     <Box marginLeft="50px" >
                                         <Typography variant='h5' sx={{ fontWeight: "bold" }}>Deep Learning Research Intern</Typography>
                                         <Typography variant="h4" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
@@ -92,13 +92,13 @@ function Timeline2() {
                                 </Box>
 
                                 <Box display="flex" justifyContact="center" justifyItems="center" mb="20px">
-                                    <Divider sx={{ width: "215px", height: "2px", mt: "7px", backgroundColor: "gray" }} />
+                                    <Divider sx={{ width: "14.5vw", height: "2px", mt: "7px", backgroundColor: "gray" }} />
                                     <Box sx={{ border: "1px solid #F7AE9D", borderRadius: "50%", width: "15px", height: "15px", backgroundColor: "#F7AE9D" }}></Box>
-                                    <Divider sx={{ width: "363px", height: "2px", mt: "7px", backgroundColor: "gray" }} />
+                                    <Divider sx={{ width: "14.5vw", height: "2px", mt: "7px", backgroundColor: "gray" }} />
                                 </Box>
 
                                 <Box width="90%">
-                                    <Typography variant='h6' sx={{ color: "text.secondary", mb: "30px", textAlign: "center" }}>June 2021 ‐ January 2022 </Typography>
+                                    <Typography variant='h6' sx={{ color: "text.secondary", mb: "30px", textAlign: "center" }}>Jun 2021 ‐ Jan 2022 </Typography>
                                     <Box marginLeft="60px"> <Typography variant='h5' sx={{ fontWeight: "bold" }}>Deep Learning Consultant</Typography>
                                         <Typography variant="h4" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
                                             Omnispeech, LLC
@@ -125,9 +125,9 @@ function Timeline2() {
                                 /></Box>
 
                                 <Box display="flex" justifyContact="center" justifyItems="center" mb="20px">
-                                    <Divider sx={{ width: "215px", height: "2px", mt: "7px", backgroundColor: "gray" }} />
+                                    <Divider sx={{ width: "14.5vw", height: "2px", mt: "7px", backgroundColor: "gray" }} />
                                     <Box sx={{ border: "1px solid #F7AE9D", borderRadius: "50%", width: "15px", height: "15px", backgroundColor: "#F7AE9D" }}></Box>
-                                    <Divider sx={{ width: "200px", height: "2px", mt: "7px", backgroundColor: "gray" }} />
+                                    <Divider sx={{ width: "14.5vw", height: "2px", mt: "7px", backgroundColor: "gray" }} />
                                 </Box>
 
                                 <Box width="90%" >

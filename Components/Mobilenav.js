@@ -88,7 +88,7 @@ function Mobilenav() {
             >
                 <Container maxWidth="xlg">
                     <Toolbar>
-                        <Box display='flex' flexGrow={1} alignItems="center" justifyContent="space-between" sx={{ px: { sm: "10px", md: "40px" } }}>
+                        <Box display='flex' flexGrow={1} alignItems="center" justifyContent="space-between" sx={{ px: { xs: "0px", sm: "0px", md: "40px" } }}>
 
                             <Typography variant="h5" noWrap sx={{ flexGrow: 1, color: "white", fontWeight: "bold", }} >
                                 Ahmed Adel Attia
