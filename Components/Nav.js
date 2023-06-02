@@ -77,7 +77,7 @@ function Nav() {
 
     return (
         <>
-            <Box sx={{ display: { sm: "none", md: "block" } }}>
+            <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
 
                 <AppBar
                     variant="permanent"
