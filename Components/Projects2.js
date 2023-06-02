@@ -59,9 +59,17 @@ BootstrapDialogTitle.propTypes = {
 
 function Projects2() {
     const [open, setOpen] = React.useState(false);
+    const [popupcontent, setPopupcontent] = React.useState([]);
+    const changecontent = (project) => {
+        console.log([project]);
+        setPopupcontent([project]);
+    }
+
 
     const handleClickOpen = () => {
         setOpen(true);
+
+
     };
     const handleClose = () => {
         setOpen(false);
@@ -100,42 +108,61 @@ function Projects2() {
                 </Container>
                 <Grid container sx={{ my: "80px" }} data-aos="fade-up"
                     data-aos-anchor-placement="top-bottom" data-aos-delay="800">
-                    {/* {projectsdata.map(project => (
+                    {projectsdata.map(project => (
                         <Grid item xs={12} sm={6} lg={3} md={6}>
 
                             <Box className={styles.projectBox}>
                                 <img src={project.image} alt='' className={styles.boximage} />
-                                <Box className={styles.boxtext} onClick={handleClickOpen}>
-                                    <Typography variant='subtitle1'>VIEW PROJECT</Typography>
+                                <Box className={styles.boxtext} onClick={() => changecontent(project)}>
+
+                                    <Typography variant='subtitle1' onClick={handleClickOpen} sx={{ cursor: "pointer" }}>VIEW PROJECT</Typography>
+
+
 
                                 </Box>
                                 <Typography >{project.title}</Typography>
                             </Box>
-                            <BootstrapDialog
-                                onClose={handleClose}
-                                aria-labelledby="customized-dialog-title"
-                                open={open}
-                            >
-                                <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
-                                    {project.title}
-                                </BootstrapDialogTitle>
-                                <DialogContent dividers>
-                                    <Typography gutterBottom>
-                                        {project.body}
-                                    </Typography>
 
-                                </DialogContent>
-                                 <DialogActions>
-                                    <button autoFocus onClick={handleClose}>
-                                        Save changes
-                                    </button>
-                                </DialogActions> 
-                            </BootstrapDialog>
+
+
 
                         </Grid>
 
-                    ))} */}
-                    <Grid item xs={12} sm={6} lg={3} md={6}>
+                    ))}
+                    <BootstrapDialog
+                        onClose={handleClose}
+                        aria-labelledby="customized-dialog-title"
+                        open={open}
+
+                    >
+                        {popupcontent.map((pop) => {
+                            return (
+                                <>
+                                    <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
+                                        {pop.title}
+                                    </BootstrapDialogTitle>
+                                    <DialogContent dividers>
+                                        <Typography gutterBottom>
+                                            {pop.body}
+                                        </Typography>
+
+                                    </DialogContent>
+                                    {/* <DialogActions>
+                            <button autoFocus onClick={handleClose}>
+                                Save changes
+                            </button>
+                        </DialogActions> */}
+                                </>
+
+
+                            )
+
+
+
+                        })}
+                    </BootstrapDialog>
+
+                    {/* <Grid item xs={12} sm={6} lg={3} md={6}>
 
                         <Box className={styles.projectBox}>
                             <img src="" alt='' className={styles.boximage} />
@@ -159,11 +186,11 @@ function Projects2() {
                                 </Typography>
 
                             </DialogContent>
-                            {/* <DialogActions>
-                                    <button autoFocus onClick={handleClose}>
-                                        Save changes
-                                    </button>
-                                </DialogActions> */}
+                            <DialogActions>
+                                <button autoFocus onClick={handleClose}>
+                                    Save changes
+                                </button>
+                            </DialogActions>
                         </BootstrapDialog>
 
                     </Grid>
@@ -191,78 +218,15 @@ function Projects2() {
                                 </Typography>
 
                             </DialogContent>
-                            {/* <DialogActions>
-                                    <button autoFocus onClick={handleClose}>
-                                        Save changes
-                                    </button>
-                                </DialogActions> */}
+                            <DialogActions>
+                                <button autoFocus onClick={handleClose}>
+                                    Save changes
+                                </button>
+                            </DialogActions>
                         </BootstrapDialog>
 
-                    </Grid>
-                    <Grid item xs={12} sm={6} lg={3} md={6}>
+                    </Grid> */}
 
-                        <Box className={styles.projectBox}>
-                            <img src="" alt='' className={styles.boximage} />
-                            <Box className={styles.boxtext} onClick={handleClickOpen}>
-                                <Typography variant='subtitle1'>VIEW PROJECT</Typography>
-
-                            </Box>
-
-                        </Box>
-                        <BootstrapDialog
-                            onClose={handleClose}
-                            aria-labelledby="customized-dialog-title"
-                            open={open}
-                        >
-                            <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
-                                VR Hostage Rescue Video Game Open source
-                            </BootstrapDialogTitle>
-                            <DialogContent dividers>
-                                <Typography gutterBottom>
-                                    I created an immersive Virtual Reality video game using Unity for the PC and Oculus platforms. This thrilling game puts players in the midst of hostage rescue missions, delivering an interactive and captivating experience
-                                </Typography>
-
-                            </DialogContent>
-                            {/* <DialogActions>
-                                    <button autoFocus onClick={handleClose}>
-                                        Save changes
-                                    </button>
-                                </DialogActions> */}
-                        </BootstrapDialog>
-
-                    </Grid>
-                    <Grid item xs={12} sm={6} lg={3} md={6}>
-
-                        <Box className={styles.projectBox}>
-                            <img src="" alt='' className={styles.boximage} />
-                            <Box className={styles.boxtext} onClick={handleClickOpen}>
-                                <Typography variant='subtitle1'>VIEW PROJECT</Typography>
-
-                            </Box>
-
-                        </Box>
-                        <BootstrapDialog
-                            onClose={handleClose}
-                            aria-labelledby="customized-dialog-title"
-                            open={open}
-                        >
-                            <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
-                                You Only Look Faster
-                            </BootstrapDialogTitle>
-                            <DialogContent dividers>
-                                <Typography gutterBottom>
-                                    As part of my Bachelor's degree capstone project, I developed a modified version of YOLOv2, called 'You Only Look Faster.' This lightweight object detection model is designed for efficient performance and accuracy.
-                                </Typography>
-
-                            </DialogContent>
-                            {/* <DialogActions>
-                                    <button autoFocus onClick={handleClose}>
-                                        Save changes
-                                    </button>
-                                </DialogActions> */}
-                        </BootstrapDialog>
-
-                    </Grid>
                 </Grid>
 
             </Box>
