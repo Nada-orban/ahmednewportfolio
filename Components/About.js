@@ -1,7 +1,7 @@
 import { Box, Tabs, Tab, Typography, LinkTab, Grid, Button, Container, Paper, List, ListItem, ListItemText, ListItemIcon, Avatar } from '@mui/material'
 import React from 'react'
 import styles from '../src/styles/Home.module.css'
-import profilephoto from '../public/assets/zyro-image.png'
+import profilephoto from '../public/assets/backgrounds/profile.jpg'
 import Image from 'next/image'
 import { ColorModeContext } from '../public/theme'
 import { styled, useTheme, alpha } from '@mui/material/styles';
@@ -13,14 +13,35 @@ function About() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
     return (
-        <Box id="about" py="100px" className={styles.aboutbackground}>
+        <Box id="about" py="70px" className={styles.aboutbackground}>
             <Container maxWidth="xlg" >
+                <Box display="flex" gap="20px" sx={{ px: { sm: "10px", md: "40px" } }}>
+                    <div className={styles.titlesection}>
+                        <h1>
+                            <span class={styles.a} data-aos="zoom-in" data-aos-delay="50">A</span>
+                            <span class={styles.a} data-aos="zoom-in" data-aos-delay="100">b</span>
+                            <span class={styles.a} data-aos="zoom-in" data-aos-delay="200">o</span>
+                            <span class={styles.a} data-aos="zoom-in" data-aos-delay="300">u</span>
+                            <span class={styles.a} data-aos="zoom-in" data-aos-delay="400">t</span>
+
+                        </h1>
+                    </div>
+                    <div className={styles.titlesection}>
+                        <h1>
+                            <span class={styles.a} data-aos="zoom-in" data-aos-delay="500">m</span>
+                            <span class={styles.a} data-aos="zoom-in" data-aos-delay="600">e</span>
+
+
+                        </h1>
+                    </div>
+                </Box>
                 <Grid container sx={{ px: { sm: "10px", md: "40px" } }} spacing={10} >
+
                     <Grid item xs={12} md={0} sx={{ sm: "block", md: "none", lg: "none" }} className={styles.profilephotogrid}>
-                        <Box width="200px" height="200px" border="1px solid red" overflow="hidden" margin="auto" borderRadius="50%" p="10px 0px">
+                        <Box width="300px" height="300px" overflow="hidden" margin="auto" borderRadius="10px" p=" 0px" mt="20px">
                             <Image
                                 src={profilephoto}
-                                width={200}
+                                width={300}
 
                                 className={styles.profile}
                                 alt="Picture of the author"
@@ -30,26 +51,7 @@ function About() {
 
                     </Grid>
                     <Grid item xs={12} md={6} position="relative">
-                        <Box display="flex" gap="20px">
-                            <div className={styles.titlesection}>
-                                <h1>
-                                    <span class={styles.a} data-aos="zoom-in" data-aos-delay="50">A</span>
-                                    <span class={styles.a} data-aos="zoom-in" data-aos-delay="100">b</span>
-                                    <span class={styles.a} data-aos="zoom-in" data-aos-delay="200">o</span>
-                                    <span class={styles.a} data-aos="zoom-in" data-aos-delay="300">u</span>
-                                    <span class={styles.a} data-aos="zoom-in" data-aos-delay="400">t</span>
 
-                                </h1>
-                            </div>
-                            <div className={styles.titlesection}>
-                                <h1>
-                                    <span class={styles.a} data-aos="zoom-in" data-aos-delay="500">m</span>
-                                    <span class={styles.a} data-aos="zoom-in" data-aos-delay="600">e</span>
-
-
-                                </h1>
-                            </div>
-                        </Box>
                         <Typography className={styles.bigfakeleft}>ABOUT</Typography>
                         <Box data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom">
@@ -61,7 +63,7 @@ function About() {
                                 <ListItemIcon>
                                     <Image
                                         src={marylandlogo}
-                                        width={50}
+                                        width={55}
 
                                     />
                                     {/* <SchoolIcon sx={{ color: "text.primary", width: "30px", height: "30px" }} /> */}
@@ -81,11 +83,11 @@ function About() {
                                         {'2020 ‐ Current'}
                                     </React.Fragment>}  ></ListItemText>
                             </ListItem>
-                            <ListItem data-aos="fade-up" data-aos-delay="750">
+                            <ListItem data-aos="fade-up" data-aos-delay="750" display="flex" justifyContent="center" alignItems='center' >
                                 <ListItemIcon>
                                     <Image
                                         src={alexlogo}
-                                        width={30}
+                                        width={36}
                                         className={styles.aleximage}
 
                                     />
@@ -94,7 +96,7 @@ function About() {
                                 <ListItemText primary="B.SC in electronics and communication engineering " primaryTypographyProps={{ fontSize: '18px', color: "white", fontWeight: "bold" }}
                                     secondary={<React.Fragment>
                                         <Typography
-                                            sx={{ fontSize: '18px', marginRight: 2 }}
+                                            sx={{ fontSize: '18px', marginRight: 6 }}
                                             component="span"
                                             variant="body2"
                                             color="white"

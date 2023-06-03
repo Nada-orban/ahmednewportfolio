@@ -81,7 +81,7 @@ function Projects2() {
     const theme = useTheme();
     return (
         <>
-            <Box id='projects' py="100px" backgroundColor="background.secondary">
+            <Box id='projects' py="70px" backgroundColor="background.secondary">
                 <Container maxWidth="xlg" >
                     <Box sx={{ px: { sm: "10px", md: "40px" } }} position="relative">
                         <Box display="flex" gap="20px" >
