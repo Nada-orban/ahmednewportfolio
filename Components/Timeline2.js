@@ -31,11 +31,11 @@ function Timeline2() {
                             <h1>
                                 <span class={styles.a} data-aos="zoom-in" data-aos-delay="50">T</span>
                                 <span class={styles.a} data-aos="zoom-in" data-aos-delay="100">i</span>
-                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="200">m</span>
-                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="300">e</span>
-                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="400">l</span>
-                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="400">i</span>
-                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="400">n</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="150">m</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="200">e</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="250">l</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="300">i</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="350">n</span>
                                 <span class={styles.a} data-aos="zoom-in" data-aos-delay="400">e</span>
 
 
@@ -43,7 +43,7 @@ function Timeline2() {
                         </div>
 
                     </Box>
-                    <Box sx={{ display: { xs: "none", sm: "none", md: "block" }, }}>
+                    <Box sx={{ display: { xs: "none", sm: "none", md: "block" }, }} data-aos="fade-right" data-aos-delay="300">
                         <Grid container mt="100px" >
                             <Grid item xs={12} md={4} >
                                 <Box display="flex" justifyContent="center">
@@ -56,9 +56,9 @@ function Timeline2() {
                                 </Box>
 
                                 <Box display="flex" justifyItems="center" mb="20px">
-                                    <Divider sx={{ width: "14.5vw", height: "2px", mt: "7px", backgroundColor: "gray" }} />
+                                    <Divider sx={{ width: "15.1vw", height: "2px", mt: "7px", backgroundColor: "gray" }} />
                                     <Box sx={{ border: "1px solid #F7AE9D", borderRadius: "50%", width: "15px", height: "15px", backgroundColor: "#F7AE9D" }}></Box>
-                                    <Divider sx={{ width: "14.5vw", height: "2px", mt: "7px", backgroundColor: "gray" }} />
+                                    <Divider sx={{ width: "15.1vw", height: "2px", mt: "7px", backgroundColor: "gray" }} />
 
                                 </Box>
 
@@ -92,9 +92,9 @@ function Timeline2() {
                                 </Box>
 
                                 <Box display="flex" justifyContact="center" justifyItems="center" mb="20px">
-                                    <Divider sx={{ width: "14.5vw", height: "2px", mt: "7px", backgroundColor: "gray" }} />
+                                    <Divider sx={{ width: "15.1vw", height: "2px", mt: "7px", backgroundColor: "gray" }} />
                                     <Box sx={{ border: "1px solid #F7AE9D", borderRadius: "50%", width: "15px", height: "15px", backgroundColor: "#F7AE9D" }}></Box>
-                                    <Divider sx={{ width: "14.5vw", height: "2px", mt: "7px", backgroundColor: "gray" }} />
+                                    <Divider sx={{ width: "15.1vw", height: "2px", mt: "7px", backgroundColor: "gray" }} />
                                 </Box>
 
                                 <Box width="90%">
@@ -125,9 +125,9 @@ function Timeline2() {
                                 /></Box>
 
                                 <Box display="flex" justifyContact="center" justifyItems="center" mb="20px">
-                                    <Divider sx={{ width: "14.5vw", height: "2px", mt: "7px", backgroundColor: "gray" }} />
+                                    <Divider sx={{ width: "15.1vw", height: "2px", mt: "7px", backgroundColor: "gray" }} />
                                     <Box sx={{ border: "1px solid #F7AE9D", borderRadius: "50%", width: "15px", height: "15px", backgroundColor: "#F7AE9D" }}></Box>
-                                    <Divider sx={{ width: "14.5vw", height: "2px", mt: "7px", backgroundColor: "gray" }} />
+                                    <Divider sx={{ width: "15.1vw", height: "2px", mt: "7px", backgroundColor: "gray" }} />
                                 </Box>
 
                                 <Box width="90%" >

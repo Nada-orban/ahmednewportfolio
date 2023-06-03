@@ -24,10 +24,10 @@ function Skill() {
                             <h1>
                                 <span class={styles.a} data-aos="zoom-in" data-aos-delay="50">S</span>
                                 <span class={styles.a} data-aos="zoom-in" data-aos-delay="100">k</span>
-                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="200">i</span>
-                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="300">l</span>
-                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="400">l</span>
-                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="500">s</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="150">i</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="200">l</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="250">l</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="300">s</span>
 
 
                             </h1>
@@ -35,10 +35,10 @@ function Skill() {
 
                     </Box>
                     <Typography variant='h6' data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom" data-aos-delay="600">Below are some of my skills, and I'm always looking to learn more.</Typography>
+                        data-aos-anchor-placement="top-bottom" data-aos-delay="350">Below are some of my skills, and I'm always looking to learn more.</Typography>
                     <Grid container spacing={1} sx={{ my: "50px", }} >
                         <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
-                            data-aos-delay="700">
+                            data-aos-delay="400">
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
                                 <Box sx={{ padding: "25px 20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} ><FiMonitor style={{ width: "70px", height: "70px" }} /></Box>
                                 <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Programming Languages</Typography>
@@ -47,7 +47,7 @@ function Skill() {
                             </Box>
                         </Grid>
                         <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
-                            data-aos-delay="800">
+                            data-aos-delay="430">
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
                                 <Box sx={{ padding: "25px 20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} ><BiNetworkChart style={{ width: "70px", height: "70px" }} /></Box>
                                 <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Deep Learning </Typography>
@@ -56,7 +56,7 @@ function Skill() {
                             </Box>
                         </Grid>
                         <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
-                            data-aos-delay="800">
+                            data-aos-delay="460">
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
                                 <Box sx={{ padding: "25px 20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} ><SiTensorflow style={{ width: "70px", height: "70px" }} /></Box>
                                 <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Deep Learning Frameworks</Typography>
@@ -65,7 +65,7 @@ function Skill() {
                             </Box>
                         </Grid>
                         <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
-                            data-aos-delay="900">
+                            data-aos-delay="490">
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
                                 <Box sx={{ padding: "25px 20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} ><GiSoundWaves style={{ width: "70px", height: "70px" }} /></Box>
                                 <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Signal Processing</Typography>
@@ -74,7 +74,7 @@ function Skill() {
                             </Box>
                         </Grid>
                         <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
-                            data-aos-delay="800">
+                            data-aos-delay="520">
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
                                 <Box sx={{ padding: "25px 20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} ><SiUnity style={{ width: "70px", height: "70px" }} /></Box>
                                 <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Game Development</Typography>
@@ -83,7 +83,7 @@ function Skill() {
                             </Box>
                         </Grid>
                         <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
-                            data-aos-delay="800">
+                            data-aos-delay="550">
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
                                 <Box sx={{ padding: "25px 20px", display: "flex", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} >
 

@@ -35,25 +35,25 @@ function Contact() {
                                     <h1>
                                         <span class={styles.a} data-aos="zoom-in" data-aos-delay="50" >C</span>
                                         <span class={styles.a} data-aos="zoom-in" data-aos-delay="100">o</span>
-                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="200">n</span>
-                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="300">t</span>
-                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="400">a</span>
-                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="500">c</span>
-                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="600">t</span>
+                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="150">n</span>
+                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="200">t</span>
+                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="250">a</span>
+                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="300">c</span>
+                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="350">t</span>
 
                                     </h1>
                                 </div>
                                 <div className={styles.titlesection}>
                                     <h1>
-                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="700">m</span>
-                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="800">e</span>
+                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="400">m</span>
+                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="450">e</span>
                                     </h1>
                                 </div>
                             </Box>
 
 
                             <Box display="flex" data-aos="fade-up"
-                                data-aos-anchor-placement="top-bottom" data-aos-delay="900">
+                                data-aos-anchor-placement="top-bottom" data-aos-delay="500">
                                 <AttachEmailIcon sx={{ mt: "5px", marginRight: "3px" }} />
                                 {/* <Typography variant='h5' >:</Typography> */}
                                 <Link href="mailto:ahmadadelattia@gmail.com" className={styles.myEmail}>
@@ -61,7 +61,7 @@ function Contact() {
                                 </Link>
                             </Box>
                             <Box display="flex" data-aos="fade-up"
-                                data-aos-anchor-placement="top-bottom" data-aos-delay="1000">
+                                data-aos-anchor-placement="top-bottom" data-aos-delay="550">
                                 <PhoneIphoneIcon sx={{ mt: "5px" }} />
                                 {/* <Typography variant='h5' >:</Typography> */}
 
@@ -79,7 +79,7 @@ function Contact() {
                                     <Box gap="5px" mb="10px" mt="30px" sx={{ display: { sm: 'grid', md: "flex" } }}>
                                         <TextField
                                             data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom" data-aos-delay="1100"
+                                            data-aos-anchor-placement="top-bottom" data-aos-delay="600"
                                             // sx={{ '& .css-14m6kzo-MuiInputBase-root-MuiFilledInput-root.Mui-focused': { backgroundColor: "neutral.white" } }}
                                             id="name"
                                             name="name"
@@ -104,7 +104,7 @@ function Contact() {
                                         />
                                         <TextField
                                             data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom" data-aos-delay="1200"
+                                            data-aos-anchor-placement="top-bottom" data-aos-delay="600"
                                             sx={{ mt: { xs: "10px", md: '0px' } }}
                                             id="email"
                                             name="email"
@@ -132,10 +132,9 @@ function Contact() {
                                         />
                                     </Box>
                                     <Box mb="10px" data-aos="fade-up"
-                                        data-aos-anchor-placement="top-bottom" data-aos-delay="1300">
+                                        data-aos-anchor-placement="top-bottom" data-aos-delay="650">
                                         <TextField
-                                            data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom" data-aos-delay="1300"
+
 
                                             id="subject"
                                             name="subject"
@@ -169,7 +168,7 @@ function Contact() {
 
                                     <TextField
                                         data-aos="fade-up"
-                                        data-aos-anchor-placement="top-bottom" data-aos-delay="1400"
+                                        data-aos-anchor-placement="top-bottom" data-aos-delay="700"
                                         id="message"
                                         name="message"
                                         label="Message"
@@ -198,7 +197,7 @@ function Contact() {
                                     />
                                 </Box>
 
-                                <button className={styles.normalButton2} type="submit" data-aos="fade-right" data-aos-delay="1500">
+                                <button className={styles.normalButton2} type="submit" data-aos="fade-right" data-aos-delay="750">
                                     <div className={styles.normalButtonbg}></div>
                                     <Box display="flex" justifyContent="center" alignItems="center" >
                                         <p className={styles.normalButton2text}>Send</p>

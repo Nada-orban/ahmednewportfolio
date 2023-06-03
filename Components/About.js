@@ -56,8 +56,8 @@ function About() {
                             <Typography variant='h5' sx={{ color: "white", textAlign: "start" }} >Welcome to my website!<br />I am a Deep Learning engineer and PhD researcher with expertise in Natural Language Processing, Signal Processing, Statistics, and Unsupervised Learning.My primary focus is on developing advanced Deep Learning models for speech and audio processing, with a passion for exploring the limitless possibilities of this cutting-edge technology.</Typography>
                         </Box>
                         <List >
-                            <Typography variant='h4' sx={{ my: 1, fontWeight: "bold", color: "secondary.main", textAlign: "start" }} >Education</Typography>
-                            <ListItem display="flex" justifyContent="center" alignItems='center'>
+                            <Typography variant='h4' sx={{ my: 1, fontWeight: "bold", color: "secondary.main", textAlign: "start" }} data-aos="fade-up" data-aos-delay="650">Education</Typography>
+                            <ListItem display="flex" justifyContent="center" alignItems='center' data-aos="fade-up" data-aos-delay="700">
                                 <ListItemIcon>
                                     <Image
                                         src={marylandlogo}
@@ -81,7 +81,7 @@ function About() {
                                         {'2020 ‐ Current'}
                                     </React.Fragment>}  ></ListItemText>
                             </ListItem>
-                            <ListItem>
+                            <ListItem data-aos="fade-up" data-aos-delay="750">
                                 <ListItemIcon>
                                     <Image
                                         src={alexlogo}

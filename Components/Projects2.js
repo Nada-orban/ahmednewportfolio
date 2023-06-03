@@ -81,34 +81,34 @@ function Projects2() {
     const theme = useTheme();
     return (
         <>
-            <Box id='projects' py="100px" >
+            <Box id='projects' py="100px" backgroundColor="background.secondary">
                 <Container maxWidth="xlg" >
                     <Box sx={{ px: { sm: "10px", md: "40px" } }} position="relative">
-                        <Box display="flex" gap="20px">
+                        <Box display="flex" gap="20px" >
                             <div className={styles.titlesection}>
                                 <h1>
                                     <span class={styles.a} data-aos="zoom-in" data-aos-delay="50">P</span>
                                     <span class={styles.a} data-aos="zoom-in" data-aos-delay="100">r</span>
-                                    <span class={styles.a} data-aos="zoom-in" data-aos-delay="200">o</span>
-                                    <span class={styles.a} data-aos="zoom-in" data-aos-delay="300">j</span>
-                                    <span class={styles.a} data-aos="zoom-in" data-aos-delay="400">e</span>
-                                    <span class={styles.a} data-aos="zoom-in" data-aos-delay="500">c</span>
-                                    <span class={styles.a} data-aos="zoom-in" data-aos-delay="600">t</span>
-                                    <span class={styles.a} data-aos="zoom-in" data-aos-delay="700">s</span>
+                                    <span class={styles.a} data-aos="zoom-in" data-aos-delay="150">o</span>
+                                    <span class={styles.a} data-aos="zoom-in" data-aos-delay="200">j</span>
+                                    <span class={styles.a} data-aos="zoom-in" data-aos-delay="250">e</span>
+                                    <span class={styles.a} data-aos="zoom-in" data-aos-delay="300">c</span>
+                                    <span class={styles.a} data-aos="zoom-in" data-aos-delay="350">t</span>
+                                    <span class={styles.a} data-aos="zoom-in" data-aos-delay="400">s</span>
 
                                 </h1>
                             </div>
 
                         </Box>
                         <Typography variant='h5' data-aos="fade-up"
-                            data-aos-anchor-placement="top-bottom">
+                            data-aos-anchor-placement="top-bottom" sx={{ color: "white" }}>
                             Below are some selected projects that I have worked on during my industry experience, as well as class and capstone projects. These endeavors highlight my skills and dedication in various professional contexts, showcasing the breadth of my experience and capabilities.
                         </Typography>
                         <Typography className={styles.bigfake}>WORK</Typography>
                     </Box>
                 </Container>
                 <Grid container sx={{ my: "80px" }} data-aos="fade-up"
-                    data-aos-anchor-placement="top-bottom" data-aos-delay="800">
+                    data-aos-anchor-placement="top-bottom" data-aos-delay="450">
                     {projectsdata.map(project => (
                         <Grid item xs={12} sm={6} lg={3} md={6}>
 

@@ -103,17 +103,17 @@ function Papers() {
                                     <h1>
                                         <span class={styles.a} data-aos="zoom-in" data-aos-delay="50">P</span>
                                         <span class={styles.a} data-aos="zoom-in" data-aos-delay="100">a</span>
-                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="200">p</span>
-                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="300">e</span>
-                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="400">r</span>
-                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="500">s</span>
+                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="150">p</span>
+                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="200">e</span>
+                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="250">r</span>
+                                        <span class={styles.a} data-aos="zoom-in" data-aos-delay="300">s</span>
                                     </h1>
                                 </div>
 
                             </Box>
                             <Box my="40px" >
                                 <Box my="20px" data-aos="fade-up"
-                                    data-aos-anchor-placement="top-bottom" data-aos-delay="600">
+                                    data-aos-anchor-placement="top-bottom" data-aos-delay="350">
                                     <a href="https://arxiv.org/abs/2210.15195" className={styles.linkText} target="_blank">
                                         <Typography variant='h5' sx={{ color: "secondary.main", fontWeight: "bolder" }}>Masked Autoencoders Are Articulatory Learners</Typography>
                                     </a>
@@ -126,7 +126,7 @@ function Papers() {
                                     </a>
                                 </Box>
                                 <Box my="30px" data-aos="fade-up"
-                                    data-aos-anchor-placement="top-bottom" data-aos-delay="700">
+                                    data-aos-anchor-placement="top-bottom" data-aos-delay="400">
                                     <a href="https://arxiv.org/abs/2305.10775" className={styles.linkText} target="_blank">
                                         <Typography variant='h5' sx={{ color: "secondary.main", fontWeight: "bolder" }}>Enhancing Speech Articulation Analysis Using A Geometric Transformation
                                             Of The X‐ray Microbeam Dataset </Typography>
@@ -140,7 +140,7 @@ function Papers() {
                                     </a>
                                 </Box>
                                 <Box my="30px" data-aos="fade-up"
-                                    data-aos-anchor-placement="top-bottom" data-aos-delay="800">
+                                    data-aos-anchor-placement="top-bottom" data-aos-delay="450">
                                     <a href="https://arxiv.org/abs/2205.13086" className={styles.linkText} target="_blank">
                                         <Typography variant='h5' sx={{ color: "secondary.main", fontWeight: "bolder" }}>Audio Data Augmentation for Acoustic to articulatory Speech Inversion using
                                             Bidirectional Gated RNNs </Typography>

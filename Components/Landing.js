@@ -120,11 +120,11 @@ function Landing() {
                         <Box sx={{ display: { md: "block", lg: "none" } }}>
                             <div className={styles.titlesection1}>
                                 <h1>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1050">A</span>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1100" >t</span>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1150">t</span>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1200">i</span>
-                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1250">a</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="800">A</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="850" >t</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="900">t</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="950">i</span>
+                                    <span className={styles.a} data-aos="zoom-in" data-aos-delay="1000">a</span>
                                 </h1>
                             </div>
 
@@ -140,7 +140,7 @@ function Landing() {
                         <Typography variant='h4' mb="50px" mx="5px" data-aos="fade-up" data-aos-delay="1300"
                             data-aos-anchor-placement="top-bottom">Deep Learning Ph.D Resercher</Typography>
 
-                        <Box display="flex" sx={{ justifyContent: "start", mt: { sm: "10px", xs: "10px", md: "0px", lg: "0px" }, mb: "30px" }} alignItems="center" gap="20px" >
+                        <Box display="flex" sx={{ justifyContent: "start", mt: { sm: "10px", xs: "10px", md: "0px", lg: "0px" }, mb: "30px" }} alignItems="center" gap="20px" data-aos="fade-up" data-aos-delay="1350">
                             <a href="mailto:ahmadadelattia@gmail.com" target="_blank"><Avatar variant="rounded" sx={{ width: "50px", height: "50px", backgroundColor: "secondary.main", color: "white" }} className={styles.nadaavatar}><EmailIcon /></Avatar></a>
                             <a href="https://www.linkedin.com/in/ahmedadelattia" target="_blank" ><Avatar variant="rounded" sx={{ width: "50px", height: "50px", backgroundColor: "secondary.main", color: "white" }} className={styles.nadaavatar}><FiLinkedin /></Avatar></a>
                             <a href="https://github.com/ahmedadelattia" target="_blank"><Avatar variant="rounded" sx={{ width: "50px", height: "50px", backgroundColor: "secondary.main", color: "white" }} className={styles.nadaavatar}><FiGithub /></Avatar></a>
@@ -150,14 +150,14 @@ function Landing() {
 
 
                         <Box sx={{ display: { xs: "grid", md: "flex", } }} gap="20px" justifyItems="center" justifyContent="start">
-                            <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} data-aos="fade-right" data-aos-delay="1350" >
+                            <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} data-aos="fade-right" data-aos-delay="1400" >
                                 <button className={styles.normalButton2} >
                                     <div className={styles.normalButtonbg}></div>
                                     <p className={styles.normalButton1text}>Contact me</p>
                                 </button>
 
                             </Link>
-                            <a href="/assets/CV.pdf" target="_blank" rel='noopener noreferrer' data-aos="fade-right" data-aos-delay="1400">
+                            <a href="/assets/CV.pdf" target="_blank" rel='noopener noreferrer' data-aos="fade-right" data-aos-delay="1450">
                                 <button className={styles.normalButton3} >
                                     <div className={styles.normalButtonbg3}></div>
                                     <p className={styles.normalButton3text}>RESUME</p>
