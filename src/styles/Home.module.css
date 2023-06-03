@@ -658,8 +658,8 @@
 
 }
 .projectlink{
-    text-decoration: none;
-}
+    text-decoration: underline var(--primary-color);}
+
 .projectlink:hover{
     text-decoration: underline var(--secondray-maincolor);
 }

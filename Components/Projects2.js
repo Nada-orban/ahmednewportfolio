@@ -43,7 +43,7 @@ function BootstrapDialogTitle(props) {
                         position: 'absolute',
                         right: 8,
                         top: 8,
-                        color: 'secondary.main',
+                        color: 'background.secondary',
                     }}
                 >
                     <CloseIcon />
@@ -121,9 +121,10 @@ function Projects2() {
                                 </Box>
                                 <Box className={styles.infobox}>
                                     <Typography variant='subtitle1' sx={{ fontWeight: "bold" }}>{project.title}</Typography>
-                                    <Link href={`${project.link}`} target="_blank" className={styles.projectlink}>
-                                        <Typography variant='subtitle1' sx={{ color: "white" }}>{project.source}</Typography>
-                                    </Link>
+
+                                    <Typography variant='subtitle1' sx={{ color: "white" }}>{project.source}</Typography>
+                                    <Typography variant='subtitle1' sx={{ color: "white" }}>{project.sourceclosed}</Typography>
+
                                 </Box>
                                 <Typography >{project.title}</Typography>
                             </Box>
@@ -147,6 +148,7 @@ function Projects2() {
                                         {pop.title}
                                         <br />
                                         <Link href={`${pop.link}`} target="_blank" className={styles.projectlink}><Typography variant="subtitle1" sx={{ color: "text.primary" }}>{pop.source}</Typography></Link>
+                                        <Typography variant='subtitle1' sx={{ color: "background.secondary" }}>{pop.sourceclosed}</Typography>
 
                                     </BootstrapDialogTitle>
 
