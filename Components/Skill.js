@@ -47,7 +47,7 @@ function Skill() {
                             </Box>
                         </Grid>
                         <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
-                            data-aos-delay="430">
+                            data-aos-delay="420">
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
                                 <Box sx={{ padding: "25px 20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} ><BiNetworkChart style={{ width: "70px", height: "70px" }} /></Box>
                                 <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Deep Learning </Typography>
@@ -56,7 +56,7 @@ function Skill() {
                             </Box>
                         </Grid>
                         <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
-                            data-aos-delay="460">
+                            data-aos-delay="440">
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
                                 <Box sx={{ padding: "25px 20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} ><SiTensorflow style={{ width: "70px", height: "70px" }} /></Box>
                                 <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Deep Learning Frameworks</Typography>
@@ -65,7 +65,7 @@ function Skill() {
                             </Box>
                         </Grid>
                         <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
-                            data-aos-delay="490">
+                            data-aos-delay="460">
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
                                 <Box sx={{ padding: "25px 20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} ><GiSoundWaves style={{ width: "70px", height: "70px" }} /></Box>
                                 <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Signal Processing</Typography>
@@ -74,7 +74,7 @@ function Skill() {
                             </Box>
                         </Grid>
                         <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
-                            data-aos-delay="520">
+                            data-aos-delay="480">
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
                                 <Box sx={{ padding: "25px 20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} ><SiUnity style={{ width: "70px", height: "70px" }} /></Box>
                                 <Typography variant='h4' sx={{ textAlign: "center", my: 2, fontWeight: "bold" }}>Game Development</Typography>
@@ -83,7 +83,7 @@ function Skill() {
                             </Box>
                         </Grid>
                         <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
-                            data-aos-delay="550">
+                            data-aos-delay="500">
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
                                 <Box sx={{ padding: "25px 20px", display: "flex", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} >
 
