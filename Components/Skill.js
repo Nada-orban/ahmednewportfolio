@@ -37,7 +37,7 @@ function Skill() {
                     <Typography variant='h6' data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom" data-aos-delay="350">Below are some of my skills, and I'm always looking to learn more.</Typography>
                     <Grid container spacing={1} sx={{ my: "50px", }} >
-                        <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
+                        <Grid item xs={12} sm={6} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
                             data-aos-delay="400">
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
                                 <Box sx={{ padding: "25px 20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} ><FiMonitor style={{ width: "70px", height: "70px" }} /></Box>
@@ -46,7 +46,7 @@ function Skill() {
                                 </Typography>
                             </Box>
                         </Grid>
-                        <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
+                        <Grid item xs={12} sm={6} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
                             data-aos-delay="420">
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
                                 <Box sx={{ padding: "25px 20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} ><BiNetworkChart style={{ width: "70px", height: "70px" }} /></Box>
@@ -55,7 +55,7 @@ function Skill() {
                                 </Typography>
                             </Box>
                         </Grid>
-                        <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
+                        <Grid item xs={12} sm={6} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
                             data-aos-delay="440">
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
                                 <Box sx={{ padding: "25px 20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} ><SiTensorflow style={{ width: "70px", height: "70px" }} /></Box>
@@ -64,7 +64,7 @@ function Skill() {
                                 </Typography>
                             </Box>
                         </Grid>
-                        <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
+                        <Grid item xs={12} sm={6} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
                             data-aos-delay="460">
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
                                 <Box sx={{ padding: "25px 20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} ><GiSoundWaves style={{ width: "70px", height: "70px" }} /></Box>
@@ -73,7 +73,7 @@ function Skill() {
                                 </Typography>
                             </Box>
                         </Grid>
-                        <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
+                        <Grid item xs={12} sm={6} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
                             data-aos-delay="480">
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
                                 <Box sx={{ padding: "25px 20px", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} ><SiUnity style={{ width: "70px", height: "70px" }} /></Box>
@@ -82,7 +82,7 @@ function Skill() {
                                 </Typography>
                             </Box>
                         </Grid>
-                        <Grid item xs={12} sm={12} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
+                        <Grid item xs={12} sm={6} md={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px" }} data-aos="fade-right"
                             data-aos-delay="500">
                             <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", mt: "30px", }}>
                                 <Box sx={{ padding: "25px 20px", display: "flex", textAlign: "center", border: "2px solid white", borderRadius: "25px", backgroundColor: "secondary.main", color: "background.secondary", width: "120px", height: "120px", overflow: "hidden", mx: "auto" }} >

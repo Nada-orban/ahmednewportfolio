@@ -503,17 +503,12 @@
     url('../../public/assets/backgrounds/Background-ahmed1.jpg'); */
     background: linear-gradient(to right, #0f6973 , #0f6973 ),
         url('../../public/assets/backgrounds/Background-ahmedcroped.jpg');
-
-
-
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     /* height: 70vh; */
     background-position: center;
-
     z-index: 2;
-
     overflow: hidden;
 
     /* padding: 15vh 0px; */
@@ -526,6 +521,7 @@
         height: 300px;
         justify-content: center;
         left: 10%;
+        
 
     }
 
@@ -539,7 +535,43 @@
     .profilephotogrid {
         display: block !important;
     }
-  
+    /* .profile{
+        padding-bottom: 200px;
+    }
+   */
+}
+
+@media only screen and (max-width: 900px){
+    .aboutbackground {
+        /* background: linear-gradient(135deg, #000000 0%, #ffffff00 70% ), */
+        /* background: linear-gradient(to right,#0a201cea 0%, #ffffff00 70%),
+        url('../../public/assets/backgrounds/Background-ahmed1.jpg'); */
+        background: linear-gradient(to right, #0f6973, #0f6973),
+            url('../../public/assets/backgrounds/Background-ahmedcroped.jpg');
+    
+    
+    
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        /* height: 70vh; */
+        background-position: center;
+    
+        z-index: 2;
+    
+        overflow: hidden;
+    
+        /* padding: 15vh 0px; */
+    
+    
+    }
+    .profilephotogrid {
+        display: block !important;
+    }
+    .profile{
+        padding-right: 10px;
+    }
+
 }
 
 /* ##################skills############### */

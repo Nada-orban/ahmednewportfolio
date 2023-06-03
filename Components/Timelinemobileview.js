@@ -30,7 +30,7 @@ import { NoEncryption } from '@mui/icons-material';
 
 function Timelinemobileview() {
     return (
-        <Box sx={{ display: { sm: "block", md: "none" } }}>
+        <Box sx={{ display: { sm: "block", md: "none" } }} data-aos="fade-right" data-aos-delay="400">
             <Timeline sx={{
                 my: 5,
                 [`& .${timelineItemClasses.root}:before`]: {

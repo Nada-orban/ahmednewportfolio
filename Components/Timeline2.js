@@ -43,7 +43,7 @@ function Timeline2() {
                         </div>
 
                     </Box>
-                    <Box sx={{ display: { xs: "none", sm: "none", md: "block" }, }} data-aos="fade-right" data-aos-delay="300">
+                    <Box sx={{ display: { xs: "none", sm: "none", md: "block" }, }} data-aos="fade-right" data-aos-delay="400">
                         <Grid container mt="100px" >
                             <Grid item xs={12} md={4} >
                                 <Box display="flex" justifyContent="center">
