@@ -461,6 +461,9 @@
 
 
 }
+.profilephotogrid {
+    display: none !important;
+}
 
 .photo {
     position: absolute;
@@ -511,6 +514,9 @@
         bottom: 0px;
         right: 0px;
 
+    }
+    .profilephotogrid {
+        display: block !important;
     }
 }
 

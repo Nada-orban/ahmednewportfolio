@@ -1,7 +1,7 @@
 import { Box, Tabs, Tab, Typography, LinkTab, Grid, Button, Container, Paper, List, ListItem, ListItemText, ListItemIcon, Avatar } from '@mui/material'
 import React from 'react'
 import styles from '../src/styles/Home.module.css'
-import profilephoto from '../public/assets/backgrounds/Background-Ahmed2.png'
+import profilephoto from '../public/assets/zyro-image.png'
 import Image from 'next/image'
 import { ColorModeContext } from '../public/theme'
 import { styled, useTheme, alpha } from '@mui/material/styles';
@@ -16,6 +16,19 @@ function About() {
         <Box id="about" py="100px" className={styles.aboutbackground}>
             <Container maxWidth="xlg" >
                 <Grid container sx={{ px: { sm: "10px", md: "40px" } }} spacing={10} >
+                    <Grid item xs={12} md={0} sx={{ sm: "block", md: "none", lg: "none" }} className={styles.profilephotogrid}>
+                        <Box width="200px" height="200px" border="1px solid red" overflow="hidden" margin="auto" borderRadius="50%" p="10px 0px">
+                            <Image
+                                src={profilephoto}
+                                width={200}
+
+                                className={styles.profile}
+                                alt="Picture of the author"
+                            />
+                        </Box>
+
+
+                    </Grid>
                     <Grid item xs={12} md={6} position="relative">
                         <Box display="flex" gap="20px">
                             <div className={styles.titlesection}>
@@ -94,18 +107,7 @@ function About() {
                             </ListItem>
                         </List>
                     </Grid>
-                    {/* <Grid item xs={12} md={6}>
-                        <Box position="relative">
-                            <Image
-                                src={profilephoto}
-                                width={1800}
-                                className={styles.profile}
-                                alt="Picture of the author"
-                            />
-                        </Box>
 
-
-                    </Grid> */}
                 </Grid>
 
             </Container>

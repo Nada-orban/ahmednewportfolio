@@ -63,7 +63,7 @@ function Timeline2() {
                                 </Box>
 
                                 <Box width="90%">
-                                    <Typography variant='h6' sx={{ color: "text.secondary", mb: "30px", textAlign: "center", }}>Jul 2019 ‐ Sep 2019</Typography>
+                                    <Typography variant='h6' sx={{ color: "text.secondary", mb: "30px", textAlign: "center", marginLeft: "45px" }}>Jul 2019 ‐ Sep 2019</Typography>
                                     <Box marginLeft="50px" >
                                         <Typography variant='h5' sx={{ fontWeight: "bold" }}>Deep Learning Research Intern</Typography>
                                         <Typography variant="h4" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
@@ -98,7 +98,7 @@ function Timeline2() {
                                 </Box>
 
                                 <Box width="90%">
-                                    <Typography variant='h6' sx={{ color: "text.secondary", mb: "30px", textAlign: "center" }}>Jun 2021 ‐ Jan 2022 </Typography>
+                                    <Typography variant='h6' sx={{ color: "text.secondary", mb: "30px", textAlign: "center", marginLeft: "45px" }}>Jun 2021 ‐ Jan 2022 </Typography>
                                     <Box marginLeft="60px"> <Typography variant='h5' sx={{ fontWeight: "bold" }}>Deep Learning Consultant</Typography>
                                         <Typography variant="h4" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
                                             Omnispeech, LLC
@@ -131,7 +131,7 @@ function Timeline2() {
                                 </Box>
 
                                 <Box width="90%" >
-                                    <Typography variant='h6' sx={{ color: "text.secondary", mb: "30px", textAlign: "center" }}>2022 ‐ Present</Typography>
+                                    <Typography variant='h6' sx={{ color: "text.secondary", mb: "30px", textAlign: "center", marginLeft: "60px" }}>2022 ‐ Present</Typography>
                                     <Box marginLeft="60px"> <Typography variant='h5' sx={{ fontWeight: "bold" }}>Graduate Research Assistant</Typography>
                                         <Typography variant="h4" component="span" sx={{ color: "secondary.main", fontWeight: "bold" }}>
                                             University Of Maryland

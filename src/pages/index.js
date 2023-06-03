@@ -120,6 +120,8 @@ export default function Home({ projects }) {
         <Landing />
         <About />
         <Skill />
+        <Papers />
+        <Timeline2 />
         <Projects2 />
 
         {/* //projects section */}
@@ -193,8 +195,7 @@ export default function Home({ projects }) {
             <button className={styles.normalButton}><a href='https://github.com/AhmedFakhry47' target="_blank">Visit My GitHub<GitHubIcon /></a></button>
           </Box>
         </Box> */}
-        <Papers />
-        <Timeline2 />
+
         {/* <Timelinewebsite /> */}
         <Contact />
         <Footer />
