@@ -41,6 +41,7 @@ export const themeSettongs = (mode) => {
                 },
                 secondary: {
                     main: "#F7AE9D",
+                    // #D3817A
                     // main: "#25C37D",
                     // main: "#0DD1CF"
                 },

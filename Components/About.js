@@ -1,7 +1,9 @@
 import { Box, Tabs, Tab, Typography, LinkTab, Grid, Button, Container, Paper, List, ListItem, ListItemText, ListItemIcon, Avatar } from '@mui/material'
 import React from 'react'
 import styles from '../src/styles/Home.module.css'
-import profilephoto from '../public/assets/profile3.jpg'
+import profilephoto from '../public/assets/profile8.jpg'
+import profilephoto1 from '../public/assets/backgrounds/profile.jpg'
+
 import Image from 'next/image'
 import { ColorModeContext } from '../public/theme'
 import { styled, useTheme, alpha } from '@mui/material/styles';
@@ -30,20 +32,27 @@ function About() {
                         <h1>
                             <span class={styles.a} data-aos="zoom-in" data-aos-delay="500">m</span>
                             <span class={styles.a} data-aos="zoom-in" data-aos-delay="600">e</span>
-
-
                         </h1>
                     </div>
                 </Box>
                 <Grid container sx={{ px: { sm: "10px", md: "40px" } }} spacing={10} >
 
                     <Grid item xs={12} sm={6} md={0} sx={{ sm: "block", md: "none", lg: "none" }} className={styles.profilephotogrid}>
-                        <Box width="100%" overflow="hidden" mt="20px" sx={{ borderTopLeftRadius: "30px", borderTopRightRadius: "30px", height: { xs: "60vh", sm: "80vh" } }}>
-                            <Image
+                        <Box width="100%" overflow="hidden" margin="auto" mt="20px" sx={{ borderTopLeftRadius: "30px", borderTopRightRadius: "30px", height: { xs: "50vh", sm: "80vh" } }}>
+                            {/* <Image
                                 src={profilephoto}
-                                width="400"
+                                width="370"
                                 className={styles.profile}
-                                alt="Picture of the author"
+                                alt="Picture of profile"
+                                sx={{ xs: "none", sm: "block", md: "none", lg: "none" }}
+                            /> */}
+                            <Image
+                                src={profilephoto1}
+                                width="370"
+                                className={styles.profile1}
+                                alt="Picture of profile"
+                                sx={{ xs: "block", sm: "none", md: "none", lg: "none" }}
+
                             />
                         </Box>
 

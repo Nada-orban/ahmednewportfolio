@@ -498,9 +498,7 @@
 
 @media only screen and (max-width: 600px) {
 .aboutbackground {
-    /* background: linear-gradient(135deg, #000000 0%, #ffffff00 70% ), */
-    /* background: linear-gradient(to right,#0a201cea 0%, #ffffff00 70%),
-    url('../../public/assets/backgrounds/Background-ahmed1.jpg'); */
+    
     background: linear-gradient(to right, #0f6973 , #0f6973 ),
         url('../../public/assets/backgrounds/Background-ahmedcroped.jpg');
     background-repeat: no-repeat;
@@ -535,17 +533,20 @@
     .profilephotogrid {
         display: block !important;
     }
-    /* .profile{
-        padding-bottom: 200px;
+    /* .profile1{
+        position: center;
+        margin-bottom: 100px;
+        display: block!important;
     }
-   */
+    .profile{
+        display: none!important;
+    } */
+  
 }
 
 @media only screen and (max-width: 900px){
     .aboutbackground {
-        /* background: linear-gradient(135deg, #000000 0%, #ffffff00 70% ), */
-        /* background: linear-gradient(to right,#0a201cea 0%, #ffffff00 70%),
-        url('../../public/assets/backgrounds/Background-ahmed1.jpg'); */
+     
         background: linear-gradient(to right, #0f6973, #0f6973),
             url('../../public/assets/backgrounds/Background-ahmedcroped.jpg');
     
@@ -568,9 +569,16 @@
     .profilephotogrid {
         display: block !important;
     }
-    .profile{
-        padding-right: 10px;
+    
+    /* .profile1 {
+        position: center;
+        margin-bottom: 100px;
+        display: none!important;
     }
+    
+    .profile {
+        display: block!important;
+    } */
 
 }
 
