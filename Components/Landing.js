@@ -75,7 +75,7 @@ function Landing() {
                         <Box display="flex" gap="20px" alignItems="center">
                             <div className={styles.titlesection1}>
                                 <h1 className={styles.ahmedtext}>
-                                    <Box  >
+                                    <Box className="animate__animated animate__rollIn animate__delay-0.8s">
                                         <Image
                                             src={logo}
                                             className={styles.ahmedlogo}
