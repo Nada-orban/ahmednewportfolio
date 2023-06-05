@@ -44,7 +44,7 @@ function Landing() {
                     {/* <Box sx={{ position: "absolute", top: "-150px", opacity: 0.4, }} >
                         <div ><Lottie animationData={waveform} className={styles.wavejson} /></div>
                     </Box> */}
-                    <Box className={styles.homeSection} sx={{ px: { sm: "10px", md: "40px" }, pt: { lg: "15%", md: "15%", sm: "20%", xs: "40%" }, }}>
+                    <Box className={styles.homeSection} sx={{ px: { sm: "10px", md: "40px" }, pt: { lg: "10%", md: "10%", sm: "20%", xs: "40%" }, }}>
                         <Box display="flex" gap="10px">
                             <div className={styles.titlesection1}>
                                 <h1>
@@ -106,7 +106,7 @@ function Landing() {
 
                                 </h1>
                             </div>
-                            <Box sx={{ display: { xs: "none", sm: "none", md: "none", lg: "block" } }} className={styles.titlesection1}>
+                            <Box sx={{ display: { xs: "none", sm: "none", md: "block", lg: "block" } }} className={styles.titlesection1}>
                                 <h1>
                                     <span className={styles.a} data-aos="zoom-in" data-aos-delay="800">A</span>
                                     <span className={styles.a} data-aos="zoom-in" data-aos-delay="850" >t</span>
@@ -116,8 +116,9 @@ function Landing() {
                                 </h1>
                             </Box>
 
+
                         </Box>
-                        <Box sx={{ display: { md: "block", lg: "none" } }}>
+                        <Box sx={{ display: { sm: "block", md: "none", lg: "none" } }}>
                             <div className={styles.titlesection1}>
                                 <h1>
                                     <span className={styles.a} data-aos="zoom-in" data-aos-delay="800">A</span>
@@ -127,9 +128,6 @@ function Landing() {
                                     <span className={styles.a} data-aos="zoom-in" data-aos-delay="1000">a</span>
                                 </h1>
                             </div>
-
-
-
                         </Box>
 
                         {/* <div className={styles.containertext}>

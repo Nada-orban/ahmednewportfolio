@@ -29,7 +29,7 @@
     margin-bottom: 10px;
 }
 .titlesection1{
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
 }
 
@@ -533,6 +533,11 @@
     .profilephotogrid {
         display: block !important;
     }
+    /* .profile1 {
+       padding-right: 50px;
+     
+    
+    } */
     /* .profile1{
         position: center;
         margin-bottom: 100px;
@@ -544,7 +549,7 @@
   
 }
 
-@media only screen and (max-width: 900px){
+@media (min-width:600px) and (max-width: 900px){
     .aboutbackground {
      
         background: linear-gradient(to right, #0f6973, #0f6973),
@@ -569,12 +574,12 @@
     .profilephotogrid {
         display: block !important;
     }
-    
-    /* .profile1 {
-        position: center;
-        margin-bottom: 100px;
-        display: none!important;
+    .profile1{
+        width: 500px;
+
     }
+    
+    /* 
     
     .profile {
         display: block!important;

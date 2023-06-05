@@ -1,8 +1,8 @@
 import { Box, Tabs, Tab, Typography, LinkTab, Grid, Button, Container, Paper, List, ListItem, ListItemText, ListItemIcon, Avatar } from '@mui/material'
 import React from 'react'
 import styles from '../src/styles/Home.module.css'
-import profilephoto from '../public/assets/profile8.jpg'
-import profilephoto1 from '../public/assets/backgrounds/profile.jpg'
+// import profilephoto from '../public/assets/profile8.jpg'
+import profilephoto1 from '../public/assets/profile2.jpg'
 
 import Image from 'next/image'
 import { ColorModeContext } from '../public/theme'
@@ -15,7 +15,7 @@ function About() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
     return (
-        <Box id="about" py="70px" className={styles.aboutbackground}>
+        <Box id="about" py="50px" className={styles.aboutbackground}>
             <Container maxWidth="xlg" >
                 <Box display="flex" gap="20px" sx={{ px: { sm: "10px", md: "40px" } }}>
                     <div className={styles.titlesection}>
@@ -37,21 +37,15 @@ function About() {
                 </Box>
                 <Grid container sx={{ px: { sm: "10px", md: "40px" } }} spacing={10} >
 
-                    <Grid item xs={12} sm={6} md={0} sx={{ sm: "block", md: "none", lg: "none" }} className={styles.profilephotogrid}>
-                        <Box width="100%" overflow="hidden" margin="auto" mt="20px" sx={{ borderTopLeftRadius: "30px", borderTopRightRadius: "30px", height: { xs: "50vh", sm: "80vh" } }}>
-                            {/* <Image
-                                src={profilephoto}
-                                width="370"
-                                className={styles.profile}
-                                alt="Picture of profile"
-                                sx={{ xs: "none", sm: "block", md: "none", lg: "none" }}
-                            /> */}
+                    <Grid item xs={12} sm={6} md={0} sx={{ display: { sm: "block", md: "none", lg: "none" } }} className={styles.profilephotogrid}>
+                        <Box width="100%" overflow="hidden" margin="auto" mt="20px" sx={{ borderTopLeftRadius: "30px", borderTopRightRadius: "30px", height: { xs: "45vh", sm: "80vh" }, px: "auto" }}>
+
                             <Image
                                 src={profilephoto1}
-                                width="370"
+                                width="550"
                                 className={styles.profile1}
                                 alt="Picture of profile"
-                                sx={{ xs: "block", sm: "none", md: "none", lg: "none" }}
+
 
                             />
                         </Box>
@@ -74,7 +68,7 @@ function About() {
                                         width={55}
 
                                     />
-                                    {/* <SchoolIcon sx={{ color: "text.primary", width: "30px", height: "30px" }} /> */}
+
                                 </ListItemIcon>
                                 <ListItemText primary="Ph.D. in Computer Engineering" primaryTypographyProps={{ fontSize: '18px', color: "white", fontWeight: "bold" }}
                                     secondary={<React.Fragment>
@@ -119,6 +113,7 @@ function About() {
                     </Grid>
 
                 </Grid>
+
 
             </Container>
         </Box>
