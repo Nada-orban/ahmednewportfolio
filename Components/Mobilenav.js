@@ -48,6 +48,7 @@ function Mobilenav() {
     const [navbar, setNavbar] = useState(false)
     const [hoverbutton, setHoverbutton] = useState(false)
     const [navname, setNavname] = useState(false)
+    // const [close, setClose] = useState(false)
 
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
@@ -99,42 +100,43 @@ function Mobilenav() {
                         </Box>
                     </Toolbar>
 
+
                     <Box className={mobileOpen ? Styles.bigmenuBoxactive : Styles.bigmenuBox} backgroundColor="background.secondary" textAlign="end" mt="0px" BackdropProps={{ invisible: false }} sx={{ sm: "block", md: "none", lg: "none" }} >
                         {mobileOpen && (
                             <Box>
                                 <List  >
                                     <ListItem>
-                                        <NavLinks to="about" spy={true} smooth={true} offset={-50} duration={500} className={Styles.mobilenavlink}  >
+                                        <NavLinks to="about" spy={true} smooth={true} offset={-50} duration={500} className={Styles.mobilenavlink} onClick={handleDrawerToggle} >
 
-                                            <Typography className={Styles.mobilenavlink}>ABOUT</Typography>
+                                            <Typography className={Styles.mobilenavlink} >ABOUT</Typography>
                                         </NavLinks>
                                     </ListItem>
                                     <ListItem>
-                                        <NavLinks to="skills" spy={true} smooth={true} offset={-50} duration={500} >
+                                        <NavLinks to="skills" spy={true} smooth={true} offset={-50} duration={500} onClick={handleDrawerToggle} >
 
                                             <Typography className={Styles.mobilenavlink}>SKILLS</Typography>
                                         </NavLinks>
                                     </ListItem>
                                     <ListItem>
-                                        <NavLinks to="projects" spy={true} smooth={true} offset={-50} duration={500}  >
+                                        <NavLinks to="projects" spy={true} smooth={true} offset={-50} duration={500} onClick={handleDrawerToggle} >
 
                                             <Typography className={Styles.mobilenavlink}>PROJECTS</Typography>
                                         </NavLinks>
                                     </ListItem>
                                     <ListItem>
-                                        <NavLinks to="papers" spy={true} smooth={true} offset={-50} duration={500}  >
+                                        <NavLinks to="papers" spy={true} smooth={true} offset={-50} duration={500} onClick={handleDrawerToggle} >
 
                                             <Typography className={Styles.mobilenavlink}>PAPERS</Typography>
                                         </NavLinks>
                                     </ListItem>
                                     <ListItem>
-                                        <NavLinks to="experience" spy={true} smooth={true} offset={-50} duration={500}   >
+                                        <NavLinks to="experience" spy={true} smooth={true} offset={-50} duration={500} onClick={handleDrawerToggle} >
 
                                             <Typography className={Styles.mobilenavlink}>TIMELINE</Typography>
                                         </NavLinks>
                                     </ListItem>
                                     <ListItem>
-                                        <NavLinks to="contact" spy={true} smooth={true} offset={-50} duration={500}  >
+                                        <NavLinks to="contact" spy={true} smooth={true} offset={-50} duration={500} onClick={handleDrawerToggle} >
 
                                             <Typography className={Styles.mobilenavlink}>CONTACT</Typography>
                                         </NavLinks>

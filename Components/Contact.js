@@ -207,8 +207,8 @@ function Contact() {
                                 </button>
                             </form>
                         </Grid>
-                        <Grid item sm={12} md={6} xs={12}>
-                            <Box className={styles.mapbox}>
+                        <Grid item sm={12} md={6} xs={12} sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
+                            <Box className={styles.mapbox} >
                                 <Box className={styles.maplayer}></Box>
                             </Box>
                             {/* <Image
