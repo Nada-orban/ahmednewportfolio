@@ -500,7 +500,7 @@
 .aboutbackground {
     
     background: linear-gradient(to right, #0f6973 , #0f6973 ),
-        url('../../public/assets/backgrounds/Background-ahmedcroped.jpg');
+        url('../../public/assets/backgrounds/Background-ahmed1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -553,7 +553,7 @@
     .aboutbackground {
      
         background: linear-gradient(to right, #0f6973, #0f6973),
-            url('../../public/assets/backgrounds/Background-ahmedcroped.jpg');
+            url('../../public/assets/backgrounds/Background-ahmed1.jpg');
     
     
     
@@ -991,7 +991,19 @@
     width: 100%;
     height: 700px;
     background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 
+
+}
+.maplayer{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    /* background-color:#f7ae9d60; */
+    /* background: linear-gradient(#f7ae9d80, #f7ae9d80); */
 
 }
 .linkText{
