@@ -117,7 +117,9 @@ function Papers() {
                                     <a href="https://arxiv.org/abs/2210.15195" className={styles.linkText} target="_blank">
                                         <Typography variant='h5' sx={{ color: "secondary.main", fontWeight: "bolder" }}>Masked Autoencoders Are Articulatory Learners</Typography>
                                     </a>
-                                    <Typography variant='h6'>Ahmed Adel Attia, Carol Espy-Wilson. ICASSP 2023 </Typography>
+                                    <Typography variant='h6'>
+                                        <span className={styles.papername}>Ahmed Adel Attia</span>
+                                        , Carol Espy-Wilson. ICASSP 2023 </Typography>
                                     <a href='https://arxiv.org/pdf/2210.15195.pdf' className={styles.linkText} target="_blank">
                                         <Box display="flex" justifyContent="start">
                                             <Typography variant='h5' sx={{ color: "secondary.main", }}>Download</Typography>
@@ -131,7 +133,7 @@ function Papers() {
                                         <Typography variant='h5' sx={{ color: "secondary.main", fontWeight: "bolder" }}>Enhancing Speech Articulation Analysis Using A Geometric Transformation
                                             Of The X‐ray Microbeam Dataset </Typography>
                                     </a>
-                                    <Typography variant='h6'>Ahmed Adel Attia, Mark Tiede, Carol Y. Espy-Wilson. Interspeech 2023</Typography>
+                                    <Typography variant='h6'><span className={styles.papername}>Ahmed Adel Attia</span>, Mark Tiede, Carol Y. Espy-Wilson. Interspeech 2023</Typography>
                                     <a href='https://arxiv.org/pdf/2305.10775.pdf' className={styles.linkText} target="_blank">
                                         <Box display="flex" justifyContent="start">
                                             <Typography variant='h5' sx={{ color: "secondary.main", }}>Download</Typography>
@@ -145,7 +147,7 @@ function Papers() {
                                         <Typography variant='h5' sx={{ color: "secondary.main", fontWeight: "bolder" }}>Audio Data Augmentation for Acoustic to articulatory Speech Inversion using
                                             Bidirectional Gated RNNs </Typography>
                                     </a>
-                                    <Typography variant='h6'>Yashish M. Siriwardena, Ahmed Adel Attia, Ganesh Sivaraman, Carol Espy-Wilson. EUSIPCO 2023</Typography>
+                                    <Typography variant='h6'>Yashish M. Siriwardena,<span className={styles.papername}>Ahmed Adel Attia</span>, Ganesh Sivaraman, Carol Espy-Wilson. EUSIPCO 2023</Typography>
                                     <a href='https://arxiv.org/pdf/2205.13086.pdf' className={styles.linkText} target="_blank">
                                         <Box display="flex" justifyContent="start">
                                             <Typography variant='h5' sx={{ color: "secondary.main", }}>Download</Typography>

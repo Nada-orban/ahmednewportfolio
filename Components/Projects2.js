@@ -106,74 +106,74 @@ function Projects2() {
                         </Typography>
                         <Typography className={styles.bigfake}>WORK</Typography>
                     </Box>
-                </Container>
-                <Grid container sx={{ my: "80px" }} data-aos="fade-up"
-                    data-aos-anchor-placement="top-bottom" data-aos-delay="450">
-                    {projectsdata.map(project => (
-                        <Grid item xs={12} sm={6} lg={3} md={6}>
 
-                            <Box className={styles.projectBox}>
-                                <img src={project.image} alt='' className={styles.boximage} />
-                                <Box onClick={() => changecontent(project)} >
-                                    <Box onClick={handleClickOpen} className={styles.boxtext} ></Box>
-                                    {/* <Typography variant='subtitle1' onClick={handleClickOpen} sx={{ cursor: "pointer", }} >VIEW PROJECT</Typography> */}
-                                    {/* <VisibilityIcon /> */}
+                    <Grid container sx={{ my: "80px", px: { sm: "10px", md: "40px" } }} data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom" data-aos-delay="450" spacing={2}>
+                        {projectsdata.map(project => (
+                            <Grid item xs={12} sm={6} lg={3} md={6}>
+
+                                <Box className={styles.projectBox}>
+                                    <img src={project.image} alt='' className={styles.boximage} />
+                                    <Box onClick={() => changecontent(project)} >
+                                        <Box onClick={handleClickOpen} className={styles.boxtext} ></Box>
+                                        {/* <Typography variant='subtitle1' onClick={handleClickOpen} sx={{ cursor: "pointer", }} >VIEW PROJECT</Typography> */}
+                                        {/* <VisibilityIcon /> */}
+                                    </Box>
+                                    <Box className={styles.infobox}>
+                                        <Typography variant='subtitle1' sx={{ fontWeight: "bold" }}>{project.title}</Typography>
+
+                                        <Typography variant='subtitle1' sx={{ color: "white" }}>{project.source}</Typography>
+                                        <Typography variant='subtitle1' sx={{ color: "white" }}>{project.sourceclosed}</Typography>
+
+                                    </Box>
+                                    <Typography >{project.title}</Typography>
                                 </Box>
-                                <Box className={styles.infobox}>
-                                    <Typography variant='subtitle1' sx={{ fontWeight: "bold" }}>{project.title}</Typography>
-
-                                    <Typography variant='subtitle1' sx={{ color: "white" }}>{project.source}</Typography>
-                                    <Typography variant='subtitle1' sx={{ color: "white" }}>{project.sourceclosed}</Typography>
-
-                                </Box>
-                                <Typography >{project.title}</Typography>
-                            </Box>
 
 
 
 
-                        </Grid>
+                            </Grid>
 
-                    ))}
-                    <BootstrapDialog
-                        onClose={handleClose}
-                        aria-labelledby="customized-dialog-title"
-                        open={open}
+                        ))}
+                        <BootstrapDialog
+                            onClose={handleClose}
+                            aria-labelledby="customized-dialog-title"
+                            open={open}
 
-                    >
-                        {popupcontent.map((pop) => {
-                            return (
-                                <>
-                                    <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose} sx={{ color: "secondary.main", fontWeight: "bold" }}>
-                                        {pop.title}
-                                        <br />
-                                        <Link href={`${pop.link}`} target="_blank" className={styles.projectlink}><Typography variant="subtitle1" sx={{ color: "text.primary" }}>{pop.source}</Typography></Link>
-                                        <Typography variant='subtitle1' sx={{ color: "background.secondary" }}>{pop.sourceclosed}</Typography>
+                        >
+                            {popupcontent.map((pop) => {
+                                return (
+                                    <>
+                                        <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose} sx={{ color: "secondary.main", fontWeight: "bold" }}>
+                                            {pop.title}
+                                            <br />
+                                            <Link href={`${pop.link}`} target="_blank" className={styles.projectlink}><Typography variant="subtitle1" sx={{ color: "text.primary" }}>{pop.source}</Typography></Link>
+                                            <Typography variant='subtitle1' sx={{ color: "background.secondary" }}>{pop.sourceclosed}</Typography>
 
-                                    </BootstrapDialogTitle>
+                                        </BootstrapDialogTitle>
 
-                                    <DialogContent dividers>
-                                        <Typography gutterBottom>
-                                            {pop.body}
-                                        </Typography>
+                                        <DialogContent dividers>
+                                            <Typography gutterBottom>
+                                                {pop.body}
+                                            </Typography>
 
-                                    </DialogContent>
-                                    {/* <DialogActions>
+                                        </DialogContent>
+                                        {/* <DialogActions>
                             <button autoFocus onClick={handleClose}>
                                 Save changes
                             </button>
                         </DialogActions> */}
-                                </>
+                                    </>
 
 
-                            )
+                                )
 
 
 
-                        })}
-                    </BootstrapDialog>
+                            })}
+                        </BootstrapDialog>
 
-                    {/* <Grid item xs={12} sm={6} lg={3} md={6}>
+                        {/* <Grid item xs={12} sm={6} lg={3} md={6}>
 
                         <Box className={styles.projectBox}>
                             <img src="" alt='' className={styles.boximage} />
@@ -238,7 +238,8 @@ function Projects2() {
 
                     </Grid> */}
 
-                </Grid>
+                    </Grid>
+                </Container>
 
             </Box>
             {/* <Box width="500px" height="200px" backgroundColor="red">
