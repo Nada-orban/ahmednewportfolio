@@ -11,7 +11,7 @@
 }
 
 .Appbaractive {
-    /* background-color: rgba(243, 236, 236, 0.87)!important; */
+    /* background-color: rgba(245, 241, 241, 0.822)!important; */
     background-color: rgba(247, 241, 241, 0.87) !important;
     transition: all .3s ease-in-out !important;
     /* padding: 5px 0px !important; */
@@ -188,7 +188,7 @@
     z-index: 1;
     border-radius: 50%;
     top: 20px;
-    right: 30px;
+    right: 22px;
     width: 0px;
     height: 0px;
     
@@ -204,8 +204,8 @@
     position: fixed;
     width: 100%;
     height:100%;
-    padding-left: 100px;
-    padding-top: 100px;
+    padding-left: 20vw;
+    padding-top: 20vh;
     border-radius: 50%;
     right: 0px!important;
     top: 0px;
@@ -218,7 +218,7 @@
 
 }
 .mobilenavlink{
-    font-size: 10px;
+    font-size: 17px;
     font-weight: bolder;
 }
 .emailstyle{
@@ -251,7 +251,8 @@
     transition: all 1s ease-in-out;
     width: 250px;
     height: 250px;
-    border-radius: 10px;
+    border-radius: 50%;
     z-index: -2 !important;
 
 }
+

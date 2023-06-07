@@ -1071,6 +1071,7 @@
 .nadaavatar:hover{
     transform: scale(1.2);
     transition: all .5 ease-out;
+    
 
 }
 
@@ -1081,4 +1082,13 @@
 }
 .portfoliolink:hover{
     text-decoration: underline;
+}
+/********************** icassp2023*************************/
+.outlink{
+    display: flex;
+    color:var(--primary-color);
+    gap: 20px;
+}
+.outlink:hover{
+    color: var(--secondray-maincolor);
 }
