@@ -28,11 +28,11 @@ import Lottie from 'lottie-react'
 import { ColorModeContext } from '../public/theme'
 import { styled, useTheme, alpha } from '@mui/material/styles';
 import Image from 'next/image';
-import logo from '../public/assets/backgrounds/logo2.png'
+// import logo from '../public/assets/backgrounds/logo2.png'
 import { AiOutlineFilePdf } from 'react-icons/ai'
 import { FiFacebook, FiLinkedin, FiGithub } from 'react-icons/fi'
-
 import { SiUpwork, SiGooglescholar } from 'react-icons/si'
+import logo from '../public/logo- 3 colors-small-flipped.png'
 
 
 const NavLinks = styled(Link)`
@@ -102,6 +102,15 @@ function Mobilenav() {
                                 <Box className={mobileOpen ? Styles.bigmenuBoxactive : Styles.bigmenuBox} backgroundColor="secondary.main" textAlign="end" BackdropProps={{ invisible: false }} sx={{ sm: "block", md: "none", lg: "none" }} >
                                     {mobileOpen && (
                                         <Box>
+                                            <Box sx={{ color: "background.secondary", textAlign: "start" }} data-aos="fade-right"
+                                                data-aos-delay="200"> <Image
+                                                    src={logo}
+                                                    // className={styles.ahmedlogo}
+                                                    width={20}
+                                                    className={Styles.navlogo}
+                                                    alt="Picture of the author"
+
+                                                /></Box>
                                             <List  >
                                                 <ListItem>
                                                     <NavLinks to="about" spy={true} smooth={true} offset={-50} duration={500} className={Styles.mobilenavlink} onClick={handleDrawerToggle} data-aos="fade-up"
@@ -135,7 +144,7 @@ function Mobilenav() {
                                                     <NavLinks to="experience" spy={true} smooth={true} offset={-50} duration={500} onClick={handleDrawerToggle} data-aos="fade-up"
                                                         data-aos-delay="200">
 
-                                                        <Typography className={Styles.mobilenavlink}>TIMELINE</Typography>
+                                                        <Typography className={Styles.mobilenavlink}>Experience</Typography>
                                                     </NavLinks>
                                                 </ListItem>
                                                 <ListItem>

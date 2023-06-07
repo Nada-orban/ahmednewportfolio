@@ -29,10 +29,11 @@ import Lottie from 'lottie-react'
 import { ColorModeContext } from '../public/theme'
 import { styled, useTheme, alpha } from '@mui/material/styles';
 import Image from 'next/image';
-import logo from '../public/assets/backgrounds/logo2.png'
+// import logo from '../public/assets/backgrounds/logo2.png'
 import { AiOutlineFilePdf } from 'react-icons/ai'
 import { FiFacebook, FiLinkedin, FiGithub } from 'react-icons/fi'
-import { SiUpwork } from 'react-icons'
+import { SiUpwork, SiGooglescholar } from 'react-icons/si'
+import logo from '../public/logo- 3 colors-small-flipped.png'
 
 const NavLinks = styled(Link)`
   color: white;
@@ -101,6 +102,15 @@ function Mobilenavinpage() {
                                 <Box className={mobileOpen ? Styles.bigmenuBoxactive : Styles.bigmenuBox} backgroundColor="secondary.main" textAlign="end" BackdropProps={{ invisible: false }} sx={{ sm: "block", md: "none", lg: "none" }} >
                                     {mobileOpen && (
                                         <Box>
+                                            <Box sx={{ color: "background.secondary", textAlign: "start" }} data-aos="fade-right"
+                                                data-aos-delay="200"> <Image
+                                                    src={logo}
+                                                    // className={styles.ahmedlogo}
+                                                    width={20}
+                                                    className={Styles.navlogo}
+                                                    alt="Picture of the author"
+
+                                                /></Box>
                                             <List  >
                                                 <ListItem>
                                                     <NavLinks href="https://www.ahmedadelattia.com/#about" onClick={handleDrawerToggle} data-aos="fade-up"
@@ -134,7 +144,7 @@ function Mobilenavinpage() {
                                                     <NavLinks href="https://www.ahmedadelattia.com/#experience" onClick={handleDrawerToggle} data-aos="fade-up"
                                                         data-aos-delay="200">
 
-                                                        <Typography className={Styles.mobilenavlink}>TIMELINE</Typography>
+                                                        <Typography className={Styles.mobilenavlink}>Experience</Typography>
                                                     </NavLinks>
                                                 </ListItem>
                                                 <ListItem>
@@ -155,7 +165,8 @@ function Mobilenavinpage() {
 
                                                     <a href="https://www.linkedin.com/in/nada-samir-441a58130/" ><Avatar sx={{ width: "25px", height: "25px", backgroundColor: "white", color: "background.secondary" }} ><FiLinkedin /></Avatar></a>
                                                     <a href="https://github.com/Nada-orban" ><Avatar sx={{ width: "25px", height: "25px", backgroundColor: "white", color: "background.secondary" }} ><FiGithub /></Avatar></a>
-                                                    {/* <a href="https://www.upwork.com/freelancers/~0158c861bae4be2e7b" ><Avatar variant="rounded" sx={{ width: "50px", height: "50px", backgroundColor: "secondary.main", color: "white" }} ><SiUpwork /></Avatar></a> */}
+                                                    <a href="https://scholar.google.com/citations?user=x2TMhSQAAAAJ&hl=en&oi=sra" target="_blank"><Avatar sx={{ width: "25px", height: "25px", backgroundColor: "white", color: "background.secondary" }} ><SiGooglescholar /></Avatar></a>
+
                                                 </Box>
 
 

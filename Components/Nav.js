@@ -140,7 +140,7 @@ function Nav() {
                                         <ListItem>
                                             <NavLinks to="experience" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
 
-                                                <Typography variant="h6">Timeline</Typography>
+                                                <Typography variant="h6">Experience</Typography>
                                                 {/* <ListItemText primary="Timeline" /> */}
 
                                             </NavLinks>

@@ -49,7 +49,7 @@ function ICASSP2023() {
                         </Box>
                         <Box >
                             <Link href="https://arxiv.org/abs/2210.15195" target="_blank" className={styles.outlink}> <Typography variant='h5' sx={{ color: "background.secondary" }}>Learn more about my paper</Typography></Link>
-                            <Link href="http://www.ahmedadelattia.com/" target="_blank" className={styles.outlink}> <Typography variant='h5' sx={{ color: "background.secondary" }}>Learn more about about me</Typography></Link>
+                            <Link href="http://www.ahmedadelattia.com/" target="_blank" className={styles.outlink}> <Typography variant='h5' sx={{ color: "background.secondary", mt: "10px" }}>Learn more about me</Typography></Link>
                         </Box>
                     </Stack>
                 </Container>
