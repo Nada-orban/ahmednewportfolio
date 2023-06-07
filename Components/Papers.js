@@ -97,7 +97,7 @@ function Papers() {
 
                     </Grid> */}
                     <Box className={styles.layer}>
-                        <Box sx={{ px: { xs: "10px", md: "65px" }, pt: "50px" }}>
+                        <Box sx={{ px: { xs: "20px", md: "65px" }, pt: "50px" }}>
                             <Box display="flex" gap="20px">
                                 <div className={styles.titlesection}>
                                     <h1>
