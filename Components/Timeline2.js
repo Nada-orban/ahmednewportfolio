@@ -29,14 +29,17 @@ function Timeline2() {
                     <Box display="flex" gap="20px">
                         <div className={styles.titlesection}>
                             <h1>
-                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="50">T</span>
-                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="100">i</span>
-                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="150">m</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="50">E</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="100">x</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="150">p</span>
                                 <span class={styles.a} data-aos="zoom-in" data-aos-delay="200">e</span>
-                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="250">l</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="250">r</span>
                                 <span class={styles.a} data-aos="zoom-in" data-aos-delay="300">i</span>
-                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="350">n</span>
-                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="400">e</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="350">e</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="400">n</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="450">c</span>
+                                <span class={styles.a} data-aos="zoom-in" data-aos-delay="500">e</span>
+
 
 
                             </h1>

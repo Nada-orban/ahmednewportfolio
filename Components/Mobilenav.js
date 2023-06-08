@@ -138,7 +138,7 @@ function Mobilenav() {
                                                     <NavLinks to="experience" spy={true} smooth={true} offset={0} duration={500} onClick={handleDrawerToggle} data-aos="fade-up"
                                                         data-aos-delay="200">
 
-                                                        <Typography className={Styles.mobilenavlink}>Experience</Typography>
+                                                        <Typography className={Styles.mobilenavlink}>EXPERIENCE</Typography>
                                                     </NavLinks>
                                                 </ListItem>
                                                 <ListItem>

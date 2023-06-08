@@ -138,7 +138,7 @@ function Mobilenavinpage() {
                                                     <a href="https://www.ahmedadelattia.com/#experience" target="_blank" data-aos="fade-up"
                                                         data-aos-delay="200" className={Styles.textlink}>
 
-                                                        <Typography className={Styles.mobilenavlink1}>Experience</Typography>
+                                                        <Typography className={Styles.mobilenavlink1}>EXPERIENCE</Typography>
                                                     </a>
                                                 </ListItem>
                                                 <ListItem>
