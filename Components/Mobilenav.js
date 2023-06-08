@@ -102,15 +102,10 @@ function Mobilenav() {
                                 <Box className={mobileOpen ? Styles.bigmenuBoxactive : Styles.bigmenuBox} backgroundColor="secondary.main" textAlign="end" BackdropProps={{ invisible: false }} sx={{ sm: "block", md: "none", lg: "none" }} >
                                     {mobileOpen && (
                                         <Box>
-                                            <Box sx={{ color: "background.secondary", textAlign: "start" }} data-aos="fade-right"
-                                                data-aos-delay="200"> <Image
-                                                    src={logo}
-                                                    // className={styles.ahmedlogo}
-                                                    width={20}
-                                                    className={Styles.navlogo}
-                                                    alt="Picture of the author"
-
-                                                /></Box>
+                                            <Box sx={{ color: "background.secondary", textAlign: "start" }} data-aos="fade-down"
+                                                data-aos-delay="200"><Typography variant="h6" noWrap sx={{ color: "background.secondary", fontWeight: "bold", }} className={Styles.logoname}  >
+                                                    Ahmed Adel Attia
+                                                </Typography></Box>
                                             <List  >
                                                 <ListItem>
                                                     <NavLinks to="about" spy={true} smooth={true} offset={0} duration={500} className={Styles.mobilenavlink} onClick={handleDrawerToggle} data-aos="fade-up"

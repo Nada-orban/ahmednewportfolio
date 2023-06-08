@@ -102,15 +102,20 @@ function Mobilenavinpage() {
                                 <Box className={mobileOpen ? Styles.bigmenuBoxactive : Styles.bigmenuBox} backgroundColor="secondary.main" textAlign="end" BackdropProps={{ invisible: false }} sx={{ sm: "block", md: "none", lg: "none" }} >
                                     {mobileOpen && (
                                         <Box>
-                                            <Box sx={{ color: "background.secondary", textAlign: "start" }} data-aos="fade-right"
-                                                data-aos-delay="200"> <Image
+                                            <Box sx={{ color: "background.secondary", textAlign: "start" }} data-aos="fade-down"
+                                                data-aos-delay="200">
+                                                {/* <Image
                                                     src={logo}
                                                     // className={styles.ahmedlogo}
                                                     width={20}
                                                     className={Styles.navlogo}
                                                     alt="Picture of the author"
 
-                                                /></Box>
+                                                /> */}
+                                                <Typography variant="h6" noWrap sx={{ color: "background.secondary", fontWeight: "bold", }} className={Styles.logoname} >
+                                                    Ahmed Adel Attia
+                                                </Typography>
+                                            </Box>
                                             <List  >
                                                 <ListItem>
                                                     <a href="https://www.ahmedadelattia.com/#about" target="_blank" data-aos="fade-up"

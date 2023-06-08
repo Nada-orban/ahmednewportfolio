@@ -138,7 +138,7 @@ function Contact() {
 
                                             id="subject"
                                             name="subject"
-                                            label="subject"
+                                            label="Subject"
                                             color="secondary"
                                             variant="filled"
                                             multiline
