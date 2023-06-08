@@ -113,46 +113,46 @@ function Mobilenavinpage() {
                                                 /></Box>
                                             <List  >
                                                 <ListItem>
-                                                    <NavLinks href="https://www.ahmedadelattia.com/#about" onClick={handleDrawerToggle} target="_blank" data-aos="fade-up"
-                                                        data-aos-delay="200">
+                                                    <a href="https://www.ahmedadelattia.com/#about" target="_blank" data-aos="fade-up"
+                                                        data-aos-delay="200" className={Styles.textlink}>
 
-                                                        <Typography className={Styles.mobilenavlink} >ABOUT</Typography>
-                                                    </NavLinks>
+                                                        <Typography className={Styles.mobilenavlink1} >ABOUT</Typography>
+                                                    </a>
                                                 </ListItem>
                                                 <ListItem>
-                                                    <NavLinks href="https://www.ahmedadelattia.com/#skills" onClick={handleDrawerToggle} target="_blank" data-aos="fade-up"
-                                                        data-aos-delay="200">
+                                                    <a href="https://www.ahmedadelattia.com/#skills" target="_blank" data-aos="fade-up"
+                                                        data-aos-delay="200" className={Styles.textlink}>
 
-                                                        <Typography className={Styles.mobilenavlink}>SKILLS</Typography>
-                                                    </NavLinks>
+                                                        <Typography className={Styles.mobilenavlink1}>SKILLS</Typography>
+                                                    </a>
                                                 </ListItem>
                                                 <ListItem>
-                                                    <NavLinks href="https://www.ahmedadelattia.com/#projects" onClick={handleDrawerToggle} target="_blank" data-aos="fade-up"
-                                                        data-aos-delay="200">
+                                                    <a href="https://www.ahmedadelattia.com/#projects" target="_blank" data-aos="fade-up"
+                                                        data-aos-delay="200" className={Styles.textlink}>
 
-                                                        <Typography className={Styles.mobilenavlink}>PROJECTS</Typography>
-                                                    </NavLinks>
+                                                        <Typography className={Styles.mobilenavlink1}>PROJECTS</Typography>
+                                                    </a>
                                                 </ListItem>
                                                 <ListItem>
-                                                    <NavLinks href="https://www.ahmedadelattia.com/#papers" onClick={handleDrawerToggle} target="_blank" data-aos="fade-up"
-                                                        data-aos-delay="200">
+                                                    <a href="https://www.ahmedadelattia.com/#papers" target="_blank" data-aos="fade-up"
+                                                        data-aos-delay="200" className={Styles.textlink}>
 
-                                                        <Typography className={Styles.mobilenavlink}>PAPERS</Typography>
-                                                    </NavLinks>
+                                                        <Typography className={Styles.mobilenavlink1}>PAPERS</Typography>
+                                                    </a>
                                                 </ListItem>
                                                 <ListItem>
-                                                    <NavLinks href="https://www.ahmedadelattia.com/#experience" onClick={handleDrawerToggle} target="_blank" data-aos="fade-up"
-                                                        data-aos-delay="200">
+                                                    <a href="https://www.ahmedadelattia.com/#experience" target="_blank" data-aos="fade-up"
+                                                        data-aos-delay="200" className={Styles.textlink}>
 
-                                                        <Typography className={Styles.mobilenavlink}>Experience</Typography>
-                                                    </NavLinks>
+                                                        <Typography className={Styles.mobilenavlink1}>Experience</Typography>
+                                                    </a>
                                                 </ListItem>
                                                 <ListItem>
-                                                    <NavLinks href="https://www.ahmedadelattia.com/#contact" onClick={handleDrawerToggle} target="_blank" data-aos="fade-up"
-                                                        data-aos-delay="200">
+                                                    <a href="https://www.ahmedadelattia.com/#contact" target="_blank" data-aos="fade-up"
+                                                        data-aos-delay="200" className={Styles.textlink}>
 
-                                                        <Typography className={Styles.mobilenavlink}>CONTACT</Typography>
-                                                    </NavLinks>
+                                                        <Typography className={Styles.mobilenavlink1}>CONTACT</Typography>
+                                                    </a>
                                                 </ListItem>
 
 

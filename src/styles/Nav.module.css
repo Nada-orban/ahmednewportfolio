@@ -221,6 +221,16 @@
     font-size: 17px;
     font-weight: bolder;
 }
+.mobilenavlink1{
+    font-size: 17px;
+    font-weight: bolder;
+    color: white;
+    
+
+}
+.textlink{
+    text-decoration: none;
+}
 .emailstyle{
     color: white;
     font-size: 15px;
