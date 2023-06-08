@@ -113,14 +113,14 @@ function Mobilenav() {
                                                 /></Box>
                                             <List  >
                                                 <ListItem>
-                                                    <NavLinks to="about" spy={true} smooth={true} offset={-50} duration={500} className={Styles.mobilenavlink} onClick={handleDrawerToggle} data-aos="fade-up"
+                                                    <NavLinks to="about" spy={true} smooth={true} offset={0} duration={500} className={Styles.mobilenavlink} onClick={handleDrawerToggle} data-aos="fade-up"
                                                         data-aos-delay="200">
 
                                                         <Typography className={Styles.mobilenavlink} >ABOUT</Typography>
                                                     </NavLinks>
                                                 </ListItem>
                                                 <ListItem>
-                                                    <NavLinks to="skills" spy={true} smooth={true} offset={-50} duration={500} onClick={handleDrawerToggle} data-aos="fade-up"
+                                                    <NavLinks to="skills" spy={true} smooth={true} offset={0} duration={500} onClick={handleDrawerToggle} data-aos="fade-up"
                                                         data-aos-delay="200">
 
                                                         <Typography className={Styles.mobilenavlink}>SKILLS</Typography>
@@ -128,28 +128,28 @@ function Mobilenav() {
                                                 </ListItem>
 
                                                 <ListItem>
-                                                    <NavLinks to="papers" spy={true} smooth={true} offset={-50} duration={500} onClick={handleDrawerToggle} data-aos="fade-up"
+                                                    <NavLinks to="papers" spy={true} smooth={true} offset={0} duration={500} onClick={handleDrawerToggle} data-aos="fade-up"
                                                         data-aos-delay="200">
 
                                                         <Typography className={Styles.mobilenavlink}>PAPERS</Typography>
                                                     </NavLinks>
                                                 </ListItem>
                                                 <ListItem>
-                                                    <NavLinks to="experience" spy={true} smooth={true} offset={-50} duration={500} onClick={handleDrawerToggle} data-aos="fade-up"
+                                                    <NavLinks to="experience" spy={true} smooth={true} offset={0} duration={500} onClick={handleDrawerToggle} data-aos="fade-up"
                                                         data-aos-delay="200">
 
                                                         <Typography className={Styles.mobilenavlink}>Experience</Typography>
                                                     </NavLinks>
                                                 </ListItem>
                                                 <ListItem>
-                                                    <NavLinks to="projects" spy={true} smooth={true} offset={-50} duration={500} onClick={handleDrawerToggle} data-aos="fade-up"
+                                                    <NavLinks to="projects" spy={true} smooth={true} offset={0} duration={500} onClick={handleDrawerToggle} data-aos="fade-up"
                                                         data-aos-delay="200">
 
                                                         <Typography className={Styles.mobilenavlink}>PROJECTS</Typography>
                                                     </NavLinks>
                                                 </ListItem>
                                                 <ListItem>
-                                                    <NavLinks to="contact" spy={true} smooth={true} offset={-50} duration={500} onClick={handleDrawerToggle} data-aos="fade-up"
+                                                    <NavLinks to="contact" spy={true} smooth={true} offset={0} duration={500} onClick={handleDrawerToggle} data-aos="fade-up"
                                                         data-aos-delay="200">
 
                                                         <Typography className={Styles.mobilenavlink}>CONTACT</Typography>

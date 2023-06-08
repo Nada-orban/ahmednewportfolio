@@ -101,7 +101,7 @@ function Nav() {
                                 <Box sx={{ display: { xs: "none", sm: 'none', md: 'block', } }}>
                                     <List sx={{ display: "flex" }}>
                                         <ListItem>
-                                            <NavLinks to="about" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink}  >
+                                            <NavLinks to="about" spy={true} smooth={true} offset={0} duration={500} className={Styles.navlink}  >
 
                                                 <Typography variant="h6">About</Typography>
                                                 {/* <ListItemText primary="About" /> */}
@@ -110,7 +110,7 @@ function Nav() {
                                         </ListItem>
 
                                         <ListItem>
-                                            <NavLinks to="skills" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
+                                            <NavLinks to="skills" spy={true} smooth={true} offset={0} duration={500} className={Styles.navlink} >
 
                                                 <Typography variant="h6">Skills</Typography>
                                                 {/* <ListItemText primary="Skills" /> */}
@@ -121,7 +121,7 @@ function Nav() {
 
 
                                         <ListItem>
-                                            <NavLinks to="papers" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
+                                            <NavLinks to="papers" spy={true} smooth={true} offset={0} duration={500} className={Styles.navlink} >
 
                                                 <Typography variant="h6">Papers</Typography>
                                                 {/* <ListItemText primary="Papers" /> */}
@@ -130,7 +130,7 @@ function Nav() {
                                         </ListItem>
 
                                         <ListItem>
-                                            <NavLinks to="experience" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
+                                            <NavLinks to="experience" spy={true} smooth={true} offset={0} duration={500} className={Styles.navlink} >
 
                                                 <Typography variant="h6">Experience</Typography>
                                                 {/* <ListItemText primary="Timeline" /> */}
@@ -138,7 +138,7 @@ function Nav() {
                                             </NavLinks>
                                         </ListItem>
                                         <ListItem>
-                                            <NavLinks to="projects" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink}  >
+                                            <NavLinks to="projects" spy={true} smooth={true} offset={0} duration={500} className={Styles.navlink}  >
 
                                                 <Typography variant="h6">Projects</Typography>
                                                 {/* <ListItemText primary="Projects" /> */}
@@ -149,7 +149,7 @@ function Nav() {
 
 
                                         <ListItem>
-                                            <NavLinks to="contact" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
+                                            <NavLinks to="contact" spy={true} smooth={true} offset={0} duration={500} className={Styles.navlink} >
 
                                                 <Typography variant="h6">Contact</Typography>
                                                 {/* <ListItemText primary="Contact" /> */}

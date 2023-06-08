@@ -22,7 +22,7 @@ function Contact() {
     const theme = useTheme();
     const [state, handleSubmit] = useForm("moqzolwp");
     return (
-        <Box id="contact" py="100px" sx={{ backgroundColor: "background.blue" }}>
+        <Box id="contact" py="50px" sx={{ backgroundColor: "background.blue" }}>
             <Container maxWidth="xlg" >
 
                 <Box sx={{ px: { sm: "10px", md: "40px" } }}>

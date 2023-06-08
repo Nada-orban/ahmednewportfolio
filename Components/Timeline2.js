@@ -23,7 +23,7 @@ function Timeline2() {
     const colorMode = React.useContext(ColorModeContext);
     const theme = useTheme();
     return (
-        <Box id="experience" py="100px" >
+        <Box id="experience" py="50px" >
             <Container maxWidth="xlg" >
                 <Box sx={{ px: { sm: "10px", md: "40px" }, }}>
                     <Box display="flex" gap="20px">
