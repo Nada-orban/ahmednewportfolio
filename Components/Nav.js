@@ -119,14 +119,6 @@ function Nav() {
                                             </NavLinks>
                                         </ListItem>
 
-                                        <ListItem>
-                                            <NavLinks to="projects" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink}  >
-
-                                                <Typography variant="h6">Projects</Typography>
-                                                {/* <ListItemText primary="Projects" /> */}
-
-                                            </NavLinks>
-                                        </ListItem>
 
                                         <ListItem>
                                             <NavLinks to="papers" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink} >
@@ -145,6 +137,15 @@ function Nav() {
 
                                             </NavLinks>
                                         </ListItem>
+                                        <ListItem>
+                                            <NavLinks to="projects" spy={true} smooth={true} offset={-50} duration={500} className={Styles.navlink}  >
+
+                                                <Typography variant="h6">Projects</Typography>
+                                                {/* <ListItemText primary="Projects" /> */}
+
+                                            </NavLinks>
+                                        </ListItem>
+
 
 
                                         <ListItem>

@@ -126,13 +126,7 @@ function Mobilenavinpage() {
                                                         <Typography className={Styles.mobilenavlink1}>SKILLS</Typography>
                                                     </a>
                                                 </ListItem>
-                                                <ListItem>
-                                                    <a href="https://www.ahmedadelattia.com/#projects" target="_blank" data-aos="fade-up"
-                                                        data-aos-delay="200" className={Styles.textlink}>
 
-                                                        <Typography className={Styles.mobilenavlink1}>PROJECTS</Typography>
-                                                    </a>
-                                                </ListItem>
                                                 <ListItem>
                                                     <a href="https://www.ahmedadelattia.com/#papers" target="_blank" data-aos="fade-up"
                                                         data-aos-delay="200" className={Styles.textlink}>
@@ -145,6 +139,13 @@ function Mobilenavinpage() {
                                                         data-aos-delay="200" className={Styles.textlink}>
 
                                                         <Typography className={Styles.mobilenavlink1}>Experience</Typography>
+                                                    </a>
+                                                </ListItem>
+                                                <ListItem>
+                                                    <a href="https://www.ahmedadelattia.com/#projects" target="_blank" data-aos="fade-up"
+                                                        data-aos-delay="200" className={Styles.textlink}>
+
+                                                        <Typography className={Styles.mobilenavlink1}>PROJECTS</Typography>
                                                     </a>
                                                 </ListItem>
                                                 <ListItem>

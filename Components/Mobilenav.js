@@ -126,13 +126,7 @@ function Mobilenav() {
                                                         <Typography className={Styles.mobilenavlink}>SKILLS</Typography>
                                                     </NavLinks>
                                                 </ListItem>
-                                                <ListItem>
-                                                    <NavLinks to="projects" spy={true} smooth={true} offset={-50} duration={500} onClick={handleDrawerToggle} data-aos="fade-up"
-                                                        data-aos-delay="200">
 
-                                                        <Typography className={Styles.mobilenavlink}>PROJECTS</Typography>
-                                                    </NavLinks>
-                                                </ListItem>
                                                 <ListItem>
                                                     <NavLinks to="papers" spy={true} smooth={true} offset={-50} duration={500} onClick={handleDrawerToggle} data-aos="fade-up"
                                                         data-aos-delay="200">
@@ -145,6 +139,13 @@ function Mobilenav() {
                                                         data-aos-delay="200">
 
                                                         <Typography className={Styles.mobilenavlink}>Experience</Typography>
+                                                    </NavLinks>
+                                                </ListItem>
+                                                <ListItem>
+                                                    <NavLinks to="projects" spy={true} smooth={true} offset={-50} duration={500} onClick={handleDrawerToggle} data-aos="fade-up"
+                                                        data-aos-delay="200">
+
+                                                        <Typography className={Styles.mobilenavlink}>PROJECTS</Typography>
                                                     </NavLinks>
                                                 </ListItem>
                                                 <ListItem>
