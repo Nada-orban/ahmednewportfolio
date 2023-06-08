@@ -64,8 +64,9 @@ function Contact() {
                                 data-aos-anchor-placement="top-bottom" >
                                 <PhoneIphoneIcon sx={{ mt: "5px" }} />
                                 {/* <Typography variant='h5' >:</Typography> */}
+                                <Typography variant='h5' className={styles.linkText}> (+1) 469-596-4371</Typography>
 
-                                <Typography variant='h5' sx={{ color: "secondary.main" }} className={styles.linkText}>(+1) 469-596-4371</Typography>
+                                {/* <Typography variant='h5' sx={{ color: "secondary.main" }} className={styles.linkText}>(+1) 469-596-4371</Typography> */}
 
                             </Box>
                             {/* <Box display="flex" sx={{ justifyContent: "start", mt: { sm: "10px", xs: "10px", md: "0px", lg: "0px" } }} alignItems="center" gap="20px" >
