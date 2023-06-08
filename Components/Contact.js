@@ -53,7 +53,7 @@ function Contact() {
 
 
                             <Box display="flex" data-aos="fade-up"
-                                data-aos-anchor-placement="top-bottom" data-aos-delay="500">
+                                data-aos-anchor-placement="top-bottom" >
                                 <AttachEmailIcon sx={{ mt: "5px", marginRight: "3px" }} />
                                 {/* <Typography variant='h5' >:</Typography> */}
                                 <Link href="mailto:ahmadadelattia@gmail.com" className={styles.myEmail}>
@@ -61,7 +61,7 @@ function Contact() {
                                 </Link>
                             </Box>
                             <Box display="flex" data-aos="fade-up"
-                                data-aos-anchor-placement="top-bottom" data-aos-delay="550">
+                                data-aos-anchor-placement="top-bottom" >
                                 <PhoneIphoneIcon sx={{ mt: "5px" }} />
                                 {/* <Typography variant='h5' >:</Typography> */}
 
@@ -79,7 +79,7 @@ function Contact() {
                                     <Box gap="5px" mb="10px" mt="30px" sx={{ display: { sm: 'grid', md: "flex" } }}>
                                         <TextField
                                             data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom" data-aos-delay="600"
+                                            data-aos-anchor-placement="top-bottom"
                                             // sx={{ '& .css-14m6kzo-MuiInputBase-root-MuiFilledInput-root.Mui-focused': { backgroundColor: "neutral.white" } }}
                                             id="name"
                                             name="name"
@@ -104,7 +104,7 @@ function Contact() {
                                         />
                                         <TextField
                                             data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom" data-aos-delay="600"
+                                            data-aos-anchor-placement="top-bottom"
                                             sx={{ mt: { xs: "10px", md: '0px' } }}
                                             id="email"
                                             name="email"
@@ -132,7 +132,7 @@ function Contact() {
                                         />
                                     </Box>
                                     <Box mb="10px" data-aos="fade-up"
-                                        data-aos-anchor-placement="top-bottom" data-aos-delay="650">
+                                        data-aos-anchor-placement="top-bottom" >
                                         <TextField
 
 
@@ -168,7 +168,7 @@ function Contact() {
 
                                     <TextField
                                         data-aos="fade-up"
-                                        data-aos-anchor-placement="top-bottom" data-aos-delay="700"
+                                        data-aos-anchor-placement="top-bottom"
                                         id="message"
                                         name="message"
                                         label="Message"
@@ -197,7 +197,7 @@ function Contact() {
                                     />
                                 </Box>
 
-                                <button className={styles.normalButton2} type="submit" data-aos="fade-right" data-aos-delay="750">
+                                <button className={styles.normalButton2} type="submit" data-aos="fade-right" >
                                     <div className={styles.normalButtonbg}></div>
                                     <Box display="flex" justifyContent="center" alignItems="center" >
                                         <p className={styles.normalButton2text}>Send</p>

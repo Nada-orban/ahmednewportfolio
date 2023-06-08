@@ -61,7 +61,7 @@ function About() {
                         </Box>
                         <List >
                             <Typography variant='h4' sx={{ my: 1, fontWeight: "bold", color: "secondary.main", textAlign: "start" }} data-aos="fade-up" data-aos-delay="650">Education</Typography>
-                            <ListItem display="flex" justifyContent="center" alignItems='center' data-aos="fade-up" data-aos-delay="700">
+                            <ListItem display="flex" justifyContent="center" alignItems='center' data-aos="fade-up" >
                                 <ListItemIcon>
                                     <Image
                                         src={marylandlogo}

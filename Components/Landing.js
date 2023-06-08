@@ -149,16 +149,16 @@ function Landing() {
 
                         <Box sx={{ display: { xs: "grid", md: "flex", } }} gap="20px" justifyItems="center" justifyContent="start">
                             <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} data-aos="fade-right" data-aos-delay="1400" >
-                                <button className={styles.normalButton2} >
-                                    <div className={styles.normalButtonbg}></div>
-                                    <p className={styles.normalButton1text}>Contact me</p>
+                                <button className={styles.normalButton3} >
+                                    <div className={styles.normalButtonbg3}></div>
+                                    <p className={styles.normalButton3text}>Contact me</p>
                                 </button>
 
                             </Link>
                             <a href="/assets/CV.pdf" target="_blank" rel='noopener noreferrer' data-aos="fade-right" data-aos-delay="1450">
                                 <button className={styles.normalButton3} >
                                     <div className={styles.normalButtonbg3}></div>
-                                    <p className={styles.normalButton3text}>RESUME</p>
+                                    <p className={styles.normalButton3text}>Resume</p>
                                 </button>
                                 {/* <Box display="flex" gap="5px" padding="5px 40px" justifyItems="center" border="1px solid #0DD1CF" backgroundColor="secondary.main" cursor="pointer">
                                     <InsertDriveFileIcon sx={{ color: "white", mt: "8px", cursor: "pointer" }} />

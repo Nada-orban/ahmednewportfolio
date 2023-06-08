@@ -113,7 +113,7 @@ function Papers() {
                             </Box>
                             <Box my="40px" >
                                 <Box my="20px" data-aos="fade-up"
-                                    data-aos-anchor-placement="top-bottom" data-aos-delay="350">
+                                    data-aos-anchor-placement="top-bottom" >
                                     <a href="https://arxiv.org/abs/2210.15195" className={styles.linkText} target="_blank">
                                         <Typography variant='h5' sx={{ color: "secondary.main", fontWeight: "bolder" }}>Masked Autoencoders Are Articulatory Learners</Typography>
                                     </a>
@@ -128,7 +128,7 @@ function Papers() {
                                     </a>
                                 </Box>
                                 <Box my="30px" data-aos="fade-up"
-                                    data-aos-anchor-placement="top-bottom" data-aos-delay="400">
+                                    data-aos-anchor-placement="top-bottom" >
                                     <a href="https://arxiv.org/abs/2305.10775" className={styles.linkText} target="_blank">
                                         <Typography variant='h5' sx={{ color: "secondary.main", fontWeight: "bolder" }}>Enhancing Speech Articulation Analysis Using A Geometric Transformation
                                             Of The X‐ray Microbeam Dataset </Typography>
@@ -142,7 +142,7 @@ function Papers() {
                                     </a>
                                 </Box>
                                 <Box my="30px" data-aos="fade-up"
-                                    data-aos-anchor-placement="top-bottom" data-aos-delay="450">
+                                    data-aos-anchor-placement="top-bottom" >
                                     <a href="https://arxiv.org/abs/2205.13086" className={styles.linkText} target="_blank">
                                         <Typography variant='h5' sx={{ color: "secondary.main", fontWeight: "bolder" }}>Audio Data Augmentation for Acoustic to articulatory Speech Inversion using
                                             Bidirectional Gated RNNs </Typography>

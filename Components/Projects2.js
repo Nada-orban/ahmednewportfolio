@@ -108,7 +108,7 @@ function Projects2() {
                     </Box>
 
                     <Grid container sx={{ my: "80px", px: { sm: "10px", md: "40px" } }} data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom" data-aos-delay="450" spacing={2}>
+                        data-aos-anchor-placement="top-bottom" spacing={2}>
                         {projectsdata.map(project => (
                             <Grid item xs={12} sm={6} lg={3} md={6}>
 

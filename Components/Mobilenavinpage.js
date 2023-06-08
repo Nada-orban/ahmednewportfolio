@@ -113,42 +113,42 @@ function Mobilenavinpage() {
                                                 /></Box>
                                             <List  >
                                                 <ListItem>
-                                                    <NavLinks href="https://www.ahmedadelattia.com/#about" onClick={handleDrawerToggle} data-aos="fade-up"
+                                                    <NavLinks href="https://www.ahmedadelattia.com/#about" onClick={handleDrawerToggle} target="_blank" data-aos="fade-up"
                                                         data-aos-delay="200">
 
                                                         <Typography className={Styles.mobilenavlink} >ABOUT</Typography>
                                                     </NavLinks>
                                                 </ListItem>
                                                 <ListItem>
-                                                    <NavLinks href="https://www.ahmedadelattia.com/#skills" onClick={handleDrawerToggle} data-aos="fade-up"
+                                                    <NavLinks href="https://www.ahmedadelattia.com/#skills" onClick={handleDrawerToggle} target="_blank" data-aos="fade-up"
                                                         data-aos-delay="200">
 
                                                         <Typography className={Styles.mobilenavlink}>SKILLS</Typography>
                                                     </NavLinks>
                                                 </ListItem>
                                                 <ListItem>
-                                                    <NavLinks href="https://www.ahmedadelattia.com/#projects" onClick={handleDrawerToggle} data-aos="fade-up"
+                                                    <NavLinks href="https://www.ahmedadelattia.com/#projects" onClick={handleDrawerToggle} target="_blank" data-aos="fade-up"
                                                         data-aos-delay="200">
 
                                                         <Typography className={Styles.mobilenavlink}>PROJECTS</Typography>
                                                     </NavLinks>
                                                 </ListItem>
                                                 <ListItem>
-                                                    <NavLinks href="https://www.ahmedadelattia.com/#papers" onClick={handleDrawerToggle} data-aos="fade-up"
+                                                    <NavLinks href="https://www.ahmedadelattia.com/#papers" onClick={handleDrawerToggle} target="_blank" data-aos="fade-up"
                                                         data-aos-delay="200">
 
                                                         <Typography className={Styles.mobilenavlink}>PAPERS</Typography>
                                                     </NavLinks>
                                                 </ListItem>
                                                 <ListItem>
-                                                    <NavLinks href="https://www.ahmedadelattia.com/#experience" onClick={handleDrawerToggle} data-aos="fade-up"
+                                                    <NavLinks href="https://www.ahmedadelattia.com/#experience" onClick={handleDrawerToggle} target="_blank" data-aos="fade-up"
                                                         data-aos-delay="200">
 
                                                         <Typography className={Styles.mobilenavlink}>Experience</Typography>
                                                     </NavLinks>
                                                 </ListItem>
                                                 <ListItem>
-                                                    <NavLinks href="https://www.ahmedadelattia.com/#contact" onClick={handleDrawerToggle} data-aos="fade-up"
+                                                    <NavLinks href="https://www.ahmedadelattia.com/#contact" onClick={handleDrawerToggle} target="_blank" data-aos="fade-up"
                                                         data-aos-delay="200">
 
                                                         <Typography className={Styles.mobilenavlink}>CONTACT</Typography>
