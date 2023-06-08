@@ -103,7 +103,7 @@ function Mobilenav() {
                                     {mobileOpen && (
                                         <Box>
                                             <Box sx={{ color: "background.secondary", textAlign: "start" }} data-aos="fade-down"
-                                                data-aos-delay="200"><Typography variant="h6" noWrap sx={{ color: "background.secondary", fontWeight: "bold", }} className={Styles.logoname}  >
+                                                data-aos-delay="200"><Typography noWrap sx={{ color: "background.secondary", fontWeight: "bold", fontSize: "15px" }} className={Styles.logoname}  >
                                                     Ahmed Adel Attia
                                                 </Typography></Box>
                                             <List  >

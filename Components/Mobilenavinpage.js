@@ -112,7 +112,7 @@ function Mobilenavinpage() {
                                                     alt="Picture of the author"
 
                                                 /> */}
-                                                <Typography variant="h6" noWrap sx={{ color: "background.secondary", fontWeight: "bold", }} className={Styles.logoname} >
+                                                <Typography noWrap sx={{ color: "background.secondary", fontWeight: "bold", fontSize: "15px" }} className={Styles.logoname} >
                                                     Ahmed Adel Attia
                                                 </Typography>
                                             </Box>
