@@ -169,8 +169,8 @@ function Mobilenavinpage() {
                                                 <Typography sx={{ color: "background.secondary", fontSize: "15px" }}>Social</Typography>
                                                 <Box display="flex" sx={{ justifyContent: "start", mt: { sm: "10px", xs: "10px", md: "0px", lg: "0px" }, mb: "30px" }} alignItems="center" gap="20px" >
 
-                                                    <a href="https://www.linkedin.com/in/nada-samir-441a58130/" ><Avatar sx={{ width: "25px", height: "25px", backgroundColor: "white", color: "background.secondary" }} ><FiLinkedin /></Avatar></a>
-                                                    <a href="https://github.com/Nada-orban" ><Avatar sx={{ width: "25px", height: "25px", backgroundColor: "white", color: "background.secondary" }} ><FiGithub /></Avatar></a>
+                                                    <a href="https://www.linkedin.com/in/ahmedadelattia" ><Avatar sx={{ width: "25px", height: "25px", backgroundColor: "white", color: "background.secondary" }} ><FiLinkedin /></Avatar></a>
+                                                    <a href="https://github.com/ahmedadelattia" ><Avatar sx={{ width: "25px", height: "25px", backgroundColor: "white", color: "background.secondary" }} ><FiGithub /></Avatar></a>
                                                     <a href="https://scholar.google.com/citations?user=x2TMhSQAAAAJ&hl=en&oi=sra" target="_blank"><Avatar sx={{ width: "25px", height: "25px", backgroundColor: "white", color: "background.secondary" }} ><SiGooglescholar /></Avatar></a>
 
                                                 </Box>
