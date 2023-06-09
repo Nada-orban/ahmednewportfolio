@@ -136,7 +136,7 @@ function Landing() {
                         </div> */}
 
                         <Typography variant='h4' mb="50px" mx="5px" data-aos="fade-up" data-aos-delay="1300"
-                            data-aos-anchor-placement="top-bottom">Deep Learning Ph.D Resercher</Typography>
+                            data-aos-anchor-placement="top-bottom">Deep Learning And Speech PhD Researcher</Typography>
 
                         <Box display="flex" sx={{ justifyContent: "start", mt: { sm: "10px", xs: "10px", md: "0px", lg: "0px" }, mb: "30px" }} alignItems="center" gap="20px" data-aos="fade-up" data-aos-delay="1350">
                             <a href="mailto:ahmadadelattia@gmail.com" target="_blank"><Avatar variant="rounded" sx={{ width: "50px", height: "50px", backgroundColor: "secondary.main", color: "white" }} className={styles.nadaavatar}><EmailIcon /></Avatar></a>
