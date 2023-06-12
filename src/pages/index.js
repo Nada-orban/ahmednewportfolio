@@ -100,7 +100,7 @@ export default function Home({ photo }) {
         <meta property="og:image" content="https://kvkirthy.github.io/code-samples/assets/dino.png" />
         <meta property="og:url" content="https://kvkirthy.github.io/code-sample/" /> */}
 
-        <meta property="og:image" content={"https://www.freepik.com/free-vector/hand-drawn-collage-design_33812597.htm"} />
+        {/* <meta property="og:image" content={`https://lighter.com/home-card.png`} /> */}
         <link rel="icon" href="/logo.png" />
         <link rel="icon" href="%PUBLIC_URL%/logonada.png" />
         {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
