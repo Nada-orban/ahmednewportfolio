@@ -30,7 +30,7 @@ import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import PropTypes from 'prop-types';
 import GitHubIcon from '@mui/icons-material/GitHub';
-// import imagebg from '../../public/assets/backgrounds/profile.jpg'
+import imagebg from '../../public/assets/backgrounds/profile.jpg'
 
 
 
@@ -99,13 +99,13 @@ export default function Home({ photo }) {
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://kvkirthy.github.io/code-samples/assets/dino.png" />
         <meta property="og:url" content="https://kvkirthy.github.io/code-sample/" /> */}
-        <meta
+        {/* <meta
           property="og:description"
           content="Hurray!! Yes Social Media Preview is Working"
-        />
+        /> */}
 
 
-        <meta property="og:image" content={`../../public/profile.jpg`} />
+        <meta property="og:image" content={imagebg} />
         <link rel="icon" href="/logo.png" />
         <link rel="icon" href="%PUBLIC_URL%/logonada.png" />
         {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
