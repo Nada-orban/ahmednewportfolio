@@ -100,7 +100,7 @@ export default function Home({ photo }) {
         <meta property="og:image" content="https://kvkirthy.github.io/code-samples/assets/dino.png" />
         <meta property="og:url" content="https://kvkirthy.github.io/code-sample/" /> */}
 
-        {/* <meta property="og:image" content={`https://lighter.com/home-card.png`} /> */}
+        <meta property="og:image" content={`https://img.freepik.com/free-photo/dramatic-white-clouds-blue-sky-from-airplane-window-view-colorful-sunset-cloudscape-background_90220-1208.jpg?w=740&t=st=1686756807~exp=1686757407~hmac=f8e5f614e44b04f047bf44bfbf1c5d942209e9e89f85cf03bd4f2f656575e5f3`} />
         <link rel="icon" href="/logo.png" />
         <link rel="icon" href="%PUBLIC_URL%/logonada.png" />
         {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
