@@ -99,6 +99,11 @@ export default function Home({ photo }) {
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://kvkirthy.github.io/code-samples/assets/dino.png" />
         <meta property="og:url" content="https://kvkirthy.github.io/code-sample/" /> */}
+        <meta
+          property="og:description"
+          content="Hurray!! Yes Social Media Preview is Working"
+        />
+
 
         <meta property="og:image" content={`../../public/profile.jpg`} />
         <link rel="icon" href="/logo.png" />
