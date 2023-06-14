@@ -105,7 +105,7 @@ export default function Home({ photo }) {
         /> */}
 
 
-        <meta property="og:image" content="/public/profile.jpg" />
+        <meta property="og:image" content="/profile.jpg" />
         <link rel="icon" href="/logo.png" />
         <link rel="icon" href="%PUBLIC_URL%/logonada.png" />
         {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
