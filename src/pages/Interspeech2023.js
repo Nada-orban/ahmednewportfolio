@@ -9,6 +9,7 @@ import Nav from '../../Components/Nav'
 import Particlesbackground from '../../Components/Particlesbackground'
 import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
 import icassplogo from '../../public/assets/papers/icassp.png'
+import interspeechlogo from '../../public/assets/papers/insterspeech (1).png'
 import Head from 'next/head'
 import Mobilenavinpage from '../../Components/Mobilenavinpage';
 
@@ -42,13 +43,13 @@ function ICASSP2023() {
                         backgroundColor="rgba(245, 241, 241, 0.822) " borderRadius="10px" py="120px" border="4px solid white ">
                         <Box>
                             <Image
-                                src={icassplogo}
+                                src={interspeechlogo}
                                 width={200}
                                 alt="conference photo"
                             />
                         </Box>
                         <Box >
-                            <Link href="https://arxiv.org/abs/2210.15195" target="_blank" className={styles.outlink}> <Typography variant='h5' sx={{ color: "background.secondary" }}>Learn more about my paper</Typography></Link>
+                            <Link href="https://arxiv.org/pdf/2305.10775.pdf" target="_blank" className={styles.outlink}> <Typography variant='h5' sx={{ color: "background.secondary" }}>Learn more about my paper</Typography></Link>
                             <Link href="http://www.ahmedadelattia.com/" target="_blank" className={styles.outlink}> <Typography variant='h5' sx={{ color: "background.secondary", mt: "10px" }}>Learn more about me</Typography></Link>
                         </Box>
                     </Stack>
