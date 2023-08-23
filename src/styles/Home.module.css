@@ -1090,6 +1090,7 @@
     display: flex;
     color:var(--primary-color);
     gap: 20px;
+    
 }
 .outlink:hover{
     color: var(--secondray-maincolor);

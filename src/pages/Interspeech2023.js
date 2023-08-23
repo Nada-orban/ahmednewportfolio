@@ -49,8 +49,12 @@ function ICASSP2023() {
                             />
                         </Box>
                         <Box >
-                            <Link href="https://arxiv.org/pdf/2305.10775.pdf" target="_blank" className={styles.outlink}> <Typography variant='h5' sx={{ color: "background.secondary" }}>Learn more about my paper</Typography></Link>
-                            <Link href="http://www.ahmedadelattia.com/" target="_blank" className={styles.outlink}> <Typography variant='h5' sx={{ color: "background.secondary", mt: "10px" }}>Learn more about me</Typography></Link>
+                            <Link href="/assets/Interspeech.pdf" target="_blank" className={styles.outlink}> <Typography variant='h5' sx={{ color: "background.secondary", mt: "10px", mx: "auto" }}>Follow along with the presentation</Typography></Link>
+                            <Link href="https://scl.umd.edu/?fbclid=IwAR17n3TZSb9M2gNut1fV9UYV8de0fgVdTUl8GfQOjiXBDFdNWCBuYUj3RO8" target="_blank" className={styles.outlink}> <Typography variant='h5' sx={{ color: "background.secondary", mt: "10px", textAlign: "center", mx: "auto" }}> SCL Website </Typography></Link>
+                            <Link href="https://arxiv.org/pdf/2305.10775.pdf" target="_blank" className={styles.outlink}> <Typography variant='h5' sx={{ color: "background.secondary", mx: "auto", mt: "10px" }}>View Manuscript</Typography></Link>
+                            <Link href="http://www.ahmedadelattia.com/" target="_blank" className={styles.outlink}> <Typography variant='h5' sx={{ color: "background.secondary", mt: "10px", mx: "auto" }}>Learn more about me</Typography></Link>
+
+
                         </Box>
                     </Stack>
                 </Container>
