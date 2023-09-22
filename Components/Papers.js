@@ -159,12 +159,7 @@ function Papers() {
                                             </Box>
 
                                         </a>
-                                        <a href='https://github.com/ahmedadelattia/MAE_Articulatory_Learners' className={styles.linkText} target="_blank" >
-                                            <Box display="flex" gap="4px" justifyContent="start" alignItems="center" >
-                                                <Typography variant='h5' sx={{ color: "secondary.main", }}>GitHub</Typography>
-                                                <GitHubIcon className={styles.iconLink} />
-                                            </Box>
-                                        </a>
+
                                         {/* <a href='/assets/Interspeech.pdf ' className={styles.linkText} target="_blank" >
                                             <Box display="flex" gap="4px" justifyContent="start" alignItems="center" >
                                                 <Typography variant='h5' sx={{ color: "secondary.main", }}>Presentation</Typography>
@@ -193,6 +188,12 @@ function Papers() {
                                             <Box display="flex" gap="4px" justifyContent="start" alignItems="center" >
                                                 <Typography variant='h5' sx={{ color: "secondary.main", }}>Presentation</Typography>
                                                 <YouTubeIcon className={styles.iconLink} />
+                                            </Box>
+                                        </a>
+                                        <a href='https://github.com/ahmedadelattia/MAE_Articulatory_Learners' className={styles.linkText} target="_blank" >
+                                            <Box display="flex" gap="4px" justifyContent="start" alignItems="center" >
+                                                <Typography variant='h5' sx={{ color: "secondary.main", }}>GitHub</Typography>
+                                                <GitHubIcon className={styles.iconLink} />
                                             </Box>
                                         </a>
                                     </Box>
